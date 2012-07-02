@@ -1,0 +1,49 @@
+/* template borrowed from swy.me/resume */
+
+@charset "UTF-8";
+
+@media print { 
+        body {  }
+	a { border-bottom: 10px; }
+	
+}
+
+/*
+@media print {
+	body { background-color: #fff; color: #444 !important; line-height: 130%; -webkit-text-stroke: 1px transparent; -moz-opacity: 0.99; }
+	.hresume { -webkit-transform:rotate(0deg); transform:rotate(0deg); }
+	.top, .middle, .bottom { background-image: none; }
+	h1, h2, h3, h4, h5, h6 { page-break-after:avoid; color: #202C56; }
+	.hresume .top { height: 120px; display: block; padding: 10px 60px 31px 0px; margin:  0 0 -62px 0; }
+	.hresume .middle { display: block; height: auto; padding: 30px 60px 1px 0px; }
+	h1.title { font-size: 50px; width: 140px; float: left; position: relative; bottom: 35px; }
+	h2, h3, h4, h5, h6 { text-transform:uppercase; font-size: 18px !important; }
+	.top span { font-size: 12pt !important; position: relative; top: 25px; }
+	a { text-decoration: none; color: #2C3C75; }
+	.linkedin, .bottom .content { display: none; }
+	.lnspan, .lna { display: inline; }
+	.hresume .tags ul li { list-style: none; padding: 10px 0; }
+	.hresume .vcard { margin-bottom: 20px; line-height: 26px; }
+	.hresume abbr { border: none; }
+	.hresume address { font-style: normal; }
+	.hresume hr { display: block; }
+	.hresume .contact .fn { font-weight: bold; }
+	.hresume .vcard { margin-bottom: 20px; line-height: 26px; }
+	.name, .first { border-top: 1px solid #d2d4d4; border-bottom: 1px solid #d2d4d4; }
+	.dob, .adr, .phn, .eml, .web, .tags ul li { border-bottom: 1px solid #d2d4d4; }
+	.education, .experience { border-top: 1px solid #d2d4d4; }
+	.hresume .education, .hresume .accreditation { margin: 10px 0 10px 20px; padding: 1px; }
+	.hresume .experience { margin: 10px 0 30px 20px; padding: 1px; }
+	.hresume .summary, .hresume .tags { margin: 10px 0 20px 20px; padding: 1px; }
+	.hresume .education .htitle, .hresume .experience .htitle { float: left; line-height: 16px; margin-top: 5px; }
+	.hresume .htitle .include { display: none; }
+	.hresume .education .date_duration, .hresume .experience .date_duration { float: right; font-size: smaller; color: #777; line-height: 16px; margin-top: 5px; }
+	.hresume .education .summary { margin: 0; }
+	.hresume .title { font-weight: bold; } 
+	.hresume .org {	color: #333; font-style: italic; }
+	.attribute { color: #555; font-weight: none; display: inline-block; width: 150px !important; }
+	.profile { margin: 0 0 20px 0; }
+	.skill { width: 140px; display: inline-block; font-weight: bold; color: #444; }
+	.xp { width: 180px; display: inline-block; }
+	.xp, .desc { color: #666; }
+} */
