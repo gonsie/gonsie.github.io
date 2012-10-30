@@ -99,10 +99,110 @@ Now, more than ever we have more people who can read, and more access to books. 
 
 And thus it is obvious why the author wrote this book. He cannot see how the current system will improve itself, without outside influence.
 
+It is also true that adult education is worth while, since there are no grades or tests or scores to keep adults learning. 
+
+> Let me state now, simply and briefly, the conditions under which you can effectively hely yourself. Anf art or skill is possessed by those who have formed the habit of operating according to its rules. In fact, the artist or craftsman in anf field differs thus from those who lack his skill. He has a habit they lack.
+
+	See the movie "Jiro Dreams of Sushi", now on netflix
+
+> In other words, to *understand* the rules is to *know more than* the rules.
+
+So just follow the rules. And keep reading. You must continue to practice and improve your habits.
+
+> The most direct sign that you have done the work of reading is *fatigue*.
+
+Read with a pen and paper at your side, take notes of your thoughts.
+
+> Intelligent note taking is probably as hard as intelligent reading.
+
+Some examples of note taking (as representations in different steps in thinking):
+- grasping the structure of the book => several outlines
+- mark important words and sentences
+- note shifts in meanings
+- where the author appears to contradict himself
+
+Example notes from the first couple chapters of this book:
+	
+>*Types of Reading:*
+>	- I. For amusement
+>	- II. For knowledge
+>		- A. For information
+>		- B. For understanding
+
+>*Types of Learning:*
+>	- I. By discovery: without teachers
+>	- II. By instruction: thruough aid of teachers 
+>		- A. By live teachers: lectures; listening
+>		- B. By dead teachers: books; reading
+
+>Hence *Reading II* (*A* and *B*) is *Learning II* (*B*)
+
+>But books are also of different sorts:
+
+>*Types of Books:*
+>	- I. Digests and repetitions of other books
+>	- II. Original communications
+
+>And it appears that:
+
+>	*Reading II (A)* is related more closely to *Books I*
+
+>	*Reading II (B)* is related more closely to *Books II*
+
+
+For the next part, the different sets of rules relate to different ways in which a book can be approached: 
+1. as a complicatied structure of parts with unity in organization
+2. in terms of linguistic elements
+3. the relation of the author to the reader (similar to a conversation)
+
+Other books about reading:
+- *Interpretation in Teaching* by Mr. I. A. Richards: goes more into rules type 2, esp. principle of grammar and logic
+- *Intelligent Reading* by Professor Tenney of Cornell: rules type 2 and 3
+
+Some books on reading value semantics above all else, assuming that most books/authors are not worth reading, until proven otherwise. 
+> We should assume that the author is intelligible until shown otherwise, not that he is guilty of nonsense and must prove his innocence.
 
 ## Part 2: The Rules
 
 ### Chapter 7: From Many Rules to One Habit
+
+> While you are in the stage of learning to read, you have to go over a book more than once. If it iis worth reading at all, it is worth three readings at least.
+
+Meaning that there are three *ways* of reading, and an expert will be able to do all three readings at once. But start with threes individual focused readings.
+
+This is based on scientific study of the learning process (detailed comparison of learning to type with learning to read). You start with many small, individual steps/rules, accelerate in skill, pleatu while working on larger chuncks, accelerate, plateau, accelerate, plateau, etc. The number of plateaus depends on the skill. Until all the small individual rules become one larger habit.
+
+> At the beginning, the learner pays attention to himself and his skill in separate acts. When the acts have lost their separateness in the skill of the whole performance, the learner can at last pay attention to to goal which the technique he has acquired enables him to reach.
+
+First you must *understand* the book, then you must *criticize* it. To understand a book, first you much approach in as a whole from the unity of the parts, then you must approach its elements and units of language and thought.
+
+- Understand
+	- I. The first reading can be called *structural* or analytic. Here the reader proceeds from the whole to its parts.
+		1. what kind of book it is; subject matter
+		2. what the book as a whole is trying to say;
+		3. into what parts that whole is divided, and
+		4. what the main problems are that the author is trying to solve
+	- II. The second reading can be called *interpretative* or synthetic. Here the reader proceeds form the parts to the whole.
+		1. You must discover and interpret the msot important *words* in the book;
+		2. you must do the same or the most important *sentences*, and
+		3. similarly for the *paragraphs* which express arguments
+		4. you must know which of his problems the author solved, and which he failed on
+- Criticize
+	- III. The third reading can be called *critical* or evaluative. Here the reader judges the author, and decides whether he agrees or disagrees.
+
+See [The Complete Rules](#the_rules) in chapter 14.
+
+It is clear that the first two readings can be combined into one. They should be treated separately, but more or less be done side-by-side. The third reading must always come separately. One cannot and should not criticize, before truely understanding.
+
+Intrinsic reading: reading a book in itself.
+Extrinsic reading: reading a book in light of
+	- dictionaries, encyclopedias almanacs
+	- useful commentaries or digests
+	- other great books
+	- relevant experience 
+
+
+
 ### Chapter 8: Catching on From the Title
 ### Chapter 9: Seeing the Skeleton
 ### Chapter 10: Coming to Terms
@@ -110,6 +210,30 @@ And thus it is obvious why the author wrote this book. He cannot see how the cur
 ### Chapter 12: The Etiquette of Talking Back
 ### Chapter 13: The Things the Reader Can Say
 ### Chapter 14: And Still More Rules
+
+<a id='the_rules'></a>
+1. The Analysis of a Book's Structure
+	1. Classify the book according to kind and subject matter.
+	2. State what the whole book is about with the utmost brevity.
+	3. Enumerate its major parts in their order and relation, and analyze these parts as you have analyzed the whole.
+	4. Define the problem or problems the author is trying to solve
+2. The Interpretation of a Book's Contents
+	1. Come to terms with the author by interpreting his basic words
+	2. Grasp the author's leading propositions through dealing with his most important sentences.
+	3. Know the author's arguments, by finding them in, or constructing them out of, sequences of sentences.
+	4. Determine which of his problems the author solved, and which he did not; and of the latter, decide which the author knew he failed to solve.
+3. The Criticism of a Book as a Communication of Konwledge
+	1. General Maxims
+		1. Do not begin criticism until you have completed analysis and interpretation. (Do not say you agree, disagree, or suspend judgement, until you can say, "I understand.")
+		2. Do not disagree disputatiously or contentiously.
+		3. Respect the difference between knowledge and opinion, by having reasons for any critical judgement you make.
+	2. Specific Criteria for Points of Criticism
+		1. Show wherein the author in uninformed.
+		2. Show wherein the author is misinformed.
+		3. Show wherein the author is illogical.
+		4. Show wherein the author's analysis or account is incomplete.
+		
+	Note: Of these, the first three are criteria for disagreement. Failing in all of these, you must argee, in part at least, though you may suspend judgement on the whole, in the light of the fourth point.
 
 ## Part 3: The Rest of the Reader's Life
 
@@ -128,3 +252,14 @@ And thus it is obvious why the author wrote this book. He cannot see how the cur
   - Tragedies (esp. *Oedipus the King*, *Antigone*, *Electra*)
 - Euripides (c. 485–406 BC)
   - Tragedies (esp. *Medea*, *Electra*, *Hippolytus*, *Bacchae*)
+- Herodotus (c. 484–425 BC)
+  - *History* (of the Persian Wars) (c. 444–425 BC)
+- Thucydides (c. 470–400 BC)
+	- *Histroy of the Peloponnesian War* (c. 404–401 BC)
+- Hippocrates (c. 460–357? BC)
+	- Collection of Medical Writings (c. 320–300 BC)
+- Aristophanes (c. 444–380 BC)
+	- Comedies (esp. *Lysistrata*, *Clouds*, *Birds*, *Frogs*)
+- Plato (c. 427–347 BC)
+	- Dalogues (c. 404–437 BC)
+	(esp. *Republic*, *Symposium*, *Phaedo*, *Meno*, *Apology*, *Lysis*, *Phaedrus*, *Protagoras*, *Gorgias*, *Cratylus*, *Sophist*, *Philebus*, *Thaetetus*, *Parmenides*)
