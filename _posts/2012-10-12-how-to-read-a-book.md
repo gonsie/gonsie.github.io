@@ -12,7 +12,7 @@ layout: notes
 
 There is more to reading than what we learned in grade school. Have you ever read a book more than once and seen different things each time? That's some of real `reading`. This book will tell you how to get there. How to pull yourself up by your bootstraps to increase your understanding. 
 
-> If we consider men and women generally, and apart from their professions or occupation, there is only one situation I can think of in which they almost pull themselves up by their bootstraps, making an effor to read better than they usually do. When they are in love and are reading a love letter, thery read for all they are worth. They read every word three ways; they read between the lines and in the margins; they read the whole in terms of ther parts, and each part in therms of the whole; they grow sensitive to context and ambiguity, to insinuation and implication; they perceive the color of words, the odor of phrases, and the weight of sentences. They may even take the punctuation into account. Then, if never before or after, they read.
+> If we consider men and women generally, and apart from their professions or occupation, there is only one situation I can think of in which they almost pull themselves up by their bootstraps, making an effort to read better than they usually do. When they are in love and are reading a love letter, they read for all they are worth. They read every word three ways; they read between the lines and in the margins; they read the whole in terms of ther parts, and each part in terms of the whole; they grow sensitive to context and ambiguity, to insinuation and implication; they perceive the color of words, the odor of phrases, and the weight of sentences. They may even take the punctuation into account. Then, if never before or after, they read.
 
 ### Chapter 2: The Reading of "Reading"
 
@@ -101,7 +101,7 @@ And thus it is obvious why the author wrote this book. He cannot see how the cur
 
 It is also true that adult education is worth while, since there are no grades or tests or scores to keep adults learning. 
 
-> Let me state now, simply and briefly, the conditions under which you can effectively hely yourself. Anf art or skill is possessed by those who have formed the habit of operating according to its rules. In fact, the artist or craftsman in anf field differs thus from those who lack his skill. He has a habit they lack.
+> Let me state now, simply and briefly, the conditions under which you can effectively hely yourself. Any art or skill is possessed by those who have formed the habit of operating according to its rules. In fact, the artist or craftsman in anf field differs thus from those who lack his skill. He has a habit they lack.
 
 	See the movie "Jiro Dreams of Sushi", now on netflix
 
@@ -201,9 +201,41 @@ Extrinsic reading: reading a book in light of
 	- other great books
 	- relevant experience 
 
+Complications:
+	- Reading two or more books in relation to each other
+	- Reading a *whole* book
+	- Reading to learn, and not reading for enjoyment. This also depends on the intent of the author. 
+		- *fine* art: intent is to please and delight
+		- *liberal* art: intent is to instruct by teaching the truth
+
+This book only deals with scientific (not poetic) reading. For instructions on appreciating beauty, rather than truth, see page 135 (end of section 5).
+
+> Beauty is truth, truth is beauty.
+
+False. Don't event start to assume this is so. 
 
 
 ### Chapter 8: Catching on From the Title
+
+First rule of the first reading:
+
+> You must know what kind of (expository) book you are reading, and you should know this as early in the process as possible, preferably before you begin to read.
+
+You can do this by looking at the front matter: title, subtitle, table of contents, preface, etc.
+
+Ask the question: What kind of book is this? We need a scheme of classification.
+
+- Practical: teach you *how* to do something which you think you *should*
+- Theoretical: teach you *that* something *is* the case
+
+- Theoretical
+	- History: Things or events in the past that changed over the course of time
+	- Science: Timeless generalizations and universal physical truths. Relates to laboratory work.
+	- Philosophy: Generalizations and objective truths. Relates to common, everyday life
+
+Just as there are different topics to learn, there are different ways to learn them. Different subjects in school are taught differently, and learned differently, books on different subjects must be read differently. 
+
+
 ### Chapter 9: Seeing the Skeleton
 ### Chapter 10: Coming to Terms
 ### Chapter 11: What's the Proposition and Why
@@ -232,7 +264,7 @@ Extrinsic reading: reading a book in light of
 		2. Show wherein the author is misinformed.
 		3. Show wherein the author is illogical.
 		4. Show wherein the author's analysis or account is incomplete.
-		
+				
 	Note: Of these, the first three are criteria for disagreement. Failing in all of these, you must argee, in part at least, though you may suspend judgement on the whole, in the light of the fourth point.
 
 ## Part 3: The Rest of the Reader's Life
@@ -261,5 +293,34 @@ Extrinsic reading: reading a book in light of
 - Aristophanes (c. 444–380 BC)
 	- Comedies (esp. *Lysistrata*, *Clouds*, *Birds*, *Frogs*)
 - Plato (c. 427–347 BC)
-	- Dalogues (c. 404–437 BC)
+	- Dialogues (c. 404–437 BC)
 	(esp. *Republic*, *Symposium*, *Phaedo*, *Meno*, *Apology*, *Lysis*, *Phaedrus*, *Protagoras*, *Gorgias*, *Cratylus*, *Sophist*, *Philebus*, *Thaetetus*, *Parmenides*)
+- Aristotle (384–322 BC)
+	- Works (c. 335–323 BC)
+	(esp. *Organon*, *Physics*, *Metaphysics*, *De Anima*, *Ethics*, *Politics Rhetoric*, *Poetics*)
+- Eculid (c. 323–283 BC)
+	- *Elements of Geometry*
+- Cicero (106–43 BC)
+	- *Orations* (c. 66–57 BC)
+	- *Republic* (54 BC)
+	- *Laws* (52 BC)
+	- *Tusculan Disputations* (45 BC)
+	- *Offices* (44 BC)
+- Lucretius (c. 95–52 BC)
+	- *Of the Nature of Things* (c. 55 BC)
+- Virgil (70–19 BC)
+	- *Aeneid* (c. 27–20 BC)
+- Horace (65–8 BC)
+	- *Odes and Epodes* (22–13 BC)
+	- *The Art of Poetry* (13 BC)
+- Livy (59 BC–AD 17)
+	- *History of Rome* (c. 27–25 BC)
+- Ovid (43 BC–AD 17)
+	- *Metamophoses* (c. 9–17)
+- Quintillian (c. 40–118)
+	- *Institutes of Oratory* (94–95)
+- Plutarch (c. 45–102)
+	- *Lives*
+- Tacitus (c. 55–117)
+	- *Dialogue on Oratory* (c. 84–85)
+	- *Germania* (98)
