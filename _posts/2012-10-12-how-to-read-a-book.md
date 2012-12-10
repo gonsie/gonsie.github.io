@@ -32,7 +32,7 @@ Reading to aqurire knowledge... requires practice to improve skill in reading.
 Reading for information vs. reading for understanding.
 Example of college students who read for information and do not understand. Never connect the dots between information in one class to another or themselves.
 
-> There books to be tasted, others to bo swallowed, and some few to be chewed and digested.
+> There books to be tasted, others to be swallowed, and some few to be chewed and digested.
 – Bacon
 
 There is learing through discourse (reading and listening) and learning through discovery. 
@@ -166,7 +166,7 @@ Some books on reading value semantics above all else, assuming that most books/a
 
 ### Chapter 7: From Many Rules to One Habit
 
-> While you are in the stage of learning to read, you have to go over a book more than once. If it iis worth reading at all, it is worth three readings at least.
+> While you are in the stage of learning to read, you have to go over a book more than once. If it is worth reading at all, it is worth three readings at least.
 
 Meaning that there are three *ways* of reading, and an expert will be able to do all three readings at once. But start with threes individual focused readings.
 
@@ -212,7 +212,7 @@ This book only deals with scientific (not poetic) reading. For instructions on a
 
 > Beauty is truth, truth is beauty.
 
-False. Don't event start to assume this is so. 
+**False**. Don't event start to assume this is so. 
 
 
 ### Chapter 8: Catching on From the Title
@@ -227,9 +227,7 @@ Ask the question: What kind of book is this? We need a scheme of classification.
 
 - Practical: teach you *how* to do something which you think you *should*
 - Theoretical: teach you *that* something *is* the case
-
-- Theoretical
-	- History: Things or events in the past that changed over the course of time
+    - History: Things or events in the past that changed over the course of time
 	- Science: Timeless generalizations and universal physical truths. Relates to laboratory work.
 	- Philosophy: Generalizations and objective truths. Relates to common, everyday life
 
@@ -237,6 +235,19 @@ Just as there are different topics to learn, there are different ways to learn t
 
 
 ### Chapter 9: Seeing the Skeleton
+
+Second and third rules pertain to the unity and organization of parts:
+
+> State the unity of the whole book in a single sentence, or at most in several sentences (a short paragraph).
+
+> Set forth the major parts of the book, and show how these are organized into a whole, by being ordered to one another and to the unity of the whole.
+
+Rule 2: What is the *theme* or main *point*?
+
+Rule 3: Although the previous rule gets at the bare bones, we must understand how the parts move and flow in the larger whole of the book.
+
+
+
 ### Chapter 10: Coming to Terms
 ### Chapter 11: What's the Proposition and Why
 ### Chapter 12: The Etiquette of Talking Back
