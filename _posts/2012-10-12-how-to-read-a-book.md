@@ -374,3 +374,22 @@ This requires two steps: a step dealing with the language as such, and a step be
 - Tacitus (c. 55–117)
 	- *Dialogue on Oratory* (c. 84–85)
 	- *Germania* (98)
+- Nichomachus
+       - *Introduction to Arithmetic* (c. 100)
+- Epictetus (c. 60–120)
+       - *Discourses*
+- Lucian (c. 120–190)
+       - Works (c. 145–175)
+       (esp. *The Way to Write History*, *The True History*, *Alexander the Oracle Monger*, *Charon*, *The Sale of Lives*, *The Fisherman*, *Dialogues of the Gods*, *Dialogues of the Sea-Gods*, *Dialogues of the Dead*)
+- Marcus Aurelius (121–180)
+       - *Meditations*
+- Gales (131–c. 210)
+       - *Of the Natural Faculties*
+- *The New Testament*
+- St. Augustine (354–430)
+       - *Of the Teacher* (c. 389)
+       - *Confessions* (397)
+       - *City of God* (c. 413–426)
+- *Volsunga Saga* (or *Nibelungenlied*)
+- *Song of Roland* (c. 1190)
+- *Burnt Njal* (Icelandic saga)
