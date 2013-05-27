@@ -246,6 +246,35 @@ Rule 2: What is the *theme* or main *point*?
 
 Rule 3: Although the previous rule gets at the bare bones, we must understand how the parts move and flow in the larger whole of the book.
 
+This rule pertains to the major parts of the book in terms of their order and relation. The second rule was for *unity*, this one is for *complexity*. Each section of the whole has its own unity and complexity. A reader should make a rough approximation of these rules, and may choose to be more or less rigid with certain books.
+
+> It is alright to hitch your wagon to a star, but you had better be sure it is well lubricated before you take the reins.
+
+A master analyziz migth look something like:
+- the statement of the major parts
+- their division inot sections
+- enumeration of poits in each section
+
+Rule 4: Find out what the author's problems were.
+
+A problem is a question. The book ostensibly contains one or more answers to it.
+
+#### Questions anyone can ask about anything:
+*Theoretical Questions*
+- Does something exist?
+- What kind of think is it?
+- What caused it to exist, or under what conditions can it exist, or why does it exist?
+- What purpose does it serve?
+- What are the consequences of its existence?
+- What are its characteristics properties, its typical traits?
+- What are its relations to other things of a similar sort, or of a different sort?
+- How does it behave?
+*Practical Questions*
+- What ends should be sought?
+- What means should be chosen to a given end?
+- What things must one do to gain a certain objective, and in what order?
+- Under these conditions, what is the right thing to do, or the better rather than the worse?
+- Under what conditions would it be better to do this rather than that?
 
 
 ### Chapter 10: Coming to Terms
