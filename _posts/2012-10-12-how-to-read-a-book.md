@@ -278,6 +278,14 @@ A problem is a question. The book ostensibly contains one or more answers to it.
 
 
 ### Chapter 10: Coming to Terms
+
+A *term* is not a *word*-at least, not just a word without any further qualifications. A term is a word used unambiguously.
+
+Rule 1: find the important words and through them come to terms with the author.
+
+This requires two steps: a step dealing with the language as such, and a step beyond the language to the thought which lies behind it. If language were a pure and prefect medium for thought, these steps would not be separate.
+
+
 ### Chapter 11: What's the Proposition and Why
 ### Chapter 12: The Etiquette of Talking Back
 ### Chapter 13: The Things the Reader Can Say
