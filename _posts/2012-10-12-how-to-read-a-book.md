@@ -244,13 +244,15 @@ Second and third rules pertain to the unity and organization of parts:
 
 Rule 2: What is the *theme* or main *point*?
 
+In essence, there are only a handful of plots in the world, what matters is how the author dresses up the bare bones. Expository books are less likely to keep you in suspense. They are are more likely to summarize the main points right away. Accept this summary, but don't rely on it completely.
+
 Rule 3: Although the previous rule gets at the bare bones, we must understand how the parts move and flow in the larger whole of the book.
 
 This rule pertains to the major parts of the book in terms of their order and relation. The second rule was for *unity*, this one is for *complexity*. Each section of the whole has its own unity and complexity. A reader should make a rough approximation of these rules, and may choose to be more or less rigid with certain books.
 
 > It is alright to hitch your wagon to a star, but you had better be sure it is well lubricated before you take the reins.
 
-A master analyziz migth look something like:
+A master analysis migth look something like:
 - the statement of the major parts
 - their division inot sections
 - enumeration of poits in each section
