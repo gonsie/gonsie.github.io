@@ -287,8 +287,25 @@ Rule 1: find the important words and through them come to terms with the author.
 
 This requires two steps: a step dealing with the language as such, and a step beyond the language to the thought which lies behind it. If language were a pure and prefect medium for thought, these steps would not be separate.
 
+Note: This is further complicated by the fact that language and word usage changes over time. Translated works only make matters worse. 
+
+> The most important words are those which give you trouble. 
+
+First, try to determine whether the word has one or many meanings. If it has many, try to see whether they are related and how. Finally, note the places where the word is used in one  sense or another, and see if the context gives you any clue to the reason for the shift in meaning. Distinguish between the author's technical *vocabulary* and his analytical *terminology*.
+
+This only touches on the use of words and terms. To go further:
+- literal vs. metaphorical use
+- abstract vs. concrete words
+- proper vs. common names
+- defining words vs. defining things
+- "the emotive use of words"
+
 
 ### Chapter 11: What's the Proposition and Why
+
+
+
+
 ### Chapter 12: The Etiquette of Talking Back
 ### Chapter 13: The Things the Reader Can Say
 ### Chapter 14: And Still More Rules
@@ -393,3 +410,16 @@ This requires two steps: a step dealing with the language as such, and a step be
 - *Volsunga Saga* (or *Nibelungenlied*)
 - *Song of Roland* (c. 1190)
 - *Burnt Njal* (Icelandic saga)
+- Maimonides (c. 1135–1204)
+	   - *Guide for the Perplexed* (1190)
+- St. Thomas Aquinas (c. 1225–1274)
+	   - *Of Being and Essence* (1256)
+	   - *Summa Contra Gentiles* (1258–60)
+	   - *Of the Governance of Rulers* (1265–67)
+	   - *Summa Theologica* (1267–73)
+- Dante (1265–1321)
+	   - *The Divine Comedy* (c. 1300)
+- Chaucer (c. 1340–1400)
+	   - *The Canterbury Tales* (c. 1398)
+- Thomas À Kempis (c. 1380–1471)
+	   - *Of the Imitation of Christ*
