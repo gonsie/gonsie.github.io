@@ -15,9 +15,6 @@ pygments:    true
 markdown:    rdiscount
 permalink:   none
 
-table_of_contents:
-  dirs: [_posts]
-
 maruku:
   use_tex:    false
   use_divs:   false
