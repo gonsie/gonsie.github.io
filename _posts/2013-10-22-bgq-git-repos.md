@@ -30,7 +30,6 @@ Create and configure the target repository:
 	$ cd ROSS
 	$ git init
 	$ git config receive.denyCurrentBranch ignore
-	$ echo "git reset --hard HEAD" > .git/hooks/post-receive
 
 ### Local
 Add the remote location to your local repository:
@@ -42,10 +41,19 @@ Now you are ready to push your repository to the CCI.
 
 ## Updating your CCI repository
 
+You must follow both of these step everytime you update your repository on the CCI machines. Your git repository must be `reset` after each push.
+
 ### Local Push
 	
 	$ cd ~/Projects/ROSS
 	$ git push amos master
+
+### CCI Receive
+
+        $ ssh RSNTgons@lp01.ccni.rpi.edu
+        $ ssh q
+        $ cd /gpfs/lb/provisioned/RSNT/RSNTgons/ROSS
+        $ git reset --hard HEAD
 
 ## WARNING
 
