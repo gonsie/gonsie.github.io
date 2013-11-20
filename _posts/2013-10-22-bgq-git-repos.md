@@ -32,7 +32,7 @@ Create and configure the target repository:
 	$ git config receive.denyCurrentBranch ignore
 
 ### Local
-Add the remote location to your local repository:
+Your local machine should be on RPI campus (and thus allowed through the CCI firewall). Add the remote location to your local repository:
 
 	$ cd ~/Projects/ROSS
 	$ git remote add amos RSNTgons@lp01.ccni.rpi.edu:/gpfs/lb/provisioned/RSNT/RSNTgons/ROSS
