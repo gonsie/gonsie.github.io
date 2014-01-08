@@ -59,3 +59,30 @@ You must follow both of these step everytime you update your repository on the C
 
 If you follow these instructions, any repository changes/commits you make on CCI machines will be **overwritten** when you do the `git push` command. It is recommended that you *do not* make any repository changes on CCI machines. 
 
+## Advanced Git
+
+### Branches
+
+When pushing to the CCI, you want to make sure you are pushing on top of the correct branch for a repository. This way, the `git reset` command simply resets the branch to the latest commit.
+
+#### Scenario
+
+You are developing a branch on your local machine, and would like to test it using the CCI.
+
+#### Workflow
+
+Create and switch to the branch you want to work on, on the CCI machine. 
+
+	$ git checkout -b newBranch
+
+Push the branch from your local machine:
+
+	$ git push amos newBranch
+
+Reset the git head on the CCI machine:
+
+	$ git reset --hard HEAD
+
+Your CCI machine should now be up to date. When using multiple branches on your CCI machine, make sure the proper branch is checked out before you push changes on top of it.
+
+
