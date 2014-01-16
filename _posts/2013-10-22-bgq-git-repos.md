@@ -85,4 +85,10 @@ Reset the git head on the CCI machine:
 
 Your CCI machine should now be up to date. When using multiple branches on your CCI machine, make sure the proper branch is checked out before you push changes on top of it.
 
+### Commiting Changes on the CCI Machine
+
+If you want to do development while on the CCI machines, you will need to pull your changes off of the machine. There is no direct step to go from the CCI to GitHub. You will need to use your local machine to pull from the CCI and push to GitHub. From your local machine the workflow looks like:
+
+	$ git pull amos master
+	$ git push origin master
 
