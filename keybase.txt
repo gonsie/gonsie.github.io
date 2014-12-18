@@ -1,0 +1,65 @@
+==================================================================
+https://keybase.io/gonsie
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://gonsie.com
+  * I am gonsie (https://keybase.io/gonsie) on keybase.
+  * I have a public key with fingerprint 46C0 FD64 4B3B AABD 3921  B51C D367 742D FD7E 3C28
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "46c0fd644b3baabd3921b51cd367742dfd7e3c28",
+            "host": "keybase.io",
+            "key_id": "d367742dfd7e3c28",
+            "uid": "74c6ee5cb877ed863de6d988fe43a900",
+            "username": "gonsie"
+        },
+        "service": {
+            "hostname": "gonsie.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1418872003,
+    "expire_in": 157680000,
+    "prev": "731c6f9109fac482ba9f92759e270aa8205a77be5d4ad092c2075fb10cfa2ade",
+    "seqno": 4,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v1.1.6
+Comment: https://keybase.io/crypto
+
+yMHgAnicbVFdSBRRGN210tp+sJeQQLTRUElt5s7/Wkgma4RFUERmNN6ZubOO5sy2
+s27pFpqI9EelaWAoWYlUoBloYASJWrH1IBVCFuTThm5lYQ8KidsdqYeg+/Jxz3fO
++b7DN7Z+hcPlnAPXN+Qn195zvh7+Vu041FI4GiJkU60h3CGiEi0XTTe8yO/z60aA
+cBMMp5CayjGMTMsQyiotAkpmKUWlOZ5ngKqpPKIVIBDZRLlp2QpsI0ML5eomxvBH
+0lWM/odfvdzgGYVDiFVkgeeRKnC0ijhVFAQNMTQUSdImWshvwCqE2V7TsHREnM0m
+MBbUFWRvbA/+p5+rmFVY5/ObAVMxT2C8PBDwuW1ZoMZn804hWfrjIMm6oeLMWBBE
+fks3DcJNYaYS0G1LiqEEgQckSWcT6LRP9yNJtxkszwkkfvYYFLSD0JTCaSJFihpU
+GAHIUNREwLMiAjwJoQBIFvK8jFiVgSopAgWQPKvJFKloEEAVEXamk4ZJuBm8JvRi
+S0v3GjBQ7ceBR4aPrXQ4XY74VXH21RyuNYl/b7m4mLDEAuMif2MxJ5isRaLnM/qD
+kazGkrbYlgWwmmzNTKvaWhcrSzjzMDrZ2DQJryTNFrgGvRNzmZ6X008K0gbedafu
+T0lnRx6nDCV9F3d3efQDb5fuHJZqnjfk9Xct3EzKlR1T4aJRb8b4fKgzDKNF+YOP
+Si8faf7a8bn96HRxg+f2jt6dL2YdeUXHzznrJN+DD9tBYdP9ffOdV+fib0l3r8XW
+bWu/kDk10zI2kNqcsbGjfsFnJcr1PdRMTpMZGbR+tMU9Da/tmfiyN6HsTdul2Mdd
+6ZHZkcrC2Piv0vBBqbfr0yuxpLgvpbYvWRKGfnZv2hOqGPW0bo4+687KfF9h/QbX
+gRat
+=UKQr
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/gonsie
+
+==================================================================
