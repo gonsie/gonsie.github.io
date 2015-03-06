@@ -11,7 +11,7 @@ layout: notes
 
 ## Description
 
-This work represents a more than 2 year effort between RPI and AFRL in investigating massively-parallel circuit simulation. 
+This work represents a more than 2 year effort between RPI and AFRL in investigating massively-parallel circuit simulation.
 
 ## Links
 
@@ -37,7 +37,7 @@ This work represents a more than 2 year effort between RPI and AFRL in investiga
 ### Step 1: Parsing
 
 - `ply_liberty` parse the liberty library. This step defines the some of the valid tokens for the netlist, as well as the format of all gate data. By defining the gate types, the 'factory' design pattern is used to fill in the data model. This piece of the system leverages the strength of the Java language with object oriented programs.
-- `ply_verilog_netlist` parse the generated netlist file. This step builds the data model for the circuit. Each named wire and gate is connected, 
+- `ply_verilog_netlist` parse the generated netlist file. This step builds the data model for the circuit. Each named wire and gate is connected,
 - `ply_bool_expr` parse boolean expressions (used during library parsing). This generates C-code from simple boolean expressions.
 
 ### Step 2: Data Generation
@@ -73,4 +73,4 @@ The ROSS/gates is built using a combination of CMake and a bash scripts. These s
 - full Liberty library parsing
 - ModelSIM correctness comparison
 - full processor simulation (clock?)
-- valid instructions 
+- valid instructions
