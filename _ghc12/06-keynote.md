@@ -3,8 +3,6 @@ title: Keynote
 layout: default
 ---
 
-## <a id="keynote"></a> Keynote: Nora Denzel
-
 - decided at 16 to persue a career in CS because of programming on an old computer
 
 > *Error messages*

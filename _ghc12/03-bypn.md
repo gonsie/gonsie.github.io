@@ -3,8 +3,6 @@ title: Building Your Professional Network
 layout: default
 ---
 
-## <a id="bypn"></a> Buliding Your Professional Network
-
 > If you do good work, fame, funding, promotions, etc. will follow
 
 ### FALSE

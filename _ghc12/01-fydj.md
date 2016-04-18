@@ -3,8 +3,6 @@ title: Finding Your Dream Job
 layout: default
 ---
 
-## <a id="fydj"></a> Finding Your Dream Job
-
 [cra-w.org](cra-w.org) computer research association
 
 > pay attention to what you like to do

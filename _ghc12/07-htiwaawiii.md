@@ -3,8 +3,6 @@ title: How To Influence Without Authority And Why It Is Important
 layout: default
 ---
 
-## <a id="htiwaawiii"></a> How To Influence Without Authority And Why It Is Important
-
 How many have the need to influence? How many have the authority to influence?
 
 **Q: What do you need influence for?**

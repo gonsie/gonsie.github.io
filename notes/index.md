@@ -1,12 +1,11 @@
 ---
 layout: default
-title: Contents
+title: Notes
 ---
 
 <!-- This is a special file -->
 <!-- The "notes" collection is not parsed by jekyll -->
 
-<h2>Notes</h2>
 <ul>
 {% for page in site.categories.notes %}
   <li><a href="{{ page.url }}">{{ page.title }}</a></li>

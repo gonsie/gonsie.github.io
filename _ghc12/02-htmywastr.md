@@ -3,8 +3,6 @@ title: How to Market Yourself with a Strong Technical Resume
 layout: default
 ---
 
-## <a id="htmywastr"></a> How to Market Yourself With a Strong Technical Resume
-
 Technical Branding & Networking (w/ someone from LinkedIn)
 
 1. Resume & web presence (for scouts)

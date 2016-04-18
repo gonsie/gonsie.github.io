@@ -3,8 +3,6 @@ title: Working Together Apart
 layout: default
 ---
 
-## <a id="wta"></a> Working Together Apart
-
 Work today is increasingly distributed because we can and because experts are remote
 
 **Collaboration success wizard**
