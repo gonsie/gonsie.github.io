@@ -13,6 +13,8 @@ markdown:    kramdown
 permalink:   none
 
 collections:
+  unix-git:
+    output: true
   ghc12:
     output: true
 
