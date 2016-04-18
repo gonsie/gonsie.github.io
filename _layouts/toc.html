@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{site.baseurl}}/stylesheets/github-markdown.css" />
+    <style>
+    .markdown-body {
+        box-sizing: border-box;
+        min-width: 200px;
+        max-width: 980px;
+        margin: 0 auto;
+        padding: 45px;
+    }
+	</style>
+</head>
+
+<body>
+
+<article class="markdown-body">
+<h1>
+{{ page.title }}<br />
+{{ page.date | date: "%b %-d, %Y" }} {{ page.loc }}
+</h1>
+
+<h2>Contents</h2>
+<ul>
+  {% for p in site.[page.collection] %}
+    <!-- <li><a href="{{ p.url }}">{{ p.title }}</a></li> -->
+    <li><a href="#{{ p.url }}">{{ p.title }}</a></li>
+  {% endfor %}
+</ul>
+</article>
+
+{% for p in site.[page.collection] %}
+	<a id="{{ p.url }}"></a>
+	{{ p.output }}
+{% endfor %}
+
+</body>
+</html>
