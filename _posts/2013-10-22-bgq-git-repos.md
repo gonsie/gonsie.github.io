@@ -1,15 +1,15 @@
 ---
 title: GitHub Repositories on AMOS
 category: notes
-layout: notes
+layout: default
 ---
 
 # GitHub Repositories on CCI Machines
 
-Since there are no holes poked in the RPI firewall for GitHub, we have to manually push from local machines to the landing pads. 
-The process is easy, but requires some set up. As always, I recommend using an SSH config file. 
+Since there are no holes poked in the RPI firewall for GitHub, we have to manually push from local machines to the landing pads.
+The process is easy, but requires some set up. As always, I recommend using an SSH config file.
 
-In this example, I will follow the best practices highlighted [here](ccni-gpfs.html). 
+In this example, I will follow the best practices highlighted [here](ccni-gpfs.html).
 
 My personal details are:
 
@@ -44,7 +44,7 @@ Now you are ready to push your repository to the CCI.
 You must follow both of these step everytime you update your repository on the CCI machines. Your git repository must be `reset` after each push.
 
 ### Local Push
-	
+
 	$ cd ~/Projects/ROSS
 	$ git push amos master
 
@@ -57,7 +57,7 @@ You must follow both of these step everytime you update your repository on the C
 
 ## WARNING
 
-If you follow these instructions, any repository changes/commits you make on CCI machines will be **overwritten** when you do the `git push` command. It is recommended that you *do not* make any repository changes on CCI machines. 
+If you follow these instructions, any repository changes/commits you make on CCI machines will be **overwritten** when you do the `git push` command. It is recommended that you *do not* make any repository changes on CCI machines.
 
 ## Advanced Git
 
@@ -71,7 +71,7 @@ You are developing a branch on your local machine, and would like to test it usi
 
 #### Workflow
 
-Create and switch to the branch you want to work on, on the CCI machine. 
+Create and switch to the branch you want to work on, on the CCI machine.
 
 	$ git checkout -b newBranch
 

@@ -1,7 +1,7 @@
 ---
 title: how to read a book
 categories: notes
-layout: notes
+layout: default
 ---
 
 # Notes From *How to Read a Book* by Mortimer J. Adler
@@ -10,7 +10,7 @@ layout: notes
 
 ### Chapter 1: To the Average Reader
 
-There is more to reading than what we learned in grade school. Have you ever read a book more than once and seen different things each time? That's some of real `reading`. This book will tell you how to get there. How to pull yourself up by your bootstraps to increase your understanding. 
+There is more to reading than what we learned in grade school. Have you ever read a book more than once and seen different things each time? That's some of real `reading`. This book will tell you how to get there. How to pull yourself up by your bootstraps to increase your understanding.
 
 > If we consider men and women generally, and apart from their professions or occupation, there is only one situation I can think of in which they almost pull themselves up by their bootstraps, making an effort to read better than they usually do. When they are in love and are reading a love letter, they read for all they are worth. They read every word three ways; they read between the lines and in the margins; they read the whole in terms of ther parts, and each part in terms of the whole; they grow sensitive to context and ambiguity, to insinuation and implication; they perceive the color of words, the odor of phrases, and the weight of sentences. They may even take the punctuation into account. Then, if never before or after, they read.
 
@@ -20,7 +20,7 @@ How do we define good readers? How do we create the scale to measure this?
 
 There is active and what is called "passive" reading, but there really is no such thing. Reading is like communication... A baseball metaphor was presented:
 - Pitcher and catcher work together. They have a similar understanding of what to expect and are on the same level. They are obviously 'active' but not extrodinarily
-- Batter and outfielder must be very active. They do not know what to expect from the pitcher. 
+- Batter and outfielder must be very active. They do not know what to expect from the pitcher.
 
 From writer to reader is communication. One must be active about it.
 
@@ -35,7 +35,7 @@ Example of college students who read for information and do not understand. Neve
 > There books to be tasted, others to be swallowed, and some few to be chewed and digested.
 – Bacon
 
-There is learing through discourse (reading and listening) and learning through discovery. 
+There is learing through discourse (reading and listening) and learning through discovery.
 Both require:
 - keenness of obseravtion
 - readily available memory
@@ -48,9 +48,9 @@ Listening is learning from living teachers, reading is learning from dead ones.
 
 A live teacher can help with demonstration and correct technique. When it comes to discovery, they can only teach us the art of discovery. But, let's limit ourselves to live teachers as a source of knowledge, and therefore instruction.
 
-Teachers and books usually compete or cooperate. Thus, you should be able to learn everything from just books. And if you seek understanding rather than information, books again win out. People may be somewhat passive readers, but they are most certainly passive listeners. For example, mindlessly taking notes in class. 
+Teachers and books usually compete or cooperate. Thus, you should be able to learn everything from just books. And if you seek understanding rather than information, books again win out. People may be somewhat passive readers, but they are most certainly passive listeners. For example, mindlessly taking notes in class.
 
-> Someone said you can tell the difference between graduate and undergraduate students in this way. If you walk into a classroom and say "Good morning," and the students reply, they are undergraduates. If they write it down, they are graduate students. 
+> Someone said you can tell the difference between graduate and undergraduate students in this way. If you walk into a classroom and say "Good morning," and the students reply, they are undergraduates. If they write it down, they are graduate students.
 
 __-3-__ Very interesting description of the role of teachers throughout the ages and `original communication`.
 
@@ -60,7 +60,7 @@ There are so many `great books` in that they are worth reading. And yet they are
 
 Teachers should only see themselves as better students. And learn from the great "dead" teachers of history. They should not come between students and the material to learn.
 
-The truely great books are worth it, and truely great in that they are the most readable. They reward reader for all the effort put forth. However little or much. 
+The truely great books are worth it, and truely great in that they are the most readable. They reward reader for all the effort put forth. However little or much.
 
 > This book has only two functions to perform: to interest you in the profit of reading and to assist you in cultivating the art.
 
@@ -74,14 +74,14 @@ Many people realize that the school system is failing students since they cannot
 
 There is a mountain of evidence that students cannot read for understanding, and standardized tests only measure reading for information. It should not be too much to ask of our school system that students continue to learn to read well throughout high school and college.
 
-Some people do have *disabilities*, but doctors cannot fix an *inability* to read. 
+Some people do have *disabilities*, but doctors cannot fix an *inability* to read.
 
-There are two reasons why students are not taught to read. First the school curriculums are too full and second the teachers do not seem to know how to teach reading. 
+There are two reasons why students are not taught to read. First the school curriculums are too full and second the teachers do not seem to know how to teach reading.
 
 > The discipline that is identical with trained power is also identical with freedom... Genuine freedom, in short, is intellectual; it rests in the trained power of thought.
 – John Dewey
 
-While reading may be the most important in intellectual education, that does not mean that writing and communication don't come close behind. And in all things, a proper moral education should always be placed above an intellectual one. 
+While reading may be the most important in intellectual education, that does not mean that writing and communication don't come close behind. And in all things, a proper moral education should always be placed above an intellectual one.
 
 > Knowledge and skill are not the most important items in this life. Loving the right things is more important.
 
@@ -99,7 +99,7 @@ Now, more than ever we have more people who can read, and more access to books. 
 
 And thus it is obvious why the author wrote this book. He cannot see how the current system will improve itself, without outside influence.
 
-It is also true that adult education is worth while, since there are no grades or tests or scores to keep adults learning. 
+It is also true that adult education is worth while, since there are no grades or tests or scores to keep adults learning.
 
 > Let me state now, simply and briefly, the conditions under which you can effectively hely yourself. Any art or skill is possessed by those who have formed the habit of operating according to its rules. In fact, the artist or craftsman in anf field differs thus from those who lack his skill. He has a habit they lack.
 
@@ -122,7 +122,7 @@ Some examples of note taking (as representations in different steps in thinking)
 - where the author appears to contradict himself
 
 Example notes from the first couple chapters of this book:
-	
+
 >*Types of Reading:*
 >	- I. For amusement
 >	- II. For knowledge
@@ -131,7 +131,7 @@ Example notes from the first couple chapters of this book:
 
 >*Types of Learning:*
 >	- I. By discovery: without teachers
->	- II. By instruction: thruough aid of teachers 
+>	- II. By instruction: thruough aid of teachers
 >		- A. By live teachers: lectures; listening
 >		- B. By dead teachers: books; reading
 
@@ -150,7 +150,7 @@ Example notes from the first couple chapters of this book:
 >	*Reading II (B)* is related more closely to *Books II*
 
 
-For the next part, the different sets of rules relate to different ways in which a book can be approached: 
+For the next part, the different sets of rules relate to different ways in which a book can be approached:
 1. as a complicatied structure of parts with unity in organization
 2. in terms of linguistic elements
 3. the relation of the author to the reader (similar to a conversation)
@@ -159,7 +159,7 @@ Other books about reading:
 - *Interpretation in Teaching* by Mr. I. A. Richards: goes more into rules type 2, esp. principle of grammar and logic
 - *Intelligent Reading* by Professor Tenney of Cornell: rules type 2 and 3
 
-Some books on reading value semantics above all else, assuming that most books/authors are not worth reading, until proven otherwise. 
+Some books on reading value semantics above all else, assuming that most books/authors are not worth reading, until proven otherwise.
 > We should assume that the author is intelligible until shown otherwise, not that he is guilty of nonsense and must prove his innocence.
 
 ## Part 2: The Rules
@@ -199,12 +199,12 @@ Extrinsic reading: reading a book in light of
 	- dictionaries, encyclopedias almanacs
 	- useful commentaries or digests
 	- other great books
-	- relevant experience 
+	- relevant experience
 
 Complications:
 	- Reading two or more books in relation to each other
 	- Reading a *whole* book
-	- Reading to learn, and not reading for enjoyment. This also depends on the intent of the author. 
+	- Reading to learn, and not reading for enjoyment. This also depends on the intent of the author.
 		- *fine* art: intent is to please and delight
 		- *liberal* art: intent is to instruct by teaching the truth
 
@@ -212,7 +212,7 @@ This book only deals with scientific (not poetic) reading. For instructions on a
 
 > Beauty is truth, truth is beauty.
 
-**False**. Don't event start to assume this is so. 
+**False**. Don't event start to assume this is so.
 
 
 ### Chapter 8: Catching on From the Title
@@ -231,7 +231,7 @@ Ask the question: What kind of book is this? We need a scheme of classification.
 	- Science: Timeless generalizations and universal physical truths. Relates to laboratory work.
 	- Philosophy: Generalizations and objective truths. Relates to common, everyday life
 
-Just as there are different topics to learn, there are different ways to learn them. Different subjects in school are taught differently, and learned differently, books on different subjects must be read differently. 
+Just as there are different topics to learn, there are different ways to learn them. Different subjects in school are taught differently, and learned differently, books on different subjects must be read differently.
 
 
 ### Chapter 9: Seeing the Skeleton
@@ -287,9 +287,9 @@ Rule 1: find the important words and through them come to terms with the author.
 
 This requires two steps: a step dealing with the language as such, and a step beyond the language to the thought which lies behind it. If language were a pure and prefect medium for thought, these steps would not be separate.
 
-Note: This is further complicated by the fact that language and word usage changes over time. Translated works only make matters worse. 
+Note: This is further complicated by the fact that language and word usage changes over time. Translated works only make matters worse.
 
-> The most important words are those which give you trouble. 
+> The most important words are those which give you trouble.
 
 First, try to determine whether the word has one or many meanings. If it has many, try to see whether they are related and how. Finally, note the places where the word is used in one  sense or another, and see if the context gives you any clue to the reason for the shift in meaning. Distinguish between the author's technical *vocabulary* and his analytical *terminology*.
 
@@ -331,7 +331,7 @@ This only touches on the use of words and terms. To go further:
 		2. Show wherein the author is misinformed.
 		3. Show wherein the author is illogical.
 		4. Show wherein the author's analysis or account is incomplete.
-				
+
 	Note: Of these, the first three are criteria for disagreement. Failing in all of these, you must argee, in part at least, though you may suspend judgement on the whole, in the light of the fourth point.
 
 ## Part 3: The Rest of the Reader's Life
