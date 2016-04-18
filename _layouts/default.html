@@ -2,32 +2,28 @@
 "http://www.w3.org/TR/html4/loose.dtd">
 
 <html>
-  <head>
-    <title>{{ page.title }}</title>
-        <link rel="stylesheet" href="{{site.baseurl}}/stylesheets/github-markdown.css" />
-        <style>
-    .markdown-body {
-        box-sizing: border-box;
-        min-width: 200px;
-        max-width: 980px;
-        margin: 0 auto;
-        padding: 45px;
-    }
-</style>
-  </head>
 
-  <body>
+<head>
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{site.baseurl}}/stylesheets/github-markdown.css" />
+  <style>
+  .markdown-body {
+  box-sizing: border-box;
+  min-width: 200px;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 45px;
+  }
+  </style>
+</head>
 
+<body>
+  <div id="content">
+  <article class="markdown-body">
+  <h2>{{ page.title }}</h2>
+  {{ content }}
+  </article>
+  </div>
 
-
-    <div id="content">
-<article class="markdown-body">
-
-      {{ content }}
-</article>
-
-      </div>
-
-    </body>
-
+</body>
 </html>
