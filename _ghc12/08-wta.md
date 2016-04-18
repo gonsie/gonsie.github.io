@@ -1,6 +1,5 @@
 ---
 title: Working Together Apart
-category: ghc12
 layout: default
 ---
 

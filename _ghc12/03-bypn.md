@@ -1,6 +1,5 @@
 ---
 title: Building Your Professional Network
-category: ghc12
 layout: default
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: Are we there yet... ?
-category: ghc12
 layout: default
 ---
 

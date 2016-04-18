@@ -1,6 +1,5 @@
 ---
 title: How To Influence Without Authority And Why It Is Important
-category: ghc12
 layout: default
 ---
 

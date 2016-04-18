@@ -1,6 +1,5 @@
 ---
 title: How to Market Yourself with a Strong Technical Resume
-category: ghc12
 layout: default
 ---
 

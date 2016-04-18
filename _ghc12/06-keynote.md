@@ -1,6 +1,5 @@
 ---
 title: Keynote
-category: ghc12
 layout: default
 ---
 

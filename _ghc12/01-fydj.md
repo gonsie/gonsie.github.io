@@ -1,6 +1,5 @@
 ---
 title: Finding Your Dream Job
-category: ghc12
 layout: default
 ---
 
