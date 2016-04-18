@@ -12,6 +12,10 @@ higlighter:  pygments
 markdown:    kramdown
 permalink:   none
 
+collections:
+  ghc12:
+    output: true
+
 maruku:
   use_tex:    false
   use_divs:   false
@@ -28,7 +32,7 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   use_coderay: false
-  
+
   coderay:
     coderay_wrap: div
     coderay_line_numbers: inline
