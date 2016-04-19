@@ -12,6 +12,8 @@ higlighter:  pygments
 markdown:    kramdown
 permalink:   none
 
+exclude: [Gemfile]
+
 collections:
   unix-git:
     output: true
