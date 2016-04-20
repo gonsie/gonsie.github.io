@@ -15,9 +15,9 @@ title: Notes
 <!-- collection contents -->
 
 {% for x in site.collections %}
-{% for c in x %}
+{% if x.label != "posts" %}
 
-{% for cpage in site.[c.label] %}
+{% for cpage in site.[x.label] %}
 {% capture y %}{{ cpage.url | split: "/" | last }}{% endcapture %}
 {% if y == "index.html" %}
 <h2><a href="{{ cpage.url }}">{{ cpage.title }}</a></h2>
@@ -25,7 +25,7 @@ title: Notes
 {% endfor %}
 
 <ul>
-{% for cpage in site.[c.label] %}
+{% for cpage in site.[x.label] %}
 {% capture y %}{{ cpage.url | split: "/" | last }}{% endcapture %}
 {% unless y == "index.html" %}
   <li><a href="{{ cpage.url }}">{{ cpage.title }}</a></li>
@@ -33,5 +33,5 @@ title: Notes
 {% endfor %}
 </ul>
 
-{% endfor %}
+{% endif %}
 {% endfor %}
