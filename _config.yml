@@ -15,16 +15,6 @@ collections:
   ghc12:
     output: true
 
-maruku:
-  use_tex:    false
-  use_divs:   false
-  png_engine: blahtex
-  png_dir:    images/latex
-  png_url:    /images/latex
-
-rdiscount:
-  extensions: []
-
 kramdown:
   auto_ids: true,
   footnote_nr: 1
