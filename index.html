@@ -26,6 +26,7 @@
         h2 span { position: absolute; margin: 0 5px 0 0; top: 0; right: 0; text-align: right; font-family: "Playfair Display", Georgia, Serif; font-size: 12px; color: #999; font-weight: normal; }
         p { position: relative; }
         p.floating { position: relative; margin: -60px 5px 0 0; text-align: right; float: right; font-size: 12px; font-family: "Playfair Display"; }
+        p span { position: absolute; margin: 0 5px 0 0; top: 0; right: 0; text-align: right; font-family: "Playfair Display", Georgia, Serif; font-size: 12px; font-weight: normal; }
         a { color: #999; text-decoration: none; border-bottom: 1px dotted #999; }
         a:hover { border-bottom-style: solid; color: black; }
         ul { margin: 0 0 0 18px; }
@@ -56,9 +57,9 @@
 
         <div id="contact-info" class="vcard">
             <!-- Microformats! -->
- <!--
+ 
             <h1 class="fn">Elsa Gonsiorowski</h1>
-            <p class="floating">
+<!--            <p class="floating">
                 Phone: <span class="tel">617-877-5293</span><br />
                 Email: <a class="email">gonsie@me.com</a>
             </p>
@@ -78,9 +79,9 @@
             <dd class="clear"></dd>
             <dt>Personal Information</dt>
             <dd>
-                <h2>Livermore Computing, L-561<span>Phone: 925-422-1127</span></h2>
-                <h2 class="smartmargin">Lawrence Livermore National Laboratory<span>Email: gonsie@llnl.gov</span></h2>
-                <h2 class="smartmargin">Livermore, CA 95440</h2>
+                <p>Livermore Computing, L-561<span >Phone: 925-422-1127</span></p>
+                <p>Lawrence Livermore National Laboratory<span>Email: gonsie@llnl.gov</span></p>
+                <p>Livermore, CA 95440</p>
             </dd>
             
             <dd class="clear"></dd>
@@ -104,7 +105,8 @@
                 <p>High performance computing,
                     parallel discrete-event simulation,
                     parallel digital gate level simulation,
-                    storage modeling and simulation
+                    storage modeling and simulation,
+                    application I/O
                 </p>
             </dd>
 
@@ -117,10 +119,10 @@
             </dd>
 
             <dd class="clear"></dd>
-            <dt>Related Experience</dt>
+            <dt>Professional Experience</dt>
             <dd>
                 <h2>
-                    <strong>Computer Scientist</strong>LLNL, Livermore, CA
+                    <strong>Systems Software Developer</strong>LLNL, Livermore, CA
                     <span>Sept 2016 &ndash; Present</span>
                 </h2>
                 <ul>
@@ -318,7 +320,7 @@
                         <a href="papers/Delta.pdf" class='noprint'>link</a>
                     </li>
                     <li>M. Plagge, C. D. Carothers, and <strong>E. Gonsiorowski</strong>.
-                        "NeMo: A Massively Parallel Discrete-Event Simulation Model for NEuromorphic Architectures".
+                        "NeMo: A Massively Parallel Discrete-Event Simulation Model for Neuromorphic Architectures".
                         <em>Proceedings of the 2016 ACM SIGSIM Conference on Principles of Advanced Discrete Simulation (SIGSIM PADS 2016)</em>.
                         Banff, Alberta, Canada May 15&ndash;18, 2016.
                         <!-- <a href="papers/pads2016-nemo.pdf" class='noprint'>link</a> -->
@@ -336,8 +338,14 @@
                     <li><strong>E. Gonsiorowski</strong>, C. D. Carothers, and J. M. LaPre.
                         "Automatic Model Generation for Gate-Level Circuit PDES with Reverse Computation".
                         <em>ACM Transactions on Modeling and Computer Simulation (TOMACS): Best of PADS 2015 Special Issue</em>.
-                        Under revision for second review.
+                        Awaiting Publication.
                         <!-- <a href="papers/tomacs.pdf" class='noprint'>link</a> -->
+                    </li>
+                    <li>M. Plagge, C. Carothers, <strong>E. Gonsiorowski</strong>, and N. McGlohon.
+                        "NeMo: A Massively Parallel Discrete-Event Simulation Model for Neuromorphic Architectures".
+                        <em>ACM Transactions on Modeling and Computer Simulation (TOMACS): Best of PADS 2016 Special Issue</em>.
+                        Under review.
+                        <!-- <a href="papers/tomacs-nemo.pdf" class='noprint'>link</a> -->
                     </li>
                 </ol>
 
@@ -381,6 +389,7 @@
             <dd class="noprint">
                 <h2><strong>Invited Talks</strong></h2>
                 <ol>
+                    <li><strong>ROSS: Past, Present, Future</strong> at Summer of CODES, ANL <span>Jul 2016</span></li>
                     <li><strong>Unix Command Line and Git</strong> at NY&chi;: New York Capital Hackathon for Inclusivity <span>Apr 2016</span></li>
                     <li><strong>Panel: Graduate School</strong> at ACM-W NY Celebration of Women in Computing <span>Apr 2016</span></li>
                     <li><strong>Women in HPC in New York</strong> at ACM-W NY Celebration of Women in Computing <span>Apr 2016</span></li>
