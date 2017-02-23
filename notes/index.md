@@ -21,6 +21,7 @@ title: Notes
 {% capture y %}{{ cpage.url | split: "/" | last }}{% endcapture %}
 {% if y == "index.html" %}
 <h2><a href="{{ cpage.url }}">{{ cpage.title }}</a></h2>
+<p><em>{{ cpage.content }}</em></p>
 {% endif %}
 {% endfor %}
 
