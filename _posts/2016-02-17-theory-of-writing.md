@@ -18,7 +18,7 @@ All generated files, including the document itself, should not be included in th
 
 ## Content Editing
 
-Text should be editing plain ascii text files, possibly with markup language (HTML or Markdown).
+Text should be edited in plain ascii text files, possibly with markup language (TeX or Markdown).
 
 When using git, each sentence gets its own line.
 Sentences are the basic unit in writing, using one-line-per-sentence allows for easy parsing of diffs.
@@ -26,7 +26,8 @@ Sentences are the basic unit in writing, using one-line-per-sentence allows for 
 ## Layout Design
 
 Layout design should be a separate process entirely.
-Layout designs should be codified (such as LaTeX or CSS).
+Layout designs should be codified (such as a LaTeX-style or CSS).
+The layout design is distinct from the build system which parses the input and uses the layout to generate the end document.
 
 ## The End Document
 
