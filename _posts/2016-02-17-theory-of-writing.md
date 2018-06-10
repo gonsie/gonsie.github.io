@@ -1,10 +1,7 @@
 ---
-title: Theory of Writing
-category: notes
-layout: default
+title: My Theory of Writing
+layout: post
 ---
-
-# My Theory on Writing
 
 The base of my theory is this: content editing is a completely different process from layout design.
 Each of these processes is further complicated by real-time collaborations and the necessity for version control.

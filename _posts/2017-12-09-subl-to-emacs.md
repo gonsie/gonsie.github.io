@@ -1,35 +1,14 @@
 ---
 title: Converting from Sublime Text to Emacs
-categories: notes
-layout: default
+layout: post
 ---
 
 -   [Motivation](#motivation)
 -   [Prerequisites](#prerequisites)
-    -   [Assumptions](#assumptions)
-    -   [Package Management](#package-management)
-    -   [Color Theme](#color-theme)
 -   [The Basics](#the-basics)
-    -   [Syncing Between Machines](#syncing-between-machines)
-    -   [Trim Spaces](#trim-spaces)
-    -   [Closing Parenthesis Insertion](#closing-parenthesis-insertion)
-    -   [Large Files](#large-files)
-    -   [Adding Language Syntax](#adding-language-syntax)
 -   [The Best from Sublime Text](#the-best-from-sublime-text)
-    -   [Project View](#project-view)
-    -   [Multiple Cursors](#multiple-cursors)
-    -   [Project-Wide Search](#project-wide-search)
-    -   [Spell Check](#spell-check)
--   [Things That Never Really Worked in
-    ST](#things-that-never-really-worked-in-st)
-    -   [Git](#git)
-    -   [Shell Integration](#shell-integration)
+-   [Things That Never Really Worked in ST](#things-that-never-really-worked-in-st)
 -   [Org-mode](#org-mode)
-    -   [Basics Syntax & Outlining](#basics-syntax-outlining)
-    -   [Literate Programming](#literate-programming)
-        -   [Export](#export)
-        -   [Tangle](#tangle)
-    -   [Agendas](#agendas)
 -   [Conclusion](#conclusion)
 
 Motivation
@@ -106,9 +85,9 @@ Emacs supports many package managers, but the most popular one is
 [installation instructions](http://melpa.org/#/getting-started). Once
 MELPA is configured, you can manually install packages with:
 
-``` {.elisp}
+{% highlight elisp %}
 M-x package-install RET package-name
-```
+{% endhighlight %}
 
 On top of MELPA, I use the [use-package](http://melpa.org/#/use-package)
 package to organize all of the packages I need. This works especially
@@ -130,7 +109,7 @@ Here is my code for initializing the Emacs color theme. It has a useful
 snippet is to set background color for GUI Emacs (which should not be
 done when in the Terminal).
 
-``` {.elisp}
+{% highlight elisp %}
 (eval-after-load "color-theme"
   '(progn
      (color-theme-initialize)
@@ -140,7 +119,7 @@ done when in the Terminal).
        (add-to-list 'default-frame-alist '(background-color . "#282B35"))
        (add-to-list 'default-frame-alist '(foreground-color . "White"))
        (set-frame-font "Inconsolata 18" nil t))))
-```
+{% endhighlight %}
 
 I will cover my particular color theme in more detail in a separate
 post.
@@ -198,17 +177,17 @@ Trim Spaces
 I absolutely hate extra white space and a newline at the end of a file
 is a must. Here are the Emacs settings:
 
-``` {.elisp}
+{% highlight elisp %}
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 (setq require-final-newline t)
-```
+{% endhighlight %}
 
 Which does the equivalent of these ST options:
 
-``` {.yaml}
+{% highlight yaml %}
 "trim_trailing_white_space_on_save": true
 "ensure_newline_at_eof_on_save": true
-```
+{% endhighlight %}
 
 Closing Parenthesis Insertion
 -----------------------------
@@ -221,12 +200,12 @@ assume it is always on, there is no need to show it on my mode line
 find myself editing more and more lisp, I\'ve turned on a mode which
 shows the matching open or close parenthesis if one is selected.
 
-``` {.elisp}
+{% highlight elisp %}
 ;; autopair
 (autopair-global-mode)
 (diminish 'autpair-mode)
 (show-paren-mode 1)
-```
+{% endhighlight %}
 
 Large Files
 -----------
@@ -235,10 +214,10 @@ One of the greatest things about ST is its handling of large files. In
 Emacs, I can at least set the threshold for warning me about the large
 file:
 
-``` {.elisp}
+{% highlight elisp %}
 ;; warn when opening files bigger than 100MB
 (setq large-file-warning-threshold 100000000)
-```
+{% endhighlight %}
 
 Adding Language Syntax
 ----------------------
@@ -251,35 +230,35 @@ file support.
 In this first example, it assumes that `cmake-mode` has been installed
 manually:
 
-``` {.elisp}
+{% highlight elisp %}
 ;; CMake
 (setq auto-mode-alist
       (append
        '(("CMakeLists\\.txt\\'" . cmake-mode))
        '(("\\.cmake\\'" . cmake-mode))
        auto-mode-alist))
-```
+{% endhighlight %}
 
 In this second example, `use-package` syntax is used for lazy-loading.
 This means we don\'t have to remember to package-install cmake-mode. It
 also means that the cmake-mode package is not installed until I open a
 CMake file.
 
-``` {.elisp}
+{% highlight elisp %}
 ;; CMake
 (use-package cmake-mode
   :mode ("\\.cmake\\'"
          "CMakeLists\\.txt\\'")
   :config (use-package cmake-font-lock))
-```
+{% endhighlight %}
 
 Here is another example, but for Rust:
 
-``` {.elisp}
+{% highlight elisp %}
 ;; rust
 (use-package rust-mode
   :mode ("\\.rs\\'" . rust-mode))
-```
+{% endhighlight %}
 
 The Best from Sublime Text
 ==========================
@@ -301,12 +280,12 @@ that yet. I stuck with the suggested keybinding of \<f8\>. To customize
 it for Mac, I had to change the default system command to the `open`
 program.
 
-``` {.elisp}
+{% highlight elisp %}
 ;; neotree
 (use-package neotree
   :bind ([f8] . neotree-toggle)
   :config (setq neo-default-system-application "open"))
-```
+{% endhighlight %}
 
 Neotree supports a bunch of functionality in its buffer, including
 \"quicklook\" and \"add file here\". The one thing that is missing is
@@ -328,7 +307,7 @@ keybindings working on a Mac. Thus, I\'ve dedicated the \<f2\> and
 \<f3\> keys for this. I\'ve also used ESC ESC as the quit-this-mode
 command (similar to what would work in ST):
 
-``` {.elisp}
+{% highlight elisp %}
 ;; multiple-cursors
 (use-package multiple-cursors
   :bind (("<f2>" . mc/mark-previous-like-this)
@@ -336,7 +315,7 @@ command (similar to what would work in ST):
          ("C-c <f2>" . mc/mark-all-like-this)
          ("<ESC> <ESC>" . mc/keyboard-quit))
   :ensure t)
-```
+{% endhighlight %}
 
 As you get started with multiple-cursors mode, it will ask you several
 questions to make sure you really intend to something at all cursors.
@@ -368,22 +347,22 @@ and tell Emacs where to find the program.
 I define the ispell program variable in my custom file since location is
 machine specific.
 
-``` {.elisp}
+{% highlight elisp %}
 (setq ispell-program-name "/usr/local/bin/aspell")
 (setq ispell-list-command "--list")
-```
+{% endhighlight %}
 
 The only missing element is an always-on spell checker. Another Emacs
 package, [Flyspell](https://www.emacswiki.org/emacs/FlySpell), does the
 trick. Now I just need to enable `flyspell-mode` by default for
 text-type buffers:
 
-``` {.elisp}
+{% highlight elisp %}
 (dolist (hook '(text-mode-hook))
   (add-hook hook (lambda () (flyspell-mode 1))))
 (dolist (hook '(change-log-mode-hook log-edit-mode-hook))
   (add-hook hook (lambda () (flyspell-mode -1))))
-```
+{% endhighlight %}
 
 Things That Never Really Worked in ST
 =====================================
@@ -402,12 +381,12 @@ Magit works through a series of popups, meaning you only need to know
 one keybinding. Once you are in a magit popup, you can figure out how to
 do things with the `?` key.
 
-``` {.elisp}
+{% highlight elisp %}
 ;; MAGIT
 (use-package magit
   :bind ("C-x g" . magit-status)
   :ensure t)
-```
+{% endhighlight %}
 
 Shell Integration
 -----------------
@@ -464,28 +443,28 @@ through the visibility of the children.
 Org-mode also supports blocks, such as code blocks, quotes, examples,
 and more:
 
-``` {.example}
+{% highlight org %}
 #+BEGIN_SRC rust
 fn sample_code () -> u32 {
     10
 }
 #+END_SRC
-```
+{% endhighlight %}
 
 Renders to:
 
-``` {.rust}
+{% highlight rust %}
 fn sample_code () -> u32 {
     10
 }
-```
+{% endhighlight %}
 
-``` {.example}
+{% highlight org %}
 #+BEGIN_QUOTE
 Everybody lies
  -- Dr. House
 #+END_QUOTE
-```
+{% endhighlight %}
 
 Renders to:
 
@@ -521,18 +500,17 @@ To generate the RESULTS blocks, one would type `C-c C-c` within a source block.
 
 #### Example 1: Shell Command
 
-``` {.example}
+{% highlight org %}
 #+BEGIN_SRC bash
 hostname
 #+END_SRC
 
 #+RESULTS:
 Eris.local
-```
-
+{% endhighlight %}
 #### Example 2: Generate and Embed an Image
 
-``` {.example}
+{% highlight org %}
 #+BEGIN_SRC dot :file images/example_dot.png :cmdline -Kdot -Tpng
 digraph g {
 rankdir = LR;
@@ -541,8 +519,8 @@ a -> b;
 #+END_SRC
 
 #+RESULTS:
-```
-![](/images/example_dot.png)
+{% endhighlight %}
+![]({{ site.baseurl }}/images/example_dot.png)
 
 I\'ll just let that seep in. The possibilities are truly endless.
 
@@ -559,13 +537,13 @@ to look around at what others have done.
 First, you\'ll need to turn on the org-mode agenda functions with some
 keybindings. The defaults are:
 
-``` {.elisp}
+{% highlight elisp %}
 ;; org-mode agenda recommended keybindings
 (global-set-key "\C-cl" 'org-store-link)
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cc" 'org-capture)
 (global-set-key "\C-cb" 'org-iswitchb)
-```
+{% endhighlight %}
 
 Next, you\'ll need an easy way to keep track of any TODO item you
 create. The easiest way I\'ve found is this on-save hook (from
@@ -574,14 +552,14 @@ Giasson](http://fgiasson.com/blog/index.php/2016/06/21/optimal-Emacs-settings-fo
 Through this hook, every org file is automatically \"filed\" and any to
 do items inside will be found by the org-mode agenda builder.
 
-``` {.elisp}
+{% highlight elisp %}
 ;; Add Org files to the agenda when we save them
 (defun to-agenda-on-save-org-mode-file()
   (when (string= (message "%s" major-mode) "org-mode")
     (org-agenda-file-to-front)))
 
 (add-hook 'after-save-hook 'to-agenda-on-save-org-mode-file)
-```
+{% endhighlight %}
 
 This does mean that when files are deleted or moved the org agenda
 complains.
@@ -591,7 +569,7 @@ Conclusion
 
 I\'ve been down the Emacs rabbit hole about 2 months now. It has been
 fun and I\'m excited to continue to modify my setup and play with new
-packages.
+packages. You can find my setup [on GitHub](https://github.com/gonsie/dotfiles/blob/master/emacs/init.el).
 
 In my brief exploration I\'ve found a number of extremely helpful
 individuals:
