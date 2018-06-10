@@ -1,29 +1,29 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
-"http://www.w3.org/TR/html4/loose.dtd">
-
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="{{site.baseurl}}/stylesheets/github-markdown.css" />
-  <style>
-  .markdown-body {
-  box-sizing: border-box;
-  min-width: 200px;
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 45px;
-  }
-  </style>
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="blog, {{ site.author }}, {{ site.title }}, jekyll">
+    <meta name="author" content="{{ site.author }}">
+    {% if page.url == "/404.html" %}
+        <meta http-equiv="refresh" content="5; url=/">
+    {% endif %}
+    {% if page.url %}
+        {% assign url = site.url | append: site.baseurl | append: page.url %}
+    {% else %}
+        {% assign url = site.url | append: site.baseurl | append: page.url %}
+    {% endif %}
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Average|Inconsolata" rel="stylesheet" type="text/css">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} RSS" href="/feed.xml" />
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
 </head>
-
 <body>
-  <div id="content">
-  <article class="markdown-body">
-  <h2>{{ page.title }}</h2>
-  {{ content }}
-  </article>
-  </div>
-
+    <div class="wrapper">
+      <div class="main">
+        {{ content }}
+      </div>
+    </div>
+    {% include footer.html %}
 </body>
-</html>
