@@ -27,14 +27,14 @@
 
 <h2>Contents</h2>
 <ul>
-  {% for p in site.[page.collection] %}
+  {% for p in site[page.collection] %}
     <!-- <li><a href="{{ p.url }}">{{ p.title }}</a></li> -->
     <li><a href="#{{ p.url }}">{{ p.title }}</a></li>
   {% endfor %}
 </ul>
 </article>
 
-{% for p in site.[page.collection] %}
+{% for p in site[page.collection] %}
 	<a id="{{ p.url }}"></a>
 	{{ p.output }}
 {% endfor %}
