@@ -1,6 +1,6 @@
 ---
 title: How to Market Yourself with a Strong Technical Resume
-layout: default
+layout: old_default
 ---
 
 Technical Branding & Networking (w/ someone from LinkedIn)

@@ -1,6 +1,6 @@
 ---
 title: Finding Your Dream Job
-layout: default
+layout: old_default
 ---
 
 [cra-w.org](cra-w.org) computer research association

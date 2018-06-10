@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: old_default
 title:  GitHub
 ---
 

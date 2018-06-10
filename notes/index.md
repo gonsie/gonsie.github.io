@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: old_default
 title: Notes
 ---
 
@@ -7,8 +7,10 @@ title: Notes
 <!-- The "notes" collection is not parsed by jekyll -->
 
 <ul>
-{% for page in site.categories.notes %}
+{% for page in site.pages %}
+{% if page.url contains "notes" and page.url != "/notes/" %}
   <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+{% endif %}
 {% endfor %}
 </ul>
 

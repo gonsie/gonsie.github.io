@@ -1,7 +1,7 @@
 ---
 title: GitHub Repositories on AMOS
 category: notes
-layout: default
+layout: old_default
 ---
 
 # GitHub Repositories on CCI Machines

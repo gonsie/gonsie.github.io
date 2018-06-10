@@ -1,7 +1,7 @@
 ---
 title: how to read a book
 categories: notes
-layout: default
+layout: old_default
 ---
 
 # Notes From *How to Read a Book* by Mortimer J. Adler

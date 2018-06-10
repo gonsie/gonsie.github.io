@@ -1,6 +1,6 @@
 ---
 title: Keynote
-layout: default
+layout: old_default
 ---
 
 - decided at 16 to persue a career in CS because of programming on an old computer

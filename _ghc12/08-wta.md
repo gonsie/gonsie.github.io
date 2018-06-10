@@ -1,6 +1,6 @@
 ---
 title: Working Together Apart
-layout: default
+layout: old_default
 ---
 
 Work today is increasingly distributed because we can and because experts are remote

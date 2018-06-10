@@ -1,10 +1,8 @@
 ---
 title: Parallel Circuit Simulation
 category: notes
-layout: notes
+layout: old_default
 ---
-
-# Parallel Circuit Simulation
 
 > Elsa Gonsiorowski <br />
 > Rensselaer Polytechnic Institute

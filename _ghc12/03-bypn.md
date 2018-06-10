@@ -1,6 +1,6 @@
 ---
 title: Building Your Professional Network
-layout: default
+layout: old_default
 ---
 
 > If you do good work, fame, funding, promotions, etc. will follow

@@ -1,7 +1,7 @@
 ---
 title: CCNI GPFS
 category: notes
-layout: notes
+layout: old_default
 ---
 
 # Best Practices for Using the [CCNI File System] [ccni_gpfs]
@@ -14,7 +14,7 @@ layout: notes
 
 ---
 
-The new file system at the CCNI was very carefully designed. 
+The new file system at the CCNI was very carefully designed.
 Be sure to read [this page] [ccni_gpfs] about how it was set up.
 The following reiterates what was said on the CCNI Wiki, then lists some [best practices](#best_practices) you can use to make your life easier.
 
@@ -42,16 +42,16 @@ This means your personal ~ home directory is at `/gpsf/sb/home/PROJ/PROJuser/`.
 
 ### Home
 
-These directories are shared by the group, and replicated to ensure data reliablity. 
+These directories are shared by the group, and replicated to ensure data reliablity.
 This portion of the file system has an effective quota of 5 GB per project.
 
 ### Data
 
 **Please Note**: These directiories are for *temporary* storage. Files not touched in at least 14 days will be purged frequetly.
 
-These directories are intended to be staging areas for performing computation. 
+These directories are intended to be staging areas for performing computation.
 They exist on both the small and large block partitions of the system, for flexiblity and optimum usage.
-Again they are shared by the group and have a much larger quota. 
+Again they are shared by the group and have a much larger quota.
 
 ### Provisioned
 
@@ -76,15 +76,15 @@ This ensures that if cataclysmic event occurs and the CCNI loses this data, I ha
 ### Build
 `/gpfs/lb/data/RSNT/RSNTgons/rossnet-build/`
 
-This directory is where my source code is built. 
-The executable lives here, and not much else. 
-If I go on vacation for two weeks, I expect everything in these directories to disappear. 
+This directory is where my source code is built.
+The executable lives here, and not much else.
+If I go on vacation for two weeks, I expect everything in these directories to disappear.
 
 ### Test
 `/gpfs/sb/home/RSNT/RSNTgons/ROSS-tests/`
 
 This is within my home directory.
-All of my experimental results and run scprits are kept here. 
+All of my experimental results and run scprits are kept here.
 This is the core of important files, that, if destroyed, would delay my PhD by years.
 
 
@@ -104,14 +104,14 @@ This is the core of important files, that, if destroyed, would delay my PhD by y
 	fi
 
 	# Check build environment
-	if [ "$ARCH" = "" ]; then 
+	if [ "$ARCH" = "" ]; then
 	    module load xl
 	    export ARCH=bgq
 	    export CC=mpixlc
 	fi
 
 	# Configure Build Directory
-	if [ $# -eq 1 ]; then 
+	if [ $# -eq 1 ]; then
 	    ORDER=$1
 	else
 	    ORDER=`squeue | wc -l`

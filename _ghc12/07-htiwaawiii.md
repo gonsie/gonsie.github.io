@@ -1,6 +1,6 @@
 ---
 title: How To Influence Without Authority And Why It Is Important
-layout: default
+layout: old_default
 ---
 
 How many have the need to influence? How many have the authority to influence?

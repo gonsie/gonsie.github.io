@@ -1,7 +1,7 @@
 ---
 title: words
 categories: notes
-layout: default
+layout: old_default
 ---
 
 * [acceptable](#acceptable)
