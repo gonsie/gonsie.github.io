@@ -25,6 +25,9 @@ sass:
 plugins:
   - jekyll-feed
 
+feed:
+    path: blorg/feed.xml
+
 
 # old site
 
