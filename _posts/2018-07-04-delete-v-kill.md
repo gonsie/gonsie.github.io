@@ -89,159 +89,24 @@ The implementation looks like:
 (global-set-key (kbd "<<keybinding>>") '<<function>>)
 {% endhighlight %}
 
-<table id="org58c9b12" border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+| Direction | Type   | Save  | Key Binding                             | Function                 |
+|-----------|--------|-------|-----------------------------------------|--------------------------|
+| Backwards | Char   | No    | `<delete>`                              | None needed              |
+|           | <del>Char</del> | <del>Yes</del> |                                         | Not implemented          |
+|           | Word   | No    | `<M-delete>`                            | `backward-delete-word` * |
+|           | Word   | Yes   | `<M-S-backspace>`                       | `backward-kill-word`     |
+|           | Line   | No    | `<C-backspace>`                         | `backward-delete-line` * |
+|           | Line   | Yes   | `<C-S-backspace>`                       | `backward-kill-line` *   |
+| Forwards  | Char   | No    | `<kp-delete>`                           | `delete-forward-char`    |
+|           | <del>Char</del> | <del>Yes</del> |                                         | Not implemented          |
+|           | Word   | No    | `<M-kp-delete>`                         | `delete-word` *          |
+|           | Word   | Yes   | `<M-S-kp-delete>`                       | `kill-word`              |
+|           | Line   | No    | `<C-kp-delete>`                         | `delete-line` *          |
+|           | Line   | Yes   | `<C-S-kp-delete>`                       | `kill-line`              |
+| Both      | Line   | No    | `<s-backspace>` and `<s-kp-delete>`     | `delete-current-line` *  |
+| Both      | Line   | Yes   | `<s-S-backspace>` and `<s-S-kp-delete>` | `kill-whole-line`        |
 
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Direction</th>
-<th scope="col" class="org-left">Type</th>
-<th scope="col" class="org-left">Save</th>
-<th scope="col" class="org-left">Key Binding</th>
-<th scope="col" class="org-left">Function</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td class="org-left">Backwards</td>
-<td class="org-left">Char</td>
-<td class="org-left">No</td>
-<td class="org-left">`<delete>`</td>
-<td class="org-left">None needed</td>
-</tr>
-
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left"><del>Char</del></td>
-<td class="org-left"><del>Yes</del></td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">Not implemented</td>
-</tr>
-
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">Word</td>
-<td class="org-left">No</td>
-<td class="org-left">`<M-delete>`</td>
-<td class="org-left">`backward-delete-word` \*</td>
-</tr>
-
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">Word</td>
-<td class="org-left">Yes</td>
-<td class="org-left">`<M-S-backspace>`</td>
-<td class="org-left">`backward-kill-word`</td>
-</tr>
-
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">Line</td>
-<td class="org-left">No</td>
-<td class="org-left">`<C-backspace>`</td>
-<td class="org-left">`backward-delete-line` \*</td>
-</tr>
-
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">Line</td>
-<td class="org-left">Yes</td>
-<td class="org-left">`<C-S-backspace>`</td>
-<td class="org-left">`backward-kill-line` \*</td>
-</tr>
-
-
-<tr>
-<td class="org-left">Forwards</td>
-<td class="org-left">Char</td>
-<td class="org-left">No</td>
-<td class="org-left">`<kp-delete>`</td>
-<td class="org-left">`delete-forward-char`</td>
-</tr>
-
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left"><del>Char</del></td>
-<td class="org-left"><del>Yes</del></td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">Not implemented</td>
-</tr>
-
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">Word</td>
-<td class="org-left">No</td>
-<td class="org-left">`<M-kp-delete>`</td>
-<td class="org-left">`delete-word` \*</td>
-</tr>
-
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">Word</td>
-<td class="org-left">Yes</td>
-<td class="org-left">`<M-S-kp-delete>`</td>
-<td class="org-left">`kill-word`</td>
-</tr>
-
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">Line</td>
-<td class="org-left">No</td>
-<td class="org-left">`<C-kp-delete>`</td>
-<td class="org-left">`delete-line` \*</td>
-</tr>
-
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">Line</td>
-<td class="org-left">Yes</td>
-<td class="org-left">`<C-S-kp-delete>`</td>
-<td class="org-left">`kill-line`</td>
-</tr>
-
-
-<tr>
-<td class="org-left">Both</td>
-<td class="org-left">Line</td>
-<td class="org-left">No</td>
-<td class="org-left">`<s-backspace>` and `<s-kp-delete>`</td>
-<td class="org-left">`delete-current-line` \*</td>
-</tr>
-
-
-<tr>
-<td class="org-left">Both</td>
-<td class="org-left">Line</td>
-<td class="org-left">Yes</td>
-<td class="org-left">`<s-S-backspace>` and `<s-S-kp-delete>`</td>
-<td class="org-left">`kill-whole-line`</td>
-</tr>
-</tbody>
-</table>
-
-The functions marked with a \* must be implemented.
+The functions marked with a * must be implemented.
 
 {% highlight elisp %}
 ;; from https://stackoverflow.com/a/12990359/1160876
