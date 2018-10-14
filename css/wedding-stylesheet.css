@@ -1,6 +1,5 @@
 body {
     text-align: center;
-    background: #eeffbb99;
 
 }
 
@@ -24,6 +23,46 @@ p {
     font-size: 40px;
     line-height: .9em;
     margin: 1em;
+}
+
+.nav {
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+nav {
+    font-family: 'Cormorant Upright', serif;
+    font-weight: 300;
+    font-size: 24px;
+    display: inline;
+}
+
+nav h2 {
+        margin: 0 0 0 60px;
+        text-align: left;
+        position: absolute;
+        width: 300px;
+}
+
+a {
+    font-family: 'Sacramento', cursive;
+    font-style: italic;
+    font-size: 30px;
+    color: #999;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    margin: 0 30px;
+    position: relative;
+}
+
+.active {
+    color: #000;
+}
+
+.logo {
+    height: 36px;
+    padding: 5px 10px 0;
+    position: absolute;
 }
 
 .img-circle {
