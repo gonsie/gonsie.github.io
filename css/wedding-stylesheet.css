@@ -44,7 +44,7 @@ nav h2 {
         width: 300px;
 }
 
-a {
+nav a {
     font-family: 'Sacramento', cursive;
     font-style: italic;
     font-size: 30px;
@@ -54,9 +54,16 @@ a {
     margin: 0 30px;
     position: relative;
 }
-
 .active {
     color: #000;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid;
+    margin: 0 30px;
+    position: relative;
 }
 
 .logo {
