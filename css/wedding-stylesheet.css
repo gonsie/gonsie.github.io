@@ -17,6 +17,15 @@ h2 {
     font-size: 36px;
 }
 
+p.block {
+    font-family: 'Cormorant', serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 1em;
+    margin: 1em;
+}
+
 p {
     font-family: 'Sacramento', cursive;
     font-style: italic;
