@@ -1,33 +1,11 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+---
+layout: wedding
+---
+<img src="/images/mos.png" width="100%" style="max-width:500px"/>
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+Welcome!
 
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+## We are looking forward to celebrating our marriage with our family and friends on June 22, 2019 at Liberty Ridge Farms in Schaghticoke, NY.
+We are excited to invite all children
 
-  <title>Elsa & John are getting married!</title>
-  <link href="https://fonts.googleapis.com/css?family=Cormorant+Upright" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Cormorant:300" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
-  <link href="/css/wedding-stylesheet.css" rel="stylesheet">
-</head>
-  <body>
-    <div class="nav">
-    <nav>
-      <div class="logo">
-        <img src="/images/heart.png" class="logo" />
-        <h2 align="left">Elsa & John</h2>
-      </div>
-      <a href="/wedding/std.html">save the date</a>
-      <a href="/wedding/hotel.html">hotel</a>
-    </nav>
-    </div>
-
-    <img src="/images/mos.png" width="100%" style="max-width:500px"/>
-
-  <p>Welcome!</p>
-  <h2>We are looking forward to celebrating our marriage with our family and friends on June 22, 2019 at Liberty Ridge Farms in Schaghticoke, NY.</h2>
-  <p>We are excited to invite all children</p>
-  <h2>Our venue offers a unique opportunity to celebrate with family and friends of all ages. Children are welcome and professional 'child minders' will be available for part of our celebration.</h2>
-</body>
+## Our venue offers a unique opportunity to celebrate with family and friends of all ages. Children are welcome and professional 'child minders' will be available for part of our celebration.
