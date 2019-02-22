@@ -12,7 +12,7 @@ please book by calling
 details
 
 <p class="block">
-Rooms are available under the<br/>
+Rooms are available for June 21&ndash;23<br/>
 Gonsiorowski/Wolff Wedding block<br/>
 Single King rooms are priced at $109<br/>
 Double Queen rooms are priced at $119
