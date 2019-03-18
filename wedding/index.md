@@ -5,7 +5,12 @@ layout: wedding
 
 Welcome!
 
-## We are looking forward to celebrating our marriage with our family and friends on June 22, 2019 at Liberty Ridge Farms in Schaghticoke, NY.
+<p class="block">
+We are looking forward to celebrating our marriage with our family and friends on June 22, 2019 at Liberty Ridge Farms in Schaghticoke, NY.
+</p>
+
 We are excited to invite all children
 
-## Our venue offers a unique opportunity to celebrate with family and friends of all ages. Children are welcome and professional 'child minders' will be available for part of our celebration.
+<p class="block">
+Our venue offers a unique opportunity to celebrate with family and friends of all ages. Children are welcome and professional 'child minders' will be available for part of our celebration.
+</p>
