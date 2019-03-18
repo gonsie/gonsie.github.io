@@ -34,23 +34,26 @@ p {
     margin: 1em;
 }
 
-.nav {
+.header {
     padding-top: 10px;
     padding-bottom: 50px;
 }
 
-nav {
+.logo {
     font-family: 'Cormorant Upright', serif;
     font-weight: 300;
     font-size: 24px;
-    display: inline;
+    height: 36px;
+    position: absolute;
 }
 
-nav h2 {
-        margin: 0 0 0 60px;
-        text-align: left;
-        position: absolute;
-        width: 300px;
+.logo h2 {
+    padding: 0px 10px;
+    text-align: left;
+    position: absolute;
+    width: 300px;
+    display: inline;
+    color: #000;
 }
 
 nav a {
@@ -63,22 +66,17 @@ nav a {
     margin: 0 30px;
     position: relative;
 }
+
 .active {
     color: #000;
 }
 
-a {
+.content a {
     text-decoration: none;
     color: #000;
     border-bottom: 1px solid;
     margin: 0 30px;
     position: relative;
-}
-
-.logo {
-    height: 36px;
-    padding: 5px 10px 0;
-    position: absolute;
 }
 
 .img-circle {

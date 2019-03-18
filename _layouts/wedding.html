@@ -13,18 +13,23 @@
   <link href="/css/wedding-stylesheet.css" rel="stylesheet">
 </head>
 <body>
-  <div class="nav">
+  <div class="header">
+    <div class="logo">
+      <a href="{{ site.baseurl }}/wedding">
+        <img src="/images/heart.png" height="50px"/>
+        <h2>Elsa & John</h2>
+      </a>
+    </div>
     <nav>
-      <div class="logo">
-        <img src="/images/heart.png" class="logo" />
-        <h2 align="left">Elsa & John</h2>
-      </div>
-      <a href="/wedding/std.html">save the date</a>
-      <a href="/wedding/hotel.html">hotel</a>
+      <a href="/wedding/std.html"
+         {% if page.url == "/wedding/std.html" %} class="active" {% endif %}>save the date</a>
+      <a href="/wedding/hotel.html"
+         {% if page.url == "/wedding/hotel.html" %} class="active" {% endif %}>hotel</a>
+      <a href="/wedding/registry.html"
+         {% if page.url == "/wedding/registry.html" %} class="active" {% endif %}>registry</a>
     </nav>
   </div>
-
-
+  <div class="content">
   {{ content }}
-
+  </div>
 </body>
