@@ -34,6 +34,14 @@ span {
     margin: 1em;
 }
 
+h2 + p {
+    margin-top: 100px;
+}
+
+p + h2 {
+    margin-top: -20px;
+}
+
 .header {
     padding-top: 10px;
     padding-bottom: 50px;
