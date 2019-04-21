@@ -43,17 +43,22 @@ p {
     font-family: 'Cormorant Upright', serif;
     font-weight: 300;
     font-size: 24px;
-    height: 36px;
-    position: absolute;
+    height: 50px;
+    width: 350px;
+    float: left;
+    text-align: left;
 }
 
 .logo h2 {
     padding: 0px 10px;
     text-align: left;
     position: absolute;
-    width: 300px;
     display: inline;
     color: #000;
+}
+
+nav {
+    display: table-row;
 }
 
 nav a {
@@ -64,7 +69,7 @@ nav a {
     text-decoration: none;
     border-bottom: 1px solid;
     margin: 0 30px;
-    position: relative;
+    display: inline-flex;
 }
 
 .active {
