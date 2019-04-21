@@ -2,11 +2,11 @@
 layout: wedding
 ---
 
-our full registry is available online at
+<span>our full registry is available online at</span>
 
 # [zola.com/registry/gonsie](https://www.zola.com/registry/gonsie)
 
 <br/>
-with select items at
+<span>with select items at</span>
 
 # [Macys.com](https://www.macys.com/wgl/registry/guest/7050238)

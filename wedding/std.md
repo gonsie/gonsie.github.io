@@ -1,8 +1,8 @@
 ---
 layout: wedding
 ---
-save the date
+<span>save the date</span>
 # Elsa & John
-are getting married
+<span>are getting married</span>
 ## Saturday<br/>June 22, 2019<br/>Schaghticoke, NY
-<small>formal invitation to follow</small>
+<span><small>formal invitation to follow</small></span>
