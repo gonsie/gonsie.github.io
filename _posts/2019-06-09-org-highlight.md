@@ -7,7 +7,7 @@ tags:
 I use org-mode to take a lot of notes and I frequently want to highlight some terms that I'm defining or a key sentence.
 Overall, I want two things:
 
-1.  I would like to add some markup syntax which will highlight a word or phrase.
+1.  I would like to add some markup syntax which will highlight a word or phrase, using ':' to mark the start and end of the phrase (similar to bold or italic markup).
 2.  When I export this markup through HTML (or markdown) it the markup should get converted to the HTML5 `<mark>` tag.
 
 
