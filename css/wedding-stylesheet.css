@@ -95,3 +95,7 @@ nav a {
 .img-circle {
     border-radius: 25%;
 }
+
+.sc {
+    font-variant: small-caps;
+}
