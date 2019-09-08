@@ -1,12 +1,9 @@
 ---
 layout: wedding
 ---
-<img src="/images/mos.png" width="100%" style="max-width:500px"/>
+<img src="/images/lrf.jpg" width="100%" style="max-width:700px"/>
 
-<span>Welcome!</span>
+<span>Thank you!</span>
 
-We are looking forward to celebrating our marriage with our family and friends on June 22, 2019 at Liberty Ridge Farms in Schaghticoke, NY.
-
-<span>We are excited to invite all children</span>
-
-Our venue offers a unique opportunity to celebrate with family and friends of all ages. Children are welcome and professional 'child minders' will be available for part of our celebration.
+We would like to thank everyone who helped make our wedding day so special.
+It was incredible to be surrounded by so many of our family and friends.
