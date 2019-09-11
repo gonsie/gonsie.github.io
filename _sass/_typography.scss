@@ -4,6 +4,19 @@
 h1 {
     font-size: 60px;
     color: $accent-color;
+    padding-top: 1.5em;
+}
+#rss {
+    width: 60px;
+}
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 9vw;
+    }
+    #rss {
+        width: 30px;
+    }
 }
 
 .content {
