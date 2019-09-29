@@ -15,7 +15,7 @@ In this post I'll detail some challenges and highlight the best apps that I've f
 
 ## My Recommendations
 
-![img](./images/ipad-best-apps.jpeg)
+![img](/images/ipad-best-apps.jpeg)
 
 Before I get too into the weeds, here is the bottom line up front.
 These are my must-have apps.
@@ -138,7 +138,7 @@ It has great support for keyboard shortcuts, works offline, and provides tons of
 
 ## The Rest
 
-![img](./images/ipad-suite-apps.jpeg)
+![img](/images/ipad-suite-apps.jpeg)
 
 If your are gearing up to use your iPad as a main computing device, there are a bunch of apps you should have *just in case*.
 Mostly, they are the typical suites of office software and video conferencing platforms.
