@@ -140,8 +140,8 @@ It has great support for keyboard shortcuts, works offline, and provides tons of
 
 ![img](/images/ipad-suite-apps.jpeg)
 
-If your are gearing up to use your iPad as a main computing device, there are a bunch of apps you should have *just in case*.
-Mostly, they are the typical suites of office software and video conferencing platforms.
+If you are gearing up to use your iPad as your main computing device, there are a bunch of apps you should have *just in case*.
+Mostly, they are the typical suites of office software and video conferencing tools.
 Personally, I wouldn't choose to use any of these, but no one asks me.
 That said, when I have had to use these office-suite apps, I have been surprised at how seamlessly they work.
 It is completely possible to edit a budget spreadsheet (full of advanced macros) while waiting for your flight.
