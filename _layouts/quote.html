@@ -7,8 +7,8 @@ layout: default
   <div class="post-date">
     <time>{{ page.date | date: '%B %d, %Y '}}</time>
   </div>
-  <quote>{{ post.title }}</quote>
-  {% if post.link %}
-  <p>from <a href="{{ post.link }}">{{ post.link }}</a></p>
+  <quote>{{ page.title }}</quote>
+  {% if page.link %}
+  <p>from <a href="{{ page.link }}">{{ page.link }}</a></p>
   {% endif %}
 </div>
