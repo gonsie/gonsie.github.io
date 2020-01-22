@@ -15,6 +15,9 @@ layout: default
             <div class="post-preview">
                 <span class="post-title alignable pull-left">
                     <a class="post-link underline" href="{{ post.url | prepend: site.baseurl }}">
+                        {% if post.layout == "quote" %}
+                        💬
+                        {% endif %}
                         {{ post.title }}
                     </a>
                 </span>
