@@ -17,6 +17,8 @@ layout: default
                     <a class="post-link underline" href="{{ post.url | prepend: site.baseurl }}">
                         {% if post.layout == "quote" %}
                         💬
+                        {% elsif post.layout == "photo" %}
+                        📷
                         {% endif %}
                         {{ post.title }}
                     </a>
