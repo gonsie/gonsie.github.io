@@ -4,3 +4,5 @@ layout: quote
 source: The Communicative Value of Using Git Well
 link: https://jeremykun.com/2020/01/14/the-communicative-value-of-using-git-well/
 ---
+
+Quote originally by [Hal Abelson](https://en.wikipedia.org/wiki/Hal_Abelson)
