@@ -9,7 +9,13 @@ layout: default
   </div>
   <blockquote>{{ page.title }}</blockquote>
   {% if page.link %}
-  <p>from <a href="{{ page.link }}">{{ page.link }}</a></p>
+  <p>from <a href="{{ page.link }}">
+    {% if page.source %}
+    {{ page.source }}
+    {% else %}
+    {{ page.link}}
+    {% endif %}
+  </a></p>
   {% endif %}
   {{ content }}
 </div>
