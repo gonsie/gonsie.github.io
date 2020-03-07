@@ -4,11 +4,11 @@ layout: default
 
 {% include nav.html %}
 <div class="content container">
-  <h1 class="post-title">{{ page.title }}</h1>
+  <h1 class="post-title">📸 {{ page.title }}</h1>
   <div class="post-date">
     <time>{{ page.date | date: '%B %d, %Y '}}</time>
   </div>
-  
+
   <img src={{ page.filename }} width="100%" style="max-width:700px"/>
 
   {{ content }}
