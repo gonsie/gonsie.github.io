@@ -7,9 +7,9 @@
 <style type="text/css">
 .underline { text-decoration: underline; }
 </style>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/np/dist/reveal.css"/>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/moon.css" id="theme"/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/np/dist/theme/moon.css" id="theme"/>
 
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
@@ -18,98 +18,47 @@
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        link.href = 'https://cdn.jsdelivr.net/np/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
     }
 </script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </head>
 <body>
 <div class="reveal">
 <div class="slides">
 <section id="sec-title-slide"><h1 class="title">Building A Personal Website</h1><p class="subtitle">(HPC Cluster Academy)</p>
-<h2 class="author">Elsa Gonsiorowski</h2><h2 class="date">July 20, 2020</h2><p class="date">Created: 2020-07-20 Mon 12:28</p>
-</section>
-<section id="table-of-contents"><div id="table-of-contents">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents">
-<ul>
-<li><a href="#/slide-orgf104239">1. Goals</a></li>
-<li><a href="#/slide-org9e809f1">2. Schedule</a></li>
-<li><a href="#/slide-org8630afe">3. Setup</a>
-<ul>
-<li><a href="#/slide-org46ef76b">3.1. Things You'll Need</a></li>
-<li><a href="#/slide-org21fd397">3.2. Text Editor with Markdown Support</a></li>
-<li><a href="#/slide-orgab8ef60">3.3. Text Editor with Markdown Support</a></li>
-<li><a href="#/slide-orged408b8">3.4. Package Managers</a></li>
-<li><a href="#/slide-orgf5a1fbc">3.5. Jekyll</a></li>
-<li><a href="#/slide-org8e3698c">3.6. Activity 1</a></li>
-</ul>
-</li>
-<li><a href="#/slide-org26ef8a1">4. Activities</a>
-<ul>
-<li><a href="#/slide-org2295c47">4.1. Activity 2: GitHub pages</a></li>
-<li><a href="#/slide-orgdc15842">4.2. Activity 3: Learning More</a></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
+<h2 class="author">Elsa Gonsiorowski</h2><h2 class="date">July 20, 2020</h2><p class="date">Created: 2020-07-20 Mon 12:44</p>
 </section>
 
 <section>
-<section id="slide-orgf104239">
-<h2 id="orgf104239"><span class="section-number-2">1</span> Goals</h2>
+<section id="slide-orgf1f0572">
+<h2 id="orgf1f0572"><span class="section-number-2">1</span> Goals</h2>
 <ul>
 <li>Set up a markdown / web development environment on your machine</li>
 <li>Refresh your resume</li>
 <li>Build a personal website</li>
 
 </ul>
+
+<p>
+Follow along: <a href="https://www.gonsie.com/gh-resume.html">https://www.gonsie.com/gh-resume.html</a>
+</p>
 </section>
 </section>
 <section>
-<section id="slide-org9e809f1">
-<h2 id="org9e809f1"><span class="section-number-2">2</span> Schedule</h2>
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-right" />
-
-<col  class="org-left" />
-</colgroup>
-<tbody>
-<tr>
-<td class="org-right">1-1:30</td>
-<td class="org-left">Setup &amp; Installation</td>
-</tr>
-
-<tr>
-<td class="org-right">1:30-2</td>
-<td class="org-left">Programming for Documents</td>
-</tr>
-
-<tr>
-<td class="org-right">&#xa0;</td>
-<td class="org-left">Building a Website</td>
-</tr>
-
-<tr>
-<td class="org-right">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-</tbody>
-</table>
+<section id="slide-orga1b298b">
+<h2 id="orga1b298b"><span class="section-number-2">2</span> Schedule</h2>
 </section>
 </section>
 <section>
-<section id="slide-org8630afe">
-<h2 id="org8630afe"><span class="section-number-2">3</span> Setup</h2>
+<section id="slide-orge69beb2">
+<h2 id="orge69beb2"><span class="section-number-2">3</span> Setup</h2>
 <div class="outline-text-2" id="text-3">
 </div>
 </section>
-<section id="slide-org46ef76b">
-<h3 id="org46ef76b"><span class="section-number-3">3.1</span> Things You'll Need</h3>
+<section id="slide-orgdf0be10">
+<h3 id="orgdf0be10"><span class="section-number-3">3.1</span> Things You'll Need</h3>
 <ul>
 <li>Resume</li>
 <li>Text editor with Markdown Support</li>
@@ -118,16 +67,16 @@
 
 </ul>
 </section>
-<section id="slide-org21fd397">
-<h3 id="org21fd397"><span class="section-number-3">3.2</span> Text Editor with Markdown Support</h3>
+<section id="slide-org585aedc">
+<h3 id="org585aedc"><span class="section-number-3">3.2</span> Text Editor with Markdown Support</h3>
 <ul>
 <li>Syntax highlighting</li>
 <li>Export / preview support (may require additional software)</li>
 
 </ul>
 </section>
-<section id="slide-orgab8ef60">
-<h3 id="orgab8ef60"><span class="section-number-3">3.3</span> Text Editor with Markdown Support</h3>
+<section id="slide-org0190e19">
+<h3 id="org0190e19"><span class="section-number-3">3.3</span> Text Editor with Markdown Support</h3>
 <ul>
 <li>Emacs (<a href="https://github.com/plasticboy/vim-markdown">markdown-mode</a> / MELPA)</li>
 <li>Vim (<a href="https://github.com/plasticboy/vim-markdown">vim-markdown</a>)</li>
@@ -138,18 +87,18 @@
 
 </ul>
 </section>
-<section id="slide-orged408b8">
-<h3 id="orged408b8"><span class="section-number-3">3.4</span> Package Managers</h3>
+<section id="slide-org14cd7ed">
+<h3 id="org14cd7ed"><span class="section-number-3">3.4</span> Package Managers</h3>
 <div class="outline-text-3" id="text-3-4">
 </div>
 <ol class="org-ol">
-<li><a id="org3f67585"></a>MacOS<br />
+<li><a id="orgc7ae3ee"></a>MacOS<br />
 <ul>
 <li><a href="https://brew.sh">Homebrew</a> package manager</li>
 
 </ul>
 </li>
-<li><a id="org3dee781"></a>Windows<br />
+<li><a id="orgd069842"></a>Windows<br />
 <ul>
 <li><a href="https://docs.microsoft.com/en-us/windows/wsl/install-win10">Windows Subsystem for Linux</a>
 <ul>
@@ -159,7 +108,7 @@
 
 </ul>
 </li>
-<li><a id="org2bdd3c4"></a>Linux<br />
+<li><a id="org23ec489"></a>Linux<br />
 <ul>
 <li><code>apt-get</code> for Ubuntu/Debian distros</li>
 <li><code>yum</code> for RedHat/CentOS distros</li>
@@ -168,19 +117,19 @@
 </li>
 </ol>
 </section>
-<section id="slide-orgf5a1fbc">
-<h3 id="orgf5a1fbc"><span class="section-number-3">3.5</span> Jekyll</h3>
+<section id="slide-org15dfc84">
+<h3 id="org15dfc84"><span class="section-number-3">3.5</span> Jekyll</h3>
 <ul>
 <li><a href="https://jekyllrb.com/docs/">Jekyll install instructions</a></li>
 
 </ul>
 </section>
-<section id="slide-org8e3698c">
-<h3 id="org8e3698c"><span class="section-number-3">3.6</span> Activity 1</h3>
+<section id="slide-org88bf1fa">
+<h3 id="org88bf1fa"><span class="section-number-3">3.6</span> <b>Activity: Setup</b></h3>
 <div class="outline-text-3" id="text-3-6">
 </div>
 <ol class="org-ol">
-<li><a id="orgee74c22"></a>Setup<br />
+<li><a id="orgf6654f8"></a>Setup<br />
 <ul>
 <li>Pick an editor and install markdown support</li>
 <li>Find your most recent resume</li>
@@ -188,7 +137,7 @@
 
 </ul>
 </li>
-<li><a id="orgd4d250f"></a>GitHub<br />
+<li><a id="orgc8b34fc"></a>GitHub<br />
 <ol>
 <li>Create a profile on <a href="https://github.com">GitHub</a></li>
 <li>Follow <a href="https://github.com/gonsie">@gonsie</a></li>
@@ -200,17 +149,187 @@
 </section>
 </section>
 <section>
-<section id="slide-org26ef8a1">
-<h2 id="org26ef8a1"><span class="section-number-2">4</span> Activities</h2>
+<section id="slide-org5d2141f">
+<h2 id="org5d2141f"><span class="section-number-2">4</span> Programming for Documents</h2>
 <div class="outline-text-2" id="text-4">
 </div>
 </section>
-<section id="slide-org2295c47">
-<h3 id="org2295c47"><span class="section-number-3">4.1</span> Activity 2: GitHub pages</h3>
-<div class="outline-text-3" id="text-4-1">
+<section id="slide-org7f53bf7">
+<h3 id="org7f53bf7"><span class="section-number-3">4.1</span> Computer Languages</h3>
+<blockquote >
+<p>
+A <b>markup language</b> is a system for annotating a document in a way that is syntactically distinguishable from the text.
+</p>
+</blockquote>
+
+<blockquote >
+<p>
+A <b>style sheet language</b>, or <b>style language</b>, expresses the presentation of structured documents.
+</p>
+</blockquote>
+
+</section>
+<section id="slide-org9534a2a">
+<h3 id="org9534a2a"><span class="section-number-3">4.2</span> Computer Languages</h3>
+<div class="outline-text-3" id="text-4-2">
 </div>
 <ol class="org-ol">
-<li><a id="org2eb924d"></a>GitHub Pages<br />
+<li><a id="org50ae5d7"></a>Markup<br />
+<ul>
+<li>Adds information to the content, such as hierarchy or emphasis.</li>
+<li>Example: HTML, Markdown, TeX, troff</li>
+
+</ul>
+</li>
+
+<li><a id="org5faae64"></a>Style<br />
+<ul>
+<li>Describes how to display the content</li>
+<li>CSS, TeX class/style, editor color theme</li>
+
+</ul>
+</li>
+</ol>
+
+</section>
+<section id="slide-org3444a85">
+<h3 id="org3444a85"><span class="section-number-3">4.3</span> Example</h3>
+<div class="org-src-container">
+
+<pre  class="src src-markdown"><code trim># This is a level 1 heading in markdown
+</code></pre>
+</div>
+
+<div class="org-src-container">
+
+<pre  class="src src-html"><code trim>&lt;h1&gt;This is a level 1 heading in HTML&lt;/h1&gt;
+</code></pre>
+</div>
+
+<div class="org-src-container">
+
+<pre  class="src src-org"><code trim>* This is a level 1 heading in orgmode
+</code></pre>
+</div>
+
+<p>
+This is some regular text.
+</p>
+
+<p>
+<b>This is some red text.</b>
+\pause
+</p>
+<div class="llnlsummaryenv">
+<p>
+Markup + Styling = Beautiful Documents
+</p>
+
+</div>
+</section>
+<section id="slide-orgfee229e">
+<h3 id="orgfee229e"><span class="section-number-3">4.4</span> Markup Languages</h3>
+
+<div class="figure">
+<p><img src="images/markup-word-cloup.png" alt="markup-word-cloup.png" />
+</p>
+</div>
+</section>
+<section id="slide-org84aa24c">
+<h3 id="org84aa24c"><span class="section-number-3">4.5</span> Beautiful Web Documents</h3>
+<ul>
+<li>HTML + CSS</li>
+<li>Structure and style a document</li>
+<li>Understood by browsers</li>
+<li><b>HTML</b> Elements are marked at the beginning and end with a tag</li>
+<li><b>HTML</b> Elements have attributes which provide additional information</li>
+<li><b>CSS</b> Selects an element and sets properties</li>
+<li><a href="https://www.w3schools.com/">W3Schools</a> is a great reference</li>
+
+</ul>
+</section>
+<section id="slide-org87492e4">
+<h3 id="org87492e4"><span class="section-number-3">4.6</span> HTML Example</h3>
+<div class="org-src-container">
+
+<pre  class="src src-html"><code trim>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;link rel="stylesheet" href="basic.css"/&gt;
+    &lt;title&gt;My web page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p class="ugly"&gt;This is some text on my webpage&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+</div>
+</section>
+<section id="slide-org22ff6b5">
+<h3 id="org22ff6b5"><span class="section-number-3">4.7</span> CSS Example</h3>
+<div class="org-src-container">
+
+<pre  class="src src-css"><code trim>body {
+color: blue;
+}
+p.ugly {
+border-bottom: 1px dotted #999;
+}
+</code></pre>
+</div>
+</section>
+<section id="slide-orgea7adce">
+<h3 id="orgea7adce"><span class="section-number-3">4.8</span> Rendered Example</h3>
+
+<div class="figure">
+<p><img src="images/basic-page.png" alt="basic-page.png" />
+</p>
+</div>
+
+</section>
+<section id="slide-orgad91c55">
+<h3 id="orgad91c55"><span class="section-number-3">4.9</span> Viewing a Web page</h3>
+<ol>
+<li>Parse HTML to construct DOM tree  (Document Object Model)</li>
+<li>Render tree construction / apply CSS</li>
+<li>Layout the elements</li>
+<li>Draw the page on the screen</li>
+
+</ol>
+</section>
+<section id="slide-org73f300d">
+<h3 id="org73f300d"><span class="section-number-3">4.10</span> <b>Activity: Make a Web page</b> (10 min)</h3>
+<ol>
+<li>Write an basic HTML page</li>
+<li>View the page in your browser</li>
+<li>Add some CSS styling</li>
+
+</ol>
+<p>
+\pause
+</p>
+<div class="llnlsummaryenv">
+<p>
+Do you need to run the web server to view the page you created?
+What is the URL of your page?
+</p>
+
+</div>
+
+</section>
+</section>
+<section>
+<section id="slide-org86b2b7a">
+<h2 id="org86b2b7a"><span class="section-number-2">5</span> Activities</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+</section>
+<section id="slide-org805ca3d">
+<h3 id="org805ca3d"><span class="section-number-3">5.1</span> Activity 2: GitHub pages</h3>
+<div class="outline-text-3" id="text-5-1">
+</div>
+<ol class="org-ol">
+<li><a id="orgddc9e3e"></a>GitHub Pages<br />
 <ul>
 <li>Publish website with <a href="https://pages.github.com">GitHub Pages</a></li>
 <li>Free hosting for project and user websites
@@ -223,7 +342,7 @@ This will appear at <code>https://username.github.io/projectname</code></li>
 
 </ul>
 </li>
-<li><a id="org8778708"></a>Activity 2: Resume with GitHub pages<br />
+<li><a id="org97410fb"></a>Activity 2: Resume with GitHub pages<br />
 <ol>
 <li>Fork the <a href="https://github.com/gonsie/Cthulu-Resume">gonsie/Cthulu-Resume: one-page resume</a> repo</li>
 <li>Rename the repo to <code>username.github.io</code></li>
@@ -236,12 +355,12 @@ This will appear at <code>https://username.github.io/projectname</code></li>
 </li>
 </ol>
 </section>
-<section id="slide-orgdc15842">
-<h3 id="orgdc15842"><span class="section-number-3">4.2</span> Activity 3: Learning More</h3>
-<div class="outline-text-3" id="text-4-2">
+<section id="slide-orgdd70775">
+<h3 id="orgdd70775"><span class="section-number-3">5.2</span> Activity 3: Learning More</h3>
+<div class="outline-text-3" id="text-5-2">
 </div>
 <ol class="org-ol">
-<li><a id="org17a7117"></a>Activity 3: Learning More<br />
+<li><a id="orgd4b68a2"></a>Activity 3: Learning More<br />
 <ul>
 <li><a href="https://learngitbranching.js.org">Git Branching Game</a></li>
 <li>File an issue on a project repo</li>
@@ -260,7 +379,7 @@ This will appear at <code>https://username.github.io/projectname</code></li>
 </section>
 </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/np/dist/reveal.js"></script>
 
 <script>
 // Full list of configuration options available here:
@@ -274,11 +393,11 @@ multiplex: {
 
 // Optional libraries used to extend on reveal.js
 dependencies: [
- { src: 'https://cdn.jsdelivr.net/npm/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
- { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
- { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+ { src: 'https://cdn.jsdelivr.net/np/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/np/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/np/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/np/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/np/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
 });
 </script>
 </body>
