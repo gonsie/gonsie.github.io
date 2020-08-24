@@ -1,0 +1,329 @@
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+EPRESENT_FRAME_LEVEL: 2
+
+#+title: Building A Personal Website
+#+subtitle: HPC Cluster Academy
+#+author: Elsa Gonsiorowski
+#+date: July 20, 2020
+
+#+options: H:2 toc:nil
+
+* Goals
+- Set up a markdown / web development environment on your machine
+- Refresh your resume
+- Build a personal website
+
+Follow along: [[https://www.gonsie.com/gh-resume.html]]
+* Schedule
+|    1-1:30 | Setup                     |
+| 1:30-2:30 | Programming for Documents |
+| 2:30-3:30 | Markdown                  |
+|    3:30-4 | Static Websites           |
+|       4-5 | Building a Website        |
+* Setup
+** Things You'll Need
+- Resume
+- Text editor with Markdown Support
+- GitHub account
+- Package manager to install Jekyll (optional)
+** Text Editor with Markdown Support
+- Syntax highlighting
+- Export / preview support (may require additional software)
+** Text Editor with Markdown Support
+- Emacs ([[https://github.com/plasticboy/vim-markdown][markdown-mode]] / MELPA)
+- Vim ([[https://github.com/plasticboy/vim-markdown][vim-markdown]])
+- SublimeText ([[https://packagecontrol.io/search/markdown][packages: markdown]])
+- Atom ([[https://atom.io/packages/search?q=markdown][packages: markdown]])
+- VSCode ([[https://marketplace.visualstudio.com/search?term=markdown&target=VSCode&category=All%20categories&sortBy=Relevance][extensions: markdown]])
+- Web-based [[https://dillinger.io][Dillinger]]
+** Package Managers
+*** MacOS
+- [[https://brew.sh][Homebrew]] package manager
+*** Windows
+- [[https://docs.microsoft.com/en-us/windows/wsl/install-win10][Windows Subsystem for Linux]]
+  - Suggested Linux: [[https://wiki.ubuntu.com/WSL][Ubunto Image]]
+*** Linux
+- =apt-get= for Ubuntu/Debian distros
+- =yum= for RedHat/CentOS distros
+** Jekyll
+- [[https://jekyllrb.com/docs/][Jekyll install instructions]]
+** *Activity: Setup*
+*** Setup
+- Pick an editor and install markdown support
+- Find your most recent resume
+*** GitHub
+1. Create a profile on [[https://github.com][GitHub]]
+2. Follow [[https://github.com/gonsie][@gonsie]]
+3. Follow your friends!
+* Programming for Documents
+** Computer Languages
+
+#+BEGIN_QUOTE
+A *markup language* is a system for annotating a document in a way that is syntactically distinguishable from the text.
+#+END_QUOTE
+
+#+BEGIN_QUOTE
+A *style sheet language*, or *style language*, expresses the presentation of structured documents.
+#+END_QUOTE
+
+** Computer Languages
+
+*** Markup
+- Adds information to the content, such as hierarchy or emphasis.
+- Example: HTML, Markdown, TeX, troff
+
+*** Style
+- Describes how to display the content
+- CSS, TeX class/style, editor color theme
+
+** Example
+#+BEGIN_SRC markdown
+# This is a level 1 heading in markdown
+#+END_SRC
+
+#+BEGIN_SRC html
+<h1>This is a level 1 heading in HTML</h1>
+#+END_SRC
+
+#+BEGIN_SRC org
+ * This is a level 1 heading in orgmode
+#+END_SRC
+
+This is some regular text.
+
+*This is some red text.*
+\pause
+#+begin_llnlsummaryenv
+Markup + Styling = Beautiful Documents
+#+end_llnlsummaryenv
+** Markup Languages
+#+attr_latex: :height 0.8\textheight
+[[file:images/markup-word-cloup.png]]
+** Beautiful Web Documents
+- HTML + CSS
+- Structure and style a document
+- Understood by browsers
+- *HTML* Elements are marked at the beginning and end with a tag
+- *HTML* Elements have attributes which provide additional information
+- *CSS* Selects an element and sets properties
+- [[https://www.w3schools.com/][W3Schools]] is a great reference
+** HTML Example
+#+BEGIN_SRC html :tangle basic.html
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="basic.css"/>
+    <title>My web page</title>
+  </head>
+  <body>
+    <p class="ugly">This is some text on my webpage</p>
+  </body>
+</html>
+#+END_SRC
+** CSS Example
+#+BEGIN_SRC css :tangle basic.css
+body {
+color: blue;
+}
+p.ugly {
+border-bottom: 1px dotted #999;
+}
+#+END_SRC
+** Rendered Example
+#+attr_latex: :width 0.7\textwidth
+[[file:images/basic-page.png]]
+
+** Viewing a Web page
+1. Parse HTML to construct DOM tree @@latex:\\@@ (Document Object Model)
+2. Render tree construction / apply CSS
+3. Layout the elements
+4. Draw the page on the screen
+** *Activity: Make a Web page* (10 min)
+1. Write an basic HTML page
+2. View the page in your browser
+3. Add some CSS styling
+\pause
+#+begin_llnlsummaryenv
+Do you need to run the web server to view the page you created?@@latex:\\@@
+What is the URL of your page?
+#+end_llnlsummaryenv
+
+* Markdown
+** Markdown
+- Designed by [[https://daringfireball.net][John Gruber (Daring Fireball)]]
+- Defined syntax for translating text to HTML.
+- A superset of HTML
+- Used extensively in software communities.
+** Markdown to HTML
+#+BEGIN_SRC dot :file images/mkdown.png :cmdline -Kdot -Tpng
+digraph g {
+rankdir = LR;
+markdown -> converter -> html;
+}
+#+END_SRC
+
+#+attr_latex: :width 0.7\textwidth
+#+RESULTS:
+[[file:images/mkdown.png]]
+** Markdown Syntax
+#+BEGIN_SRC markdown
+  # h1 Heading
+  ## h2 Heading
+  ### h3 Heading
+
+  ---
+
+  Emphasis with **bold**, *italic*, or ~~strikethrough~~ text.
+
+  > Blockquote for included text
+
+  [Also links](http://example.com)
+#+END_SRC
+** Markdown Syntax
+#+BEGIN_SRC markdown
+  1. Numbered Lists
+     - Unordered lists
+     ,* mixed marks
+     + like this
+  7. Only the first number matters
+
+  Support for `inline code` and code blocks:
+
+  ```
+  for (int i = 0; i < 100; i++) printf("Hello World!\n");
+  ```
+#+END_SRC
+** Markdown Syntax Example
+#+attr_latex: :width \textwidth
+[[file:images/mkdown-example.png]]
+** Markdown Style Example
+#+attr_latex: :width \textwidth
+[[file:images/mkdown-custom-css.png]]
+
+** Markdown to HTML
+#+attr_latex: :width 0.7\textwidth
+#+RESULTS:
+[[file:images/mkdown.png]]
+
+\pause
+#+begin_llnlsummaryenv
+Converters have their own rules.
+#+end_llnlsummaryenv
+** Additional Markdown Rules
+- GitHub-flavored-markdown (GFM) includes task lists and emojis.
+- [[https://kramdown.gettalong.org][kramdown]] includes better handling of code blocks
+- [[https://pandoc.org][pandoc]] converts to/from any number of markup formats
+** *Activity: Practice Markdown* (20 min)
+Practice writing markdown syntax by re-writing your resume in markdown.
+
+- Your name is a level 1 heading
+- Sections are level 2 headings
+- Different companies are level 3 headings
+- Be sure to use lists and emphasis
+- Additional resources: [[https://www.markdownguide.org][Markdown Guide]]
+
+* Static Website
+** Static vs Dynamic Websites
+- Web pages with fixed content
+- No backing database / dynamic server
+- No way to "log in" to the site
+** Jekyll
+- Static website generator
+- Structured on top of basic markdown
+- Generate HTML and CSS from source code
+** Jekyll
+#+BEGIN_SRC dot :file images/jekyll.png :cmdline -Kdot -Tpng
+digraph g {
+  rankdir = LR;
+  node [shape="box"];
+  Jekyll;
+  node [shape="ellipse"];
+  markdown -> Jekyll -> website;
+  HTML -> Jekyll;
+  Sass -> Jekyll
+  CSS -> Jekyll;
+  Liquid -> Jekyll;
+}
+#+END_SRC
+
+#+attr_latex: :width 0.7\textwidth
+#+RESULTS:
+[[file:images/jekyll.png]]
+** Jekyll Front Matter
+- Jekyll parses markdown pages with extra /front matter/
+  - Must be on line 1 of your =.md= file
+  - Pass information about the page to jekyll to allow for proper rendering
+- Use this front matter on your =resume.md= file:
+#+begin_src jekyll
+---
+layout: resume
+title: "My Awesome Resume"
+---
+#+end_src
+** Liquid
+- Templating language
+- Allows hierarchical construction of a jekyll web page
+- Access to variables, programming constructs
+** GitHub Pages
+- /FREE/ websites for you and your projects
+- Open source repos get free website hosting
+- Can serve basic HTML or Jekyll site
+** *Activity: Start your website* (15 min)
+- Fork [[https://github.com/gonsie/jekyll-resume]]
+- Rename to /username/.github.io
+- Make sure *GitHub Pages* is turned on (from the master branch)
+- Clone your repo and update the resume
+- Push your changes
+- Visit your website!
+* Building a Website
+** Web Conventions
+#+BEGIN_SRC
+https://gonsie.com
+#+END_SRC
+
+*** DNS: Domain Name System
+- Hierarchical and decentralized name mapping to IP
+*** Default Homepage
+- =index.html=
+*** Subdomain
+- Allows name mapping at the destination
+** Web Conventions
+#+beamer: \addtocounter{framenumber}{-1}
+#+BEGIN_SRC
+https://gonsie.github.io/index.html
+#+END_SRC
+
+*** DNS: Domain Name System
+- Hierarchical and decentralized name mapping to IP
+*** Default Homepage
+- =index.html=
+*** Subdomain
+- Allows name mapping at the destination
+** GitHub Pages
+- =username.github.io=
+- =username.github.io/repo=
+- can support custom domains
+** Building Your Personal Brand
+- How you present yourself to the world
+- Username, profile image(s), profile information
+- Join the blogosphere / independent web and own your content
+- Build your own network with RSS
+** Personal Site Demo
+** *Activity: Build Your Web Site* (60 min)
+- Look up a domain (try [[https://namecheap.com][namecheap]] or [[https://hover.com][hover]]). How much does it cost?
+- Find a theme ([[http://jekyllthemes.org][jekyllthemes.org]]) and tweak it for your site
+- Write an index and/or about page
+- Brainstorm some blog posts with your neighbor
+- Write a blog post
+- Add an RSS feed to your site (hint: can be done in =_config.yml=)
+- Use Liquid to add a list of blog posts to the homepage
+- Enable HTTPS on your site
+* Fun
+** Have Fun
+- [[https://secretgeek.github.io/html_wysiwyg/html.html][This page is a truly naked, brutalist html quine.]]
+- [[https://jrl.ninja/etc/1/][58 bytes of css to look great nearly everywhere]]
+- Get Social on reddit or [[https://dev.to][dev.to]]
+** *Activity: GitHub Secret*
+- Create a new repo called /username/
+- Add a =README.md= file
+- Visit your GitHub Profile (=github.com/username=)
