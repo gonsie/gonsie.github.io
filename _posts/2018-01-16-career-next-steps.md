@@ -1,6 +1,7 @@
 ---
 title: Career Next Steps
 layout: post
+tags: [career, talk]
 ---
 
 <!-- 1.  [0. About Me](#org346fef3) -->

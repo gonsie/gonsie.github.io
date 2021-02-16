@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Writing More
+tags: [writing]
 ---
 
 - [Meaning](#org09876bb)

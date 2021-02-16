@@ -1,6 +1,7 @@
 ---
 title: My Theory of Writing
 layout: post
+tags: writing
 ---
 
 The base of my theory is this: content editing is a completely different process from layout design.
