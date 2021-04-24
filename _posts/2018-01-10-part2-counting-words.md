@@ -1,6 +1,7 @@
 ---
 title: "Part 2: Counting Words"
 layout: post
+tags: [emacs, elisp, org]
 ---
 
 *This post is part of a series.*

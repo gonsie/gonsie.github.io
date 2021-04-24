@@ -1,6 +1,7 @@
 ---
 title: "Part 0: Word Count Goals"
 layout: post
+tags: [emacs, elisp, org]
 ---
 
 ## An Excursion into E-Lisp and Org

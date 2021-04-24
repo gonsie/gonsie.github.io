@@ -1,6 +1,7 @@
 ---
 title: Converting from Sublime Text to Emacs
 layout: post
+tags: [emacs, org]
 ---
 
 -   [Motivation](#motivation)

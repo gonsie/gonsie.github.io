@@ -1,6 +1,7 @@
 ---
 title: "Part 1: Using Org to Develop Elisp"
 layout: post
+tags: [emacs, elisp, org]
 ---
 
 *This post is part of a series.*
