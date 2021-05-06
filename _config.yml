@@ -36,3 +36,5 @@ collections:
     output: true
   ghc12:
     output: true
+  comments:
+    output: true
