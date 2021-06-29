@@ -5,8 +5,10 @@
     <label for="comment-form-email">Email</label>
     <input type="text" name="email" id="comment-form-email" required><br/>
     <label for="comment-form-comment">Comment</label>
+    <br/>
     <textarea name="comment" id="comment-form-comment" required></textarea><br/>
     <input type="hidden" name="_next" value="https://gonsie.com/blorg/comment-success.html">
+    <input type="hidden" name="_subject" value="{{ page.title }}">
     <input type="text" name="_honey" style="display:none">
     <input type="hidden" name="_captcha" value="false">
     <input type="submit" value="Submit" />
