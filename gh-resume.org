@@ -15,11 +15,11 @@
 
 Follow along: [[https://www.gonsie.com/gh-resume.html]]
 * Schedule
-|    1-1:30 | Setup                     |
-| 1:30-2:30 | Programming for Documents |
-| 2:30-3:30 | Markdown                  |
-|    3:30-4 | Static Websites           |
-|       4-5 | Building a Website        |
+|    1-1:30 | Setup             |
+| 1:30-2:30 | HTML & CSS        |
+| 2:30-3:30 | Markdown          |
+|    3:30-4 | Static Websites   |
+|       4-5 | Building a Website|
 * Setup
 ** Things You'll Need
 - Resume
@@ -30,7 +30,7 @@ Follow along: [[https://www.gonsie.com/gh-resume.html]]
 - Syntax highlighting
 - Export / preview support (may require additional software)
 ** Text Editor with Markdown Support
-- Emacs ([[https://github.com/plasticboy/vim-markdown][markdown-mode]] / MELPA)
+- Emacs ([https://github.com/plasticboy/vim-markdown][markdown-mode] / MELPA)
 - Vim ([[https://github.com/plasticboy/vim-markdown][vim-markdown]])
 - SublimeText ([[https://packagecontrol.io/search/markdown][packages: markdown]])
 - Atom ([[https://atom.io/packages/search?q=markdown][packages: markdown]])
@@ -55,7 +55,7 @@ Follow along: [[https://www.gonsie.com/gh-resume.html]]
 1. Create a profile on [[https://github.com][GitHub]]
 2. Follow [[https://github.com/gonsie][@gonsie]]
 3. Follow your friends!
-* Programming for Documents
+* HTML & CSS
 ** Computer Languages
 
 #+BEGIN_QUOTE
@@ -76,7 +76,7 @@ A *style sheet language*, or *style language*, expresses the presentation of str
 - Describes how to display the content
 - CSS, TeX class/style, editor color theme
 
-** Example
+** COMMENT Example
 #+BEGIN_SRC markdown
 # This is a level 1 heading in markdown
 #+END_SRC
@@ -139,10 +139,11 @@ border-bottom: 1px dotted #999;
 3. Layout the elements
 4. Draw the page on the screen
 ** *Activity: Make a Web page* (10 min)
-1. Write an basic HTML page
+# needs more detail
+1. Write a basic HTML page
 2. View the page in your browser
 3. Add some CSS styling
-\pause
+------
 #+begin_llnlsummaryenv
 Do you need to run the web server to view the page you created?@@latex:\\@@
 What is the URL of your page?
