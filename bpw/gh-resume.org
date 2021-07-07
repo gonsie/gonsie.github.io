@@ -1,42 +1,62 @@
 #+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
-#+EPRESENT_FRAME_LEVEL: 2
+# +EPRESENT_FRAME_LEVEL: 2
+#+REVEAL_INIT_OPTIONS: height:1000
 
 #+title: Building A Personal Website
 #+subtitle: HPC Cluster Academy
 #+author: Elsa Gonsiorowski
-#+date: July 20, 2020
+#+date: July 19, 2021
 
 #+options: H:2 toc:nil
+#+export_file_name: index.html
 
 * Goals
-- Set up a markdown / web development environment on your machine
+- Set up a markdown and web development environment on your machine
 - Refresh your resume
 - Build a personal website
 
 Follow along: [[https://www.gonsie.com/gh-resume.html]]
 * Schedule
-|    1-1:30 | Setup             |
-| 1:30-2:30 | HTML & CSS        |
-| 2:30-3:30 | Markdown          |
-|    3:30-4 | Static Websites   |
-|       4-5 | Building a Website|
-* Setup
-** Things You'll Need
+|    1-1:30 | About Me & Setup           |
+| 1:30-2:30 | Crash course in HTML & CSS |
+| 2:30-3:30 | Markdown & Your Resume     |
+|    3:30-4 | Deploying Static Websites  |
+|       4-5 | Build Your Website!        |
+* About Me & Setup
+** Elsa Gonsiorowski
+- Joined LLNL / LC in 2016
+- HPC I/O Specialist
+- Working on [[https://computing.llnl.gov/projects/scalable-checkpoint-restart-for-mpi][SCR: Scalable Checkpoint Restart]]
+- Part of the [[https://www.exascaleproject.org][ECP]] [[https://ideas-productivity.org][IDEAS]] Team working on [[https://bssw.io/blog_posts/productivity-and-sustainability-improvement-planning-psip][PSIP]]
+- Excited about emacs, static websites, cmake
+** gonsie.com
+#+ATTR_HTML: :alt Screenshot of gonsie.com
+[[file:images/bpw-gonsie-com.png]]
+** github.com/gonsie
+#+ATTR_HTML: :alt Screenshot of gonsie's profile on github.com
+[[file:images/bpw-github-gonsie.png]]
+** gonsie.com/cv.html
+#+ATTR_HTML: :alt Screenshot of Elsa's C.V.
+[[file:images/bpw-gonsie-cv.png]]
+** Setup: Things You'll Need
 - Resume
-- Text editor with Markdown Support
+- Text editor with Markdown, HTML, CSS support
 - GitHub account
 - Package manager to install Jekyll (optional)
-** Text Editor with Markdown Support
-- Syntax highlighting
+** Text Editor Support
+- Syntax highlighting, checking
+- Indentation
 - Export / preview support (may require additional software)
-** Text Editor with Markdown Support
-- Emacs ([https://github.com/plasticboy/vim-markdown][markdown-mode] / MELPA)
+- Snippets
+- Colors
+** Markdown
+- Emacs ([[https://github.com/jrblevin/markdown-mode][markdown-mode]] / MELPA)
 - Vim ([[https://github.com/plasticboy/vim-markdown][vim-markdown]])
 - SublimeText ([[https://packagecontrol.io/search/markdown][packages: markdown]])
 - Atom ([[https://atom.io/packages/search?q=markdown][packages: markdown]])
 - VSCode ([[https://marketplace.visualstudio.com/search?term=markdown&target=VSCode&category=All%20categories&sortBy=Relevance][extensions: markdown]])
 - Web-based [[https://dillinger.io][Dillinger]]
-** Package Managers
+** COMMENT Package Managers
 *** MacOS
 - [[https://brew.sh][Homebrew]] package manager
 *** Windows
@@ -47,17 +67,21 @@ Follow along: [[https://www.gonsie.com/gh-resume.html]]
 - =yum= for RedHat/CentOS distros
 ** Jekyll
 - [[https://jekyllrb.com/docs/][Jekyll install instructions]]
-** *Activity: Setup*
+** *Activity: Setup (10 minutes)*
 *** Setup
-- Pick an editor and install markdown support
+- Pick an editor and install packages
+- /optional/ Install jekyll
 - Find your most recent resume
 *** GitHub
 1. Create a profile on [[https://github.com][GitHub]]
 2. Follow [[https://github.com/gonsie][@gonsie]]
 3. Follow your friends!
+*** COMMENT POLL
+#+begin_quote
+/poll "Which editor are you using?" "emacs" "vim" "sublimetext" "atom" "vscode" "web" "other"
+#+end_quote
 * HTML & CSS
 ** Computer Languages
-
 #+BEGIN_QUOTE
 A *markup language* is a system for annotating a document in a way that is syntactically distinguishable from the text.
 #+END_QUOTE
@@ -67,7 +91,6 @@ A *style sheet language*, or *style language*, expresses the presentation of str
 #+END_QUOTE
 
 ** Computer Languages
-
 *** Markup
 - Adds information to the content, such as hierarchy or emphasis.
 - Example: HTML, Markdown, TeX, troff
@@ -97,7 +120,7 @@ This is some regular text.
 Markup + Styling = Beautiful Documents
 #+end_llnlsummaryenv
 ** Markup Languages
-#+attr_latex: :height 0.8\textheight
+# +attr_latex: :height 0.8\textheight
 [[file:images/markup-word-cloup.png]]
 ** Beautiful Web Documents
 - HTML + CSS
@@ -107,7 +130,7 @@ Markup + Styling = Beautiful Documents
 - *HTML* Elements have attributes which provide additional information
 - *CSS* Selects an element and sets properties
 - [[https://www.w3schools.com/][W3Schools]] is a great reference
-** HTML Example
+** Example -- HTML
 #+BEGIN_SRC html :tangle basic.html
 <!DOCTYPE html>
 <html>
@@ -120,7 +143,7 @@ Markup + Styling = Beautiful Documents
   </body>
 </html>
 #+END_SRC
-** CSS Example
+** Example -- CSS
 #+BEGIN_SRC css :tangle basic.css
 body {
 color: blue;
@@ -129,44 +152,48 @@ p.ugly {
 border-bottom: 1px dotted #999;
 }
 #+END_SRC
-** Rendered Example
-#+attr_latex: :width 0.7\textwidth
+** Example -- Rendered
+# +attr_latex: :width 0.7\textwidth
 [[file:images/basic-page.png]]
 
-** Viewing a Web page
+** Displaying a Web page
 1. Parse HTML to construct DOM tree @@latex:\\@@ (Document Object Model)
 2. Render tree construction / apply CSS
 3. Layout the elements
 4. Draw the page on the screen
 ** *Activity: Make a Web page* (10 min)
-# needs more detail
-1. Write a basic HTML page
-2. View the page in your browser
-3. Add some CSS styling
+1. Edit the basic HTML + CSS pages with your editor ([[file:basic.html][basic.html]] and [[file:basic.css][basic.css]])
+2. "Open" the basic.html file using your browser
+3. Add some more HTML and/or CSS
+   - [[https://www.w3schools.com/tags/default.asp][List of HTML elements]]
+   - [[https://www.w3schools.com/cssref/default.asp][CSS Reference]]
 ------
 #+begin_llnlsummaryenv
 Do you need to run the web server to view the page you created?@@latex:\\@@
 What is the URL of your page?
 #+end_llnlsummaryenv
-
-* Markdown
+*** COMMENT POLL
+#+begin_quote
+"What is your favorite HTML tag?"
+#+end_quote
+* Markdown & Your Resume
 ** Markdown
 - Designed by [[https://daringfireball.net][John Gruber (Daring Fireball)]]
 - Defined syntax for translating text to HTML.
 - A superset of HTML
 - Used extensively in software communities.
 ** Markdown to HTML
-#+BEGIN_SRC dot :file images/mkdown.png :cmdline -Kdot -Tpng
+#+BEGIN_SRC dot :file images/bpw-mkdown.png :cmdline -Kdot -Tpng
 digraph g {
+converter [shape=box];
 rankdir = LR;
 markdown -> converter -> html;
 }
 #+END_SRC
 
-#+attr_latex: :width 0.7\textwidth
 #+RESULTS:
-[[file:images/mkdown.png]]
-** Markdown Syntax
+[[file:images/bpw-mkdown.png]]
+** Markdown Syntax 1
 #+BEGIN_SRC markdown
   # h1 Heading
   ## h2 Heading
@@ -180,7 +207,7 @@ markdown -> converter -> html;
 
   [Also links](http://example.com)
 #+END_SRC
-** Markdown Syntax
+** Markdown Syntax 2
 #+BEGIN_SRC markdown
   1. Numbered Lists
      - Unordered lists
@@ -195,23 +222,19 @@ markdown -> converter -> html;
   ```
 #+END_SRC
 ** Markdown Syntax Example
-#+attr_latex: :width \textwidth
+# +attr_html: :width 80%
 [[file:images/mkdown-example.png]]
 ** Markdown Style Example
-#+attr_latex: :width \textwidth
+# +attr_html: :width 80%
 [[file:images/mkdown-custom-css.png]]
-
 ** Markdown to HTML
-#+attr_latex: :width 0.7\textwidth
+# +attr_html: :width 80%
 #+RESULTS:
-[[file:images/mkdown.png]]
-
-\pause
-#+begin_llnlsummaryenv
+[[file:images/bpw-mkdown.png]]
+------
 Converters have their own rules.
-#+end_llnlsummaryenv
 ** Additional Markdown Rules
-- GitHub-flavored-markdown (GFM) includes task lists and emojis.
+- [[https://github.github.com/gfm/][GitHub-flavored-markdown]] (GFM) includes task lists and emojis.
 - [[https://kramdown.gettalong.org][kramdown]] includes better handling of code blocks
 - [[https://pandoc.org][pandoc]] converts to/from any number of markup formats
 ** *Activity: Practice Markdown* (20 min)

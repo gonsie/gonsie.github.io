@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Building A Personal Website</title>
+<meta name="author" content="(Elsa Gonsiorowski)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/moon.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Building A Personal Website</h1><p class="subtitle">(HPC Cluster Academy)</p>
+<h2 class="author">Elsa Gonsiorowski</h2><h2 class="date">July 19, 2021</h2><p class="date">Created: 2021-07-06 Tue 17:24</p>
+</section>
+
+<section>
+<section id="slide-org74a1650">
+<h2 id="org74a1650"><span class="section-number-2">1</span> Goals</h2>
+<ul>
+<li>Set up a markdown and web development environment on your machine</li>
+<li>Refresh your resume</li>
+<li>Build a personal website</li>
+
+</ul>
+
+<p>
+Follow along: <a href="https://www.gonsie.com/gh-resume.html">https://www.gonsie.com/gh-resume.html</a>
+</p>
+</section>
+</section>
+<section>
+<section id="slide-orgb324658">
+<h2 id="orgb324658"><span class="section-number-2">2</span> Schedule</h2>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-right">1-1:30</td>
+<td class="org-left">About Me &amp; Setup</td>
+</tr>
+
+<tr>
+<td class="org-right">1<mark>30-2</mark>30</td>
+<td class="org-left">Crash course in HTML &amp; CSS</td>
+</tr>
+
+<tr>
+<td class="org-right">2<mark>30-3</mark>30</td>
+<td class="org-left">Markdown &amp; Your Resume</td>
+</tr>
+
+<tr>
+<td class="org-right">3:30-4</td>
+<td class="org-left">Deploying Static Websites</td>
+</tr>
+
+<tr>
+<td class="org-right">4-5</td>
+<td class="org-left">Build Your Website!</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section>
+<section id="slide-org1764d6c">
+<h2 id="org1764d6c"><span class="section-number-2">3</span> About Me &amp; Setup</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+</section>
+<section id="slide-orgc9da2ac">
+<h3 id="orgc9da2ac"><span class="section-number-3">3.1</span> Elsa Gonsiorowski</h3>
+<ul>
+<li>Joined LLNL / LC in 2016</li>
+<li>HPC I/O Specialist</li>
+<li>Working on <a href="https://computing.llnl.gov/projects/scalable-checkpoint-restart-for-mpi">SCR: Scalable Checkpoint Restart</a></li>
+<li>Part of the <a href="https://www.exascaleproject.org">ECP</a> <a href="https://ideas-productivity.org">IDEAS</a> Team working on <a href="https://bssw.io/blog_posts/productivity-and-sustainability-improvement-planning-psip">PSIP</a></li>
+<li>Excited about emacs, static websites, cmake</li>
+
+</ul>
+</section>
+<section id="slide-orgeec3187">
+<h3 id="orgeec3187"><span class="section-number-3">3.2</span> gonsie.com</h3>
+
+<div id="orgf611b0f" class="figure">
+<p><img src="images/bpw-gonsie-com.png" alt="Screenshot of gonsie.com" />
+</p>
+</div>
+</section>
+<section id="slide-org2ddec55">
+<h3 id="org2ddec55"><span class="section-number-3">3.3</span> github.com/gonsie</h3>
+
+<div id="org7829a98" class="figure">
+<p><img src="images/bpw-github-gonsie.png" alt="Screenshot of gonsie's profile on github.com" />
+</p>
+</div>
+</section>
+<section id="slide-org30f82c2">
+<h3 id="org30f82c2"><span class="section-number-3">3.4</span> gonsie.com/cv.html</h3>
+
+<div id="org72299af" class="figure">
+<p><img src="images/bpw-gonsie-cv.png" alt="Screenshot of Elsa's C.V." />
+</p>
+</div>
+</section>
+<section id="slide-org5378f50">
+<h3 id="org5378f50"><span class="section-number-3">3.5</span> Setup: Things You'll Need</h3>
+<ul>
+<li>Resume</li>
+<li>Text editor with Markdown, HTML, CSS support</li>
+<li>GitHub account</li>
+<li>Package manager to install Jekyll (optional)</li>
+
+</ul>
+</section>
+<section id="slide-org6c08fa8">
+<h3 id="org6c08fa8"><span class="section-number-3">3.6</span> Text Editor Support</h3>
+<ul>
+<li>Syntax highlighting, checking</li>
+<li>Indentation</li>
+<li>Export / preview support (may require additional software)</li>
+<li>Snippets</li>
+<li>Colors</li>
+
+</ul>
+</section>
+<section id="slide-orgf08fa74">
+<h3 id="orgf08fa74"><span class="section-number-3">3.7</span> Markdown</h3>
+<ul>
+<li>Emacs (<a href="https://github.com/jrblevin/markdown-mode">markdown-mode</a> / MELPA)</li>
+<li>Vim (<a href="https://github.com/plasticboy/vim-markdown">vim-markdown</a>)</li>
+<li>SublimeText (<a href="https://packagecontrol.io/search/markdown">packages: markdown</a>)</li>
+<li>Atom (<a href="https://atom.io/packages/search?q=markdown">packages: markdown</a>)</li>
+<li>VSCode (<a href="https://marketplace.visualstudio.com/search?term=markdown&amp;target=VSCode&amp;category=All%20categories&amp;sortBy=Relevance">extensions: markdown</a>)</li>
+<li>Web-based <a href="https://dillinger.io">Dillinger</a></li>
+
+</ul>
+</section>
+<section id="slide-org881ca1f">
+<h3 id="org881ca1f"><span class="section-number-3">3.8</span> Jekyll</h3>
+<ul>
+<li><a href="https://jekyllrb.com/docs/">Jekyll install instructions</a></li>
+
+</ul>
+</section>
+<section id="slide-orgafcd69a">
+<h3 id="orgafcd69a"><span class="section-number-3">3.9</span> <b>Activity: Setup (10 minutes)</b></h3>
+<div class="outline-text-3" id="text-3-9">
+</div>
+<ol class="org-ol">
+<li><a id="orgcadbb4e"></a>Setup<br />
+<ul>
+<li>Pick an editor and install packages</li>
+<li><i>optional</i> Install jekyll</li>
+<li>Find your most recent resume</li>
+
+</ul>
+</li>
+<li><a id="org4e044eb"></a>GitHub<br />
+<ol>
+<li>Create a profile on <a href="https://github.com">GitHub</a></li>
+<li>Follow <a href="https://github.com/gonsie">@gonsie</a></li>
+<li>Follow your friends!</li>
+
+</ol>
+</li>
+</ol>
+</section>
+</section>
+<section>
+<section id="slide-org0b08ddb">
+<h2 id="org0b08ddb"><span class="section-number-2">4</span> HTML &amp; CSS</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+</section>
+<section id="slide-org4372d49">
+<h3 id="org4372d49"><span class="section-number-3">4.1</span> Computer Languages</h3>
+<blockquote >
+<p>
+A <b>markup language</b> is a system for annotating a document in a way that is syntactically distinguishable from the text.
+</p>
+</blockquote>
+
+<blockquote >
+<p>
+A <b>style sheet language</b>, or <b>style language</b>, expresses the presentation of structured documents.
+</p>
+</blockquote>
+
+</section>
+<section id="slide-org65ea76b">
+<h3 id="org65ea76b"><span class="section-number-3">4.2</span> Computer Languages</h3>
+<div class="outline-text-3" id="text-4-2">
+</div>
+<ol class="org-ol">
+<li><a id="org321c595"></a>Markup<br />
+<ul>
+<li>Adds information to the content, such as hierarchy or emphasis.</li>
+<li>Example: HTML, Markdown, TeX, troff</li>
+
+</ul>
+</li>
+
+<li><a id="orgd58a300"></a>Style<br />
+<ul>
+<li>Describes how to display the content</li>
+<li>CSS, TeX class/style, editor color theme</li>
+
+</ul>
+</li>
+</ol>
+
+</section>
+<section id="slide-org6293a8d">
+<h3 id="org6293a8d"><span class="section-number-3">4.3</span> Markup Languages</h3>
+
+<div id="org4257b6e" class="figure">
+<p><img src="images/markup-word-cloup.png" alt="markup-word-cloup.png" />
+</p>
+</div>
+</section>
+<section id="slide-orgc76ede1">
+<h3 id="orgc76ede1"><span class="section-number-3">4.4</span> Beautiful Web Documents</h3>
+<ul>
+<li>HTML + CSS</li>
+<li>Structure and style a document</li>
+<li>Understood by browsers</li>
+<li><b>HTML</b> Elements are marked at the beginning and end with a tag</li>
+<li><b>HTML</b> Elements have attributes which provide additional information</li>
+<li><b>CSS</b> Selects an element and sets properties</li>
+<li><a href="https://www.w3schools.com/">W3Schools</a> is a great reference</li>
+
+</ul>
+</section>
+<section id="slide-org161b9a2">
+<h3 id="org161b9a2"><span class="section-number-3">4.5</span> Example &#x2013; HTML</h3>
+<div class="org-src-container">
+
+<pre  class="src src-html" ><code trim>&lt;<span style="color: #BF369A;">!DOCTYPE</span> html&gt;
+&lt;<span style="color: #95C76E;">html</span>&gt;
+  &lt;<span style="color: #95C76E;">head</span>&gt;
+    &lt;<span style="color: #95C76E;">link</span> <span style="color: #ffff00;">rel</span>=<span style="color: #E1404A;">"stylesheet"</span> <span style="color: #ffff00;">href</span>=<span style="color: #E1404A;">"basic.css"</span>/&gt;
+    &lt;<span style="color: #95C76E;">title</span>&gt;<span style="font-weight: bold; text-decoration: underline;">My web page</span>&lt;/<span style="color: #95C76E;">title</span>&gt;
+  &lt;/<span style="color: #95C76E;">head</span>&gt;
+  &lt;<span style="color: #95C76E;">body</span>&gt;
+    &lt;<span style="color: #95C76E;">p</span> <span style="color: #ffff00;">class</span>=<span style="color: #E1404A;">"ugly"</span>&gt;This is some text on my webpage&lt;/<span style="color: #95C76E;">p</span>&gt;
+  &lt;/<span style="color: #95C76E;">body</span>&gt;
+&lt;/<span style="color: #95C76E;">html</span>&gt;
+</code></pre>
+</div>
+</section>
+<section id="slide-orgfa2bc23">
+<h3 id="orgfa2bc23"><span class="section-number-3">4.6</span> Example &#x2013; CSS</h3>
+<div class="org-src-container">
+
+<pre  class="src src-css" ><code trim><span style="color: #95C76E;">body </span>{
+<span style="color: #BF369A;">color</span>: <span style="color: #ffffff; background-color: #0000ff;">blue</span>;
+}
+<span style="color: #95C76E;">p.ugly </span>{
+<span style="color: #BF369A;">border-bottom</span>: 1px dotted <span style="color: #ffffff; background-color: #999;">#999</span>;
+}
+</code></pre>
+</div>
+</section>
+<section id="slide-org92dfcfe">
+<h3 id="org92dfcfe"><span class="section-number-3">4.7</span> Example &#x2013; Rendered</h3>
+
+<div id="orgfd5f9a8" class="figure">
+<p><img src="images/basic-page.png" alt="basic-page.png" />
+</p>
+</div>
+
+</section>
+<section id="slide-orgd3a15ab">
+<h3 id="orgd3a15ab"><span class="section-number-3">4.8</span> Displaying a Web page</h3>
+<ol>
+<li>Parse HTML to construct DOM tree  (Document Object Model)</li>
+<li>Render tree construction / apply CSS</li>
+<li>Layout the elements</li>
+<li>Draw the page on the screen</li>
+
+</ol>
+</section>
+<section id="slide-org61fad49">
+<h3 id="org61fad49"><span class="section-number-3">4.9</span> <b>Activity: Make a Web page</b> (10 min)</h3>
+<ol>
+<li>Edit the basic HTML + CSS pages with your editor (<a href="basic.html">basic.html</a> and <a href="basic.css">basic.css</a>)</li>
+<li>"Open" the basic.html file using your browser</li>
+<li>Add some more HTML and/or CSS
+<ul>
+<li><a href="https://www.w3schools.com/tags/default.asp">List of HTML elements</a></li>
+<li><a href="https://www.w3schools.com/cssref/default.asp">CSS Reference</a></li>
+
+</ul></li>
+
+</ol>
+<hr />
+<div class="llnlsummaryenv" id="org39febcd">
+<p>
+Do you need to run the web server to view the page you created?
+What is the URL of your page?
+</p>
+
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgc820d7d">
+<h2 id="orgc820d7d"><span class="section-number-2">5</span> Markdown &amp; Your Resume</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+</section>
+<section id="slide-org613d1fb">
+<h3 id="org613d1fb"><span class="section-number-3">5.1</span> Markdown</h3>
+<ul>
+<li>Designed by <a href="https://daringfireball.net">John Gruber (Daring Fireball)</a></li>
+<li>Defined syntax for translating text to HTML.</li>
+<li>A superset of HTML</li>
+<li>Used extensively in software communities.</li>
+
+</ul>
+</section>
+<section id="slide-orgd53efd5">
+<h3 id="orgd53efd5"><span class="section-number-3">5.2</span> Markdown to HTML</h3>
+
+<div id="org4a0807b" class="figure">
+<p><img src="images/bpw-mkdown.png" alt="bpw-mkdown.png" />
+</p>
+</div>
+</section>
+<section id="slide-orge8a0eae">
+<h3 id="orge8a0eae"><span class="section-number-3">5.3</span> Markdown Syntax 1</h3>
+<div class="org-src-container">
+
+<pre  class="src src-markdown" ><code trim><span style="color: #b3b3b3;"># </span><span style="color: #95C76E; font-weight: bold;">h1 Heading</span>
+<span style="color: #b3b3b3;">## </span><span style="color: #95C76E; font-weight: bold;">h2 Heading</span>
+<span style="color: #b3b3b3;">### </span><span style="color: #95C76E; font-weight: bold;">h3 Heading</span>
+
+<span style="color: #b3b3b3;">---</span>
+
+Emphasis with <span style="color: #b3b3b3;">**</span><span style="font-weight: bold;">bold</span><span style="color: #b3b3b3;">**</span>, <span style="color: #b3b3b3;">*</span><span style="font-style: italic;">italic</span><span style="color: #b3b3b3;">*</span>, or <span style="color: #b3b3b3;">~~</span><span style="text-decoration: line-through;">strikethrough</span><span style="color: #b3b3b3;">~~</span> text.
+
+<span style="color: #b3b3b3;">&gt;</span><span style="color: #E1404A;"> Blockquote for included text</span>
+
+<span style="color: #b3b3b3;">[</span><span style="color: #536fd6; text-decoration: underline;">Also links</span><span style="color: #b3b3b3;">](</span><span style="color: #E1404A;">http://example.com</span><span style="color: #b3b3b3;">)</span>
+</code></pre>
+</div>
+</section>
+<section id="slide-orgb55c445">
+<h3 id="orgb55c445"><span class="section-number-3">5.4</span> Markdown Syntax 2</h3>
+<div class="org-src-container">
+
+<pre  class="src src-markdown" ><code trim><span style="color: #b3b3b3;">1.</span> Numbered Lists
+   <span style="color: #b3b3b3;">-</span> Unordered lists
+   <span style="color: #b3b3b3;">*</span> mixed marks
+   <span style="color: #b3b3b3;">+</span> like this
+<span style="color: #b3b3b3;">7.</span> Only the first number matters
+
+Support for <span style="color: #b3b3b3;">`</span><span style="color: #8B86CE;">inline code</span><span style="color: #b3b3b3;">`</span> and code blocks:
+
+<span style="color: #b3b3b3;">```</span>
+<span style="color: #8B86CE;">for (int i = 0; i &lt; 100; i++) printf("Hello World!\n");</span>
+<span style="color: #b3b3b3;">```</span>
+</code></pre>
+</div>
+</section>
+<section id="slide-orga5232bd">
+<h3 id="orga5232bd"><span class="section-number-3">5.5</span> Markdown Syntax Example</h3>
+
+<div id="org27b7351" class="figure">
+<p><img src="images/mkdown-example.png" alt="mkdown-example.png" />
+</p>
+</div>
+</section>
+<section id="slide-org91af6a3">
+<h3 id="org91af6a3"><span class="section-number-3">5.6</span> Markdown Style Example</h3>
+
+<div id="orge011b0f" class="figure">
+<p><img src="images/mkdown-custom-css.png" alt="mkdown-custom-css.png" />
+</p>
+</div>
+</section>
+<section id="slide-orgefa68ed">
+<h3 id="orgefa68ed"><span class="section-number-3">5.7</span> Markdown to HTML</h3>
+
+<div id="org0d76451" class="figure">
+<p><img src="images/bpw-mkdown.png" alt="bpw-mkdown.png" />
+</p>
+</div>
+<hr />
+<p>
+Converters have their own rules.
+</p>
+</section>
+<section id="slide-org61c9ebe">
+<h3 id="org61c9ebe"><span class="section-number-3">5.8</span> Additional Markdown Rules</h3>
+<ul>
+<li><a href="https://github.github.com/gfm/">GitHub-flavored-markdown</a> (GFM) includes task lists and emojis.</li>
+<li><a href="https://kramdown.gettalong.org">kramdown</a> includes better handling of code blocks</li>
+<li><a href="https://pandoc.org">pandoc</a> converts to/from any number of markup formats</li>
+
+</ul>
+</section>
+<section id="slide-org94a9f06">
+<h3 id="org94a9f06"><span class="section-number-3">5.9</span> <b>Activity: Practice Markdown</b> (20 min)</h3>
+<p>
+Practice writing markdown syntax by re-writing your resume in markdown.
+</p>
+
+<ul>
+<li>Your name is a level 1 heading</li>
+<li>Sections are level 2 headings</li>
+<li>Different companies are level 3 headings</li>
+<li>Be sure to use lists and emphasis</li>
+<li>Additional resources: <a href="https://www.markdownguide.org">Markdown Guide</a></li>
+
+</ul>
+
+</section>
+</section>
+<section>
+<section id="slide-org96bdf67">
+<h2 id="org96bdf67"><span class="section-number-2">6</span> Static Website</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+</section>
+<section id="slide-orgb5d9f8a">
+<h3 id="orgb5d9f8a"><span class="section-number-3">6.1</span> Static vs Dynamic Websites</h3>
+<ul>
+<li>Web pages with fixed content</li>
+<li>No backing database / dynamic server</li>
+<li>No way to "log in" to the site</li>
+
+</ul>
+</section>
+<section id="slide-orgc426d41">
+<h3 id="orgc426d41"><span class="section-number-3">6.2</span> Jekyll</h3>
+<ul>
+<li>Static website generator</li>
+<li>Structured on top of basic markdown</li>
+<li>Generate HTML and CSS from source code</li>
+
+</ul>
+</section>
+<section id="slide-orga77a9bb">
+<h3 id="orga77a9bb"><span class="section-number-3">6.3</span> Jekyll</h3>
+
+<div id="org0b2fba9" class="figure">
+<p><img src="images/jekyll.png" alt="jekyll.png" />
+</p>
+</div>
+</section>
+<section id="slide-org8ebce6e">
+<h3 id="org8ebce6e"><span class="section-number-3">6.4</span> Jekyll Front Matter</h3>
+<ul>
+<li>Jekyll parses markdown pages with extra <i>front matter</i>
+<ul>
+<li>Must be on line 1 of your <code>.md</code> file</li>
+<li>Pass information about the page to jekyll to allow for proper rendering</li>
+
+</ul></li>
+<li>Use this front matter on your <code>resume.md</code> file:</li>
+
+</ul>
+<div class="org-src-container">
+
+<pre  class="src src-jekyll" ><code trim>---
+layout: resume
+title: "My Awesome Resume"
+---
+</code></pre>
+</div>
+</section>
+<section id="slide-org11b84eb">
+<h3 id="org11b84eb"><span class="section-number-3">6.5</span> Liquid</h3>
+<ul>
+<li>Templating language</li>
+<li>Allows hierarchical construction of a jekyll web page</li>
+<li>Access to variables, programming constructs</li>
+
+</ul>
+</section>
+<section id="slide-orgfe6ce69">
+<h3 id="orgfe6ce69"><span class="section-number-3">6.6</span> GitHub Pages</h3>
+<ul>
+<li><i>FREE</i> websites for you and your projects</li>
+<li>Open source repos get free website hosting</li>
+<li>Can serve basic HTML or Jekyll site</li>
+
+</ul>
+</section>
+<section id="slide-org88e94e3">
+<h3 id="org88e94e3"><span class="section-number-3">6.7</span> <b>Activity: Start your website</b> (15 min)</h3>
+<ul>
+<li>Fork <a href="https://github.com/gonsie/jekyll-resume">https://github.com/gonsie/jekyll-resume</a></li>
+<li>Rename to <i>username</i>.github.io</li>
+<li>Make sure <b>GitHub Pages</b> is turned on (from the master branch)</li>
+<li>Clone your repo and update the resume</li>
+<li>Push your changes</li>
+<li>Visit your website!</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org1434c47">
+<h2 id="org1434c47"><span class="section-number-2">7</span> Building a Website</h2>
+<div class="outline-text-2" id="text-7">
+</div>
+</section>
+<section id="slide-org5d0b8b4">
+<h3 id="org5d0b8b4"><span class="section-number-3">7.1</span> Web Conventions</h3>
+<pre  class="example">
+https://gonsie.com
+</pre>
+
+<ol class="org-ol">
+<li><a id="org239f784"></a>DNS: Domain Name System<br />
+<ul>
+<li>Hierarchical and decentralized name mapping to IP</li>
+
+</ul>
+</li>
+<li><a id="orgd7642b7"></a>Default Homepage<br />
+<ul>
+<li><code>index.html</code></li>
+
+</ul>
+</li>
+<li><a id="org3f82601"></a>Subdomain<br />
+<ul>
+<li>Allows name mapping at the destination</li>
+
+</ul>
+</li>
+</ol>
+</section>
+<section id="slide-org674f300">
+<h3 id="org674f300"><span class="section-number-3">7.2</span> Web Conventions</h3>
+<pre  class="example">
+https://gonsie.github.io/index.html
+</pre>
+
+<ol class="org-ol">
+<li><a id="org6b8e561"></a>DNS: Domain Name System<br />
+<ul>
+<li>Hierarchical and decentralized name mapping to IP</li>
+
+</ul>
+</li>
+<li><a id="org0cdf501"></a>Default Homepage<br />
+<ul>
+<li><code>index.html</code></li>
+
+</ul>
+</li>
+<li><a id="orgb244a88"></a>Subdomain<br />
+<ul>
+<li>Allows name mapping at the destination</li>
+
+</ul>
+</li>
+</ol>
+</section>
+<section id="slide-org9f1f738">
+<h3 id="org9f1f738"><span class="section-number-3">7.3</span> GitHub Pages</h3>
+<ul>
+<li><code>username.github.io</code></li>
+<li><code>username.github.io/repo</code></li>
+<li>can support custom domains</li>
+
+</ul>
+</section>
+<section id="slide-orgec004df">
+<h3 id="orgec004df"><span class="section-number-3">7.4</span> Building Your Personal Brand</h3>
+<ul>
+<li>How you present yourself to the world</li>
+<li>Username, profile image(s), profile information</li>
+<li>Join the blogosphere / independent web and own your content</li>
+<li>Build your own network with RSS</li>
+
+</ul>
+</section>
+<section id="slide-orge429265">
+<h3 id="orge429265"><span class="section-number-3">7.5</span> Personal Site Demo</h3>
+</section>
+<section id="slide-org33602f4">
+<h3 id="org33602f4"><span class="section-number-3">7.6</span> <b>Activity: Build Your Web Site</b> (60 min)</h3>
+<ul>
+<li>Look up a domain (try <a href="https://namecheap.com">namecheap</a> or <a href="https://hover.com">hover</a>). How much does it cost?</li>
+<li>Find a theme (<a href="http://jekyllthemes.org">jekyllthemes.org</a>) and tweak it for your site</li>
+<li>Write an index and/or about page</li>
+<li>Brainstorm some blog posts with your neighbor</li>
+<li>Write a blog post</li>
+<li>Add an RSS feed to your site (hint: can be done in <code>_config.yml</code>)</li>
+<li>Use Liquid to add a list of blog posts to the homepage</li>
+<li>Enable HTTPS on your site</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orge5f488f">
+<h2 id="orge5f488f"><span class="section-number-2">8</span> Fun</h2>
+<div class="outline-text-2" id="text-8">
+</div>
+</section>
+<section id="slide-org38faa0e">
+<h3 id="org38faa0e"><span class="section-number-3">8.1</span> Have Fun</h3>
+<ul>
+<li><a href="https://secretgeek.github.io/html_wysiwyg/html.html">This page is a truly naked, brutalist html quine.</a></li>
+<li><a href="https://jrl.ninja/etc/1/">58 bytes of css to look great nearly everywhere</a></li>
+<li>Get Social on reddit or <a href="https://dev.to">dev.to</a></li>
+
+</ul>
+</section>
+<section id="slide-org7f7ff46">
+<h3 id="org7f7ff46"><span class="section-number-3">8.2</span> <b>Activity: GitHub Secret</b></h3>
+<ul>
+<li>Create a new repo called <i>username</i></li>
+<li>Add a <code>README.md</code> file</li>
+<li>Visit your GitHub Profile (<code>github.com/username</code>)</li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+height:1000,
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+
+
+</script>
+</body>
+</html>
