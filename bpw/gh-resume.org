@@ -14,21 +14,22 @@
 - Set up a markdown and web development environment on your machine
 - Refresh your resume
 - Build a personal website
+- Have fun!
 
-Follow along: [[https://www.gonsie.com/gh-resume.html]]
-* Schedule
-|    1-1:30 | About Me & Setup           |
-| 1:30-2:30 | Crash course in HTML & CSS |
-| 2:30-3:30 | Markdown & Your Resume     |
-|    3:30-4 | Deploying Static Websites  |
-|       4-5 | Build Your Website!        |
+Follow along: [[https://www.gonsie.com/bpw/index.html]]
+** Schedule
+|    1-1:30 | About Me & Setup                |
+| 1:30-2:30 | Crash course in HTML & CSS      |
+| 2:30-3:30 | Markdown & Your Resume          |
+|    3:30-4 | Deploying Static Websites       |
+|       4-5 | Have Fun Building Your Website! |
 * About Me & Setup
 ** Elsa Gonsiorowski
 - Joined LLNL / LC in 2016
 - HPC I/O Specialist
 - Working on [[https://computing.llnl.gov/projects/scalable-checkpoint-restart-for-mpi][SCR: Scalable Checkpoint Restart]]
 - Part of the [[https://www.exascaleproject.org][ECP]] [[https://ideas-productivity.org][IDEAS]] Team working on [[https://bssw.io/blog_posts/productivity-and-sustainability-improvement-planning-psip][PSIP]]
-- Excited about emacs, static websites, cmake
+- Excited about emacs, org-mode, static websites, fish shell, cmake, documentation, crossfit, rowing, knitting
 ** gonsie.com
 #+ATTR_HTML: :alt Screenshot of gonsie.com
 [[file:images/bpw-gonsie-com.png]]
@@ -65,13 +66,11 @@ Follow along: [[https://www.gonsie.com/gh-resume.html]]
 *** Linux
 - =apt-get= for Ubuntu/Debian distros
 - =yum= for RedHat/CentOS distros
-** Jekyll
-- [[https://jekyllrb.com/docs/][Jekyll install instructions]]
-** *Activity: Setup (10 minutes)*
+** *Activity: Setup* /1:30/
 *** Setup
 - Pick an editor and install packages
-- /optional/ Install jekyll
 - Find your most recent resume
+- Install [[https://jekyllrb.com/docs/][Jekyll]] /(optional)/
 *** GitHub
 1. Create a profile on [[https://github.com][GitHub]]
 2. Follow [[https://github.com/gonsie][@gonsie]]
@@ -161,16 +160,22 @@ border-bottom: 1px dotted #999;
 2. Render tree construction / apply CSS
 3. Layout the elements
 4. Draw the page on the screen
-** *Activity: Make a Web page* (10 min)
-1. Edit the basic HTML + CSS pages with your editor ([[file:basic.html][basic.html]] and [[file:basic.css][basic.css]])
+** *Activity: Make a Web page* /2:30/
+1. Edit the basic HTML + CSS pages with your editor ([[file:basic.html][basic.html]] and [[file:basic.css][basic.css]] right-click to download)
 2. "Open" the basic.html file using your browser
 3. Add some more HTML and/or CSS
    - [[https://www.w3schools.com/tags/default.asp][List of HTML elements]]
    - [[https://www.w3schools.com/cssref/default.asp][CSS Reference]]
+
 ------
-#+begin_llnlsummaryenv
-Do you need to run the web server to view the page you created?@@latex:\\@@
-What is the URL of your page?
+
+Try adding this:
+
+~<marquee>Some text</marquee>~
+*** COMMENT POLL
+- Do you need to run the web server to view the page you created?
+- What is the URL of your page?
+- What is the most interesting tag?
 #+end_llnlsummaryenv
 *** COMMENT POLL
 #+begin_quote
@@ -237,37 +242,43 @@ Converters have their own rules.
 - [[https://github.github.com/gfm/][GitHub-flavored-markdown]] (GFM) includes task lists and emojis.
 - [[https://kramdown.gettalong.org][kramdown]] includes better handling of code blocks
 - [[https://pandoc.org][pandoc]] converts to/from any number of markup formats
-** *Activity: Practice Markdown* (20 min)
-Practice writing markdown syntax by re-writing your resume in markdown.
-
+** *Activity: Practice Markdown* /3:30/
+Practice writing markdown syntax by re-writing your resume in markdown, with the following rules:
+- Create a file =resume.md=
 - Your name is a level 1 heading
 - Sections are level 2 headings
 - Different companies are level 3 headings
 - Be sure to use lists and emphasis
 - Additional resources: [[https://www.markdownguide.org][Markdown Guide]]
-
-* Static Website
+*** COMMENT POLL
+* Static Websites
 ** Static vs Dynamic Websites
 - Web pages with fixed content
 - No backing database / dynamic server
 - No way to "log in" to the site
+** Static Site Generators
+- [[https://jekyllrb.com][Jekyll]] (Ruby)
+- [[https://gohugo.io][Hugo]] (Go)
+- [[https://www.11ty.dev][Eleventy]] (Javascript)
+- [[https://blog.getpelican.com][Pelican]] (Python)
 ** Jekyll
-- Static website generator
-- Structured on top of basic markdown
+- Defines a file structure and file format
+- Built on top of markdown
 - Generate HTML and CSS from source code
 ** Jekyll
 #+BEGIN_SRC dot :file images/jekyll.png :cmdline -Kdot -Tpng
-digraph g {
-  rankdir = LR;
-  node [shape="box"];
-  Jekyll;
-  node [shape="ellipse"];
-  markdown -> Jekyll -> website;
-  HTML -> Jekyll;
-  Sass -> Jekyll
-  CSS -> Jekyll;
-  Liquid -> Jekyll;
-}
+  digraph g {
+    rankdir = LR;
+    node [shape="box"];
+    Jekyll;
+    node [shape="ellipse"];
+    website [label="Website:\nA set of related\nweb pages (HTML + CSS)"]
+    markdown -> Jekyll -> website;
+    HTML -> Jekyll;
+    Sass -> Jekyll
+    CSS -> Jekyll;
+    Liquid -> Jekyll;
+  }
 #+END_SRC
 
 #+attr_latex: :width 0.7\textwidth
@@ -277,28 +288,30 @@ digraph g {
 - Jekyll parses markdown pages with extra /front matter/
   - Must be on line 1 of your =.md= file
   - Pass information about the page to jekyll to allow for proper rendering
+  - must be followed by a blank line
 - Use this front matter on your =resume.md= file:
 #+begin_src jekyll
 ---
 layout: resume
 title: "My Awesome Resume"
 ---
+
 #+end_src
 ** Liquid
 - Templating language
 - Allows hierarchical construction of a jekyll web page
 - Access to variables, programming constructs
-** GitHub Pages
+** GitHub and GitLab Pages
 - /FREE/ websites for you and your projects
 - Open source repos get free website hosting
-- Can serve basic HTML or Jekyll site
-** *Activity: Start your website* (15 min)
+- Github: Can automatically serve HTML or a Jekyll site
+- GitLab: Can deploy any static site using CI (examples provided)
+** *Activity: Start your website* /4:00/
 - Fork [[https://github.com/gonsie/jekyll-resume]]
-- Rename to /username/.github.io
-- Make sure *GitHub Pages* is turned on (from the master branch)
-- Clone your repo and update the resume
+- In settings: make sure *GitHub Pages* is turned on (from the main branch)
+- Clone your repo and update the =resume.md= file
 - Push your changes
-- Visit your website!
+- Visit your website at =<USERNAME>.github.io/jekyll-resume/resume.html=
 * Building a Website
 ** Web Conventions
 #+BEGIN_SRC
@@ -333,8 +346,9 @@ https://gonsie.github.io/index.html
 - Join the blogosphere / independent web and own your content
 - Build your own network with RSS
 ** Personal Site Demo
-** *Activity: Build Your Web Site* (60 min)
+** *Activity: Build Your Web Site* /5:00/
 - Look up a domain (try [[https://namecheap.com][namecheap]] or [[https://hover.com][hover]]). How much does it cost?
+- Explore different Static Site Generators
 - Find a theme ([[http://jekyllthemes.org][jekyllthemes.org]]) and tweak it for your site
 - Write an index and/or about page
 - Brainstorm some blog posts with your neighbor
