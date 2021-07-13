@@ -1,0 +1,117 @@
+#+title: IHPCSS Mentoring: Career Workshop
+#+author: Elsa Gonsiorowski
+#+date: July  8, 2021
+
+#+options: H:2 toc:nil
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+REVEAL_INIT_OPTIONS: height:1000
+#+REVEAL_THEME: beige
+
+* Session Overview
+** Schedule
+|--------+------------------------------|
+| 15 min | Career Paths Talk            |
+| 15 min | Peer-to-peer resume review 1 |
+| 15 min | Peer-to-peer resume review 2 |
+|--------+------------------------------|
+** Disclaimer
+- This is a /quick/ talk, with links to many other resources.
+- You don't need to know what you exactly what you want to do, but it's good to have an idea of the possibilities.
+- Talk to the staff here about their career paths and see which options appeal to you.
+** General Career Paths
+[[file:3-career-paths.png]]
+* Academia
+** Academia
+- Teaching at a college or university
+- Each institution has a difference emphasis on 3 areas:
+  - Teaching Responsibilities
+  - Research (winning grants and writing publications)
+  - Community Service (departmental roles, conference & journal organization)
+- Some initial funding comes from the school, but then you must find more money
+** Academic Career Path
+1. Post Doc (optional)
+2. Assistant Professor
+3. Tenure
+4. Full Professor
+** Academia Pros
+- You get to work with students through teaching and research
+- You get to build your own lab
+- Once you have tenure...
+  - You are "unfireable and almost rich"
+  - Can explore any research topic you want (/if you can get funding/)
+  - Long term career path and stability
+** Academia Cons
+- You /have/ to work with students, teaching whatever classes need to be taught
+- Getting tenure is difficult
+- You have to move to wherever the school is
+** How to Get Started
+- Try teaching / being a teaching assistant
+- Try mentoring undergraduates, new graduate students
+- Talk to professors in your department
+* Industry
+** Industry
+- Beholden to customers, must create products to sell
+- Can work on government contracts / grants
+** Industry Career Path
+- Varies by scientific field & company
+- Larger companies typically have well-defined career paths with a specific progression of job titles
+- May look something like:
+  1. Individual contributor
+  2. Project lead
+  3. Technical Expert
+** Industry Pros
+- Pay is usually higher than academia
+- Company perks: free food, stock options, bonuses, sabbaticals
+- May have the freedom to work remotely or more options of where in world/country to work
+- You work with/for the customer
+- Higher turnover, you can have a more varied career and change roles every few years
+** Industry Cons
+- You have to make a product / make a profit for the company
+- Less freedom to do "pure" research
+- You work with/for the customer
+- Company culture may not have the best work/life balance
+** How to Get Started
+- Look for summer internship programs
+- Go to career fairs / recruiting sessions
+  - at your university
+  - at conferences
+* Research Lab
+** Research Lab
+- Could be associated with a University or Government
+- Funding could depend on current political climate or vary depending on your current project
+- Best of both academia and industry worlds:
+  - No teaching responsibilities (but option to work with summer interns)
+  - Understand basic research activities, such as publication and conference attendance
+** Research Lab Career Path
+1. Individual contributor
+2. Project Lead
+3a. Management
+3b. Technical Expert
+** Research Lab Pros
+- Opportunity to do "pure" research/get grants
+- Some labs may have a "mission"
+- No teaching responsibilities
+- Culture typically has good work/life balance
+** Research Lab Cons
+- Government bureaucracy
+- Federal funding, not as many perks as industry
+- Not as well paid
+- Employees are typically there for a long time, some can become "Retired In Place"
+** How to Get Started
+- Look for lab people in your research area, ask about an internship
+- Look for summer internship programs
+- Research if there are citizenship preferences for different labs
+* Resources
+** Resources
+- [[https://bookshop.org/books/a-phd-is-not-enough-a-guide-to-survival-in-science/9780465022229][_A PhD is Not Enough!_]] by Peter J. Feibelman
+- [[http://sciencecareers.sciencemag.org/career_magazine/previous_issues/articles/2013_11_21/caredit.a1300256][The Postdoc: A Special Kind of Hell]]
+* Peer-to-Peer Resume Review
+** Peer-to-Peer Resume Review
+- See the "[[file:resume-review.pdf][Reviewing a Resume or CV]]" handout
+- We will do 2 peer-to-peer sessions, 15 minutes each
+  - 5 minutes - Exchange resumes and review individually
+  - 5 minutes - Discuss one person's resume
+  - 5 minutes - Discuss other person's resume
+- We will announce when to switch
+** Start the timer!
+[[https://www.timeanddate.com/timer/]]
