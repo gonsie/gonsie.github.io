@@ -362,3 +362,9 @@ https://gonsie.github.io/index.html
 - Visit your GitHub Profile (=github.com/username=)
 ** *Activity: Show & Tell*
 - What did you build?
+* Credits
+Created with [[https://www.gnu.org/software/emacs/][Emacs]], [[https://orgmode.org][Org Mode]], and [[https://revealjs.com][RevealJS]].
+
+#+begin_export html
+View the <a href="./gh-resume.org">source</a>.
+#+end_export
