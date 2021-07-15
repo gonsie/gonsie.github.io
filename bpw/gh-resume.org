@@ -46,6 +46,7 @@ Follow along: [[https://www.gonsie.com/bpw/index.html]]
 - Text editor with Markdown, HTML, CSS support
 - GitHub account
 - Package manager to install Jekyll (optional)
+- Mattermost
 ** Text Editor Support
 - Syntax highlighting, checking
 - Indentation
@@ -73,14 +74,15 @@ Follow along: [[https://www.gonsie.com/bpw/index.html]]
 - Pick an editor and install packages
 - Find your most recent resume
 - Install [[https://jekyllrb.com/docs/][Jekyll]] /(optional)/
+- Join the Mattermost channel #bpw
 *** GitHub
 1. Create a profile on [[https://github.com][GitHub]]
 2. Follow [[https://github.com/gonsie][@gonsie]]
 3. Follow your friends!
-*** COMMENT POLL
-#+begin_quote
+** POLL
+#+begin_src
 /poll "Which editor are you using?" "emacs" "vim" "sublimetext" "atom" "vscode" "web" "other"
-#+end_quote
+#+end_src
 * HTML & CSS
 ** Computer Languages
 #+BEGIN_QUOTE
@@ -174,15 +176,10 @@ border-bottom: 1px dotted #999;
 Try adding this:
 
 ~<marquee>Some text</marquee>~
-*** COMMENT POLL
+** POLL
 - Do you need to run the web server to view the page you created?
 - What is the URL of your page?
 - What is the most interesting tag?
-#+end_llnlsummaryenv
-*** COMMENT POLL
-#+begin_quote
-"What is your favorite HTML tag?"
-#+end_quote
 * Markdown & Your Resume
 ** Markdown
 - Designed by [[https://daringfireball.net][John Gruber (Daring Fireball)]]
@@ -252,7 +249,8 @@ Practice writing markdown syntax by re-writing your resume in markdown, with the
 - Different companies are level 3 headings
 - Be sure to use lists and emphasis
 - Additional resources: [[https://www.markdownguide.org][Markdown Guide]]
-*** COMMENT POLL
+** POLL
+- How does markdown compare to HTML?
 * Static Websites
 ** Static vs Dynamic Websites
 - Web pages with fixed content
@@ -309,6 +307,9 @@ title: "My Awesome Resume"
 - Clone your repo and update the =resume.md= file
 - Push your changes
 - Visit your website at =<USERNAME>.github.io/jekyll-resume/resume.html=
+** POLL
+- Any issues?
+- How does your resume look?
 * Building a Website
 ** Web Conventions
 #+BEGIN_SRC
@@ -341,15 +342,14 @@ https://gonsie.github.io/index.html
 ** *Activity: Build Your Website* /5:00/
 - Look up a domain (try [[https://namecheap.com][namecheap]] or [[https://hover.com][hover]]). How much does it cost?
 - Explore different Static Site Generators
-- Find a theme (most come with instructions to get started)
+- Find a theme (most come with instructions)
   - [[https://jamstackthemes.dev/ssg/]]
   - [[http://jekyllthemes.org][jekyllthemes.org]]
   - [[https://themes.gohugo.io]]
 - Set up a [[https://pages.github.com][GitHub Pages]] or [[https://docs.gitlab.com/ee/user/project/pages/][GitLab pages]] website
 - Write an index and/or about page
-- Brainstorm some blog posts with your neighbor
-- Write a blog post
-- Add an RSS feed to your site (hint: can be done in =_config.yml=)
+- Brainstorm some blog posts
+- Add an RSS feed to your site
 - Use Liquid to add a list of blog posts to the homepage
 - Enable HTTPS on your site
 * Fun
