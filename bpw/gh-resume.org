@@ -1,5 +1,4 @@
 #+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
-# +EPRESENT_FRAME_LEVEL: 2
 #+REVEAL_INIT_OPTIONS: height:1000
 #+REVEAL_THEME: blood
 
@@ -250,6 +249,7 @@ Practice writing markdown syntax by re-writing your resume in markdown, with the
 - Be sure to use lists and emphasis
 - Additional resources: [[https://www.markdownguide.org][Markdown Guide]]
 ** POLL
+- Does your editor allow you to preview the document?
 - How does markdown compare to HTML?
 * Static Websites
 ** Static vs Dynamic Websites
@@ -304,7 +304,7 @@ title: "My Awesome Resume"
 ** *Activity: Your Resume Website* /3:00/
 - Fork [[https://github.com/gonsie/jekyll-resume]]
 - In settings: make sure *GitHub Pages* is turned on (from the main branch)
-- Clone your repo and update the =resume.md= file
+- Clone your repo and update the =resume.md= file (with the front matter!)
 - Push your changes
 - Visit your website at =<USERNAME>.github.io/jekyll-resume/resume.html=
 ** POLL
