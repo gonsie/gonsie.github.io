@@ -14,6 +14,10 @@
 | 15 min | Peer-to-peer resume review 1 |
 | 15 min | Peer-to-peer resume review 2 |
 |--------+------------------------------|
+
+Follow along at
+
+[[http://gonsie.com/ihpcss/career-paths.html]]
 ** Disclaimer
 - This is a /quick/ talk, with links to some other resources.
 - You don't need to know exactly what you want to do, but it's good to have an idea of the possibilities.
