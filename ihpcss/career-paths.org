@@ -1,6 +1,6 @@
 #+title: IHPCSS Mentoring: Career Workshop
 #+author: Elsa Gonsiorowski
-#+date: July  8, 2021
+#+date: July  23, 2021
 
 #+options: H:2 toc:nil
 #+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
