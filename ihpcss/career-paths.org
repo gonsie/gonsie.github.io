@@ -15,9 +15,10 @@
 | 15 min | Peer-to-peer resume review 2 |
 |--------+------------------------------|
 ** Disclaimer
-- This is a /quick/ talk, with links to many other resources.
-- You don't need to know what you exactly what you want to do, but it's good to have an idea of the possibilities.
-- Talk to the staff here about their career paths and see which options appeal to you.
+- This is a /quick/ talk, with links to some other resources.
+- You don't need to know exactly what you want to do, but it's good to have an idea of the possibilities.
+- Talk to the staff here about their career experiences and see which options appeal to you.
+  - A good place to do this will be at Monday's mentoring session: The Resource Fair
 ** General Career Paths
 [[file:3-career-paths.png]]
 * Academia
@@ -28,9 +29,10 @@
   - Research (winning grants and writing publications)
   - Community Service (departmental roles, conference & journal organization)
 - Some initial funding comes from the school, but then you must find more money
-** Academic Career Path
+** Academic Career Path (US)
+/titles may be different in different countries/
 1. Post Doc (optional)
-2. Assistant Professor
+2. Assistant Professor, tenure track
 3. Tenure
 4. Full Professor
 ** Academia Pros
@@ -75,28 +77,33 @@
 - Go to career fairs / recruiting sessions
   - at your university
   - at conferences
-* Research Lab
-** Research Lab
-- Could be associated with a University or Government
+* Supercomputer Center
+** Supercomputer Center
+- Could be associated with a University or Government Research lab
 - Funding could depend on current political climate or vary depending on your current project
 - Best of both academia and industry worlds:
-  - No teaching responsibilities (but option to work with summer interns)
+  - No required teaching responsibilities
+    - option to work with summer interns
+    - possibility to do HPC training sessions
   - Understand basic research activities, such as publication and conference attendance
-** Research Lab Career Path
-1. Individual contributor
-2. Project Lead
+** Supercomputer Center Career Path
+/many paths available, depending on role/
+1. Individual contributor; Consultant/user support; Trainer
+2. Project or Team Lead
 3a. Management
 3b. Technical Expert
-** Research Lab Pros
+** Supercomputer Center Pros
+- Opportunity to do a specific role, such as user support or application development
 - Opportunity to do "pure" research/get grants
 - Some labs may have a "mission"
-- No teaching responsibilities
+- No required teaching responsibilities
 - Culture typically has good work/life balance
-** Research Lab Cons
+** Supercomputer Center Cons
 - Government bureaucracy
 - Federal funding, not as many perks as industry
 - Not as well paid
 - Employees are typically there for a long time, some can become "Retired In Place"
+- Career path may be limited, depending on size/needs of the center
 ** How to Get Started
 - Look for lab people in your research area, ask about an internship
 - Look for summer internship programs
