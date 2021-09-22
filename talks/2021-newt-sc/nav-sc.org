@@ -1,0 +1,121 @@
+#+title:  What's the Big Deal About SC?
+#+author: Elsa Gonsiorowski
+#+date:   September 22, 2021
+
+#+options: H:2 toc:nil
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+REVEAL_INIT_OPTIONS: height:1000, loop:true, autoSlide:15000, slideNumber:'c/t'
+#+REVEAL_THEME: serif
+
+* Big Deal Name
+[[file:images/sc21.png]]
+** International Conference for High Performance Comptuing, Networking, Stroage, and Analysis
+
+- Started in 1988
+- Sponsored by ACM SIGHPC and IEEE-Computer Society
+- About 12,000 attendees
+- Representing 70 countries worldwide
+- Only 20-25% of attendees are from the US
+
+* Big Deal Network
+[[file:images/sc19-scinet-potato.jpg]]
+** SCinet
+#+BEGIN_center
+/1 *year* to design,/
+/1 *month* to build,/
+
+/1 *week* to operate,/
+/1 *day* to teardown/
+#+END_center
+
+- 130+ volunteers
+- 60+ miles of fiber optic cable in the exhibit halls
+- 300+ wireless access points
+- 1,000,000 Sq-ft coverage
+- 4.22 Terabits per sec of wide area network connectivity
+- $52M loaned network equipment
+
+* Big Deal Program
+[[file:images/sc19-awards.jpg]]
+** Tutorials (Sun/Mon)
+36 different topics including:
+- Fault Tolerance
+- Lossy Compression
+- Deep Learning
+- Distributed GPU Programming
+- Parallel Programming 101
+- Kubernetes
+** Workshops (Sun/Mon/Fri)
+38 different sessions (many with published proceedings):
+- Women in HPC
+- HPC User Support Tools (HUST)
+- Performance Modeling, Benchmarking and Simulation of HPC Systems (PMBS)
+- RSE in HPC
+- Quantum Computing Software
+- Best Practices for HPC Training and Education
+** Papers / Technical Program (Tue-Thur)
+- Algorithms
+- Applications
+- Architectures & Networks
+- Clouds & Distributed Computing
+- Data Analytics, Visualization & Storage
+- Machine Learning and HPC
+- Performance
+- Programming Systems
+- State of the Practice
+- System Software
+** Posters (Tue)
+- Research
+- ACM Graduate Students
+- ACM Undergraduate Students
+- Doctoral Showcase
+- Scientific Visualization & Data Analytics
+** Awards
+- Gordon Bell
+- ACM SIGHPC
+- ACM/IEEE-CS
+- IEEE-CS Seymour Cray, Sidney Fernbach, TCHPC
+- Test of Time Award, Best of
+- Student Cluster Competition
+* Big Deal Vendors
+[[file:images/sc-exhibits.jpg]]
+** Exhibit Hall
+- Intel
+- Cray/HPE
+- NVidia
+- Amazon
+- Google
+- Department of Energy
+* Big Deal Parties
+[[file:images/sc19-fun.png]]
+** Receptions and Free Food
+- Grand Opening Gala Reception
+- Poster Reception
+- Technical Program Reception
+- Vendor events: Beowulf Bash, RedHat LLNL Party
+* Big Deal People
+[[file:images/bronis-sc19.jpg]]
+** Students
+- *Student & Post-Doc Job Fair* /Wednesday/
+- *Students@SC Sessions* /open to all/
+- Student Cluster Competition
+  - 16 Teams, 5 from new institutions
+- Student Volunteers
+- HPC Experience for Undergraduates
+- Mentor-Protege Program
+- Tours for local students
+** Organizing Committee
+- *Conference Chair* Bronis de Supinski
+- *Executive Assistant* Michele Bianchini-Gunn
+- *Virtual Logistics Chair* Lori Daichin
+- *Technical Program Vice Chair* Todd Gamblin
+- *Mobile Application Chair* Stephen Herbein
+- *Reporter* Jeremy Thomas
+- 30 others from LLNL
+* SC is a Big Deal
+* Credits
+Created with [[https://www.gnu.org/software/emacs/][Emacs]], [[https://orgmode.org][Org Mode]], and [[https://revealjs.com][RevealJS]].
+
+#+begin_export html
+View the <a href="./nav-sc.org">source</a>.
+#+end_export
