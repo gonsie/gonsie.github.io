@@ -179,6 +179,7 @@ Try adding this:
 - Do you need to run the web server to view the page you created?
 - What is the URL of your page?
 - What is the most interesting tag?
+** TODO View Source / Developer Tools
 * Markdown & Your Resume
 ** Markdown
 - Designed by [[https://daringfireball.net][John Gruber (Daring Fireball)]]
@@ -354,6 +355,7 @@ https://gonsie.github.io/index.html
 - Enable HTTPS on your site
 * Fun
 ** Have Fun
+- [[https://education.github.com/pack][GitHub Education Pack]]
 - [[https://secretgeek.github.io/html_wysiwyg/html.html][This page is a truly naked, brutalist html quine.]]
 - [[https://web.archive.org/web/20210318102514/https://jrl.ninja/etc/1/][58 bytes of css to look great nearly everywhere]]
 ** *Activity: GitHub Secret*
