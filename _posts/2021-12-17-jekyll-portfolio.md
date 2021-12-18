@@ -22,7 +22,7 @@ Looking over this collection, I mainly see a lot of acronyms&#x2026;
 ![gonsie.com screenshot](/images/portfolio/portfolio-gonsie.png)
 
 The only real blog in my portfolio, this site has a bunch of sections and cruft left around from past projects.
-Recently, I've created some post templates which allow me to post easily quotations and photos.
+Recently, I've created some post templates which allow me to easily post quotations and photos.
 
 
 ## ROSS
@@ -64,17 +64,6 @@ The New York Capitol Hackathon for Inclusivity was a hackathon I help organize i
 We needed a quick website.
 This site includes some nice liquid for automatically generating the navigation menu from all pages that exist.
 
-{% highlight markdown %}
-  {% for p in site.pages %}
-    {% if p.title != "Thank You" %}
-      <li class="element">
-        <a href="{{ p.url
-- prepend: site.baseurl }}">{{ p.title }}</a>
-      </li>
-    {% endif %}
-  {% endfor %}
-{% endhighlight %}
-
 
 ## IHPCSS
 
@@ -86,19 +75,19 @@ This site includes some nice liquid for automatically generating the navigation 
 
 This wiki theme is very cool with tons of functionality.
 I created this site because there was a lot of information that I wanted to organize for students at the International HPC Summer School.
-I hoped the wiki feature would allow other to add content, but the site was voted down and the content migrated to a different system.
+I hoped the wiki feature would allow other to add content, but the site was voted down by the organizing committee and the content migrated to a different system.
 
 
 ## HUST
 
 -   [hust-workshop.github.io](https://hust-workshop.github.io)
--   I joined 2019 (still in use)
+-   I joined in 2019 (still in use)
 -   [SinglePaged](http://jekyllthemes.org/themes/singlepaged/) Theme by Tim O'Brien
 
 ![HUST workshop webpage screenshot](/images/portfolio/portfolio-hust.png)
 
 The HUST site was initially developed by [Chris Bording](https://github.com/chrisbuwahpc), but I started co-organizing the workshop (and running the website) in 2019.
-This single-paged site uses post files to hold the content.
+This single-paged site uses post files to hold the content for each section.
 Any posts from the current year (as specified by the frontmatter in the index.md) are displayed.
 This allows us to easily keep the content file from previous years, without them getting in the way.
 
@@ -111,7 +100,7 @@ This allows us to easily keep the content file from previous years, without them
 
 ![PSIP webpage screenshot](/images/portfolio/portfolio-psip.png)
 
-This really simple site hosts a bunch of markdown documentation for the Productivity and Sustainability Improvement Planning software improvement process.
+This really simple site was for a bunch of markdown documentation whcih existed on GitHub for the Productivity and Sustainability Improvement Planning software improvement process.
 The coolest thing was an interactive [Rate Your Project Survey](https://bssw-psip.github.io/ptc-catalog/survey.html) which calculates a cumulative score for items checked off on the page (using javascript).
 
 
@@ -126,4 +115,4 @@ The coolest thing was an interactive [Rate Your Project Survey](https://bssw-psi
 I've used Chris Coyier's one page resume since 2012 (slightly before I started using jekyll).
 In 2019 I created a template jekyll repository which I use to teach students about markdown and static websites.
 The template renders a resume written in markdown to a nice one page resume website.
-This site is a better demonstration of my markdown and css skills (rather than jekyll or liquid).
+This site is really a demonstration of my markdown and css skills (rather than jekyll or liquid).
