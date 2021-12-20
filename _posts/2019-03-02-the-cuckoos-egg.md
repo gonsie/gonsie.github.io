@@ -8,8 +8,8 @@ tags:
 About a year ago a colleague recommended the book [The Cuckoo's Egg](https://en.m.wikipedia.org/wiki/The_Cuckoo's_Egg) (Wikipedia) by Cliff Stoll.
 Welp, I finally got around to reading it and boy is it good!
 
-This book reads like a journal of Cliff's experience working as Lawrence Berekely Lab in the 1970's.
-Like many computer administrators at the time, Cliff began is career as a scientist in a completely different field (astrophysics).
+This book reads like a journal of Cliff's experience working at Lawrence Berekely Lab in the 1970's.
+Like many computer administrators at the time, Cliff began his career as a scientist in a completely different field (astrophysics).
 Cliff's first project as computer guy is to figure out why the accounting records aren't balanced.
 One small discrepancy quickly morphs into a "high speed" chase of a skilled hacker who's leapfrogging through public and private computer centers looking for military secrets.
 
