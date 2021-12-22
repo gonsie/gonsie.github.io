@@ -41,4 +41,4 @@ Showing the one place with a `cl` requirement:
 `Users/gonsie/.config/emacs/elisp/color-theme-6.6.0/color-theme.el`
 
 Unfortunately this is in one of the packages I've been hand carrying around for over 10 years (longer than my dotfiles repo has existed).
-It's finally time to update the implementation of emacs theme, but that is a post for another day.
+It's finally time to update the implementation of my preferred color theme, but that is a post for another day.
