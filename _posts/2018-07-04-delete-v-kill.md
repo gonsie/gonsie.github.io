@@ -5,6 +5,7 @@ categories:
 tags:
 - emacs
 ---
+
 One thing that has always vexed me is the Emacs kill ring.
 It's great that it makes a list of things you've killed, but often I just want delete things quickly without saving it.
 So I need to change the default settings to enable both killing and deleting words and lines.

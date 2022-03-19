@@ -4,6 +4,7 @@ layout: post
 categories:
 tags:
 ---
+
 I use org-mode to take a lot of notes and I frequently want to highlight some terms that I'm defining or a key sentence.
 Overall, I want two things:
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Org and Jekyll: A Survey"
-tags: org, emacs
+tags: [org, emacs]
 ---
 
 <div id="table-of-contents">
