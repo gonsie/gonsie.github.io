@@ -22,6 +22,7 @@ markdown: kramdown
 sass:
     style: compressed
     sass_dir: _sass
+
 plugins:
   - jekyll-feed
 
@@ -36,3 +37,9 @@ collections:
     output: true
   ghc12:
     output: true
+
+defaults:
+  - scope:
+      type: tag
+    values:
+      layout: rss
