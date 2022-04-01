@@ -28,7 +28,11 @@ layout: default
                 <span class="post-time alignable pull-right">
                     <time>{{ post.date | date: '%B %d, %Y '}}</time>
                 </span>
-                <div style="clear:both"></div>
+
+                <div style="clear:both; height:5px;"></div>
+                {% for t in post.tags %}
+                &emsp; <span class="post-tag">{{ t }}</span>
+                {% endfor %}
             </div>
         {% endfor %}
     </div>

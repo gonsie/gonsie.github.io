@@ -8,6 +8,11 @@ layout: default
   <div class="post-date">
     <time>{{ page.date | date: '%B %d, %Y '}}</time>
   </div>
+  <div style="float: right; margin-top: -3em;">
+  {% for t in page.tags %}
+  <span class="post-tag">{{ t }}</span>
+  {% endfor %}
+  </div>
   {{ content }}
 
 <hr/>
