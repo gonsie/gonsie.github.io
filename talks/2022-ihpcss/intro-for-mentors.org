@@ -1,0 +1,198 @@
+#+title: IHPCSS Mentoring: Introduction for Mentors
+#+author: Elsa Gonsiorowski
+#+date: July  19, 2022
+
+#+options: H:2 toc:nil
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+REVEAL_INIT_OPTIONS: height:1000
+#+REVEAL_THEME: beige
+
+* Mentoring at the Summer School
+** Committee
+- Scott Callaghan (lead)
+- Weronkia Filinger
+- Elsa Gonsiorowski
+- Ilya Zhukov
+
+** Mentoring Program
+- Students consistently rate the mentoring program as the most valuable and distinctive part of the summer school
+- We have a number of sessions planned throughout the week, please participate!
+- You have something to offer every student
+- Matching is a best guess based on the surveys
+  - Not just matched on technical topics
+  - If not a good match, that's ok; students can request a change
+  - Students will have the opportunity to talk with all the staff
+
+* What is Mentoring?
+** Mentoring Basics
+- Partnership between 2 people
+- Give support, guidance, maybe advice
+  - Listen, understand, validate
+  - Favor guiding over telling
+- Based on mutual trust and respect
+- Ask questions and challenge, but be encouraging
+
+** Topics for Mentoring
+- Not just technical topics
+- Students are interested in hearing about:
+  - Career progression
+  - Work-life balance
+  - Dealing with tough advisors
+  - Future of HPC
+- You may need to bring up these topics
+- Ultimately, these conversations can have the most influence on their career paths
+
+* Mentoring at the Summer School
+** Mentoring Groups
+** Mentoring Schedule
+
+* Final Words
+** Impostor Syndrome
+- Students feel like frauds and like they don't deserve to be here, or in research in general
+- Doesn't matter what others tell them: success dismissed as luck, timing, not real, or deception
+- May look like lacking ambition or claiming lack of expertise
+- Ways to help:
+  - Share that these thoughts of common and don't mean students don't belong
+    - 70% of academics at some point; 40% of academics right now
+  - Help students become more aware of thought patterns: feeling like a failure does not make it true
+  - Ask students what they would tell someone in their position
+  - Some of you have personal experience with impostor syndrome -- your perspective is powerful
+** Ask for Help
+- It can be really powerful to tell your mentee that you don't have all the answers
+- Use your network (everyone here) to help your mentee with things you don't know how to address
+- Please don't hesitate to reach out to the mentoring committee, in person, on slack, or over email
+  - Elsa Gonsiorowski <gonsie@me.com>
+  - Scott Callaghan <scottcal@usc.edu>
+  - Weronika Filinger <w.filinger@epcc.ed.ac.uk>
+  - Ilya Zhukov <i.zhukov@fz-juelich.de>.
+
+* Session Overview
+** Schedule
+|--------+------------------------------|
+| 15 min | Career Paths Talk            |
+| 15 min | Peer-to-peer resume review 1 |
+| 15 min | Peer-to-peer resume review 2 |
+|--------+------------------------------|
+
+Follow along at
+
+[[http://gonsie.com/ihpcss/career-paths.html]]
+** Disclaimer
+- This is a /quick/ talk, with links to some other resources.
+- You don't need to know exactly what you want to do, but it's good to have an idea of the possibilities.
+- Talk to the staff here about their career experiences and see which options appeal to you.
+  - A good place to do this will be at Monday's mentoring session: The Resource Fair
+** General Career Paths
+[[file:3-career-paths.png]]
+* Academia
+** Academia
+- Teaching at a college or university
+- Each institution has a difference emphasis on 3 areas:
+  - Teaching Responsibilities
+  - Research (winning grants and writing publications)
+  - Community Service (departmental roles, conference & journal organization)
+- Some initial funding comes from the school, but then you must find more money
+** Academic Career Path (US)
+/titles may be different in different countries/
+1. Post Doc (optional)
+2. Assistant Professor, tenure track
+3. Tenure
+4. Full Professor
+** Academia Pros
+- You get to work with students through teaching and research
+- You get to build your own lab
+- Once you have tenure...
+  - You are "unfireable and almost rich"
+  - Can explore any research topic you want (/if you can get funding/)
+  - Long term career path and stability
+** Academia Cons
+- You /have/ to work with students, teaching whatever classes need to be taught
+- Getting tenure is difficult
+- You have to move to wherever the school is
+** How to Get Started
+- Try teaching / being a teaching assistant
+- Try mentoring undergraduates, new graduate students
+- Talk to professors in your department
+* Industry
+** Industry
+- Beholden to customers, must create products to sell
+- Can work on government contracts / grants
+** Industry Career Path
+- Varies by scientific field & company
+- Larger companies typically have well-defined career paths with a specific progression of job titles
+- May look something like:
+  1. Individual contributor
+  2. Project lead
+  3. Technical Expert
+** Industry Pros
+- Pay is usually higher than academia
+- Company perks: free food, stock options, bonuses, sabbaticals
+- May have the freedom to work remotely or more options of where in world/country to work
+- You work with/for the customer
+- Higher turnover, you can have a more varied career and change roles every few years
+** Industry Cons
+- You have to make a product / make a profit for the company
+- Less freedom to do "pure" research
+- You work with/for the customer
+- Company culture may not have the best work/life balance
+** How to Get Started
+- Look for summer internship programs
+- Go to career fairs / recruiting sessions
+  - at your university
+  - at conferences
+* Supercomputer Center
+** Supercomputer Center
+- Could be associated with a University or Government Research lab
+- Funding could depend on current political climate or vary depending on your current project
+- Best of both academia and industry worlds:
+  - No required teaching responsibilities
+    - option to work with summer interns
+    - possibility to do HPC training sessions
+  - Understand basic research activities, such as publication and conference attendance
+** Supercomputer Center Career Path
+/many paths available, depending on role/
+1. Individual contributor; Consultant/user support; Trainer
+2. Project or Team Lead
+3a. Management
+3b. Technical Expert
+** Supercomputer Center Pros
+- Opportunity to do a specific role, such as user support or application development
+- Opportunity to do "pure" research/get grants
+- Some labs may have a "mission"
+- No required teaching responsibilities
+- Culture typically has good work/life balance
+** Supercomputer Center Cons
+- Government bureaucracy
+- Federal funding, not as many perks as industry
+- Not as well paid
+- Employees are typically there for a long time, some can become "Retired In Place"
+- Career path may be limited, depending on size/needs of the center
+** How to Get Started
+- Look for lab people in your research area, ask about an internship
+- Look for summer internship programs
+- Research if there are citizenship preferences for different labs
+* Resources
+** Resources
+- [[https://bookshop.org/books/a-phd-is-not-enough-a-guide-to-survival-in-science/9780465022229][_A PhD is Not Enough!_]] by Peter J. Feibelman
+- [[https://bookshop.org/books/tomorrow-s-professor-preparing-for-careers-in-science-and-engineering/9780780311367][_Tomorrow's Professor_]] by Richard M. Reis
+- [[http://www.gonsie.com/blorg/career-next-steps.html][Career Next Steps]]
+- [[http://sciencecareers.sciencemag.org/career_magazine/previous_issues/articles/2013_11_21/caredit.a1300256][The Postdoc: A Special Kind of Hell]]
+- [[https://matt.might.net/articles/phd-school-in-pictures/][Illustrated Guide to a PhD]]
+- [[https://www.richardbutterworth.co.uk/blog/13-i-did-a-phd][I did a PhD and did NOT go mad]]
+* Peer-to-Peer Resume Review
+** Peer-to-Peer Resume Review
+- See the "[[file:resume-review.pdf][Reviewing a Resume or CV]]" handout
+- We will do 2 peer-to-peer sessions, 15 minutes each
+  - 5 minutes - Exchange resumes and review individually
+  - 5 minutes - Discuss one person's resume
+  - 5 minutes - Discuss other person's resume
+- We will announce when to switch
+** Start the timer!
+[[https://www.timeanddate.com/timer/]]
+
+* Credits
+Created with [[https://www.gnu.org/software/emacs/][Emacs]], [[https://orgmode.org][Org Mode]], and [[https://revealjs.com][RevealJS]].
+
+#+begin_export html
+View the <a href="./career-paths.org">source</a>.
+#+end_export
