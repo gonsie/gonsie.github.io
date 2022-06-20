@@ -3,6 +3,10 @@ layout: page
 title: Talks
 ---
 
+## 2022
+
+- [Introduction for Mentors](/talks/2022-ihpcss/intro-for-mentors.html), International HPC Summer School. July 19, 2022
+
 ## 2021
 
 - [What's the Big Deal About SC?](/talks/2021-newt-sc/nav-sc.html), LC NEWT Lightning Talks. September 22, 2021.
