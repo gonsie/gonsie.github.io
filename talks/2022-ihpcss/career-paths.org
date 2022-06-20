@@ -1,4 +1,4 @@
-#+title: IHPCSS Mentoring: @@html:<br>@@ Career Workshop
+#+title: IHPCSS Mentoring: Career Workshop
 #+author: Elsa Gonsiorowski
 #+date: June 22, 2022
 
