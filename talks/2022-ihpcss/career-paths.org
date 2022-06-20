@@ -1,6 +1,6 @@
 #+title: IHPCSS Mentoring: Career Workshop
 #+author: Elsa Gonsiorowski
-#+date: July  23, 2021
+#+date: June 22, 2022
 
 #+options: H:2 toc:nil
 #+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
@@ -9,20 +9,24 @@
 
 * Session Overview
 ** Schedule
-|--------+------------------------------|
-| 15 min | Career Paths Talk            |
-| 15 min | Peer-to-peer resume review 1 |
-| 15 min | Peer-to-peer resume review 2 |
-|--------+------------------------------|
 
-Follow along at
+|--------+-----------------------------|
+| 15 min | Career Paths Talk           |
+| 45 min | Breakout Sessions [[breakouts]] |
+|--------+-----------------------------|
 
-[[http://gonsie.com/ihpcss/career-paths.html]]
+<<breakouts>>
+
+- Resume Review
+- Presentation Skills
+- Networking & Elevator Pitch
+- Interview tips
+
 ** Disclaimer
 - This is a /quick/ talk, with links to some other resources.
 - You don't need to know exactly what you want to do, but it's good to have an idea of the possibilities.
 - Talk to the staff here about their career experiences and see which options appeal to you.
-  - A good place to do this will be at Monday's mentoring session: The Resource Fair
+  - This makes a good topic for your one-on-one discussions
 ** General Career Paths
 [[file:3-career-paths.png]]
 * Academia
@@ -93,9 +97,8 @@ Follow along at
 ** Supercomputer Center Career Path
 /many paths available, depending on role/
 1. Individual contributor; Consultant/user support; Trainer
-2. Project or Team Lead
-3a. Management
-3b. Technical Expert
+2. Team Lead or Project Lead
+3. Management _or_ Technical Expert
 ** Supercomputer Center Pros
 - Opportunity to do a specific role, such as user support or application development
 - Opportunity to do "pure" research/get grants
@@ -116,11 +119,11 @@ Follow along at
 ** Resources
 - [[https://bookshop.org/books/a-phd-is-not-enough-a-guide-to-survival-in-science/9780465022229][_A PhD is Not Enough!_]] by Peter J. Feibelman
 - [[https://bookshop.org/books/tomorrow-s-professor-preparing-for-careers-in-science-and-engineering/9780780311367][_Tomorrow's Professor_]] by Richard M. Reis
-- [[http://www.gonsie.com/blorg/career-next-steps.html][Career Next Steps]]
-- [[http://sciencecareers.sciencemag.org/career_magazine/previous_issues/articles/2013_11_21/caredit.a1300256][The Postdoc: A Special Kind of Hell]]
-- [[https://matt.might.net/articles/phd-school-in-pictures/][Illustrated Guide to a PhD]]
-- [[https://www.richardbutterworth.co.uk/blog/13-i-did-a-phd][I did a PhD and did NOT go mad]]
-* Peer-to-Peer Resume Review
+- [[http://www.gonsie.com/blorg/career-next-steps.html][Career Next Steps]], Elsa Gonisorowski
+- [[http://sciencecareers.sciencemag.org/career_magazine/previous_issues/articles/2013_11_21/caredit.a1300256][The Postdoc: A Special Kind of Hell]], Adam Ruben
+- [[https://matt.might.net/articles/phd-school-in-pictures/][Illustrated Guide to a PhD]], Matt Might
+- [[https://www.richardbutterworth.co.uk/blog/13-i-did-a-phd][I did a PhD and did NOT go mad]], Richard Butterworth
+* COMMENT Peer-to-Peer Resume Review
 ** Peer-to-Peer Resume Review
 - See the "[[file:resume-review.pdf][Reviewing a Resume or CV]]" handout
 - We will do 2 peer-to-peer sessions, 15 minutes each
@@ -128,8 +131,6 @@ Follow along at
   - 5 minutes - Discuss one person's resume
   - 5 minutes - Discuss other person's resume
 - We will announce when to switch
-** Start the timer!
-[[https://www.timeanddate.com/timer/]]
 
 * Credits
 Created with [[https://www.gnu.org/software/emacs/][Emacs]], [[https://orgmode.org][Org Mode]], and [[https://revealjs.com][RevealJS]].
