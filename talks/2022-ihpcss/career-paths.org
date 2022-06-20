@@ -1,11 +1,13 @@
-#+title: IHPCSS Mentoring: Career Workshop
+#+title: IHPCSS Mentoring: @@html:<br>@@ Career Workshop
 #+author: Elsa Gonsiorowski
 #+date: June 22, 2022
 
 #+options: H:2 toc:nil
 #+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
-#+REVEAL_INIT_OPTIONS: height:1000
-#+REVEAL_THEME: beige
+# +REVEAL_INIT_OPTIONS: width:2000,height:1000
+#+REVEAL_THEME: custom
+#+REVEAL_THEME_CUSTOM: /css/robot-lung.css
+#+HTML_HEAD_EXTRA: <div class="line top"></div><div class="line bottom"></div><div class="line left"></div><div class="line right"></div>
 
 * Session Overview
 ** Schedule
@@ -28,6 +30,7 @@
 - Talk to the staff here about their career experiences and see which options appeal to you.
   - This makes a good topic for your one-on-one discussions
 ** General Career Paths
+#+attr_html: :width 1500
 [[file:3-career-paths.png]]
 * Academia
 ** Academia
@@ -133,7 +136,9 @@
 - We will announce when to switch
 
 * Credits
-Created with [[https://www.gnu.org/software/emacs/][Emacs]], [[https://orgmode.org][Org Mode]], and [[https://revealjs.com][RevealJS]].
+Created with [[https://www.gnu.org/software/emacs/][Emacs]], [[https://orgmode.org][Org Mode]], and [[https://revealjs.com][RevealJS]]
+
+(using the [[https://revealjs-themes.dzello.com/#/][Robot Lung]] theme).
 
 #+begin_export html
 View the <a href="./career-paths.org">source</a>.
