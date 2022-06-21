@@ -8,6 +8,7 @@
 #+REVEAL_THEME: custom
 #+REVEAL_THEME_CUSTOM: /css/robot-lung.css
 #+HTML_HEAD_EXTRA: <div class="line top"></div><div class="line bottom"></div><div class="line left"></div><div class="line right"></div>
+#+HTML_HEAD_EXTRA: <style>.line {background: #4EA69E;}</style>
 
 * Session Overview
 ** Schedule
@@ -61,6 +62,8 @@
 - Try teaching / being a teaching assistant
 - Try mentoring undergraduates, new graduate students
 - Talk to professors in your department
+- /Talk to Scott Callaghan, Tom Cheatham, Frank Jenko, Erik Lindahl, Danel Silver/
+
 * Industry
 ** Industry
 - Beholden to customers, must create products to sell
@@ -88,6 +91,8 @@
 - Go to career fairs / recruiting sessions
   - at your university
   - at conferences
+- /Talk to Sahil Chhabra, Pawel Janowski/
+
 * Supercomputer Center
 ** Supercomputer Center
 - Could be associated with a University or Government Research lab
@@ -118,6 +123,8 @@
 - Look for lab people in your research area, ask about an internship
 - Look for summer internship programs
 - Research if there are citizenship preferences for different labs
+- /Talk to Elsa Gonsiorowski (Government Lab), Weronika Filinger (Academic HPC Center), Ilya Zhukov (HPC Center)/
+
 * Resources
 ** Resources
 - [[https://bookshop.org/books/a-phd-is-not-enough-a-guide-to-survival-in-science/9780465022229][_A PhD is Not Enough!_]] by Peter J. Feibelman
