@@ -129,6 +129,7 @@
 ** Resources
 - [[https://bookshop.org/books/a-phd-is-not-enough-a-guide-to-survival-in-science/9780465022229][_A PhD is Not Enough!_]] by Peter J. Feibelman
 - [[https://bookshop.org/books/tomorrow-s-professor-preparing-for-careers-in-science-and-engineering/9780780311367][_Tomorrow's Professor_]] by Richard M. Reis
+- [[https://www.apa.org/pubs/books/4316430][_The Psychologist's Guide to an Academic Career_]], by Harriet L. Rheingold
 - [[http://www.gonsie.com/blorg/career-next-steps.html][Career Next Steps]], Elsa Gonisorowski
 - [[http://sciencecareers.sciencemag.org/career_magazine/previous_issues/articles/2013_11_21/caredit.a1300256][The Postdoc: A Special Kind of Hell]], Adam Ruben
 - [[https://matt.might.net/articles/phd-school-in-pictures/][Illustrated Guide to a PhD]], Matt Might
