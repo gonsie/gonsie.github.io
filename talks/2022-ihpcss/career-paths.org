@@ -135,6 +135,11 @@
   - 5 minutes - Discuss other person's resume
 - We will announce when to switch
 
+* Breakouts
+- Resume Review :: Elsa Gonsiorowski
+- Presentation Skills :: Ilya Zhukov
+- Networking & Elevator Pitch :: Weronika Filinger
+- Interview Tips :: Scott Callaghan
 * Credits
 Created with [[https://www.gnu.org/software/emacs/][Emacs]], [[https://orgmode.org][Org Mode]], and [[https://revealjs.com][RevealJS]]
 
