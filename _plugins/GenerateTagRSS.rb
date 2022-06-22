@@ -15,7 +15,7 @@ module GenerateTagRSS
     def initialize(site, tag, posts)
       @site = site             # the current site instance.
       @base = site.source      # path to the source directory.
-      @dir  = 'blorg/feeds'    # the directory the page will reside in.
+      @dir  = 'blorg/feeds-gen'    # the directory the page will reside in.
 
       @basename = tag          # filename without the extension.
       @ext      = '.xml'       # the extension.

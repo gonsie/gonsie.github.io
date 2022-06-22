@@ -42,4 +42,4 @@ defaults:
   - scope:
       type: tag
     values:
-      layout: rss
+      layout: rss-gen
