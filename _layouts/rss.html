@@ -8,10 +8,11 @@
         <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
         <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
         <generator>Jekyll v{{ jekyll.version }}</generator>
-        {% for post in page.linked_docs %}
+        {% for post in site.posts %}
+        {% if post.tags contains page.tagname %}
             <item>
                 <title>{{ post.title | xml_escape }}</title>
-                <author>gonsie@me.com (Elsa Gonsiorowski)</author>
+                <author>{{ site.email | xml_escape }} ({{ site.author | xml_escape }})</author>
                 <description>{{ post.content | xml_escape }}</description>
                 <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
                 <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
@@ -23,6 +24,7 @@
                 <category>{{ cat | xml_escape }}</category>
                 {% endfor %}
             </item>
+        {% endif %}
         {% endfor %}
     </channel>
 </rss>
