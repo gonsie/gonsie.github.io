@@ -6,8 +6,13 @@ h1 {
     color: $accent-color;
     padding-top: 1.5em;
 }
-#rss {
+#nav-icon {
     width: 60px;
+}
+
+.content #nav-icon {
+    position: absolute;
+    margin: -.3em -2em;
 }
 
 @media (max-width: 700px) {
