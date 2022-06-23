@@ -15,6 +15,11 @@ h1 {
     margin: -.3em -2em;
 }
 
+.org-center {
+    text-align: center;
+    margin: -1em 0 2em 0;
+}
+
 @media (max-width: 700px) {
     h1 {
         font-size: 9vw;
