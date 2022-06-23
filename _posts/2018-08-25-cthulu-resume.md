@@ -7,6 +7,7 @@ tags:
 - html
 - git
 ---
+
 I've had my resume as single, printable webpage for over 5 years ([initial git commit](https://github.com/gonsie/gonsie.github.io/commit/c3b13b29035b6692d324b36d9e42ebf0db780361) in 2012).
 Since all of the styling and content is self contained, it is very easy to used.
 

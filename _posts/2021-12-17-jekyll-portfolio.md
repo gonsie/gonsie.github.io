@@ -3,7 +3,9 @@ title: "Jekyll Portfolio"
 layout: post
 categories:
 tags:
+- jekyll
 ---
+
 So I recently learned that the future of Jekyll is, well, [grim](https://www.bridgetownrb.com/future/rip-jekyll/).
 I have quite the history with jekyll, I've been creating websites with it since 2012 (most especially this one).
 To mark the end of my jekyll era, I've collected a portfolio of all the sites I've developed and contributed to.
