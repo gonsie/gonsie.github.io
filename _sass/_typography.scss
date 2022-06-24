@@ -4,7 +4,7 @@
 h1 {
     font-size: 4em;
     color: $accent-color;
-    padding-top: 1.5em;
+    padding-top: 1.25em;
 }
 #nav-icon {
     width: 60px;
@@ -42,12 +42,12 @@ h1 {
     }
     h1, h2, h3, h4, h5, h6, dl {
         font-family: $font-stack-one;
-        margin: 1.5em 0 .5em 0;
+        margin: 1em 0 .5em 0;
     }
     code {
         font-size: 1em;
     }
-    .post-title {
+    h1 {
         margin: 0.1em 0;
     }
     h2 {
