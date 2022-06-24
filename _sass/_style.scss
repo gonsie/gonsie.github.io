@@ -274,6 +274,41 @@ nav {
     margin-bottom: $base-spacing;
 }
 
+/* Comment Form
+ * * * * * * * * * * */
+input, textarea {
+    font-family: $code-font;
+    font-size: 1em;
+    font-weight: lighter;
+    width: 100%;
+    padding: .5em;
+    margin: 1em 0;
+    display: inline-block;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  border: 1px solid $medium-gray-color;
+}
+
+input[type=submit] {
+  background-color: lighten($accent-color, 25%);
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: $accent-color;
+}
+
+.comment-form {
+  border-radius: 5px;
+  background-color: $well-color;
+  padding: 2em;
+}
+
 /* Styling
  * * * * * * * * * * */
 hr {
