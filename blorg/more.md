@@ -7,3 +7,4 @@ title: More
 - [Elsa's CV](/cv)
 - [Talks](/talks/)
 - [RSS Feeds](/blorg/feeds/)
+- [CrossFit](/blorg/crossfit)
