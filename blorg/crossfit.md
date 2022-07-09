@@ -10,12 +10,12 @@ I will say, the "cult" of CrossFit is very strong, and walking in for a class is
 
 ![Elsa's CrossFit in the USA](/images/cf-in-usa.png "Elsa's CrossFit visits in the USA")
 <div class="org-center">
-CrossFit locations I've visited around the US. Map view is <code>/-98,40,3.1,0/800x500</code>.
+CrossFit locations I've visited around the US. Map view is <code>-98,40,3.1,0</code>.
 </div>
 
 ![Elsa's CrossFit visits in Europe](/images/cf-in-europe.png "Elsa's CrossFit visits in Europe")
 <div class="org-center">
-CrossFit locations I've visited around Europe. Map view is <code>/13,48,3.1,0/800x500</code>.
+CrossFit locations I've visited around Europe. Map view is <code>13,48,3.1,0</code>.
 </div>
 
 These images were created with [MapBox](https://www.mapbox.com),
