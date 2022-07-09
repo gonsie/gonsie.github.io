@@ -10,17 +10,22 @@ I will say, the "cult" of CrossFit is very strong, and walking in for a class is
 
 ![Elsa's CrossFit in the USA](/images/cf-in-usa.png "Elsa's CrossFit visits in the USA")
 <div class="org-center">
-CrossFit locations I've visited around the US.
+CrossFit locations I've visited around the US. Map view is <code>/-98,40,3.1,0/800x500</code>.
 </div>
 
 ![Elsa's CrossFit visits in Europe](/images/cf-in-europe.png "Elsa's CrossFit visits in Europe")
 <div class="org-center">
-CrossFit locations I've visited around Europe.
+CrossFit locations I've visited around Europe. Map view is <code>/13,48,3.1,0/800x500</code>.
 </div>
 
-These maps were created with [MapBox](https://www.mapbox.com), you can read more about their creation [here](/blorg/blog/crossfit-map.md).
+These images were created with [MapBox](https://www.mapbox.com),
+using their [static map playground](https://docs.mapbox.com/playground/static/),
+their [dataset creation tool](https://studio.mapbox.com/datasets/),
+and a little bit of [jq](https://jqplay.org).
 
 ## Data
+
+### List of CrossFit Visits
 
 Home gyms in bold, repeat locations italicized.
 
@@ -59,3 +64,13 @@ Home gyms in bold, repeat locations italicized.
 | 2019 | Watertown, MA          | Christmas               | -71.196115, 42.3686    |
 | 2021 | Middletown, RI         | **1 Asterisk CrossFit** | -71.30426, 41.55361    |
 | 2022 | Athens Greece          | IHPCSS                  | 23.706244, 37.963687   |
+
+## URL Request for MapBox Image
+
+```
+https://api.mapbox.com/styles/v1/mapbox/outdoors-v11/static
+/geojson({JSON_DATASET})
+/MAP_VIEW
+/800x500
+?access_token=YOUR_ACCESS_TOKEN
+```
