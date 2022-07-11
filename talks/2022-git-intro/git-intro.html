@@ -3,13 +3,15 @@
 <head>
 <meta charset="utf-8"/>
 <title>Introduction to Version Control With Git</title>
-<meta name="author" content="(Elsa Gonsiorowski)"/>
+<meta name="author" content="Elsa Gonsiorowski"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
 <style type="text/css">
 .underline { text-decoration: underline; }
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/solarized.css" id="theme"/>
+<link rel="stylesheet" href="/css/robot-lung.css" id="theme"/>
 
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
@@ -22,36 +24,39 @@
         document.getElementsByTagName( 'head' )[0].appendChild( link );
     }
 </script>
+<div class="line top"></div><div class="line bottom"></div><div class="line left"></div><div class="line right"></div>
+<style>.line {background: #415F8E;}</style>
 </head>
 <body>
 <div class="reveal">
 <div class="slides">
-<section id="sec-title-slide"><h1 class="title">Introduction to Version Control With Git</h1><h2 class="author">Elsa Gonsiorowski</h2><h2 class="date">July 11, 2022</h2><p class="date">Created: 2022-07-11 Mon 11:10</p>
+<section id="sec-title-slide"><h1 class="title">Introduction to Version Control With Git</h1><p class="subtitle"></p>
+<h2 class="author">Elsa Gonsiorowski</h2><h2 class="date">July 11, 2022</h2><p class="date">Created: 2022-07-11 Mon 11:46</p>
 </section>
-<section id="sec-table-of-contents"><div id="table-of-contents">
+<section id="sec-table-of-contents"><div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents">
+<div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#/slide-org9788a35">1. Introduction</a></li>
-<li><a href="#/slide-org34ec8e6">2. What is Version Control</a></li>
-<li><a href="#/slide-orgc18a71e">3. Configuring Git</a></li>
-<li><a href="#/slide-orga23bdba">4. Git Repositories</a></li>
-<li><a href="#/slide-org13d8997">5. Git Caveats</a></li>
-<li><a href="#/slide-orge7ea786">6. Continue Your Journey</a></li>
-<li><a href="#/slide-orgfbc5ae2">7. Credits</a></li>
+<li><a href="#/slide-orgc91173c">1. Introduction</a></li>
+<li><a href="#/slide-orgbb02c58">2. What is Version Control</a></li>
+<li><a href="#/slide-org2633f66">3. Configuring Git</a></li>
+<li><a href="#/slide-orge82d8c6">4. Git Repositories</a></li>
+<li><a href="#/slide-org10fcf27">5. Git</a></li>
+<li><a href="#/slide-org8766593">6. Continue Your Journey</a></li>
+<li><a href="#/slide-org1d383c5">7. Credits</a></li>
 </ul>
 </div>
 </div>
 </section>
 
 <section>
-<section id="slide-org9788a35">
-<h2 id="org9788a35"><span class="section-number-2">1</span> Introduction</h2>
+<section id="slide-orgc91173c">
+<h2 id="orgc91173c"><span class="section-number-2">1.</span> Introduction</h2>
 <div class="outline-text-2" id="text-1">
 </div>
 </section>
-<section id="slide-org2e814a2">
-<h3 id="org2e814a2">Schedule for the Week</h3>
+<section id="slide-orga225cf9">
+<h3 id="orga225cf9">Schedule for the Week</h3>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -88,8 +93,8 @@
 </tbody>
 </table>
 </section>
-<section id="slide-org8ecf76b">
-<h3 id="org8ecf76b">Caveats</h3>
+<section id="slide-org8a5385a">
+<h3 id="org8a5385a">Caveats</h3>
 <ul>
 <li>This is a 1 hour session, there is so much more to learn!</li>
 <li>You can type along, but I will be moving <i>fast</i></li>
@@ -97,8 +102,8 @@
 
 </ul>
 </section>
-<section id="slide-orgd249f98">
-<h3 id="orgd249f98">Elsa Gonsiorowski</h3>
+<section id="slide-orgdaa60d0">
+<h3 id="orgdaa60d0">Elsa Gonsiorowski</h3>
 <ul>
 <li>2010 B.S. Physics and Computer Science from Rensselaer Polytechnic Institute (Troy, NY)</li>
 <li>2010,2011 Failed to get into any other graduate schools, so I stayed at RPI doing a PhD in CS</li>
@@ -106,8 +111,8 @@
 
 </ul>
 </section>
-<section id="slide-orgbb084de">
-<h3 id="orgbb084de">At LLNL</h3>
+<section id="slide-org57275c2">
+<h3 id="org57275c2">At LLNL</h3>
 <ul>
 <li>2016 Joined LLNL as HPC I/O Specialist in Livermore Computing</li>
 <li>I knew enough about HPC file systems&#x2026; because I had crashed one several times during grad school.</li>
@@ -116,8 +121,8 @@
 
 </ul>
 </section>
-<section id="slide-org9e092c9">
-<h3 id="org9e092c9">Raise Your Hand</h3>
+<section id="slide-orgc2831ce">
+<h3 id="orgc2831ce">Raise Your Hand</h3>
 <ul>
 <li class="fragment appear">If you can find the "Raise Hand" button on Webex</li>
 <li class="fragment appear">If you know someone else attending this lecture</li>
@@ -128,31 +133,30 @@
 </section>
 </section>
 <section>
-<section id="slide-org34ec8e6">
-<h2 id="org34ec8e6"><span class="section-number-2">2</span> What is Version Control</h2>
+<section id="slide-orgbb02c58">
+<h2 id="orgbb02c58"><span class="section-number-2">2.</span> What is Version Control</h2>
 <p>
 <a href="https://swcarpentry.github.io/git-novice/01-basics/index.html">SC: Automated Version Control</a>
 </p>
 </section>
-<section id="slide-orgd1fc3c5">
-<h3 id="orgd1fc3c5">VC Through Naming</h3>
+<section id="slide-orge3ce2f7">
+<h3 id="orge3ce2f7">VC Through Naming</h3>
 
-<div id="org107f6c9" class="figure">
+<div id="org1ac19d3" class="figure">
 <p><img src="images/phd101212s.png" alt="phd101212s.png" />
 </p>
 </div>
 </section>
-<section id="slide-orge96e74f">
-<h3 id="orge96e74f">VC in Parallel</h3>
+<section id="slide-org5c9f80c">
+<h3 id="org5c9f80c">VC in Parallel</h3>
 
-<div id="org7ee5c9e" class="figure">
-<p><object type="image/svg+xml" data="images/versions-merge.drawio.svg" class="org-svg">
-Sorry, your browser does not support SVG.</object>
+<div id="orge8972c3" class="figure">
+<p><img src="images/versions-merge.drawio.svg" alt="versions-merge.drawio.svg" class="org-svg" />
 </p>
 </div>
 </section>
-<section id="slide-orgb307725">
-<h3 id="orgb307725">Key Features</h3>
+<section id="slide-org1da8525">
+<h3 id="org1da8525">Key Features</h3>
 <ul>
 <li>Version control is unlimited undo (but not at a granular level)</li>
 <li>Version Control allows many people to work in parallel</li>
@@ -161,14 +165,14 @@ Sorry, your browser does not support SVG.</object>
 </section>
 </section>
 <section>
-<section id="slide-orgc18a71e">
-<h2 id="orgc18a71e"><span class="section-number-2">3</span> Configuring Git</h2>
+<section id="slide-org2633f66">
+<h2 id="org2633f66"><span class="section-number-2">3.</span> Configuring Git</h2>
 <p>
 <a href="https://swcarpentry.github.io/git-novice/02-setup/index.html">SC: Setting Up Git</a>
 </p>
 </section>
-<section id="slide-org1dd65b5">
-<h3 id="org1dd65b5">Configuring from the Command Line</h3>
+<section id="slide-org9e65f86">
+<h3 id="org9e65f86">Configuring from the Command Line</h3>
 <div class="org-src-container">
 
 <pre  class="src src-shell"   ><code trim>git config --global user.name <span style="color: #E1404A;">"Ada Lovelace"</span>
@@ -178,8 +182,8 @@ git config --global init.defaultBranch main
 </code></pre>
 </div>
 </section>
-<section id="slide-org9f29e12">
-<h3 id="org9f29e12">Help with Config</h3>
+<section id="slide-org2a89fab">
+<h3 id="org2a89fab">Help with Config</h3>
 <div class="org-src-container">
 
 <pre  class="src src-shell"   ><code trim>git config --list
@@ -188,8 +192,8 @@ cat ~/.gitconfig
 </code></pre>
 </div>
 </section>
-<section id="slide-org4c1dbf0">
-<h3 id="org4c1dbf0">Current Config <code>~/.gitconfig</code></h3>
+<section id="slide-org5ade7d2">
+<h3 id="org5ade7d2">Current Config <code>~/.gitconfig</code></h3>
 <pre  class="example" >
 [core]
     editor = emacs -nw
@@ -202,14 +206,14 @@ cat ~/.gitconfig
 </section>
 </section>
 <section>
-<section id="slide-orga23bdba">
-<h2 id="orga23bdba"><span class="section-number-2">4</span> Git Repositories</h2>
+<section id="slide-orge82d8c6">
+<h2 id="orge82d8c6"><span class="section-number-2">4.</span> Git Repositories</h2>
 <p>
 <a href="https://swcarpentry.github.io/git-novice/03-create/index.html">SC: Creating a Repository</a> and <a href="https://swcarpentry.github.io/git-novice/04-changes/index.html">SC: Tracking Changes</a>
 </p>
 </section>
-<section id="slide-orgb0ebd38">
-<h3 id="orgb0ebd38">Assumptions</h3>
+<section id="slide-org2655e1f">
+<h3 id="org2655e1f">Assumptions</h3>
 <ul>
 <li>You are familiar with working on the command line</li>
 <li><p>
@@ -253,8 +257,8 @@ You know the commands:
 
 </ul>
 </section>
-<section id="slide-orgb087d8a">
-<h3 id="orgb087d8a">Create a Repository</h3>
+<section id="slide-org8989427">
+<h3 id="org8989427">Create a Repository</h3>
 <div class="org-src-container">
 
 <pre  class="src src-shell"   ><code trim><span style="color: #D08E5D;">cd</span> ~/Desktop
@@ -262,28 +266,36 @@ ls -al
 mkdir Planets
 <span style="color: #D08E5D;">cd</span> Planets
 git init
-ls -al
 </code></pre>
 </div>
 
-<pre class="example" id="org6f3692d">
+<pre class="example" id="org2e61d6a">
 Initialized empty Git repository in /Users/gonsie/Desktop/Planets/.git/
+</pre>
+<div class="org-src-container">
 
+<pre  class="src src-shell"   ><code trim>ls -al
+</code></pre>
+</div>
+<pre class="example" id="org3cb93e7">
 total        0
 drwxr-xr-x   3  gonsiorowski1 59746  96 Jul 11 10:43 .
 drwx------@ 16  gonsiorowski1 59746 512 Jul 11 10:43 ..
 drwxr-xr-x   9  gonsiorowski1 59746 288 Jul 11 10:43 .git
 </pre>
 </section>
-<section id="slide-org8429e86">
-<h3 id="org8429e86">Query Git</h3>
+<section id="slide-org85e6883">
+<h3 id="org85e6883"><b>Hint</b> Use <code>ls</code> all the time</h3>
+</section>
+<section id="slide-org2032b2e">
+<h3 id="org2032b2e">Query Git</h3>
 <div class="org-src-container">
 
 <pre  class="src src-shell"   ><code trim>git status
 </code></pre>
 </div>
 
-<pre class="example" id="orgd6a5b0d">
+<pre class="example" id="orgc3f8b74">
 On branch main
 
 No commits yet
@@ -292,23 +304,30 @@ nothing to commit (create/copy files and use "git add" to track)
 </pre>
 
 </section>
-<section id="slide-org9875cd2">
-<h3 id="org9875cd2">Add a File</h3>
+<section id="slide-org3abdedc">
+<h3 id="org3abdedc">Create a File</h3>
 <div class="org-src-container">
 
 <pre  class="src src-shell"   ><code trim><span style="color: #D08E5D;">echo</span> <span style="color: #E1404A;">"Cold and dry, but everything is my favorite color"</span> &gt; mars.txt
 ls -al
-git status
 </code></pre>
 </div>
 
-<pre class="example" id="org0fc0ddf">
- total        0
- drwxr-xr-x   3  gonsiorowski1 59746     96 Jul 11 10:43 .
- drwx------@ 16  gonsiorowski1 59746    512 Jul 11 10:43 ..
- drwxr-xr-x   9  gonsiorowski1 59746    288 Jul 11 10:43 .git
- -rw-r--r--   1  gonsiorowski1 59746     50 Jul 11 11:08 mars.txt
+<pre class="example" id="org140b518">
+total        0
+drwxr-xr-x   3  gonsiorowski1 59746     96 Jul 11 10:43 .
+drwx------@ 16  gonsiorowski1 59746    512 Jul 11 10:43 ..
+drwxr-xr-x   9  gonsiorowski1 59746    288 Jul 11 10:43 .git
+-rw-r--r--   1  gonsiorowski1 59746     50 Jul 11 11:08 mars.txt
+</pre>
 
+<div class="org-src-container">
+
+<pre  class="src src-shell"   ><code trim>git status
+</code></pre>
+</div>
+
+<pre class="example" id="org38ab83b">
 On branch main
 
 No commits yet
@@ -320,13 +339,269 @@ Untracked files:
 nothing added to commit but untracked files present (use "git add" to track)
 </pre>
 </section>
-<section id="slide-org55ac6d2">
-<h3 id="org55ac6d2">Commit Your Changes</h3>
+<section id="slide-org0c552a7">
+<h3 id="org0c552a7"><b>Hint</b> Read <code>git status</code></h3>
+</section>
+<section id="slide-orga80e639">
+<h3 id="orga80e639">Track a File with Git</h3>
+<div class="org-src-container">
+
+<pre  class="src src-shell"   ><code trim>git add mars.txt
+git status
+</code></pre>
+</div>
+<pre class="example" id="org8e32825">
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached &lt;file&gt;..." to unstage)
+	new file:   mars.txt
+</pre>
+<div class="org-src-container">
+
+<pre  class="src src-shell"   ><code trim>ls -al
+</code></pre>
+</div>
+<pre class="example" id="org544e42b">
+total        0
+drwxr-xr-x   3  gonsiorowski1 59746  96 Jul 11 10:43 .
+drwx------@ 16  gonsiorowski1 59746 512 Jul 11 10:43 ..
+drwxr-xr-x   9  gonsiorowski1 59746 288 Jul 11 10:43 .git
+-rw-r--r--   1  gonsiorowski1 59746  50 Jul 11 11:08 mars.txt
+</pre>
+
+</section>
+<section id="slide-orgedec2bc">
+<h3 id="orgedec2bc">Git Staging Area</h3>
+
+<div id="org6168d99" class="figure">
+<p><img src="images/git-staging-area.svg" alt="git-staging-area.svg" class="org-svg" />
+</p>
+</div>
+</section>
+<section id="slide-org28ffc00">
+<h3 id="org28ffc00">Commit Your Changes</h3>
+<div class="org-src-container">
+
+<pre  class="src src-shell"   ><code trim>git commit -m <span style="color: #E1404A;">"Start of mars notes files"</span>
+</code></pre>
+</div>
+<pre class="example" id="orgf073073">
+[main (root-commit) a60f2b8] Start of mars notes file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 mars.txt
+</pre>
+
+</section>
+<section id="slide-org28ffc00-split">
+<div class="org-src-container">
+
+<pre  class="src src-shell"   ><code trim>git status
+</code></pre>
+</div>
+<pre class="example" id="org945a287">
+On branch main
+nothing to commit, working directory clean
+</pre>
+
+<div class="org-src-container">
+
+<pre  class="src src-shell"   ><code trim>git log
+</code></pre>
+</div>
+<pre class="example" id="org84498b1">
+commit a60f2b8d99fe8e803695e7cfd37fc38b846125ad (HEAD -&gt; main)
+Author: Ada Lovelace &lt;ada@lovelace.io&gt;
+Date:   Mon Jul 11 11:26:25 2022 -0400
+
+    Start of mars notes file
+</pre>
+
+<div class="org-src-container">
+
+<pre  class="src src-shell"   ><code trim>ls -al
+</code></pre>
+</div>
+<pre class="example" id="orgdddd633">
+total        0
+drwxr-xr-x   3  gonsiorowski1 59746  96 Jul 11 10:43 .
+drwx------@ 16  gonsiorowski1 59746 512 Jul 11 10:43 ..
+drwxr-xr-x   9  gonsiorowski1 59746 384 Jul 11 11:26 .git
+-rw-r--r--   1  gonsiorowski1 59746  50 Jul 11 11:08 mars.txt
+</pre>
+
+</section>
+<section id="slide-org3746789">
+<h3 id="org3746789">Change the File</h3>
+<div class="org-src-container">
+
+<pre  class="src src-shell"   ><code trim><span style="color: #D08E5D;">echo</span> <span style="color: #E1404A;">"The two moons may be a problem for Wolfman"</span> &gt;&gt; mars.txt
+git status
+</code></pre>
+</div>
+<pre class="example" id="orgc557fc6">
+On branch main
+Changes not staged for commit:
+  (use "git add &lt;file&gt;..." to update what will be committed)
+  (use "git checkout -- &lt;file&gt;..." to discard changes in working directory)
+
+	modified:   mars.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+</pre>
+</section>
+<section id="slide-org3746789-split">
+<div class="org-src-container">
+
+<pre  class="src src-shell"   ><code trim>git diff
+</code></pre>
+</div>
+<pre class="example" id="orgd904f05">
+diff --git a/mars.txt b/mars.txt
+index df0654a..315bf3a 100644
+--- a/mars.txt
++++ b/mars.txt
+@@ -1 +1,2 @@
+ Cold and dry, but everything is my favorite color
++The two moons may be a problem for Wolfman
+</pre>
+</section>
+<section id="slide-orgc614b2c">
+<h3 id="orgc614b2c">Commit the Change</h3>
+<div class="org-src-container">
+
+<pre  class="src src-shell"   ><code trim>git commit -m <span style="color: #E1404A;">"Wolfman on mars?"</span>
+</code></pre>
+</div>
+<pre class="example" id="org0c48ed2">
+On branch main
+Changes not staged for commit:
+  (use "git add &lt;file&gt;..." to update what will be committed)
+  (use "git restore &lt;file&gt;..." to discard changes in working directory)
+	modified:   mars.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+</pre>
+</section>
+<section id="slide-orgc614b2c-split">
+<div class="org-src-container">
+
+<pre  class="src src-shell"   ><code trim>git add mars.txt
+git commit -m <span style="color: #E1404A;">"Wolfman on mars?"</span>
+</code></pre>
+</div>
+<pre class="example" id="org1651f5b">
+[main f43dbe4] Wolfman on mars?
+ 1 file changed, 1 insertion(+)
+</pre>
+</section>
+<section id="slide-orgc614b2c-split">
+<div class="org-src-container">
+
+<pre  class="src src-shell"   ><code trim>git log
+</code></pre>
+</div>
+<pre class="example" id="orga987adb">
+commit f43dbe4f3e5f5d908500e587e117a998f750b3fe (HEAD -&gt; main)
+Author: Elsa Gonsiorowski (Pluto) &lt;gonsie@me.com&gt;
+Date:   Mon Jul 11 11:37:54 2022 -0400
+
+    Wolfman on mars?
+
+commit a60f2b8d99fe8e803695e7cfd37fc38b846125ad
+Author: Elsa Gonsiorowski (Pluto) &lt;gonsie@me.com&gt;
+Date:   Mon Jul 11 11:26:25 2022 -0400
+
+    Start of mars notes file
+</pre>
+</section>
+<section id="slide-orgc614b2c-split">
+<div class="org-src-container">
+
+<pre  class="src src-shell"   ><code trim>git show
+</code></pre>
+</div>
+<pre class="example" id="orge679d24">
+commit f43dbe4f3e5f5d908500e587e117a998f750b3fe (HEAD -&gt; main)
+Author: Elsa Gonsiorowski (Pluto) &lt;gonsie@me.com&gt;
+Date:   Mon Jul 11 11:37:54 2022 -0400
+
+    Wolfman on mars?
+
+diff --git a/mars.txt b/mars.txt
+index df0654a..315bf3a 100644
+--- a/mars.txt
++++ b/mars.txt
+@@ -1 +1,2 @@
+ Cold and dry, but everything is my favorite color
++The two moons may be a problem for Wolfman
+</pre>
 </section>
 </section>
 <section>
-<section id="slide-org13d8997">
-<h2 id="org13d8997"><span class="section-number-2">5</span> Git Caveats</h2>
+<section id="slide-org10fcf27">
+<h2 id="org10fcf27"><span class="section-number-2">5.</span> Git</h2>
+<p>
+<i>whew</i>
+</p>
+</section>
+<section id="slide-org815fd7c">
+<h3 id="org815fd7c">Git Commands</h3>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><code>git config --global</code></td>
+<td class="org-left">Configure settings</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>git init</code></td>
+<td class="org-left">Create <code>.git</code> directory</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>git status</code></td>
+<td class="org-left">Query git about what's up</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>git add</code></td>
+<td class="org-left">'move' a file into git's staging area</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>git commit -m</code></td>
+<td class="org-left">Create a commit with a message, add a group of changes to the repository</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>git log</code></td>
+<td class="org-left">Show recent commits</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>git diff</code></td>
+<td class="org-left">Show what is currently different</td>
+</tr>
+
+<tr>
+<td class="org-left"><code>git show</code></td>
+<td class="org-left">Detail last commit</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="slide-orgefb4241">
+<h3 id="orgefb4241">Git Caveats</h3>
 <ul>
 <li>Git is powerful</li>
 <li>Git has a terrible user design</li>
@@ -337,26 +612,23 @@ nothing added to commit but untracked files present (use "git add" to track)
 </section>
 </section>
 <section>
-<section id="slide-orge7ea786">
-<h2 id="orge7ea786"><span class="section-number-2">6</span> Continue Your Journey</h2>
+<section id="slide-org8766593">
+<h2 id="org8766593"><span class="section-number-2">6.</span> Continue Your Journey</h2>
 <div class="outline-text-2" id="text-6">
 </div>
 </section>
-<section id="slide-orgb53fa62">
-<h3 id="orgb53fa62">This is just the beginning</h3>
+<section id="slide-org25eb8e7">
+<h3 id="org25eb8e7">This is just the beginning</h3>
 <ul>
-<li>More things to learn:
-<ul>
-<li>branching</li>
-<li>collaboration through "pull" or "merge" requests</li>
-<li>platforms: GitHub and GitLab</li>
-
-</ul></li>
+<li>Distributed VC: Working with a remote person or server</li>
+<li>Branching</li>
+<li>Collaboration through "pull" or "merge" requests</li>
+<li>Platforms: GitHub and GitLab</li>
 
 </ul>
 </section>
-<section id="slide-orgbd78aa1">
-<h3 id="orgbd78aa1">Get Social</h3>
+<section id="slide-orge975139">
+<h3 id="orge975139">Get Social</h3>
 <ul>
 <li>Sign up for GitHub
 <ul>
@@ -373,17 +645,8 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 </ul>
 </section>
-<section id="slide-orgb930388">
-<h3 id="orgb930388"><b>Activity: GitHub Secret</b></h3>
-<ul>
-<li>Create a new repo called <i>username</i></li>
-<li>Add a <code>README.md</code> file</li>
-<li>Visit your GitHub Profile (<code>github.com/username</code>)</li>
-
-</ul>
-</section>
-<section id="slide-org87ea9f5">
-<h3 id="org87ea9f5">Git Lessons</h3>
+<section id="slide-org9f7652b">
+<h3 id="org9f7652b">Git Lessons</h3>
 <ul>
 <li><a href="https://swcarpentry.github.io/git-novice/">Software Carpentry: Git Novice</a></li>
 <li><a href="https://training.github.com">Git Cheetsheet</a></li>
@@ -392,8 +655,8 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 </ul>
 </section>
-<section id="slide-orga7ca38e">
-<h3 id="orga7ca38e">Advanced Git Resources</h3>
+<section id="slide-org6f087d9">
+<h3 id="org6f087d9">Advanced Git Resources</h3>
 <ul>
 <li><a href="https://skills.github.com">GitHub Skills</a></li>
 <li><a href="https://learngitbranching.js.org">Learn Git Branching Interactively</a></li>
@@ -403,18 +666,14 @@ nothing added to commit but untracked files present (use "git add" to track)
 </section>
 </section>
 <section>
-<section id="slide-orgfbc5ae2">
-<h2 id="orgfbc5ae2"><span class="section-number-2">7</span> Credits</h2>
-<div class="outline-text-2" id="text-7">
-</div>
-</section>
-<section id="slide-org91ef2e1">
-<h3 id="org91ef2e1">Content</h3>
-</section>
-<section id="slide-org097ccc2">
-<h3 id="org097ccc2">Tools</h3>
+<section id="slide-org1d383c5">
+<h2 id="org1d383c5"><span class="section-number-2">7.</span> Credits</h2>
 <p>
-Created with <a href="https://www.gnu.org/software/emacs/">Emacs</a>, <a href="https://orgmode.org">Org Mode</a>, and <a href="https://revealjs.com">RevealJS</a>.
+The images and lesson structure were taken from the <a href="https://swcarpentry.github.io/git-novice/">Software Carpentry: Git Novice</a> course.
+</p>
+
+<p>
+The presentation was created with <a href="https://www.gnu.org/software/emacs/">Emacs</a>, <a href="https://orgmode.org">Org Mode</a>, and <a href="https://revealjs.com">RevealJS</a>.
 </p>
 
 View the <a href="./2022-07-11-git-intro.org">source</a>.

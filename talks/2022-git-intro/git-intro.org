@@ -5,7 +5,10 @@
 #+options: H:2 toc:1 num:1
 #+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
 #+REVEAL_INIT_OPTIONS: height:1000, slideNumber:'c/t'
-#+REVEAL_THEME: solarized
+#+REVEAL_THEME: custom
+#+REVEAL_THEME_CUSTOM: /css/robot-lung.css
+#+HTML_HEAD_EXTRA: <div class="line top"></div><div class="line bottom"></div><div class="line left"></div><div class="line right"></div>
+#+HTML_HEAD_EXTRA: <style>.line {background: #415F8E;}</style>
 
 * COMMENT Goals
 ** Course Goals
@@ -106,18 +109,22 @@ Introduction to:
   mkdir Planets
   cd Planets
   git init
-  ls -al
 #+end_src
 
 #+RESULTS:
 #+begin_example
  Initialized empty Git repository in /Users/gonsie/Desktop/Planets/.git/
-
+#+end_example
+#+begin_src shell :eval no
+  ls -al
+#+end_src
+#+begin_example
  total        0
  drwxr-xr-x   3  gonsiorowski1 59746  96 Jul 11 10:43 .
  drwx------@ 16  gonsiorowski1 59746 512 Jul 11 10:43 ..
  drwxr-xr-x   9  gonsiorowski1 59746 288 Jul 11 10:43 .git
 #+end_example
+** *Hint* Use =ls= all the time
 ** Query Git
 #+begin_src shell :exports both :eval no
 git status
@@ -132,11 +139,10 @@ No commits yet
 nothing to commit (create/copy files and use "git add" to track)
 #+end_example
 
-** Add a File
+** Create a File
 #+begin_src shell :exports both :eval no
   echo "Cold and dry, but everything is my favorite color" > mars.txt
   ls -al
-  git status
 #+end_src
 
 #+RESULTS:
@@ -146,7 +152,13 @@ nothing to commit (create/copy files and use "git add" to track)
  drwx------@ 16  gonsiorowski1 59746    512 Jul 11 10:43 ..
  drwxr-xr-x   9  gonsiorowski1 59746    288 Jul 11 10:43 .git
  -rw-r--r--   1  gonsiorowski1 59746     50 Jul 11 11:08 mars.txt
+#+end_example
 
+#+begin_src shell :eval no
+  git status
+#+end_src
+
+#+begin_example
 On branch main
 
 No commits yet
@@ -157,18 +169,183 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 #+end_example
+** *Hint* Read =git status=
+** Track a File with Git
+#+begin_src shell :eval no
+  git add mars.txt
+  git status
+#+end_src
+#+begin_example
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   mars.txt
+#+end_example
+#+begin_src shell :eval no
+  ls -al
+#+end_src
+#+begin_example
+ total        0
+ drwxr-xr-x   3  gonsiorowski1 59746  96 Jul 11 10:43 .
+ drwx------@ 16  gonsiorowski1 59746 512 Jul 11 10:43 ..
+ drwxr-xr-x   9  gonsiorowski1 59746 288 Jul 11 10:43 .git
+ -rw-r--r--   1  gonsiorowski1 59746  50 Jul 11 11:08 mars.txt
+#+end_example
+
+** Git Staging Area
+[[file:images/git-staging-area.svg]]
 ** Commit Your Changes
-* Git Caveats
+#+begin_src shell :eval no
+git commit -m "Start of mars notes files"
+#+end_src
+#+begin_example
+[main (root-commit) a60f2b8] Start of mars notes file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 mars.txt
+#+end_example
+
+#+reveal: split
+#+begin_src shell :eval no
+git status
+#+end_src
+#+begin_example
+On branch main
+nothing to commit, working directory clean
+#+end_example
+
+#+begin_src shell :eval no
+git log
+#+end_src
+#+begin_example
+commit a60f2b8d99fe8e803695e7cfd37fc38b846125ad (HEAD -> main)
+Author: Ada Lovelace <ada@lovelace.io>
+Date:   Mon Jul 11 11:26:25 2022 -0400
+
+    Start of mars notes file
+#+end_example
+
+#+begin_src shell :eval no
+  ls -al
+#+end_src
+#+begin_example
+ total        0
+ drwxr-xr-x   3  gonsiorowski1 59746  96 Jul 11 10:43 .
+ drwx------@ 16  gonsiorowski1 59746 512 Jul 11 10:43 ..
+ drwxr-xr-x   9  gonsiorowski1 59746 384 Jul 11 11:26 .git
+ -rw-r--r--   1  gonsiorowski1 59746  50 Jul 11 11:08 mars.txt
+#+end_example
+
+** Change the File
+#+begin_src shell :eval no
+echo "The two moons may be a problem for Wolfman" >> mars.txt
+git status
+#+end_src
+#+begin_example
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   mars.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+#+end_example
+#+reveal: split
+#+begin_src shell :eval no
+git diff
+#+end_src
+#+begin_example
+diff --git a/mars.txt b/mars.txt
+index df0654a..315bf3a 100644
+--- a/mars.txt
++++ b/mars.txt
+@@ -1 +1,2 @@
+ Cold and dry, but everything is my favorite color
++The two moons may be a problem for Wolfman
+#+end_example
+** Commit the Change
+#+begin_src shell :eval no
+git commit -m "Wolfman on mars?"
+#+end_src
+#+begin_example
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   mars.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+#+end_example
+#+reveal: split
+#+begin_src shell :eval no
+  git add mars.txt
+  git commit -m "Wolfman on mars?"
+#+end_src
+#+begin_example
+[main f43dbe4] Wolfman on mars?
+ 1 file changed, 1 insertion(+)
+#+end_example
+#+reveal: split
+#+begin_src shell :eval no
+git log
+#+end_src
+#+begin_example
+commit f43dbe4f3e5f5d908500e587e117a998f750b3fe (HEAD -> main)
+Author: Elsa Gonsiorowski (Pluto) <gonsie@me.com>
+Date:   Mon Jul 11 11:37:54 2022 -0400
+
+    Wolfman on mars?
+
+commit a60f2b8d99fe8e803695e7cfd37fc38b846125ad
+Author: Elsa Gonsiorowski (Pluto) <gonsie@me.com>
+Date:   Mon Jul 11 11:26:25 2022 -0400
+
+    Start of mars notes file
+#+end_example
+#+reveal: split
+#+begin_src shell :eval no
+git show
+#+end_src
+#+begin_example
+commit f43dbe4f3e5f5d908500e587e117a998f750b3fe (HEAD -> main)
+Author: Elsa Gonsiorowski (Pluto) <gonsie@me.com>
+Date:   Mon Jul 11 11:37:54 2022 -0400
+
+    Wolfman on mars?
+
+diff --git a/mars.txt b/mars.txt
+index df0654a..315bf3a 100644
+--- a/mars.txt
++++ b/mars.txt
+@@ -1 +1,2 @@
+ Cold and dry, but everything is my favorite color
++The two moons may be a problem for Wolfman
+#+end_example
+* Git
+/whew/
+** Git Commands
+| =git config --global= | Configure settings                                                       |
+| =git init=            | Create =.git= directory                                                  |
+| =git status=          | Query git about what's up                                                |
+| =git add=             | 'move' a file into git's staging area                                    |
+| =git commit -m=       | Create a commit with a message, add a group of changes to the repository |
+| =git log=             | Show recent commits                                                      |
+| =git diff=            | Show what is currently different                                         |
+| =git show=            | Detail last commit                                                       |
+** Git Caveats
 - Git is powerful
 - Git has a terrible user design
 - Git is hard to fully learn by yourself
 - Git (like any other tool) takes time and practice to get good
 * Continue Your Journey
 ** This is just the beginning
-- More things to learn:
-  - branching
-  - collaboration through "pull" or "merge" requests
-  - platforms: GitHub and GitLab
+- Distributed VC: Working with a remote person or server
+- Branching
+- Collaboration through "pull" or "merge" requests
+- Platforms: GitHub and GitLab
 ** Get Social
 - Sign up for GitHub
   - Follow your friends, star your favorite (LLNL) projects
@@ -176,7 +353,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 - /With permission:/ use GitHub to showcase projects
   - Get approval before posting LLNL code
   - Get permission before posting homework solutions
-** *Activity: GitHub Secret*
+** COMMENT *Activity: GitHub Secret*
 - Create a new repo called /username/
 - Add a =README.md= file
 - Visit your GitHub Profile (=github.com/username=)
@@ -190,9 +367,9 @@ nothing added to commit but untracked files present (use "git add" to track)
 - [[https://learngitbranching.js.org][Learn Git Branching Interactively]]
 - [[https://sethrobertson.github.io/GitFixUm/fixup.html][Choose your own adventure: undoing, fixing, or removing commits in git]]
 * Credits
-** Content
-** Tools
-Created with [[https://www.gnu.org/software/emacs/][Emacs]], [[https://orgmode.org][Org Mode]], and [[https://revealjs.com][RevealJS]].
+The images and lesson structure were taken from the [[https://swcarpentry.github.io/git-novice/][Software Carpentry: Git Novice]] course.
+
+The presentation was created with [[https://www.gnu.org/software/emacs/][Emacs]], [[https://orgmode.org][Org Mode]], and [[https://revealjs.com][RevealJS]].
 
 #+begin_export html
 View the <a href="./2022-07-11-git-intro.org">source</a>.
