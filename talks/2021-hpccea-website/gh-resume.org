@@ -33,12 +33,15 @@ Follow along: [[https://www.gonsie.com/bpw/index.html]]
 - Excited about emacs, org-mode, static websites, fish shell, cmake, documentation, crossfit, rowing, knitting
 ** gonsie.com
 #+ATTR_HTML: :alt Screenshot of gonsie.com
+#+attr_org: :width 300
 [[file:images/bpw-gonsie-com.png]]
 ** github.com/gonsie
 #+ATTR_HTML: :alt Screenshot of gonsie's profile on github.com
+#+attr_org: :width 300
 [[file:images/bpw-github-gonsie.png]]
 ** gonsie.com/cv.html
 #+ATTR_HTML: :alt Screenshot of Elsa's C.V.
+#+attr_org: :width 300
 [[file:images/bpw-gonsie-cv.png]]
 ** Setup: Things You'll Need
 - Resume
@@ -123,6 +126,7 @@ Markup + Styling = Beautiful Documents
 #+end_llnlsummaryenv
 ** Markup Languages
 # +attr_latex: :height 0.8\textheight
+#+attr_org: :width 300
 [[file:images/markup-word-cloup.png]]
 ** Beautiful Web Documents
 - HTML + CSS
@@ -156,6 +160,7 @@ border-bottom: 1px dotted #999;
 #+END_SRC
 ** Example -- Rendered
 # +attr_latex: :width 0.7\textwidth
+#+attr_org: :width 300
 [[file:images/basic-page.png]]
 
 ** Displaying a Web page
@@ -196,6 +201,7 @@ markdown -> converter -> html;
 #+END_SRC
 
 #+RESULTS:
+#+attr_org: :width 300
 [[file:images/bpw-mkdown.png]]
 ** Markdown Syntax 1
 #+BEGIN_SRC markdown
@@ -227,13 +233,16 @@ markdown -> converter -> html;
 #+END_SRC
 ** Markdown Syntax Example
 # +attr_html: :width 80%
+#+attr_org: :width 300
 [[file:images/mkdown-example.png]]
 ** Markdown Style Example
 # +attr_html: :width 80%
+#+attr_org: :width 300
 [[file:images/mkdown-custom-css.png]]
 ** Markdown to HTML
 # +attr_html: :width 80%
 #+RESULTS:
+#+attr_org: :width 300
 [[file:images/bpw-mkdown.png]]
 ------
 Converters have their own rules.
@@ -284,6 +293,7 @@ Practice writing markdown syntax by re-writing your resume in markdown, with the
 
 #+attr_latex: :width 0.7\textwidth
 #+RESULTS:
+#+attr_org: :width 300
 [[file:images/jekyll.png]]
 ** Jekyll Front Matter
 - Jekyll parses markdown pages with extra /front matter/
