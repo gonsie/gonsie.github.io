@@ -11,7 +11,7 @@
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
 
-<link rel="stylesheet" href="../2022-ihpcss/robot-lung.css" id="theme"/>
+<link rel="stylesheet" href="/css/robot-lung.css" id="theme"/>
 
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
@@ -24,6 +24,7 @@
         document.getElementsByTagName( 'head' )[0].appendChild( link );
     }
 </script>
+<style>pre.src {background-color: #282B35; color: #FFFFFF;}</style>
 <div class="line top"></div><div class="line bottom"></div><div class="line left"></div><div class="line right"></div>
 <style>.line {background: #415F8E;}</style>
 <style>#left  {float: left;  width:48%;}</style>
@@ -33,26 +34,12 @@
 <div class="reveal">
 <div class="slides">
 <section id="sec-title-slide"><h1 class="title">Building A Personal Website</h1><p class="subtitle">HPC Cluster Academy</p>
-<h2 class="author">Elsa Gonsiorowski</h2><h2 class="date">August 2, 2022</h2><p class="date">Created: 2022-07-21 Thu 14:1!5</p>
+<h2 class="author">Elsa Gonsiorowski</h2><h2 class="date">August 2, 2022</h2><p class="date">Created: 2022-08-01 Mon 22:43</p>
 </section>
 
 <section>
-<section id="slide-org18f8cce">
-<h2 id="org18f8cce"><span class="section-number-2">1.</span> Goals</h2>
-<ul>
-<li>Set up a markdown and web development environment on your machine</li>
-<li>Refresh your resume</li>
-<li>Build a personal website</li>
-<li>Have fun!</li>
-
-</ul>
-
-<p>
-Follow along: <a href="https://www.gonsie.com/bpw/index.html">https://www.gonsie.com/bpw/index.html</a>
-</p>
-</section>
-<section id="slide-org5074dd1">
-<h3 id="org5074dd1"><span class="section-number-3">1.1.</span> Schedule</h3>
+<section id="slide-org0b0fcab">
+<h2 id="org0b0fcab"><span class="section-number-2">1.</span> Schedule</h2>
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -68,46 +55,67 @@ Follow along: <a href="https://www.gonsie.com/bpw/index.html">https://www.gonsie
 </tr>
 
 <tr>
-<td class="org-right">9:30</td>
+<td class="org-right">9:20</td>
 <td class="org-left">Crash course in HTML &amp; CSS</td>
 </tr>
 
 <tr>
-<td class="org-right">10:00</td>
+<td class="org-right">9:50</td>
 <td class="org-left">Markdown &amp; Your Resume</td>
 </tr>
 
 <tr>
-<td class="org-right">10:30</td>
+<td class="org-right">10:20</td>
 <td class="org-left">Static Websites</td>
 </tr>
 
 <tr>
-<td class="org-right">3:00</td>
+<td class="org-right">10:50</td>
 <td class="org-left">Build Your Website!</td>
 </tr>
 
 <tr>
-<td class="org-right">3:30</td>
-<td class="org-left">Fun!</td>
+<td class="org-right">11:00</td>
+<td class="org-left">Fun</td>
 </tr>
 </tbody>
 </table>
 </section>
+<section id="slide-org43e6ce7">
+<h3 id="org43e6ce7"><span class="section-number-3">1.1.</span> Goals</h3>
+<ul>
+<li>Set up a markdown and web development environment on your machine</li>
+<li>Refresh your resume</li>
+<li>Build a personal website</li>
+<li>Have fun!</li>
+
+</ul>
+
+<p>
+Follow along: <a href="https://www.gonsie.com/talks/2022-webdev-summer/index.html">gonsie.com/talks</a>
+</p>
+</section>
+<section id="slide-org6536115">
+<h3 id="org6536115"><span class="section-number-3">1.2.</span> POLL</h3>
+<ul>
+<li>Who can find the "raise hand" button on webex?</li>
+
+</ul>
+</section>
 </section>
 <section>
-<section id="slide-org346950b">
-<h2 id="org346950b"><span class="section-number-2">2.</span> About Me &amp; Setup</h2>
+<section id="slide-org5e3e80a">
+<h2 id="org5e3e80a"><span class="section-number-2">2.</span> About Me &amp; Setup</h2>
 <div class="outline-text-2" id="text-2">
 </div>
 </section>
-<section id="slide-orga4fae41">
-<h3 id="orga4fae41"><span class="section-number-3">2.1.</span> Elsa Gonsiorowski</h3>
+<section id="slide-org2abc0a8">
+<h3 id="org2abc0a8"><span class="section-number-3">2.1.</span> Elsa Gonsiorowski</h3>
 <div id="left">
 
 
-<div id="org94077fe" class="figure">
-<p><img src="images/headshot-clouds.png" alt="headshot-clouds.png" />
+<div id="org4411ab0" class="figure">
+<p><img src="images/headshot-clouds.png" alt="headshot-clouds.png" width="80%" />
 </p>
 </div>
 
@@ -118,49 +126,33 @@ Follow along: <a href="https://www.gonsie.com/bpw/index.html">https://www.gonsie
 <li>HPC I/O Specialist</li>
 <li>Working on <a href="https://computing.llnl.gov/projects/scalable-checkpoint-restart-for-mpi">SCR: Scalable Checkpoint Restart</a></li>
 <li>Excited about emacs, org-mode, static websites, fish shell, cmake, documentation, crossfit, rowing, knitting</li>
+<li>Personal site at <a href="https://gonsie.com">gonsie.com</a></li>
 
 </ul>
 
 </div>
-
 </section>
-<section id="slide-org1058c8f">
-<h3 id="org1058c8f"><span class="section-number-3">2.2.</span> gonsie.com</h3>
+<section id="slide-orgc04a229">
+<h3 id="orgc04a229"><span class="section-number-3">2.2.</span> Connect With Me</h3>
+<ul>
+<li><a href="https://github.com/gonsie">github.com/gonsie</a></li>
+<li><a href="https://gonsie.com">gonsie.com</a></li>
+<li><a href="https://gonsie.com/cv.html">gonsie.com/cv</a></li>
 
-<div id="org111e3c9" class="figure">
-<p><img src="images/bpw-gonsie-com.png" alt="Screenshot of gonsie.com" />
-</p>
-</div>
+</ul>
 </section>
-<section id="slide-orgbf47477">
-<h3 id="orgbf47477"><span class="section-number-3">2.3.</span> github.com/gonsie</h3>
-
-<div id="org4151a9e" class="figure">
-<p><img src="images/bpw-github-gonsie.png" alt="Screenshot of gonsie's profile on github.com" />
-</p>
-</div>
-</section>
-<section id="slide-org292cb21">
-<h3 id="org292cb21"><span class="section-number-3">2.4.</span> gonsie.com/cv.html</h3>
-
-<div id="orgf0e06b7" class="figure">
-<p><img src="images/bpw-gonsie-cv.png" alt="Screenshot of Elsa's C.V." />
-</p>
-</div>
-</section>
-<section id="slide-orgfbdea85">
-<h3 id="orgfbdea85"><span class="section-number-3">2.5.</span> Setup: Things You'll Need</h3>
+<section id="slide-org5593ef4">
+<h3 id="org5593ef4"><span class="section-number-3">2.3.</span> Setup: Things You'll Need</h3>
 <ul>
 <li>Resume</li>
 <li>Text editor with Markdown, HTML, CSS support</li>
 <li>GitHub account</li>
-<li>Package manager to install Jekyll (optional)</li>
-<li>Mattermost</li>
+<li>(optional) Package manager to install Jekyll</li>
 
 </ul>
 </section>
-<section id="slide-orgdd2d1ec">
-<h3 id="orgdd2d1ec"><span class="section-number-3">2.6.</span> Text Editor Support</h3>
+<section id="slide-org0595739">
+<h3 id="org0595739"><span class="section-number-3">2.4.</span> Text Editor Support</h3>
 <ul>
 <li>Syntax highlighting, checking</li>
 <li>Indentation</li>
@@ -170,8 +162,8 @@ Follow along: <a href="https://www.gonsie.com/bpw/index.html">https://www.gonsie
 
 </ul>
 </section>
-<section id="slide-orgc62df0c">
-<h3 id="orgc62df0c"><span class="section-number-3">2.7.</span> Markdown</h3>
+<section id="slide-org6338532">
+<h3 id="org6338532"><span class="section-number-3">2.5.</span> Markdown</h3>
 <ul>
 <li>Emacs (<a href="https://github.com/jrblevin/markdown-mode">markdown-mode</a> / MELPA)</li>
 <li>Vim (<a href="https://github.com/plasticboy/vim-markdown">vim-markdown</a>)</li>
@@ -182,21 +174,20 @@ Follow along: <a href="https://www.gonsie.com/bpw/index.html">https://www.gonsie
 
 </ul>
 </section>
-<section id="slide-orgbae9546">
-<h3 id="orgbae9546"><span class="section-number-3">2.8.</span> <b>Activity: Setup</b> <i>1:30</i></h3>
-<div class="outline-text-3" id="text-2-8">
+<section id="slide-org44f6527">
+<h3 id="org44f6527"><span class="section-number-3">2.6.</span> <b>Activity: Setup</b></h3>
+<div class="outline-text-3" id="text-2-6">
 </div>
 <ol class="org-ol">
-<li><a id="orgfc6e192"></a>Setup<br />
+<li><a id="orgcbf5aad"></a>Setup<br />
 <ul>
 <li>Pick an editor and install packages</li>
 <li>Find your most recent resume</li>
 <li>Install <a href="https://jekyllrb.com/docs/">Jekyll</a> <i>(optional)</i></li>
-<li>Join the Mattermost channel #bpw</li>
 
 </ul>
 </li>
-<li><a id="org708a5c4"></a>GitHub<br />
+<li><a id="org094d27b"></a>GitHub<br />
 <ol>
 <li>Create a profile on <a href="https://github.com">GitHub</a></li>
 <li>Follow <a href="https://github.com/gonsie">@gonsie</a></li>
@@ -206,21 +197,23 @@ Follow along: <a href="https://www.gonsie.com/bpw/index.html">https://www.gonsie
 </li>
 </ol>
 </section>
-<section id="slide-orgb2e8cd5">
-<h3 id="orgb2e8cd5"><span class="section-number-3">2.9.</span> POLL</h3>
-<pre  class="example" >
-/poll "Which editor are you using?" "emacs" "vim" "sublimetext" "atom" "vscode" "web" "other"
-</pre>
+<section id="slide-org2bc5e28">
+<h3 id="org2bc5e28"><span class="section-number-3">2.7.</span> POLL</h3>
+<ul>
+<li>What is your github username?</li>
+<li>Which editor are you using?</li>
+
+</ul>
 </section>
 </section>
 <section>
-<section id="slide-org2baf2ed">
-<h2 id="org2baf2ed"><span class="section-number-2">3.</span> HTML &amp; CSS</h2>
+<section id="slide-orgb7285a4">
+<h2 id="orgb7285a4"><span class="section-number-2">3.</span> HTML &amp; CSS</h2>
 <div class="outline-text-2" id="text-3">
 </div>
 </section>
-<section id="slide-orgf3d5dd4">
-<h3 id="orgf3d5dd4"><span class="section-number-3">3.1.</span> Computer Languages</h3>
+<section id="slide-org1751199">
+<h3 id="org1751199"><span class="section-number-3">3.1.</span> Computer Languages</h3>
 <blockquote >
 <p>
 A <b>markup language</b> is a system for annotating a document in a way that is syntactically distinguishable from the text.
@@ -234,12 +227,12 @@ A <b>style sheet language</b>, or <b>style language</b>, expresses the presentat
 </blockquote>
 
 </section>
-<section id="slide-orgf25c273">
-<h3 id="orgf25c273"><span class="section-number-3">3.2.</span> Computer Languages</h3>
+<section id="slide-org5819402">
+<h3 id="org5819402"><span class="section-number-3">3.2.</span> Computer Languages</h3>
 <div class="outline-text-3" id="text-3-2">
 </div>
 <ol class="org-ol">
-<li><a id="orgc7dfbee"></a>Markup<br />
+<li><a id="org12e60f5"></a>Markup<br />
 <ul>
 <li>Adds information to the content, such as hierarchy or emphasis.</li>
 <li>Example: HTML, Markdown, TeX, troff</li>
@@ -247,7 +240,7 @@ A <b>style sheet language</b>, or <b>style language</b>, expresses the presentat
 </ul>
 </li>
 
-<li><a id="org67fa6be"></a>Style<br />
+<li><a id="orgb5166fb"></a>Style<br />
 <ul>
 <li>Describes how to display the content</li>
 <li>CSS, TeX class/style, editor color theme</li>
@@ -257,16 +250,16 @@ A <b>style sheet language</b>, or <b>style language</b>, expresses the presentat
 </ol>
 
 </section>
-<section id="slide-org7b73f1a">
-<h3 id="org7b73f1a"><span class="section-number-3">3.3.</span> Markup Languages</h3>
+<section id="slide-org3b142e1">
+<h3 id="org3b142e1"><span class="section-number-3">3.3.</span> Markup Languages</h3>
 
-<div id="orgebac05b" class="figure">
-<p><img src="images/markup-word-cloup.png" alt="markup-word-cloup.png" />
+<div id="org7af4a4c" class="figure">
+<p><img src="images/markup-word-cloup.png" alt="markup-word-cloup.png" width="70%" />
 </p>
 </div>
 </section>
-<section id="slide-org62792e1">
-<h3 id="org62792e1"><span class="section-number-3">3.4.</span> Beautiful Web Documents</h3>
+<section id="slide-org50e577f">
+<h3 id="org50e577f"><span class="section-number-3">3.4.</span> Beautiful Web Documents</h3>
 <ul>
 <li>HTML + CSS</li>
 <li>Structure and style a document</li>
@@ -278,8 +271,12 @@ A <b>style sheet language</b>, or <b>style language</b>, expresses the presentat
 
 </ul>
 </section>
-<section id="slide-orge60d9ac">
-<h3 id="orge60d9ac"><span class="section-number-3">3.5.</span> Example &#x2013; HTML</h3>
+<section id="slide-orgd76f709">
+<h3 id="orgd76f709"><span class="section-number-3">3.5.</span> Example</h3>
+<div class="outline-text-3" id="text-3-5">
+</div>
+<ol class="org-ol">
+<li><a id="orgd6de04e"></a><code>basic.html</code><br />
 <div class="org-src-container">
 
 <pre  class="src src-html"   ><code trim>&lt;<span style="color: #BF369A;">!DOCTYPE</span> html&gt;
@@ -294,9 +291,8 @@ A <b>style sheet language</b>, or <b>style language</b>, expresses the presentat
 &lt;/<span style="color: #95C76E;">html</span>&gt;
 </code></pre>
 </div>
-</section>
-<section id="slide-orgadad9b2">
-<h3 id="orgadad9b2"><span class="section-number-3">3.6.</span> Example &#x2013; CSS</h3>
+</li>
+<li><a id="orgbede47e"></a><code>basic.css</code><br />
 <div class="org-src-container">
 
 <pre  class="src src-css"   ><code trim><span style="color: #95C76E;">body </span>{
@@ -307,18 +303,20 @@ A <b>style sheet language</b>, or <b>style language</b>, expresses the presentat
 }
 </code></pre>
 </div>
+</li>
+</ol>
 </section>
-<section id="slide-org199dd6b">
-<h3 id="org199dd6b"><span class="section-number-3">3.7.</span> Example &#x2013; Rendered</h3>
+<section id="slide-org216ef0c">
+<h3 id="org216ef0c"><span class="section-number-3">3.6.</span> Example &#x2013; Rendered</h3>
 
-<div id="org92dc10d" class="figure">
+<div id="org89462a1" class="figure">
 <p><img src="images/basic-page.png" alt="basic-page.png" />
 </p>
 </div>
 
 </section>
-<section id="slide-orgfcda396">
-<h3 id="orgfcda396"><span class="section-number-3">3.8.</span> Displaying a Web page</h3>
+<section id="slide-org4d788f1">
+<h3 id="org4d788f1"><span class="section-number-3">3.7.</span> Displaying a Web page</h3>
 <ol>
 <li>Parse HTML to construct DOM tree  (Document Object Model)</li>
 <li>Render tree construction / apply CSS</li>
@@ -327,8 +325,8 @@ A <b>style sheet language</b>, or <b>style language</b>, expresses the presentat
 
 </ol>
 </section>
-<section id="slide-orgad3e2cc">
-<h3 id="orgad3e2cc"><span class="section-number-3">3.9.</span> <b>Activity: Make a Web page</b> <i>2:00</i></h3>
+<section id="slide-org46d6aaa">
+<h3 id="org46d6aaa"><span class="section-number-3">3.8.</span> <b>Activity: Make a Web page</b></h3>
 <ol>
 <li>Edit the basic HTML + CSS pages with your editor (<a href="basic.html">basic.html</a> and <a href="basic.css">basic.css</a> right-click to download)</li>
 <li>"Open" the basic.html file using your browser</li>
@@ -351,8 +349,8 @@ Try adding this:
 <code>&lt;marquee&gt;Some text&lt;/marquee&gt;</code>
 </p>
 </section>
-<section id="slide-orgbac8017">
-<h3 id="orgbac8017"><span class="section-number-3">3.10.</span> POLL</h3>
+<section id="slide-org2407840">
+<h3 id="org2407840"><span class="section-number-3">3.9.</span> POLL</h3>
 <ul>
 <li>Do you need to run the web server to view the page you created?</li>
 <li>What is the URL of your page?</li>
@@ -360,18 +358,15 @@ Try adding this:
 
 </ul>
 </section>
-<section id="slide-org18fd6f5">
-<h3 id="org18fd6f5"><span class="section-number-3">3.11.</span> <span class="todo TODO">TODO</span> View Source / Developer Tools</h3>
-</section>
 </section>
 <section>
-<section id="slide-org05814f7">
-<h2 id="org05814f7"><span class="section-number-2">4.</span> Markdown &amp; Your Resume</h2>
+<section id="slide-org048a39b">
+<h2 id="org048a39b"><span class="section-number-2">4.</span> Markdown &amp; Your Resume</h2>
 <div class="outline-text-2" id="text-4">
 </div>
 </section>
-<section id="slide-org7a5b740">
-<h3 id="org7a5b740"><span class="section-number-3">4.1.</span> Markdown</h3>
+<section id="slide-orgd434dd4">
+<h3 id="orgd434dd4"><span class="section-number-3">4.1.</span> Markdown</h3>
 <ul>
 <li>Designed by <a href="https://daringfireball.net">John Gruber (Daring Fireball)</a></li>
 <li>Defined syntax for translating text to HTML.</li>
@@ -380,75 +375,33 @@ Try adding this:
 
 </ul>
 </section>
-<section id="slide-org57e1a84">
-<h3 id="org57e1a84"><span class="section-number-3">4.2.</span> Markdown to HTML</h3>
+<section id="slide-orgd94ec57">
+<h3 id="orgd94ec57"><span class="section-number-3">4.2.</span> Markdown to HTML</h3>
 
-<div id="org1503598" class="figure">
-<p><img src="images/bpw-mkdown.png" alt="bpw-mkdown.png" />
-</p>
-</div>
-
-<div id="orgedac363" class="figure">
+<div id="org732a2ef" class="figure">
 <p><img src="images/bpw-mkdown.png" alt="bpw-mkdown.png" />
 </p>
 </div>
 </section>
-<section id="slide-org06d1825">
-<h3 id="org06d1825"><span class="section-number-3">4.3.</span> Markdown Syntax 1</h3>
-<div class="org-src-container">
+<section id="slide-orge0f8b66">
+<h3 id="orge0f8b66"><span class="section-number-3">4.3.</span> Markdown Syntax</h3>
+<ul>
+<li><a href="https://www.markdownguide.org/cheat-sheet/">Cheat Sheet</a></li>
 
-<pre  class="src src-markdown"   ><code trim><span style="color: #b3b3b3;"># </span><span style="color: #95C76E; font-weight: bold;">h1 Heading</span>
-<span style="color: #b3b3b3;">## </span><span style="color: #95C76E; font-weight: bold;">h2 Heading</span>
-<span style="color: #b3b3b3;">### </span><span style="color: #95C76E; font-weight: bold;">h3 Heading</span>
-
-<span style="color: #b3b3b3;">---</span>
-
-Emphasis with <span style="color: #b3b3b3;">**</span><span style="font-weight: bold;">bold</span><span style="color: #b3b3b3;">**</span>, <span style="color: #b3b3b3;">*</span><span style="font-style: italic;">italic</span><span style="color: #b3b3b3;">*</span>, or <span style="color: #b3b3b3;">~~</span><span style="text-decoration: line-through;">strikethrough</span><span style="color: #b3b3b3;">~~</span> text.
-
-<span style="color: #b3b3b3;">&gt;</span><span style="color: #E1404A;"> Blockquote for included text</span>
-
-<span style="color: #b3b3b3;">[</span><span style="color: #536fd6; text-decoration: underline;">Also links</span><span style="color: #b3b3b3;">](</span><span style="color: #E1404A;">http://example.com</span><span style="color: #b3b3b3;">)</span>
-</code></pre>
-</div>
+</ul>
 </section>
-<section id="slide-org960fc79">
-<h3 id="org960fc79"><span class="section-number-3">4.4.</span> Markdown Syntax 2</h3>
-<div class="org-src-container">
+<section id="slide-org84e7b92">
+<h3 id="org84e7b92"><span class="section-number-3">4.4.</span> Markdown Style Example</h3>
 
-<pre  class="src src-markdown"   ><code trim><span style="color: #b3b3b3;">1.</span> Numbered Lists
-   <span style="color: #b3b3b3;">-</span> Unordered lists
-   <span style="color: #b3b3b3;">*</span> mixed marks
-   <span style="color: #b3b3b3;">+</span> like this
-<span style="color: #b3b3b3;">7.</span> Only the first number matters
-
-Support for <span style="color: #b3b3b3;">`</span><span style="color: #8B86CE;">inline code</span><span style="color: #b3b3b3;">`</span> and code blocks:
-
-<span style="color: #b3b3b3;">```</span>
-<span style="color: #8B86CE;">for (int i = 0; i &lt; 100; i++) printf("Hello World!\n");</span>
-<span style="color: #b3b3b3;">```</span>
-</code></pre>
-</div>
-</section>
-<section id="slide-org660d7ab">
-<h3 id="org660d7ab"><span class="section-number-3">4.5.</span> Markdown Syntax Example</h3>
-
-<div id="orgbbf5bf9" class="figure">
-<p><img src="images/mkdown-example.png" alt="mkdown-example.png" />
-</p>
-</div>
-</section>
-<section id="slide-org3b4e30e">
-<h3 id="org3b4e30e"><span class="section-number-3">4.6.</span> Markdown Style Example</h3>
-
-<div id="orge33dbe4" class="figure">
+<div id="orge1085b1" class="figure">
 <p><img src="images/mkdown-custom-css.png" alt="mkdown-custom-css.png" />
 </p>
 </div>
 </section>
-<section id="slide-org83da791">
-<h3 id="org83da791"><span class="section-number-3">4.7.</span> Markdown to HTML</h3>
+<section id="slide-orge14c0ef">
+<h3 id="orge14c0ef"><span class="section-number-3">4.5.</span> Markdown to HTML</h3>
 
-<div id="org4ab8a80" class="figure">
+<div id="org0effc68" class="figure">
 <p><img src="images/bpw-mkdown.png" alt="bpw-mkdown.png" />
 </p>
 </div>
@@ -457,8 +410,8 @@ Support for <span style="color: #b3b3b3;">`</span><span style="color: #8B86CE;">
 Converters have their own rules.
 </p>
 </section>
-<section id="slide-orgd8def8c">
-<h3 id="orgd8def8c"><span class="section-number-3">4.8.</span> Additional Markdown Rules</h3>
+<section id="slide-org34b7f67">
+<h3 id="org34b7f67"><span class="section-number-3">4.6.</span> Additional Markdown Rules</h3>
 <ul>
 <li><a href="https://github.github.com/gfm/">GitHub-flavored-markdown</a> (GFM) includes task lists and emojis.</li>
 <li><a href="https://kramdown.gettalong.org">kramdown</a> includes better handling of code blocks</li>
@@ -466,10 +419,10 @@ Converters have their own rules.
 
 </ul>
 </section>
-<section id="slide-orgb0b95fb">
-<h3 id="orgb0b95fb"><span class="section-number-3">4.9.</span> <b>Activity: Practice Markdown</b> <i>2:30</i></h3>
+<section id="slide-orgc022de3">
+<h3 id="orgc022de3"><span class="section-number-3">4.7.</span> <b>Activity: Practice Markdown</b></h3>
 <p>
-Practice writing markdown syntax by re-writing your resume in markdown, with the following rules:
+Practice writing markdown syntax by re-writing your resume in markdown, <b>using the following rules</b>:
 </p>
 <ul>
 <li>Create a file <code>resume.md</code></li>
@@ -477,12 +430,12 @@ Practice writing markdown syntax by re-writing your resume in markdown, with the
 <li>Sections are level 2 headings</li>
 <li>Different companies are level 3 headings</li>
 <li>Be sure to use lists and emphasis</li>
-<li>Additional resources: <a href="https://www.markdownguide.org">Markdown Guide</a></li>
+<li>Additional resources: <a href="https://www.markdownguide.org">MarkdownGuide.org</a></li>
 
 </ul>
 </section>
-<section id="slide-org26dce53">
-<h3 id="org26dce53"><span class="section-number-3">4.10.</span> POLL</h3>
+<section id="slide-org4b64b23">
+<h3 id="org4b64b23"><span class="section-number-3">4.8.</span> POLL</h3>
 <ul>
 <li>Does your editor allow you to preview the document?</li>
 <li>How does markdown compare to HTML?</li>
@@ -491,13 +444,13 @@ Practice writing markdown syntax by re-writing your resume in markdown, with the
 </section>
 </section>
 <section>
-<section id="slide-org6ea14f6">
-<h2 id="org6ea14f6"><span class="section-number-2">5.</span> Static Websites</h2>
+<section id="slide-org03a31ab">
+<h2 id="org03a31ab"><span class="section-number-2">5.</span> Static Websites</h2>
 <div class="outline-text-2" id="text-5">
 </div>
 </section>
-<section id="slide-orgdc8c125">
-<h3 id="orgdc8c125"><span class="section-number-3">5.1.</span> Static vs Dynamic Websites</h3>
+<section id="slide-orgb0d6960">
+<h3 id="orgb0d6960"><span class="section-number-3">5.1.</span> Static vs Dynamic Websites</h3>
 <ul>
 <li>Web pages with fixed content</li>
 <li>No backing database / dynamic server</li>
@@ -505,8 +458,8 @@ Practice writing markdown syntax by re-writing your resume in markdown, with the
 
 </ul>
 </section>
-<section id="slide-orgb7fd575">
-<h3 id="orgb7fd575"><span class="section-number-3">5.2.</span> Static Site Generators (SSGs)</h3>
+<section id="slide-org2ebe48d">
+<h3 id="org2ebe48d"><span class="section-number-3">5.2.</span> Static Site Generators (SSGs)</h3>
 <ul>
 <li><a href="https://jekyllrb.com">Jekyll</a> (Ruby)</li>
 <li><a href="https://gohugo.io">Hugo</a> (Go)</li>
@@ -515,8 +468,8 @@ Practice writing markdown syntax by re-writing your resume in markdown, with the
 
 </ul>
 </section>
-<section id="slide-org280fafd">
-<h3 id="org280fafd"><span class="section-number-3">5.3.</span> Jekyll</h3>
+<section id="slide-org980da46">
+<h3 id="org980da46"><span class="section-number-3">5.3.</span> Jekyll</h3>
 <ul>
 <li>Defines a file structure and file format</li>
 <li>Built on top of markdown</li>
@@ -524,21 +477,16 @@ Practice writing markdown syntax by re-writing your resume in markdown, with the
 
 </ul>
 </section>
-<section id="slide-orgf92ad8b">
-<h3 id="orgf92ad8b"><span class="section-number-3">5.4.</span> Jekyll</h3>
+<section id="slide-org99b17fb">
+<h3 id="org99b17fb"><span class="section-number-3">5.4.</span> Jekyll</h3>
 
-<div id="org9a3adac" class="figure">
-<p><img src="images/jekyll.png" alt="jekyll.png" />
-</p>
-</div>
-
-<div id="orgc4f1423" class="figure">
+<div id="orgec7cc08" class="figure">
 <p><img src="images/jekyll.png" alt="jekyll.png" />
 </p>
 </div>
 </section>
-<section id="slide-org33a6f39">
-<h3 id="org33a6f39"><span class="section-number-3">5.5.</span> Jekyll Front Matter</h3>
+<section id="slide-org3f294f0">
+<h3 id="org3f294f0"><span class="section-number-3">5.5.</span> Jekyll Front Matter</h3>
 <ul>
 <li>Jekyll parses markdown pages with extra <i>front matter</i>
 <ul>
@@ -560,8 +508,8 @@ title: "My Awesome Resume"
 </code></pre>
 </div>
 </section>
-<section id="slide-org1d07b68">
-<h3 id="org1d07b68"><span class="section-number-3">5.6.</span> Liquid</h3>
+<section id="slide-org3f15b1e">
+<h3 id="org3f15b1e"><span class="section-number-3">5.6.</span> Liquid</h3>
 <ul>
 <li>Templating language</li>
 <li>Allows hierarchical construction of a jekyll web page</li>
@@ -569,8 +517,8 @@ title: "My Awesome Resume"
 
 </ul>
 </section>
-<section id="slide-org29dfd6f">
-<h3 id="org29dfd6f"><span class="section-number-3">5.7.</span> <b>Activity: Your Resume Website</b> <i>3:00</i></h3>
+<section id="slide-org6f393cb">
+<h3 id="org6f393cb"><span class="section-number-3">5.7.</span> <b>Activity: Your Resume Website</b></h3>
 <ul>
 <li>Fork <a href="https://github.com/gonsie/jekyll-resume">https://github.com/gonsie/jekyll-resume</a></li>
 <li>In settings: make sure <b>GitHub Pages</b> is turned on (from the main branch)</li>
@@ -580,8 +528,8 @@ title: "My Awesome Resume"
 
 </ul>
 </section>
-<section id="slide-org1a63009">
-<h3 id="org1a63009"><span class="section-number-3">5.8.</span> POLL</h3>
+<section id="slide-org4b69505">
+<h3 id="org4b69505"><span class="section-number-3">5.8.</span> POLL</h3>
 <ul>
 <li>Any issues?</li>
 <li>How does your resume look?</li>
@@ -590,32 +538,32 @@ title: "My Awesome Resume"
 </section>
 </section>
 <section>
-<section id="slide-org1b14cd9">
-<h2 id="org1b14cd9"><span class="section-number-2">6.</span> Building a Website</h2>
+<section id="slide-org4c2e7b1">
+<h2 id="org4c2e7b1"><span class="section-number-2">6.</span> Building a Website</h2>
 <div class="outline-text-2" id="text-6">
 </div>
 </section>
-<section id="slide-org9d9a26b">
-<h3 id="org9d9a26b"><span class="section-number-3">6.1.</span> Web Conventions</h3>
+<section id="slide-org3f90285">
+<h3 id="org3f90285"><span class="section-number-3">6.1.</span> Web Conventions</h3>
 <pre  class="example" >
 https://gonsie.com
 
 https://gonsie.github.io/index.html
 </pre>
 <ol class="org-ol">
-<li><a id="orgc6abeb1"></a>DNS: Domain Name System<br />
+<li><a id="orgdab45a0"></a>DNS: Domain Name System<br />
 <ul>
 <li>Hierarchical and decentralized name mapping to IP</li>
 
 </ul>
 </li>
-<li><a id="orgffe8d92"></a>Default Homepage<br />
+<li><a id="orgaba120c"></a>Default Homepage<br />
 <ul>
 <li><code>index.html</code></li>
 
 </ul>
 </li>
-<li><a id="orgba3e9ee"></a>Subdomain<br />
+<li><a id="org0fc8016"></a>Subdomain<br />
 <ul>
 <li>Allows name mapping at the destination</li>
 
@@ -623,8 +571,8 @@ https://gonsie.github.io/index.html
 </li>
 </ol>
 </section>
-<section id="slide-org5fffa38">
-<h3 id="org5fffa38"><span class="section-number-3">6.2.</span> GitHub and GitLab Pages</h3>
+<section id="slide-org18df6c7">
+<h3 id="org18df6c7"><span class="section-number-3">6.2.</span> GitHub and GitLab Pages</h3>
 <ul>
 <li><i>FREE</i> websites for you and your projects</li>
 <li>Open source repos get free website hosting</li>
@@ -636,8 +584,8 @@ https://gonsie.github.io/index.html
 
 </ul>
 </section>
-<section id="slide-org7850641">
-<h3 id="org7850641"><span class="section-number-3">6.3.</span> Building Your Personal Brand</h3>
+<section id="slide-orgd47b7ec">
+<h3 id="orgd47b7ec"><span class="section-number-3">6.3.</span> Building Your Personal Brand</h3>
 <ul>
 <li>How you present yourself to the world</li>
 <li>Username, profile image(s), profile information</li>
@@ -651,11 +599,11 @@ https://gonsie.github.io/index.html
 
 </ul>
 </section>
-<section id="slide-org176cfec">
-<h3 id="org176cfec"><span class="section-number-3">6.4.</span> Personal Site Demo</h3>
+<section id="slide-orgf61af1c">
+<h3 id="orgf61af1c"><span class="section-number-3">6.4.</span> Personal Site Demo</h3>
 </section>
-<section id="slide-orgb6de807">
-<h3 id="orgb6de807"><span class="section-number-3">6.5.</span> <b>Activity: Build Your Website</b> <i>5:00</i></h3>
+<section id="slide-orgc32ad4d">
+<h3 id="orgc32ad4d"><span class="section-number-3">6.5.</span> <b>Activity: Build Your Website</b></h3>
 <ul>
 <li>Look up a domain (try <a href="https://namecheap.com">namecheap</a> or <a href="https://hover.com">hover</a>). How much does it cost?</li>
 <li>Explore different Static Site Generators</li>
@@ -677,13 +625,13 @@ https://gonsie.github.io/index.html
 </section>
 </section>
 <section>
-<section id="slide-org6e99464">
-<h2 id="org6e99464"><span class="section-number-2">7.</span> Fun</h2>
+<section id="slide-org806530d">
+<h2 id="org806530d"><span class="section-number-2">7.</span> Fun</h2>
 <div class="outline-text-2" id="text-7">
 </div>
 </section>
-<section id="slide-orgfbf580d">
-<h3 id="orgfbf580d"><span class="section-number-3">7.1.</span> Have Fun</h3>
+<section id="slide-orgf63cb55">
+<h3 id="orgf63cb55"><span class="section-number-3">7.1.</span> Have Fun</h3>
 <ul>
 <li><a href="https://education.github.com/pack">GitHub Education Pack</a></li>
 <li><a href="https://secretgeek.github.io/html_wysiwyg/html.html">This page is a truly naked, brutalist html quine.</a></li>
@@ -691,8 +639,8 @@ https://gonsie.github.io/index.html
 
 </ul>
 </section>
-<section id="slide-org8ec9a5e">
-<h3 id="org8ec9a5e"><span class="section-number-3">7.2.</span> <b>Activity: GitHub Secret</b></h3>
+<section id="slide-orga5fd78e">
+<h3 id="orga5fd78e"><span class="section-number-3">7.2.</span> <b>Activity: GitHub Secret</b></h3>
 <ul>
 <li>Create a new repo called <i>username</i></li>
 <li>Add a <code>README.md</code> file</li>
@@ -700,8 +648,8 @@ https://gonsie.github.io/index.html
 
 </ul>
 </section>
-<section id="slide-org8f5712a">
-<h3 id="org8f5712a"><span class="section-number-3">7.3.</span> <b>Activity: Show &amp; Tell</b></h3>
+<section id="slide-org74c992b">
+<h3 id="org74c992b"><span class="section-number-3">7.3.</span> <b>Activity: Show &amp; Tell</b></h3>
 <ul>
 <li>What did you build?</li>
 
@@ -709,13 +657,17 @@ https://gonsie.github.io/index.html
 </section>
 </section>
 <section>
-<section id="slide-orgf915460">
-<h2 id="orgf915460"><span class="section-number-2">8.</span> Credits</h2>
+<section id="slide-orgdb9e542">
+<h2 id="orgdb9e542"><span class="section-number-2">8.</span> Credits</h2>
 <p>
-Created with <a href="https://www.gnu.org/software/emacs/">Emacs</a>, <a href="https://orgmode.org">Org Mode</a>, and <a href="https://revealjs.com">RevealJS</a>.
+Created by <a href="https://gonsie.com">Elsa Gonsiorowski</a>
 </p>
 
-View the <a href="./gh-resume.org">source</a>.
+<p>
+using <a href="https://www.gnu.org/software/emacs/">Emacs</a>, <a href="https://orgmode.org">Org Mode</a>, and <a href="https://revealjs.com">RevealJS</a> (<a href="https://revealjs-themes.dzello.com/#/">Robot Lung</a> theme).
+</p>
+
+View the <a href="./web.org">source</a>.
 </section>
 </section>
 </div>
@@ -726,7 +678,6 @@ View the <a href="./gh-resume.org">source</a>.
 // Full list of configuration options available here:
 // https://github.com/hakimel/reveal.js#configuration
 Reveal.initialize({
-height:1000,
 
 // Optional libraries used to extend on reveal.js
 dependencies: [

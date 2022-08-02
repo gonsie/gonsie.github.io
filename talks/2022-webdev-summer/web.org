@@ -1,7 +1,7 @@
 #+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
 # +REVEAL_INIT_OPTIONS: height:1000
 #+REVEAL_THEME: custom
-#+REVEAL_THEME_CUSTOM: ../2022-ihpcss/robot-lung.css
+#+REVEAL_THEME_CUSTOM: /css/robot-lung.css
 #+HTML_HEAD_EXTRA: <div class="line top"></div><div class="line bottom"></div><div class="line left"></div><div class="line right"></div>
 #+HTML_HEAD_EXTRA: <style>.line {background: #415F8E;}</style>
 
@@ -22,10 +22,11 @@
 
 * Schedule
 |  9:00 | About Me & Setup           |
-|  9:30 | Crash course in HTML & CSS |
-| 10:00 | Markdown & Your Resume     |
-| 10:30 | Static Websites            |
-| 11:00 | Build Your Website!        |
+|  9:20 | Crash course in HTML & CSS |
+|  9:50 | Markdown & Your Resume     |
+| 10:20 | Static Websites            |
+| 10:50 | Build Your Website!        |
+| 11:00 | Fun                        |
 ** Goals
 - Set up a markdown and web development environment on your machine
 - Refresh your resume
@@ -337,7 +338,7 @@ title: "My Awesome Resume"
 - Templating language
 - Allows hierarchical construction of a jekyll web page
 - Access to variables, programming constructs
-** *Activity: Your Resume Website* /3:00/
+** *Activity: Your Resume Website*
 - Fork [[https://github.com/gonsie/jekyll-resume]]
 - In settings: make sure *GitHub Pages* is turned on (from the main branch)
 - Clone your repo and update the =resume.md= file (with the front matter!)
@@ -375,7 +376,7 @@ https://gonsie.github.io/index.html
   - [[https://dev.to]]
 - Build your own network with RSS
 ** Personal Site Demo
-** *Activity: Build Your Website* /5:00/
+** *Activity: Build Your Website*
 - Look up a domain (try [[https://namecheap.com][namecheap]] or [[https://hover.com][hover]]). How much does it cost?
 - Explore different Static Site Generators
 - Find a theme (most come with instructions)
@@ -400,9 +401,9 @@ https://gonsie.github.io/index.html
 ** *Activity: Show & Tell*
 - What did you build?
 * Credits
-Created with [[https://www.gnu.org/software/emacs/][Emacs]], [[https://orgmode.org][Org Mode]], and [[https://revealjs.com][RevealJS]]
+Created by [[https://gonsie.com][Elsa Gonsiorowski]]
 
-(using the [[https://revealjs-themes.dzello.com/#/][Robot Lung]] theme).
+using [[https://www.gnu.org/software/emacs/][Emacs]], [[https://orgmode.org][Org Mode]], and [[https://revealjs.com][RevealJS]] ([[https://revealjs-themes.dzello.com/#/][Robot Lung]] theme).
 
 #+begin_export html
 View the <a href="./web.org">source</a>.
