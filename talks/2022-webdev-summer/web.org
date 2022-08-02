@@ -32,8 +32,7 @@
 - Build a personal website
 - Have fun!
 
-Follow along: [[https://www.gonsie.com/talks
-]]
+Follow along: [[https://www.gonsie.com/talks/2022-webdev-summer/index.html][gonsie.com/talks]]
 ** POLL
 - Who can find the "raise hand" button on webex?
 * About Me & Setup
