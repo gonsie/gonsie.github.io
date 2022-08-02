@@ -1,0 +1,6 @@
+body {
+color: blue;
+}
+p.ugly {
+border-bottom: 1px dotted #999;
+}
