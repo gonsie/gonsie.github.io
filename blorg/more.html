@@ -1,0 +1,30 @@
+---
+layout: page
+title: Pages
+---
+
+<section class="post-list">
+    <div class="container">
+        {% for p in site.pages %}
+        {% if p.layout == "page" and p.title != page.title %}
+            <div class="post-preview">
+                <span class="post-title alignable pull-left">
+                    <a class="post-link underline" href="{{ p.url | prepend: site.baseurl }}">
+                        {{ p.title }}
+                    </a>
+                </span>
+                <div style="clear:both; height:5px;"></div>
+            </div>
+        {% endif %}
+        {% endfor %}
+            <div class="post-preview">
+                <span class="post-title alignable pull-left">
+                    <a class="post-link underline" href="/cv">
+                        Elsa's CV
+                    </a>
+                </span>
+                <div style="clear:both; height:5px;"></div>
+            </div>
+
+    </div>
+</section>
