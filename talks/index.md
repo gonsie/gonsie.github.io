@@ -5,10 +5,9 @@ title: Talks
 
 ## 2022
 
-- [Building a Personal Website](/talks/2022-webdev-summer/index.html), LC Summer Students. August 2, 2022.
-- [Introduction to Git](/talks/2022-git-intro/git-intro.html), LLNL CS Fundamentals. July 11, 2022.
-- [Career Workshop](/talks/2022-ihpcss/career-paths.html), International HPC Summer School. June 22, 2022.
-- [Introduction for Mentors](/talks/2022-ihpcss/intro-for-mentors.html), International HPC Summer School. June 19, 2022.
+- [Introduction to Git](/talks/2022-git-intro/git-intro.html), LLNL CS Fundamentals. July 11, 2022
+- [Career Workshop](/talks/2022-ihpcss/career-paths.html), International HPC Summer School. June 22, 2022
+- [Introduction for Mentors](/talks/2022-ihpcss/intro-for-mentors.html), International HPC Summer School. June 19, 2022
 
 ## 2021
 

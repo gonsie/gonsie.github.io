@@ -29,8 +29,6 @@ plugins:
 feed:
     path: blorg/feed.xml
 
-exclude:
-  - octicons
 
 # old site
 
