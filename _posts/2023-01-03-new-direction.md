@@ -33,3 +33,4 @@ Anyways, here is a list of some hobbies that are sparking my interest right now.
 -   Knitting (if only I had the time/space, but alas, not in this current season of life)
 -   Trying out modal editing, maybe something like [Meow](https://github.com/meow-edit/meow)
 -   Trying a new keyboard and/or layout (I've been using Dvorak and Apple keyboards for a like decade ?!?)
+-   Converting this website to a new tech stack
