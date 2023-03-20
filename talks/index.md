@@ -15,6 +15,7 @@ title: Talks
 - [What's the Big Deal About SC?](/talks/2021-newt-sc/nav-sc.html), LC NEWT Lightning Talks. September 22, 2021.
 - [Career Workshop](/talks/2021-ihpcss-mentoring/career-paths.html), International HPC Summer School. July 23, 2021.
 - [Building a Personal Website](/talks/2021-hpccea-website/index.html), LC Summer Students. July 19, 2021.
+- [Using the PSIP Toolkit to Achieve Your Goals – A Case Study at The HDF Group](https://ideas-productivity.org/events/hpc-best-practices-webinars/#webinar053), HPC Best Practices Webinar. June 9, 2021.
 
 ## 2019
 
