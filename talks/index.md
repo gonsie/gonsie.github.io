@@ -3,6 +3,11 @@ layout: page
 title: Talks
 ---
 
+## 2023
+
+- [Career Paths](/talks/2023-ihpcss/career-paths.html), International HPC Summer School. July 10, 2023.
+- [Ada Lovelace's Computer Program](/talks/2023-ada-appletime.pdf), LLNL Computing Summer Students. June 23, 2023.
+
 ## 2022
 
 - [Building a Personal Website](/talks/2022-webdev-summer/index.html), LC Summer Students. August 2, 2022.
