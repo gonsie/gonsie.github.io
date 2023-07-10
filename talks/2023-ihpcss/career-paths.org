@@ -6,8 +6,8 @@
 #+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
 # +REVEAL_INIT_OPTIONS: width:2000,height:1000 ## this makes font look smaller
 #+REVEAL_THEME: custom
-# +REVEAL_THEME_CUSTOM: /css/robot-lung.css
-#+REVEAL_THEME_CUSTOM: /Users/gonsie/Projects/WEBSITE/gonsie.github.com/talks/2023-ihpcss/robot-lung.css
+#+REVEAL_THEME_CUSTOM: /css/robot-lung.css
+# +REVEAL_THEME_CUSTOM: /Users/gonsie/Projects/WEBSITE/gonsie.github.com/talks/2023-ihpcss/robot-lung.css
 #+HTML_HEAD_EXTRA: <div class="line top"></div><div class="line bottom"></div><div class="line left"></div><div class="line right"></div>
 #+HTML_HEAD_EXTRA: <style>.line {background: #4EA69E;}</style>
 
