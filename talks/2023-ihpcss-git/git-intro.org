@@ -1,0 +1,239 @@
+#+title: Introduction to Git
+#+author: Elsa Gonsiorowski
+#+date: July 12, 2023
+
+#+options: H:2 toc:1 num:1
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+REVEAL_INIT_OPTIONS: height:1000, slideNumber:'c/t'
+#+REVEAL_THEME: solarized
+
+* Introduction
+** Course Goals
+- What is version control and why is it important
+- Configuring git, using =git config=
+- =git init= and the =.git= directory
+- Tracking a change with =git add=, =git commit=
+- Viewing repository status with =git status=
+- Adding a remote with =git remote=
+- Pushing changes to the remote =git push=
+** Poll
+#+attr_reveal: :frag (appear)
+- How many folks have used git /at all/ before?
+- How many folks have a GitHub account?
+** Git Caveats
+- Git is powerful
+- Git has a terrible user design
+- Git is hard to fully learn by yourself
+- Git (like any other tool) takes time and practice to get good
+** COMMENT ideas for interactions
+I'd like to propose this: I'm going to review a few git concepts and commands.
+Then, I will give you some tasks. You will figure out how to do them.
+
+1. speak to 1 neighbor
+2. speak to another neighbor
+3. add a line for hobbies
+4. push to github
+5. Swap computers with someone, have them make edits to your file. close the window
+6. find someone who has the same editor as you. and chat about git integration
+** Setup
+- This is a 2 hour interactive session, there is so much more to learn!
+- Please type along!
+- You will need:
+  - A terminal with git installed
+  - A text editor
+  - A GitHub account
+- Suggested setup: 2 "desktops" or "spaces", one with your editor and one with your terminal
+* What is Version Control
+[[https://swcarpentry.github.io/git-novice/01-basics.html][SC: Automated Version Control]]
+** VC Through Naming
+[[file:images/phd101212s.png]]
+** COMMENT VC in Parallel
+:PROPERTIES:
+:attr_html: :dislpay inline
+:END:
+
+#+attr_html: :width 50% :text-align left
+[[file:images/versions.svg]]
+
+#+attr_html: :width 50% :text-align right
+[[file:images/merge.svg]]
+** VC in Parallel
+# +attr_html: :height 500px
+[[file:images/versions-merge.drawio.svg]]
+** Key Features
+- Version control is unlimited undo (but not at a granular level)
+- Version Control allows many people to work in parallel
+** Other VC Systems
+[[file:images/snapshots.png]]
+
+/from [[https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F][_Pro Git_ by Scott Chacon and Ben Straub]]/
+** How Git Works
+[[file:images/deltas.png]]
+
+/from [[https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F][_Pro Git_ by Scott Chacon and Ben Straub]]/
+** Key Git Feature
+- The /deltas/ are important
+- Represent a distinct set of changes
+- Accompanied by a /commit message/
+* Configuring Git
+[[https://swcarpentry.github.io/git-novice/02-setup.html][SC: Setting Up Git]]
+** Configuring from the Command Line
+#+begin_src shell
+  git config --global user.name "Ada Lovelace"
+  git config --global user.email "ada@lovelace.io"
+  git config --global core.editor "emacs -nw"
+  git config --global init.defaultBranch main
+#+end_src
+** Help with Config
+#+begin_src shell
+  git config --list
+  git config --help
+  cat ~/.gitconfig
+#+end_src
+** Current Config =~/.gitconfig=
+#+begin_src
+[core]
+    editor = emacs -nw
+[init]
+    defaultBranch = main
+[user]
+    name = Ada Lovelace
+    email = ada@lovelace.io
+#+end_src
+* Networking Activity
+** Working Example
+- We are going to create a "database" or /repository/ of people you've met at the summer school
+- We will track changes using git and keep it all on GitHub
+- The following slides are simple instructions that you need to work through, follow along with me!
+** *Activity: Make Friends*
+#+attr_reveal: :frag (appear)
+- Create a new file to track your friends, including first name and institution
+  - I am Elsa from Lawrence Livermore National Lab
+- Start tracking this file with Git
+- Put this on GitHub
+- Talk to your neighbor and add them to your file
+  - don't forget to commit your changes
+- Talk to a different neighbor and add their information
+- Add hobbies to your entries
+** *Activity: Friends Challenge*
+- Open /just/ your text editor on your laptop
+- Swap laptops with a neighbor
+- Make a change (addition and/or deletion) to the file in front of you
+- Swap back
+- What changed??
+*** COMMENT Speaker notes
+- Make an addition with a new person
+- Fix (or insert) a typo
+- Change (or add) someone's hobby
+** Watch me!
+- Figure out what has changed
+- Commit changes in separate hunks
+** *Activity: Extra Time*
+- Find someone's repo on GitHub
+- Make a change to their friends file
+* COMMENT Git Repositories
+[[https://swcarpentry.github.io/git-novice/03-create.html][SC: Creating a Repository]] and [[https://swcarpentry.github.io/git-novice/04-changes.html][SC: Tracking Changes]]
+** Assumptions
+- You are familiar with working on the command line
+- You know the commands:
+  | *=ls=*    | list files, with the flags =-al= |
+  | *=cd=*    | change directory                 |
+  | *=mkdir=* | make directory                   |
+  | *=echo=*  | repeat text                      |
+  | *=>=*     | output redirection               |
+** Create a Repository
+#+begin_src shell :exports both :eval no
+  cd ~/Projects
+  ls -al
+  mkdir Friends
+  cd Friends
+  git init
+  ls -al
+#+end_src
+
+#+RESULTS:
+#+begin_example
+ Initialized empty Git repository in /Users/gonsie/Desktop/Friends/.git/
+
+ total        0
+ drwxr-xr-x   3  gonsiorowski1 59746  96 Jul 11 10:43 .
+ drwx------@ 16  gonsiorowski1 59746 512 Jul 11 10:43 ..
+ drwxr-xr-x   9  gonsiorowski1 59746 288 Jul 11 10:43 .git
+#+end_example
+** Query Git
+#+begin_src shell :exports both :eval no
+git status
+#+end_src
+
+#+RESULTS:
+#+begin_example
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+#+end_example
+
+** Add a File
+#+begin_src shell :exports both :eval no
+  echo "Weronika" > friends.txt
+  ls -al
+  git status
+#+end_src
+
+#+RESULTS:
+#+begin_example
+ total        0
+ drwxr-xr-x   3  gonsiorowski1 59746     96 Jul 11 10:43 .
+ drwx------@ 16  gonsiorowski1 59746    512 Jul 11 10:43 ..
+ drwxr-xr-x   9  gonsiorowski1 59746    288 Jul 11 10:43 .git
+ -rw-r--r--   1  gonsiorowski1 59746     50 Jul 11 11:08 friends.txt
+
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	mars.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+#+end_example
+** Commit Your Changes
+* Continue Your Journey
+** This is just the beginning
+- More things to learn:
+  - branching
+  - collaboration through "pull" or "merge" requests
+  - platforms: GitHub and GitLab
+** Git Hosting Services
+- GitHub, GitLab, BitBucket, and many more
+- Additional concepts: permissions, "pull request" or "merge request"
+- Additional tools: issue tracking, wiki, web/documentation hosting, CI/CD
+** Get Social
+- Sign up for GitHub
+  - Follow your friends, star your favorite projects
+  - If you follow me this week I will follow you back
+- Use GitHub to showcase projects (may need to get permission)
+- Use GitHub to collaborate and network
+** *Activity: GitHub Secret*
+- Create a new repo called /username/
+- Add a =README.md= file
+- Visit your GitHub Profile (=github.com/username=)
+** Git Lessons
+- [[https://swcarpentry.github.io/git-novice/][Software Carpentry: Git Novice]]
+- [[https://training.github.com][Git Cheetsheet]]
+- [[https://docs.gitlab.com/ee/tutorials/#use-git][GitLab: Use Git Tutorials]]
+- [[https://www.atlassian.com/git][Atlassian (BitBucket): Learn Git]]
+** Advanced Git Resources
+- [[https://skills.github.com][GitHub Skills]]
+- [[https://learngitbranching.js.org][Learn Git Branching Interactively]]
+- [[https://sethrobertson.github.io/GitFixUm/fixup.html][Choose your own adventure: undoing, fixing, or removing commits in git]]
+* Credits
+Content inspired by [[https://swcarpentry.github.io/git-novice/index.html][Software Carpentry's Version Control with Git]] course.
+
+Created with [[https://www.gnu.org/software/emacs/][Emacs]], [[https://orgmode.org][Org Mode]], and [[https://revealjs.com][RevealJS]].
+
+#+begin_export html
+View the <a href="./git-intro.org">source</a>.
+#+end_export
