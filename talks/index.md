@@ -5,6 +5,7 @@ title: Talks
 
 ## 2023
 
+- [Hands-on with Git](/talks/2023-ihpcss-git/git-intro.html), International HPC Summer School. July 12, 2023.
 - [Career Paths](/talks/2023-ihpcss/career-paths.html), International HPC Summer School. July 10, 2023.
 - [Ada Lovelace's Computer Program](/talks/2023-ada-appletime.pdf), LLNL Computing Summer Students. June 23, 2023.
 
