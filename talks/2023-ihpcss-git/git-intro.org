@@ -7,6 +7,20 @@
 #+REVEAL_INIT_OPTIONS: height:1000, slideNumber:'c/t'
 #+REVEAL_THEME: solarized
 
+* COMMENT notes for next year
+
+- Have students network before trying to push to github.
+- Diagram what a git commit looks like and the graphic that we use to describe commit history
+- branch name is a label
+
+** Github setup issues
+1. Make an account
+2. Set up SSH keys
+3. Walk through creating a repo
+4. push to remote with git@ url
+5. Remote add / remove commands — explain
+
+
 * Introduction
 ** Course Goals
 - What is version control and why is it important
