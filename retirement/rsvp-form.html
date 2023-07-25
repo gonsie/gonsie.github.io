@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,700;0,1000;1,300;1,400;1,700;1,1000&display=swap" rel="stylesheet">
+  <style type="text/css">
+    body {
+        text-align: left;
+        font-family: "Mulish", sans-serif;
+        padding: 3em;
+        margin: auto;
+        max-width: 600px;
+        display: block;
+        background: #fef7be;
+        color: #004C67;
+    }
+    p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 1em;
+        margin: 1em;
+    }
+    h1 {
+        text-align: center;
+        font-style: italic;
+        font-weight: 1000;
+        font-size: 3.5em;
+        margin: 0;
+    }
+    small {
+        font-weight: 300;
+    }
+    /* @media (prefers-color-scheme: dark) {html {filter: invert(1) hue-rotate(180deg);}} */
+
+    /* Comment Form * * * * * * * * * * */
+    input, textarea, checkbox {
+        width: 100%;
+        padding: .5em;
+        margin: 1em 0;
+        display: inline-block;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    input[type=checkbox] {
+        display: inline-block;
+        width: auto;
+        margin: auto 10px;
+    }
+
+    input[type=text], select, textarea {
+        border: 1px solid #004C67;
+    }
+
+    input[type=submit] {
+        background-color: #0097cd;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 1em;
+        border-radius: 1em;
+        padding: .5em 1.5em;
+    }
+
+    input[type=submit]:hover {
+        background-color: #004C67;
+    }
+
+    .comment-form {
+        border-radius: 5px;
+        padding: 2em;
+    }
+  </style>
+  <body>
+
+    <h1>RSPV</h1>
+
+
+    <div class="rsvp-form">
+      <form action="https://formsubmit.co/08539beb0bbdc26dab08b1906cfaa0dd" method="post">
+        <label for="rsvp-form-name">Name*</label>
+        <input type="text" name="name" id="rsvp-form-name" required><br/>
+
+        <label for="rsvp-form-email">Email*</label>
+        <input type="text" name="email" id="rsvp-form-email" required><br/>
+
+        <label for="lunch">
+          <input type="checkbox" name="lunch" id="rsvp-form-lunch" value="lunch">
+          I/We expect to attend lunch</label><br/>
+
+        <label for="dinner">
+          <input type="checkbox" name="dinner" id="rsvp-form-dinner" value="dinner">
+          I/We expect to attend dinner</label><br/>
+        <br/>
+
+        <label for="rsvp-form-rsvp">Head count and other comments*</label>
+        <br/>
+        <textarea name="rsvp" id="rsvp-form-rsvp" rows="10" required></textarea><br/>
+
+        <input type="hidden" name="_next" value="https://gonsie.com/retirement/rsvp-success.html">
+        <input type="hidden" name="_subject" value="{{ page.title }}">
+        <input type="text" name="_honey" style="display:none">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="submit" value="Submit" />
+        * Required
+      </form>
+    </div>
+
+    <p><small>Please direct any questions or comments to<br>
+        Elsa Gonsiorowski <a href="mailto:gonsie@me.com?subject=Tom and Barbara's Retirement">gonsie@me.com</a></small></p>
+
+
+  </body>
+</html>
