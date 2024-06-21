@@ -439,4 +439,4 @@ A prize will be awarded to anyone who shares their bug story at the end of the h
 ** Tools
 Created with [[https://www.gnu.org/software/emacs/][Emacs]], [[https://orgmode.org][Org Mode]], and LaTeX/Beamer.
 
-View the [[./2024-ada-appletime.org][source]].
+View the [[https://raw.githubusercontent.com/gonsie/gonsie.github.io/master/talks/2024-ada-appletime.org][source]].

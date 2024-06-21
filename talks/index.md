@@ -5,7 +5,7 @@ title: Talks
 
 ## 2024
 
-- [Ada Lovelace's Computer Program](/talks/2023-ada-appletime.pdf), LLNL Computing Summer Students. June 21, 2024.
+- [Ada Lovelace's Computer Program](/talks/2024-ada-appletime.pdf), LLNL Computing Summer Students. June 21, 2024.
 
 ## 2023
 
