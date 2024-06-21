@@ -1,0 +1,442 @@
+#+startup: beamer
+#+beamer_theme: Rochester
+#+beamer_color_theme: owl
+#+latex_header: \usepackage{inconsolata}
+# +latex_header: \usepackage{pgfpages}
+# +latex_header: \setbeameroption{show notes on second screen=bottom}
+#+latex_header: \hypersetup{colorlinks,linkcolor=yellow,urlcolor=yellow}
+#+latex_header: \lstset{language=C,basicstyle=\tiny\ttfamily,tabsize=2,columns=fixed,showstringspaces=false,showtabs=false,keywordstyle=\color{blue}\textbf,commentstyle=\color{gray},stringstyle=\color{green!70!black},stringstyle=\color{red},}
+#+title: Ada Lovelace's Computer Program
+#+subtitle: Apple Time
+#+author: Elsa Gonsiorowski
+#+date: June 21, 2024
+
+#+options: H:2 toc:nil notes:nil
+#+startup: latexpreview inlineimages
+
+* SLIDES
+** COMMENT Schedule
+| 2 min  | About me                          |
+| 10 min | Talk about the first computer bug |
+| 20 min | Breakout session 1                |
+| 20 min | Breakout session 2?               |
+** Apple Time
+| 20 Min | Short Talk            |
+| 15 Min | Discussion / Breakout |
+| 10 Min | Prizes!               |
+
+- Links are in orange
+- Full screen is recommended
+- Slides available at [[http://www.gonsie.com/talks/2024-ada-appletime.pdf][gonsie.com/talks]]
+** Elsa Gonsiorowski
+*** left
+:PROPERTIES:
+:BEAMER_col: 0.45
+:END:
+#+attr_latex: :width \textwidth
+[[file:~/Projects/dotfiles/assets/headshot-clouds.png]]
+*** right
+:PROPERTIES:
+:BEAMER_col: 0.45
+:END:
+- HPC I/O Support Specialist in Livermore Computing since 2016
+- Developer for SCR: Scalable Checkpoint Restart library
+- LC Hotline tech
+- Working remotely in RI
+- Excited about emacs, org-mode, static websites, fish shell, cmake, documentation, crossfit, rowing, knitting
+** Mathematical Tables -- 200 years ago
+*** right
+:PROPERTIES:
+:BEAMER_col: 0.45
+:END:
+#+attr_latex: :width \textwidth
+
+#+attr_org: :width 300
+[[file:images/Logarithmorum_Chilias_Prima_page_0-67.jpg]]
+*** left
+:PROPERTIES:
+:BEAMER_col: 0.45
+:END:
+- Calculated values of logarithmic and trigonometric functions
+- Built by hand by human "computers"
+- Used to do rapid multiplication, division, and exponentiation
+*** Note
+:PROPERTIES:
+:BEAMER_env: note
+:END:
+- people building these tables were called 'computers'
+- as seen in the movie /Hidden Figures/
+- often the tables had typos
+- tables needed for science, engineering, defense
+** Charles Babbage and the Difference Engine
+*** right
+:PROPERTIES:
+:BEAMER_col: 0.45
+:END:
+#+attr_latex: :width \textwidth
+
+#+attr_org: :width 300
+[[file:images/Charles_Babbage_-_1860.jpg]]
+*** left
+:PROPERTIES:
+:BEAMER_col: 0.45
+:END:
+- 1791--1871
+- Idea for a /Difference Engine/ to mechanically do the work of human computers
+  - Began development in 1822
+  - would have composed 25,000 parts, weighed 15 tons, stood 8 feet tall
+*** Note
+:PROPERTIES:
+:BEAMER_env: note
+:END:
+- Babbage began development of the Difference Engine to tabulate logarithms and trigonometric functions by evaluating finite differences
+** COMMENT Difference Engine #2
+*** right
+:PROPERTIES:
+:BEAMER_col: 0.45
+:END:
+#+attr_latex: :width \textwidth
+
+#+attr_org: :width 300
+[[file:images/charles-babbage-grandfather-of-the-modern-computer.jpg]]
+*** left
+:PROPERTIES:
+:BEAMER_col: 0.45
+:END:
+- Seven difference columns
+** Analytical Engine
+*** right
+:PROPERTIES:
+:BEAMER_col: 0.45
+:END:
+- Design began in 1833, described in 1837
+- General purpose, i.e., Turing Complete
+- Arithmetic logic unit, control flow (conditional branching and loops), memory, printer, and bell
+*** left
+:PROPERTIES:
+:BEAMER_col: 0.45
+:END:
+#+attr_latex: :width \textwidth
+
+#+attr_org: :width 300
+[[file:images/AnalyticalEngine.jpg]]
+** Augusta Ada King (née Byron), Countess of Lovelace
+*** left
+:PROPERTIES:
+:BEAMER_col: 0.45
+:END:
+- Dec. 10, 1815--Nov. 27, 1852
+- Child of poet Lord Byron and Lady Byron
+- 1833: Met Charles Babbage at a party
+- 1835: Married William King who became Earl of Lovelace
+*** right
+:PROPERTIES:
+:BEAMER_col: 0.45
+:END:
+#+attr_latex: :width \textwidth
+
+#+attr_org: :width 300
+[[file:images/Ada_Lovelace_portrait.jpg]]
+*** Note
+:PROPERTIES:
+:BEAMER_env: note
+:END:
+- only legitimate child of Lord Byron
+- parents divorced 1 month after her birth
+** Babbage and Young Lady Byron
+*** left
+:PROPERTIES:
+:BEAMER_col: 0.45
+:END:
+- 1833: Met at a party (Babbage age 41, Ada age 17)
+- Ada had extensive mathematics eduction to "ward off wild, romatic sensibility" of her father
+- They were in the same social circle and wrote each other frequently
+*** right
+:PROPERTIES:
+:BEAMER_col: 0.45
+:END:
+#+attr_latex: :width \textwidth
+
+#+attr_org: :width 300
+[[file:images/babbage-letter.jpg]]
+** Sketch of the Analytical Engine
+*** left
+:PROPERTIES:
+:BEAMER_col: 0.45
+:END:
+#+attr_latex: :width \textwidth
+
+#+attr_org: :width 300
+[[file:images/titlepage.png]]
+*** right
+:PROPERTIES:
+:BEAMER_col: 0.45
+:END:
+#+attr_latex: :width \textwidth
+
+#+attr_org: :width 300
+[[file:images/lovelace-translation.png]]
+*** Note
+:PROPERTIES:
+:BEAMER_env: note
+:END:
+- Luigi Menabrea published outline of what it could do in 1842, included "diagrams of development" (basic examples)
+- Translated to English in 1843 by Ada Lovelace
+- Text available on Google Books
+** Bernoulli Numbers
+\begin{eqnarray*}
+\sum n   &=& \frac{1}{2}n^2+\frac{1}{2}n\\
+\sum n^2 &=& \frac{1}{3}n^3+ \frac{1}{2}n^2+\frac{1}{6}n\\
+\sum n^3 &=& \frac{1}{4}n^4+ \frac{1}{2}n^3+\frac{1}{4}n^2
+\end{eqnarray*}
+
+\begin{eqnarray*}
+\sum n^m &=& \frac{1}{m+1}(B_0 n^{m+1} \pm {m+1 \choose 1}B_1 n^m + {m+1 \choose 2}B_2 n^{m-1}+...)
+\end{eqnarray*}
+*** Note
+:PROPERTIES:
+:BEAMER_env: note
+:END:
+- sequence of rational numbers which occur frequently in number theory
+** B_7 = -1(A_0 + B_1 A_1 + B_3 A_3 + B_5 A_5)
+\begin{eqnarray*}
+A_0 &=& -\frac{1}{2} \cdot \frac{2n-1}{2n+1}\\
+A_1 &=& \frac{2n}{2}\\
+A_3 &=& \frac{2n(2n-1)(2n-2)}{2 \cdot 3 \cdot 4}\\
+A_5 &=& \frac{2n(2n-1)(2n-2)(2n-3)(2n-4)}{2 \cdot 3 \cdot 4 \cdot 5 \cdot 6}
+\end{eqnarray*}
+** Notes from the Translator
+- Note A :: Promise of a machine that can perform arbirtary mathematical operations
+- Note G :: /Lady Lovelace's Objection/ -- despite it's power, the machine does not "think"
+- Note D :: "Diagram of development" for calculating @@latex:\\@@B_7 = -1(A_0 + B_1 A_1 + B_3 A_3 + B_5 A_5)
+*** Note
+:PROPERTIES:
+:BEAMER_env: note
+:END:
+#+begin_example
+whose mutual fundamental relations could be expressed by those of the abstract science of operations, and which should be also susceptible of adaptations to the action of the operating notation and mechanism of the engine
+#+end_example
+* COMMENT Note D Image
+#+attr_org: :width 600
+[[file:images/Diagram_for_the_computation_of_Bernoulli_numbers.jpg]]
+* PROGRAM IMAGE
+#+BEGIN_export latex
+{
+\usebackgroundtemplate{\includegraphics[height=\paperheight,width=\paperwidth]{images/Diagram_for_the_computation_of_Bernoulli_numbers.jpg}}
+#+END_export
+** @@latex:@@
+:PROPERTIES:
+:BEAMER_opt: plain
+:END:
+*** Notes
+:PROPERTIES:
+:BEAMER_env: note
+:END:
+- variables are more like registers
+- indication of change in value on any variable
+- line numbers
+- contains 2 =while= loops, one inside the other
+- there is a BUG on line 4
+- The first to publish a "complex program"
+* ERROR IMAGE
+#+BEGIN_export latex
+}
+{
+\usebackgroundtemplate{\includegraphics[height=\paperheight,width=\paperwidth]{images/Diagram_for_the_computation_of_Bernoulli_numbers-ERROR.jpg}}
+#+END_export
+** @@latex:@@
+:PROPERTIES:
+:BEAMER_opt: plain
+:END:
+*** Notes
+:PROPERTIES:
+:BEAMER_env: note
+:END:
+- there is a BUG on line 4
+* MORE SLIDES
+#+BEGIN_export latex
+}
+#+END_export
+** COMMENT Full C Program
+#+begin_src c
+  #include <stdio.h>
+
+/*
+ * Calculates what Ada Lovelace labeled "B7", which today we would call the 8th
+ * Bernoulli number.
+ */
+int main(int argc, char* argv[])
+{
+    // ------------------------------------------------------------------------
+    // Data
+    // ------------------------------------------------------------------------
+    float v1 = 1; // 1
+    float v2 = 2; // 2
+    float v3 = 4; // n
+
+    // ------------------------------------------------------------------------
+    // Working Variables
+    // ------------------------------------------------------------------------
+    float v4 = 0;
+    float v5 = 0;
+    float v6 = 0;                        // Factors in the numerator
+    float v7 = 0;                        // Factors in the denominator
+    float v8 = 0;
+    float v10 = 0;                       // Terms remaining count, basically
+    float v11 = 0;                       // Accumulates v6 / v7
+    float v12 = 0;                       // Stores most recent calculated term
+    float v13 = 0;                       // Accumulates the whole result
+
+    // ------------------------------------------------------------------------
+    // Result Variables
+    // ------------------------------------------------------------------------
+    float v21 = 1.0f / 6.0f;             // B1
+    float v22 = -1.0f / 30.0f;           // B3
+    float v23 = 1.0f / 42.0f;            // B5
+    float v24 = 0;                       // B7, not yet calculated
+
+    // ------------------------------------------------------------------------
+    // Calculation
+    // ------------------------------------------------------------------------
+    // ------- A0 -------
+    /* 01 */ v4 = v5 = v6 = v2 * v3;      // 2n
+    /* 02 */ v4 = v4 - v1;                // 2n - 1
+    /* 03 */ v5 = v5 + v1;                // 2n + 1
+
+    // In Lovelace's diagram, the below appears as v5 / v4, which is incorrect.
+    /* 04 */ v11 = v4 / v5;               // (2n - 1) / (2n + 1)
+
+    /* 05 */ v11 = v11 / v2;              // (1 / 2) * ((2n - 1) / (2n + 1))
+    /* 06 */ v13 = v13 - v11;             // -(1 / 2) * ((2n - 1) / (2n + 1))
+    /* 07 */ v10 = v3 - v1;               // (n - 1), set counter?
+
+    // A0 = -(1 / 2) * ((2n - 1) / (2n + 1))
+
+    // ------- B1A1 -------
+    /* 08 */ v7 = v2 + v7;                // 2 + 0, basically a MOV instruction
+    /* 09 */ v11 = v6 / v7;               // 2n / 2
+    /* 10 */ v12 = v21 * v11;             // B1 * (2n / 2)
+
+    // A1 = (2n / 2)
+    // B1A1 = B1 * (2n / 2)
+
+    // ------- A0 + B1A1 -------
+    /* 11 */ v13 = v12 + v13;            // A0 + B1A1
+    /* 12 */ v10 = v10 - v1;             // (n - 2)
+
+    // On the first loop this calculates B3A3 and adds it on to v13.
+    // On the second loop this calculates B5A5 and adds it on.
+    while (v10 > 0)
+    {
+        // ------- B3A3, B5A5 -------
+        while (v6 > 2 * v3 - (2 * (v3 - v10) - 2))
+        {                                    // First Loop:
+            /* 13 */ v6 = v6 - v1;           // 2n - 1
+            /* 14 */ v7 = v1 + v7;           // 2 + 1
+            /* 15 */ v8 = v6 / v7;           // (2n - 1) / 3
+            /* 16 */ v11 = v8 * v11;         // (2n / 2) * ((2n - 1) / 3)
+
+                                             // Second Loop:
+            // 17    v6 = v6 - v1;              2n - 2
+            // 18    v7 = v1 + v7;              3 + 1
+            // 19    v8 = v6 / v7;              (2n - 2) / 4
+            // 20    v11 = v8 * v11;            (2n / 2) * ((2n - 1) / 3) * ((2n - 2) / 4)
+        }
+
+        // A better way to do this might be to use an array for all of the
+        // "Working Variables" and then index into it based on some calculated
+        // index. Lovelace might have intended v14-v20 to be used on the
+        // second iteration of this loop.
+        //
+        // Lovelace's program only has the version of the below line using v22
+        // in the multiplication.
+        if (v10 == 2)
+        {
+        /* 21 */ v12 = v22 * v11;            // B3 * A3
+        }
+        else
+        {
+        /* 21 */ v12 = v23 * v11;            // B5 * A5
+        }
+
+        // B3A3 = B3 * (2n / 2) * ((2n - 1) / 3) * ((2n - 2) / 4)
+
+        // ------- A0 + B1A1 + B3A3, A0 + B1A1 + B3A3 + B5A5 -------
+        /* 22 */ v13 = v12 + v13;            // A0 + B1A1 + B3A3 (+ B5A5)
+        /* 23 */ v10 = v10 - v1;             // (n - 3), (n - 4)
+    }
+
+    /* 24 */ v24 = v13 + v24; // Store the final result in v24
+    /* 25 */ v3 = v1 + v3;    // Move on to the next Bernoulli number!
+
+    // This outputs a positive number, but really the answer should be
+    // negative. There is some hand-waving in Lovelace's notes about the
+    // Analytical Engine sorting out the proper sign.
+    printf("A0 + B1A1 + B3A3 + B5A5: %.2f\n", v24);
+}
+#+end_src
+** Program Snippet ([[https://gist.github.com/sinclairtarget/ad18ac65d277e453da5f479d6ccfc20e][GitHub Gist]])
+#+begin_src c
+      // ------- A0 -------
+      /* 01 */ v4 = v5 = v6 = v2 * v3;      // 2n
+      /* 02 */ v4 = v4 - v1;                // 2n - 1
+      /* 03 */ v5 = v5 + v1;                // 2n + 1
+
+      // In Lovelace's diagram, the below appears as v5 / v4, which is incorrect.
+      /* 04 */ v11 = v4 / v5;               // (2n - 1) / (2n + 1)
+
+      /* 05 */ v11 = v11 / v2;              // (1 / 2) * ((2n - 1) / (2n + 1))
+      /* 06 */ v13 = v13 - v11;             // -(1 / 2) * ((2n - 1) / (2n + 1))
+      /* 07 */ v10 = v3 - v1;               // (n - 1), set counter?
+
+      // On the first loop this calculates B3A3 and adds it on to v13.
+      // On the second loop this calculates B5A5 and adds it on.
+      while (v10 > 0)
+      {
+          // ------- B3A3, B5A5 -------
+          while (v6 > 2 * v3 - (2 * (v3 - v10) - 2))
+          {                                    // First Loop:
+              /* 13 */ v6 = v6 - v1;           // 2n - 1
+              /* 14 */ v7 = v1 + v7;           // 2 + 1
+              /* 15 */ v8 = v6 / v7;           // (2n - 1) / 3
+              /* 16 */ v11 = v8 * v11;         // (2n / 2) * ((2n - 1) / 3)
+          }
+
+          if (v10 == 2) {
+          /* 21 */ v12 = v22 * v11;            // B3 * A3
+          } else {
+          /* 21 */ v12 = v23 * v11;            // B5 * A5
+          }
+
+          // B3A3 = B3 * (2n / 2) * ((2n - 1) / 3) * ((2n - 2) / 4)
+
+          // ------- A0 + B1A1 + B3A3, A0 + B1A1 + B3A3 + B5A5 -------
+          /* 22 */ v13 = v12 + v13;            // A0 + B1A1 + B3A3 (+ B5A5)
+          /* 23 */ v10 = v10 - v1;             // (n - 3), (n - 4)
+      }
+
+      /* 24 */ v24 = v13 + v24; // Store the final result in v24
+      /* 25 */ v3 = v1 + v3;    // Move on to the next Bernoulli number!
+
+      // This outputs a positive number, but really the answer should be
+      // negative. There is some hand-waving in Lovelace's notes about the
+      // Analytical Engine sorting out the proper sign.
+      printf("A0 + B1A1 + B3A3 + B5A5: %.2f\n", v24);
+  }
+#+end_src
+** Resources
+- [[https://twobithistory.org/2018/08/18/ada-lovelace-note-g.html][/What Did Ada Lovelace's Program Actually Do?/ TwoBitHistory.org]]
+- [[https://books.google.com/books/about/Scientific_Memoirs_Selected_from_the_Tra.html?id=qsY-AAAAYAAJ][Sketch of the Analytical Engine]]
+- [[https://gist.github.com/sinclairtarget/ad18ac65d277e453da5f479d6ccfc20e][Translation of Note D to C. (gist)]]
+- Wikipedia
+** Breakout Discussions
+- Introduce yourself to your group; what are you working on this summer?
+- What is the most difficult bug you've encountered?
+- What is the best thing you've attended so far this summer? And/or what are you most looking forward to?
+
+*** /Prizes!/
+A prize will be awarded to anyone who shares their bug story at the end of the hour
+** Tools
+Created with [[https://www.gnu.org/software/emacs/][Emacs]], [[https://orgmode.org][Org Mode]], and LaTeX/Beamer.
+
+View the [[./2024-ada-appletime.org][source]].
