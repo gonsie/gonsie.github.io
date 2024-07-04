@@ -1,0 +1,4 @@
+* What didn't work
+- needed SSH keys or PAT
+- remote add and remote remove to change URL
+- ssh-keygen -R github.com
