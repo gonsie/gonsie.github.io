@@ -6,8 +6,6 @@
 #+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
 # +REVEAL_INIT_OPTIONS: width:2000,height:1000 ## this makes font look smaller
 #+REVEAL_THEME: http://www.gonsie.com/talks/2024-ihpcss-careers/robot-lung.css
-# +REVEAL_THEME_CUSTOM: /css/robot-lung.css
-# +REVEAL_THEME_CUSTOM: /Users/gonsie/Projects/gonsie.github.io/talks/2024-ihpcss-careers/robot-lung.css
 #+HTML_HEAD_EXTRA: <div class="line top"></div><div class="line bottom"></div><div class="line left"></div><div class="line right"></div>
 #+HTML_HEAD_EXTRA: <style>.line {background: #4EA69E;}</style>
 
@@ -142,6 +140,7 @@ those who regularly use expertise in programming to advance research. This inclu
 - Join an RSE society. They have job postings and host conferences.
   - [[https://society-rse.org][Society RSE]] (Mostly UK-based)
   - [[https://us-rse.org][US RSE]]
+  - [[https://www.researchsoft.org/][ReSA]]: Research Software Alliance (international)
 - Continue to improve software engineering skills, many online courses
 - /Talk to Andrew Kirby, Weronika Filinger, Scott Callaghan/
 * Resources
@@ -162,6 +161,3 @@ Created with [[https://www.gnu.org/software/emacs/][Emacs]], [[https://orgmode.o
 #+begin_export html
 View the <a href="./career-paths.org">source</a>.
 #+end_export
-
-* Returning Mentor Lightning Talks
-/After which, we will breakout into mentoring groups and head to lunch./
