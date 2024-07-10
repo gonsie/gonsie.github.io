@@ -1,6 +1,6 @@
-#+title: Introduction to Git
+#+title: Hands on with Git
 #+author: Elsa Gonsiorowski
-#+date: July 12, 2023
+#+date: July 11, 2024
 
 #+options: H:2 toc:1 num:1
 #+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
@@ -20,7 +20,13 @@
 4. push to remote with git@ url
 5. Remote add / remove commands — explain
 
-
+* Mindset
+** Software Engineering
+#+attr_html: :width 75%
+[[file:images/margaret-hamilton.jpg]]
+** Tools of the Trade
+- work with a repository on your computer
+-
 * Introduction
 ** Course Goals
 - What is version control and why is it important
@@ -85,10 +91,8 @@ Then, I will give you some tasks. You will figure out how to do them.
 [[file:images/deltas.png]]
 
 /from [[https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F][_Pro Git_ by Scott Chacon and Ben Straub]]/
-** Key Git Feature
-- The /deltas/ are important
-- Represent a distinct set of changes
-- Accompanied by a /commit message/
+** Git Commit
+[[file:images/diff-terminal.png]]
 * Configuring Git
 [[https://swcarpentry.github.io/git-novice/02-setup.html][SC: Setting Up Git]]
 ** Configuring from the Command Line
@@ -165,7 +169,6 @@ Then, I will give you some tasks. You will figure out how to do them.
   ls -al
 #+end_src
 
-#+RESULTS:
 #+begin_example
  Initialized empty Git repository in /Users/gonsie/Desktop/Friends/.git/
 
