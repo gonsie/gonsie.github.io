@@ -71,6 +71,7 @@ Home gyms in bold, repeat locations italicized.
 | 2022         | Athens, Greece         | IHPCSS                  |   23.706244, 37.963687 |
 | 2023         | Atlanta, GA            | IHPCSS                  |  -84.389507, 33.779982 |
 | 2024         | Kobe, Japan            | IHPCSS                  |   135.206572,34.703740 |
+|:------------:|:-----------------------|:------------------------|-----------------------:|
 | **11 years** | **3 continents**       | **31 boxes**            |                        |
 
 ## URL Request for MapBox Image
