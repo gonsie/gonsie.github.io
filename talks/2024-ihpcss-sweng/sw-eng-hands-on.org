@@ -18,9 +18,11 @@ There are lots of things to try, try them now with access to experts in the room
 ** Built-ins vs commands
 ** Basic commands
 ** Loops and branching
-** Prompts
-** An aside about SSH
 ** Writing your own functions
+** Prompts
+** screens command
+* Didn't get to these
+** An aside about SSH
 ** Synchronization & HPC Concerns
 ** grep, sed, awk
 *** grep
