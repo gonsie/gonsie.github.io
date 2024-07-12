@@ -1,0 +1,41 @@
+#+title: Software Engineering Hands-on
+#+author: Elsa Gonsiorowski
+#+date: July 11, 2024
+
+* Topics Poll
+- 9 :shell: effective shell / command line usage
+- 7 :large_green_square: working with git
+- 4 :test_tube: getting started with CI / testing
+- 4 :book: documentation writing and tools
+- 3 :construction: basics of build systems
+* Session Style
+This is a hands-on, interactive session.
+I would like for student to do a bit of choose-you-own-adventure.
+Please ask your questions to the experts in the room.
+There are lots of things to try, try them now with access to experts in the room.
+* Effective Shell & Command Line Usage
+** What is a shell?
+** Built-ins vs commands
+** Basic commands
+** Loops and branching
+** Prompts
+** An aside about SSH
+** Writing your own functions
+** Synchronization & HPC Concerns
+** grep, sed, awk
+*** grep
+#+begin_src shell
+grep -sr "something" ./*
+#+end_src
+*** sed
+*** awk
+- generate an input file
+- sum contents with
+#+begin_src shell
+  shuf -i 1-1000000 -n 100 > awk_test_input.txt
+  cat awk_test_input.txt | awk '{ sum = sum + $1 } END { print sum }'
+#+end_src
+* Working With Git
+* Getting Started with CI and Testing
+* Basics of Build Systems
+* Documentation Writing and Tools
