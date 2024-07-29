@@ -5,8 +5,9 @@ title: Talks
 
 ## 2024
 
-- [Ada Lovelace's Computer Program](/talks/2024-ada-appletime.pdf), LLNL Computing Summer Students. June 21, 2024.
+- [Version Control with GIT](/talks/2024-summer-git/git-intro.html), LLNL Computing Summer Students. July 29, 2024.
 - [Career Paths](/talks/2024-ihpcss-careers/career-paths.html), International HPC Summer School. July 8, 2024.
+- [Ada Lovelace's Computer Program](/talks/2024-ada-appletime.pdf), LLNL Computing Summer Students. June 21, 2024.
 
 ## 2023
 
