@@ -1,0 +1,257 @@
+#+title: Introduction to Version Control With Git
+#+author: Elsa Gonsiorowski
+#+date: July 29, 2024
+
+#+options: H:2 toc:1 num:1
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+REVEAL_REVEAL_JS_VERSION: 4
+#+REVEAL_PLUGINS: (highlight)
+#+REVEAL_HIGHLIGHT_CSS: monokai
+#+REVEAL_INIT_OPTIONS: height:1000, slideNumber:'c/t'
+#+REVEAL_THEME: solarized
+
+** COMMENT TEST
+#+ATTR_REVEAL: :code_attribs data-line-numbers='1|3'
+#+BEGIN_SRC c++
+int main()
+{
+  cout << "Hello" << endl;
+}
+#+END_SRC
+* COMMENT Goals
+** Course Goals
+Introduction to:
+- What is version control and why is it important
+- Configuring git, using =git config=
+- =git init= and the =.git= directory
+- Tracking a change with =git add=, =git commit=
+- Viewing repository status with =git status=
+** Next Steps
+- Adding a remote with =git remote=
+- Pushing changes to the remote =git push=
+* Introduction
+** Elsa Gonsiorowski
+- HPC I/O Support Specialist in Livermore Computing since 2016
+- Developer for SCR: Scalable Checkpoint Restart library
+- LC Hotline tech
+- Working remotely in RI
+- Excited about emacs, org-mode, static websites, fish shell, cmake, documentation, crossfit, rowing, knitting
+** Schedule for the Week
+| *Version Control with GIT* | Mon |
+| Functional Programming     | Tue |
+| Object Oriented Design     | Wed |
+| Intro to Containers        | Thu |
+| Software Quality Assurance | Fri |
+** Caveats
+- This is a 1 hour session, there is so much more to learn!
+- You can type along, but I will be moving /fast/
+- Slides available on =myconfluence.llnl.gov/display/CF=
+** Raise Your Hand
+#+attr_reveal: :frag (appear)
+- If you can find the "Raise Hand" button on Webex
+- If you know someone else attending this lecture
+- If you've played a video game with "checkpoints"
+- If you've used "Track Changes" (MS Word or Google Docs)
+- If you know you have git installed on your system
+* Theory: What is Version Control
+[[https://swcarpentry.github.io/git-novice/01-basics.html][SC: Automated Version Control]]
+** VC Through Naming
+[[file:images/phd101212s.png]]
+** COMMENT VC in Parallel
+:PROPERTIES:
+:attr_html: :dislpay inline
+:END:
+
+#+attr_html: :width 50% :text-align left
+[[file:images/versions.svg]]
+
+#+attr_html: :width 50% :text-align right
+[[file:images/merge.svg]]
+** VC in Parallel
+# +attr_html: :height 500px
+[[file:images/versions-merge.drawio.svg]]
+** Key Features
+- Version control allows you take /checkpoints/ or /snapshots/ as you work on a project
+- Version control is unlimited undo (but not at a granular level)
+- Version Control allows many people to work in parallel
+* Practice: Live Demos
+** Assumptions
+- You are familiar with working on the command line
+- You know the commands:
+  | *=ls=*    | list files, with the flags =-al= |
+  | *=cd=*    | change directory                 |
+  | *=mkdir=* | make directory                   |
+  | *=echo=*  | repeat text                      |
+  | *=>=*     | output redirection               |
+** Using These Slides
+- Code and command examples are written in a fixed-width font: =like this=
+- Commands that you should run in a terminal (or "on the command line") are shown with a leading =$=.
+  Do not include the =$= when actually trying to run the command
+* Skill 1: Configuring Git
+[[https://swcarpentry.github.io/git-novice/02-setup.html][SC: Setting Up Git]]
+** Configuring from the Command Line
+#+begin_src shell
+$ git config --global user.name "Ada Lovelace"
+$ git config --global user.email "ada@lovelace.io"
+$ git config --global core.editor "emacs -nw"
+$ git config --global init.defaultBranch main
+#+end_src
+** Help with Config
+#+begin_src shell
+$ git config --list
+$ git config --help
+$ cat ~/.gitconfig
+#+end_src
+** File: =~/.gitconfig=
+#+attr_reveal: :code_attribs data-line-numbers
+#+begin_src shell
+[core]
+    editor = emacs -nw
+[init]
+    defaultBranch = main
+[user]
+    name = Ada Lovelace
+    email = ada@lovelace.io
+#+end_src
+* Skill 2: Creating a Repository
+[[https://swcarpentry.github.io/git-novice/03-create.html][SC: Creating a Repository]]
+** Create a Repository
+# +attr_reveal: :code_attribs data-line-numbers="1-4|5-6|7-11"
+#+begin_src shell :exports code :eval no
+$ cd ~/Desktop
+$ ls -al
+$ mkdir Planets
+$ cd Planets
+$ git init
+Initialized empty Git repository in /Users/gonsie/Desktop/Planets/.git/
+$ ls -al
+total        0
+drwxr-xr-x   3  gonsiorowski1 59746  96 Jul 11 10:43 .
+drwx------@ 16  gonsiorowski1 59746 512 Jul 11 10:43 ..
+drwxr-xr-x   9  gonsiorowski1 59746 288 Jul 11 10:43 .git
+#+end_src
+
+#+RESULTS:
+#+begin_example
+ Initialized empty Git repository in /Users/gonsie/Desktop/Planets/.git/
+
+ total        0
+ drwxr-xr-x   3  gonsiorowski1 59746  96 Jul 11 10:43 .
+ drwx------@ 16  gonsiorowski1 59746 512 Jul 11 10:43 ..
+ drwxr-xr-x   9  gonsiorowski1 59746 288 Jul 11 10:43 .git
+#+end_example
+** Query Git
+#+begin_src shell :exports code :eval no
+$ git status
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+#+end_src
+* Skill 3: Tracking Changes
+[[https://swcarpentry.github.io/git-novice/04-changes.html][SC: Tracking Changes]]
+** Add a File
+#+begin_src shell :exports code :eval no
+$ echo "Cold and dry, but everything is my favorite color" > mars.txt
+$ ls -al
+total        0
+drwxr-xr-x   3  gonsiorowski1 59746     96 Jul 11 10:43 .
+drwx------@ 16  gonsiorowski1 59746    512 Jul 11 10:43 ..
+drwxr-xr-x   9  gonsiorowski1 59746    288 Jul 11 10:43 .git
+-rw-r--r--   1  gonsiorowski1 59746     50 Jul 11 11:08 mars.txt
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	mars.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+#+end_src
+
+#+RESULTS:
+#+begin_example
+ total        0
+ drwxr-xr-x   3  gonsiorowski1 59746     96 Jul 11 10:43 .
+ drwx------@ 16  gonsiorowski1 59746    512 Jul 11 10:43 ..
+ drwxr-xr-x   9  gonsiorowski1 59746    288 Jul 11 10:43 .git
+ -rw-r--r--   1  gonsiorowski1 59746     50 Jul 11 11:08 mars.txt
+
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	mars.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+#+end_example
+** Start Tracking Your File
+#+begin_src shell :exports code :eval no
+$ git add mars.txt
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   mars.txt
+$ git status --short
+A  mars.txt
+#+end_src
+** Commit Your Changes
+#+begin_src shell :exports code :eval no
+$ git commit -m "started work on mars.txt"
+[main (root-commit) 3383acd] started work on mars.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 mars.txt
+$
+$ git status
+On branch main
+nothing to commit, working tree clean
+#+end_src
+* Motivation: Why should I bother?
+** gonsie/thesis
+[[file:images/gonsie-thesis-repo.png]]
+** gonsie/dotfiles
+[[file:images/gonsie-dotfiles-repo.png]]
+* Continue Your Journey
+** This is just the beginning
+- More things to learn:
+  - Explore history
+  - Collaboration through "pull" or "merge" requests
+  - Platforms: GitHub and GitLab
+** Git Caveats
+- Git is powerful
+- Git has a terrible user design
+- Git is hard to fully learn by yourself
+- Git (like any other tool) takes time and practice to get good
+** Get Social
+- Sign up for GitHub
+  - Follow your friends, star your favorite (LLNL) projects
+  - If you follow me this week I will follow you back
+- /With permission:/ use GitHub to showcase projects
+  - Get approval before posting LLNL code
+  - Get permission before posting homework solutions
+** Git Lessons
+- [[https://training.github.com][Git Cheetsheet]]
+- [[https://swcarpentry.github.io/git-novice/][Software Carpentry: Git Novice]]
+- [[https://docs.gitlab.com/ee/tutorials/#use-git][GitLab: Use Git Tutorials]]
+- [[https://www.atlassian.com/git][Atlassian (BitBucket): Learn Git]]
+** Advanced Git Resources
+- [[https://skills.github.com][GitHub Skills]]
+- [[https://learngitbranching.js.org][Learn Git Branching Interactively]]
+- [[https://sethrobertson.github.io/GitFixUm/fixup.html][Choose your own adventure: undoing, fixing, or removing commits in git]]
+* Credits
+Content for this talk was taken from [[https://swcarpentry.github.io/git-novice/][Software Carpentry: Git Novice]]
+** Tools
+Created with [[https://www.gnu.org/software/emacs/][Emacs]], [[https://orgmode.org][Org Mode]], and [[https://revealjs.com][RevealJS]].
+
+#+begin_export html
+View the <a href="./2022-07-11-git-intro.org">source</a>.
+#+end_export

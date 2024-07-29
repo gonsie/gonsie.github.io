@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Introduction to Version Control With Git</title>
+<meta name="author" content="Elsa Gonsiorowski"/>
+<meta name="description" content=""/>
+<meta name="keywords" content=""/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/solarized.css" id="theme"/>
+
+<link rel="stylesheet" href="monokai"/></head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Introduction to Version Control With Git</h1><p class="subtitle"></p>
+<h2 class="author">Elsa Gonsiorowski</h2><h2 class="date">July 29, 2024</h2><p class="date">Created: 2024-07-29 Mon 12:48</p>
+</section>
+<section id="sec-table-of-contents"><div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#/slide-org24b450d">1. Introduction</a></li>
+<li><a href="#/slide-orge6fdd3a">2. Theory: What is Version Control</a></li>
+<li><a href="#/slide-org2a8cbe9">3. Practice: Live Demos</a></li>
+<li><a href="#/slide-orgeda2674">4. Skill 1: Configuring Git</a></li>
+<li><a href="#/slide-orgfd4aeac">5. Skill 2: Creating a Repository</a></li>
+<li><a href="#/slide-org0f8a472">6. Skill 3: Tracking Changes</a></li>
+<li><a href="#/slide-orgf003337">7. Motivation: Why should I bother?</a></li>
+<li><a href="#/slide-org0412fb0">8. Continue Your Journey</a></li>
+<li><a href="#/slide-orgf08ccac">9. Credits</a></li>
+</ul>
+</div>
+</div>
+</section>
+
+<section>
+<section id="slide-org24b450d">
+<h2 id="org24b450d"><span class="section-number-2">1.</span> Introduction</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+</section>
+<section id="slide-org8293ceb">
+<h3 id="org8293ceb">Elsa Gonsiorowski</h3>
+<ul>
+<li>HPC I/O Support Specialist in Livermore Computing since 2016</li>
+<li>Developer for SCR: Scalable Checkpoint Restart library</li>
+<li>LC Hotline tech</li>
+<li>Working remotely in RI</li>
+<li>Excited about emacs, org-mode, static websites, fish shell, cmake, documentation, crossfit, rowing, knitting</li>
+
+</ul>
+</section>
+<section id="slide-org423bebf">
+<h3 id="org423bebf">Schedule for the Week</h3>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><b>Version Control with GIT</b></td>
+<td class="org-left">Mon</td>
+</tr>
+
+<tr>
+<td class="org-left">Functional Programming</td>
+<td class="org-left">Tue</td>
+</tr>
+
+<tr>
+<td class="org-left">Object Oriented Design</td>
+<td class="org-left">Wed</td>
+</tr>
+
+<tr>
+<td class="org-left">Intro to Containers</td>
+<td class="org-left">Thu</td>
+</tr>
+
+<tr>
+<td class="org-left">Software Quality Assurance</td>
+<td class="org-left">Fri</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="slide-org0376e74">
+<h3 id="org0376e74">Caveats</h3>
+<ul>
+<li>This is a 1 hour session, there is so much more to learn!</li>
+<li>You can type along, but I will be moving <i>fast</i></li>
+<li>Slides available on <code>myconfluence.llnl.gov/display/CF</code></li>
+
+</ul>
+</section>
+<section id="slide-orgce0b5b9">
+<h3 id="orgce0b5b9">Raise Your Hand</h3>
+<ul>
+<li class="fragment appear">If you can find the "Raise Hand" button on Webex</li>
+<li class="fragment appear">If you know someone else attending this lecture</li>
+<li class="fragment appear">If you've played a video game with "checkpoints"</li>
+<li class="fragment appear">If you've used "Track Changes" (MS Word or Google Docs)</li>
+<li class="fragment appear">If you know you have git installed on your system</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orge6fdd3a">
+<h2 id="orge6fdd3a"><span class="section-number-2">2.</span> Theory: What is Version Control</h2>
+<p>
+<a href="https://swcarpentry.github.io/git-novice/01-basics.html">SC: Automated Version Control</a>
+</p>
+</section>
+<section id="slide-org684b639">
+<h3 id="org684b639">VC Through Naming</h3>
+
+<div id="orga87ff9c" class="figure">
+<p><img src="images/phd101212s.png" alt="phd101212s.png" />
+</p>
+</div>
+</section>
+<section id="slide-orgbfaa320">
+<h3 id="orgbfaa320">VC in Parallel</h3>
+
+<div id="org03f8395" class="figure">
+<p><img src="images/versions-merge.drawio.svg" alt="versions-merge.drawio.svg" class="org-svg" />
+</p>
+</div>
+</section>
+<section id="slide-org70185af">
+<h3 id="org70185af">Key Features</h3>
+<ul>
+<li>Version control allows you take <i>checkpoints</i> or <i>snapshots</i> as you work on a project</li>
+<li>Version control is unlimited undo (but not at a granular level)</li>
+<li>Version Control allows many people to work in parallel</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org2a8cbe9">
+<h2 id="org2a8cbe9"><span class="section-number-2">3.</span> Practice: Live Demos</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+</section>
+<section id="slide-org5d023bb">
+<h3 id="org5d023bb">Assumptions</h3>
+<ul>
+<li>You are familiar with working on the command line</li>
+<li><p>
+You know the commands:
+</p>
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left"><b><code>ls</code></b></td>
+<td class="org-left">list files, with the flags <code>-al</code></td>
+</tr>
+
+<tr>
+<td class="org-left"><b><code>cd</code></b></td>
+<td class="org-left">change directory</td>
+</tr>
+
+<tr>
+<td class="org-left"><b><code>mkdir</code></b></td>
+<td class="org-left">make directory</td>
+</tr>
+
+<tr>
+<td class="org-left"><b><code>echo</code></b></td>
+<td class="org-left">repeat text</td>
+</tr>
+
+<tr>
+<td class="org-left"><b><code>&gt;</code></b></td>
+<td class="org-left">output redirection</td>
+</tr>
+</tbody>
+</table></li>
+
+</ul>
+</section>
+<section id="slide-org397aa3d">
+<h3 id="org397aa3d">Using These Slides</h3>
+<ul>
+<li>Code and command examples are written in a fixed-width font: <code>like this</code></li>
+<li>Commands that you should run in a terminal (or "on the command line") are shown with a leading <code>$</code>.
+Do not include the <code>$</code> when actually trying to run the command</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgeda2674">
+<h2 id="orgeda2674"><span class="section-number-2">4.</span> Skill 1: Configuring Git</h2>
+<p>
+<a href="https://swcarpentry.github.io/git-novice/02-setup.html">SC: Setting Up Git</a>
+</p>
+</section>
+<section id="slide-orgc55f50d">
+<h3 id="orgc55f50d">Configuring from the Command Line</h3>
+<div class="org-src-container">
+
+<pre   ><code class="shell" >$ git config --global user.name "Ada Lovelace"
+$ git config --global user.email "ada@lovelace.io"
+$ git config --global core.editor "emacs -nw"
+$ git config --global init.defaultBranch main
+</code></pre>
+</div>
+</section>
+<section id="slide-org013e290">
+<h3 id="org013e290">Help with Config</h3>
+<div class="org-src-container">
+
+<pre   ><code class="shell" >$ git config --list
+$ git config --help
+$ cat ~/.gitconfig
+</code></pre>
+</div>
+</section>
+<section id="slide-org4fbb5da">
+<h3 id="org4fbb5da">File: <code>~/.gitconfig</code></h3>
+<div class="org-src-container">
+
+<pre   ><code class="shell" data-line-numbers>[core]
+    editor = emacs -nw
+[init]
+    defaultBranch = main
+[user]
+    name = Ada Lovelace
+    email = ada@lovelace.io
+</code></pre>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgfd4aeac">
+<h2 id="orgfd4aeac"><span class="section-number-2">5.</span> Skill 2: Creating a Repository</h2>
+<p>
+<a href="https://swcarpentry.github.io/git-novice/03-create.html">SC: Creating a Repository</a>
+</p>
+</section>
+<section id="slide-org9426ab6">
+<h3 id="org9426ab6">Create a Repository</h3>
+<div class="org-src-container">
+
+<pre   ><code class="shell" >$ cd ~/Desktop
+$ ls -al
+$ mkdir Planets
+$ cd Planets
+$ git init
+Initialized empty Git repository in /Users/gonsie/Desktop/Planets/.git/
+$ ls -al
+total        0
+drwxr-xr-x   3  gonsiorowski1 59746  96 Jul 11 10:43 .
+drwx------@ 16  gonsiorowski1 59746 512 Jul 11 10:43 ..
+drwxr-xr-x   9  gonsiorowski1 59746 288 Jul 11 10:43 .git
+</code></pre>
+</div>
+</section>
+<section id="slide-org13f158b">
+<h3 id="org13f158b">Query Git</h3>
+<div class="org-src-container">
+
+<pre   ><code class="shell" >$ git status
+On branch main
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+</code></pre>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org0f8a472">
+<h2 id="org0f8a472"><span class="section-number-2">6.</span> Skill 3: Tracking Changes</h2>
+<p>
+<a href="https://swcarpentry.github.io/git-novice/04-changes.html">SC: Tracking Changes</a>
+</p>
+</section>
+<section id="slide-org9bfc409">
+<h3 id="org9bfc409">Add a File</h3>
+<div class="org-src-container">
+
+<pre   ><code class="shell" >$ echo "Cold and dry, but everything is my favorite color" &gt; mars.txt
+$ ls -al
+total        0
+drwxr-xr-x   3  gonsiorowski1 59746     96 Jul 11 10:43 .
+drwx------@ 16  gonsiorowski1 59746    512 Jul 11 10:43 ..
+drwxr-xr-x   9  gonsiorowski1 59746    288 Jul 11 10:43 .git
+-rw-r--r--   1  gonsiorowski1 59746     50 Jul 11 11:08 mars.txt
+$ git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add &lt;file&gt;..." to include in what will be committed)
+        mars.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+</code></pre>
+</div>
+</section>
+<section id="slide-orgddba83f">
+<h3 id="orgddba83f">Start Tracking Your File</h3>
+<div class="org-src-container">
+
+<pre   ><code class="shell" >$ git add mars.txt
+$ git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached &lt;file&gt;..." to unstage)
+        new file:   mars.txt
+$ git status --short
+A  mars.txt
+</code></pre>
+</div>
+</section>
+<section id="slide-orgabe0db2">
+<h3 id="orgabe0db2">Commit Your Changes</h3>
+<div class="org-src-container">
+
+<pre   ><code class="shell" >$ git commit -m "started work on mars.txt"
+[main (root-commit) 3383acd] started work on mars.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 mars.txt
+$
+$ git status
+On branch main
+nothing to commit, working tree clean
+</code></pre>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgf003337">
+<h2 id="orgf003337"><span class="section-number-2">7.</span> Motivation: Why should I bother?</h2>
+<div class="outline-text-2" id="text-7">
+</div>
+</section>
+<section id="slide-org35891b2">
+<h3 id="org35891b2">gonsie/thesis</h3>
+
+<div id="org1971d14" class="figure">
+<p><img src="images/gonsie-thesis-repo.png" alt="gonsie-thesis-repo.png" />
+</p>
+</div>
+</section>
+<section id="slide-org2a3098d">
+<h3 id="org2a3098d">gonsie/dotfiles</h3>
+
+<div id="orgde11fb1" class="figure">
+<p><img src="images/gonsie-dotfiles-repo.png" alt="gonsie-dotfiles-repo.png" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org0412fb0">
+<h2 id="org0412fb0"><span class="section-number-2">8.</span> Continue Your Journey</h2>
+<div class="outline-text-2" id="text-8">
+</div>
+</section>
+<section id="slide-org5f9b799">
+<h3 id="org5f9b799">This is just the beginning</h3>
+<ul>
+<li>More things to learn:
+<ul>
+<li>Explore history</li>
+<li>Collaboration through "pull" or "merge" requests</li>
+<li>Platforms: GitHub and GitLab</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-org721ddf4">
+<h3 id="org721ddf4">Git Caveats</h3>
+<ul>
+<li>Git is powerful</li>
+<li>Git has a terrible user design</li>
+<li>Git is hard to fully learn by yourself</li>
+<li>Git (like any other tool) takes time and practice to get good</li>
+
+</ul>
+</section>
+<section id="slide-org104bf83">
+<h3 id="org104bf83">Get Social</h3>
+<ul>
+<li>Sign up for GitHub
+<ul>
+<li>Follow your friends, star your favorite (LLNL) projects</li>
+<li>If you follow me this week I will follow you back</li>
+
+</ul></li>
+<li><i>With permission:</i> use GitHub to showcase projects
+<ul>
+<li>Get approval before posting LLNL code</li>
+<li>Get permission before posting homework solutions</li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-orgfb051fb">
+<h3 id="orgfb051fb">Git Lessons</h3>
+<ul>
+<li><a href="https://training.github.com">Git Cheetsheet</a></li>
+<li><a href="https://swcarpentry.github.io/git-novice/">Software Carpentry: Git Novice</a></li>
+<li><a href="https://docs.gitlab.com/ee/tutorials/#use-git">GitLab: Use Git Tutorials</a></li>
+<li><a href="https://www.atlassian.com/git">Atlassian (BitBucket): Learn Git</a></li>
+
+</ul>
+</section>
+<section id="slide-org81f3a9d">
+<h3 id="org81f3a9d">Advanced Git Resources</h3>
+<ul>
+<li><a href="https://skills.github.com">GitHub Skills</a></li>
+<li><a href="https://learngitbranching.js.org">Learn Git Branching Interactively</a></li>
+<li><a href="https://sethrobertson.github.io/GitFixUm/fixup.html">Choose your own adventure: undoing, fixing, or removing commits in git</a></li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgf08ccac">
+<h2 id="orgf08ccac"><span class="section-number-2">9.</span> Credits</h2>
+<p>
+Content for this talk was taken from <a href="https://swcarpentry.github.io/git-novice/">Software Carpentry: Git Novice</a>
+</p>
+</section>
+<section id="slide-org64b2871">
+<h3 id="org64b2871">Tools</h3>
+<p>
+Created with <a href="https://www.gnu.org/software/emacs/">Emacs</a>, <a href="https://orgmode.org">Org Mode</a>, and <a href="https://revealjs.com">RevealJS</a>.
+</p>
+
+View the <a href="./2022-07-11-git-intro.org">source</a>.
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js"></script>
+
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+plugins: [RevealHighlight],
+height:1000, slideNumber:'c/t'
+});
+
+</script>
+</body>
+</html>
