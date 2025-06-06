@@ -3,6 +3,9 @@ layout: page
 title: Talks
 ---
 
+## 2025
+- [Ada Lovelace's Computer Program](/talks/2025-ada-appletime.pdf), LLNL Computing Summer Students. June 6, 2025.
+
 ## 2024
 
 - [Version Control with GIT](/talks/2024-summer-git/git-intro.html), LLNL Computing Summer Students. July 29, 2024.
