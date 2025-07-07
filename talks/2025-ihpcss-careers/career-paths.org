@@ -1,13 +1,14 @@
 #+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
 #+REVEAL_VERSION: 4
 # must set org-re-reveal-height/width via :custom # this makes font look smaller
+# use 900/1400 on pluto
 #+REVEAL_THEME: https://www.gonsie.com/talks/2025-ihpcss-careers/robot-lung.css
 #+HTML_HEAD_EXTRA: <div class="line top"></div><div class="line bottom"></div><div class="line left"></div><div class="line right"></div>
 #+HTML_HEAD_EXTRA: <style>.line {background: #4EA69E;}</style>
 #+REVEAL_TRANS: slide
 
 
-#+title: IHPCSS Mentoring: Career Paths
+#+title: IHPCSS Mentoring: @@html:<br>@@ Career Paths
 #+author: Elsa Gonsiorowski
 #+date: July 7, 2025
 
@@ -16,17 +17,17 @@
 
 
 * Session Overview
-** COMMENT Schedule
+** Schedule
 
-|----------------+----------------------------------------------|
-| 20 min         | Career Paths Talk                            |
-| min            | Returning Mentor Career Talks                |
-|                | Staff introductions                          |
-| Remaining Time | Break into mentoring groups and go to lunch  |
-| Lunch          | Sit with mentoring group, do goal setting    |
-| Return Early   | *IF* you need to test your Bridges-2 account |
-| 14:00          | Split into parallel sessions                 |
-|----------------+----------------------------------------------|
+|--------------+----------------------------------------------|
+| 20 min       | Career Paths Talk                            |
+| 35 min       | Returning Mentor Career Talks                |
+| 20 min       | Staff introductions                          |
+| Lunch        | Break into mentoring groups for lunch        |
+|              | Sit together, do goal setting handout        |
+| Return Early | *IF* you need to test your Bridges-2 account |
+| 14:00        | Split into parallel sessions                 |
+|--------------+----------------------------------------------|
 
 ** Disclaimer
 - This is a /quick/ talk, with links to some other resources.
@@ -65,7 +66,7 @@
 - Try teaching / being a teaching assistant
 - Try mentoring undergraduates, new graduate students
 - Talk to professors in your department
-- /Talk to Tom Cheatham, Erwin Laure, Eric Wernert, Michelle Kuchera/
+- /Talk to Tom Cheatham, Erwin Laure, Gladys Andino/
 * Industry
 ** Industry
 - Beholden to customers, must create products to sell
@@ -93,7 +94,7 @@
 - Go to career fairs / recruiting sessions
   - at your university
   - at conferences
-- /Talk to Sameer Deshmukh, Lorenz Canaval, Tiago Pestana/
+- /Talk to Amuro Halawa, Jiachao Zhang/
 * Supercomputer Center
 ** Supercomputer Center
 - Could be associated with a University or Government Research lab
@@ -127,18 +128,17 @@
 - /Talk to Elsa Gonsiorowski, Ilya Zhukov/
 * Professional Organizations
 ** Professional Organizations
-While you may find yourself working at one of these institutions, that doesn't mean that your career path is fully set.
-Academic researcher is quite different from Professor, yet both are at a university.
-When you attend conferences, (and this event) look for folks who you see yourself as, and figure out where they hang out, professionally.
-Join the club, get active! Network.
+- Institution doesn't fully dictate career path
+  - Do provide different opportunities and flavors of work
+- To figure out what type of career you want, look for inspiration from others
+- Join professional organizations and attend conferences for profession development
 ** Organizations of Interest
-- Association of Computing Machinery (ACM) Special Interest Group (SIG)
-  - SYS-PROs, HPC, and others
-- Research Software Engineer (RSE) Societies
+- [[https://www.acm.org/special-interest-groups/alphabetical-listing][ACM SIGs]] (Association of Computing Machinery Special Interest Groups)
+- [[https://researchsoftware.org][Research Software Engineer]] (RSE) Societies
   - See also "Research Data Engineer" and "Research Infrastructure Engineer"
-- Campus of Academic Research Computing Consortium (US)
-- Coalition of Academic Scientific Computation (US)
-** RSE Example
+- [[https://carcc.org][CaRCC]]: Campus Research Computing Consortium and [[https://casc.org][CASC]]: Coalition for Academic Scientific Computation
+- See IHPCSS organizers
+** RSE Example Career Path
 - Bring software engineering skills to research projects
 #+begin_quote
 those who regularly use expertise in programming to advance research. This includes researchers who spend a significant amount of time programming, full-time software engineers writing code to solve research problems, and those somewhere in-between. We aspire to apply the skills and practices of software development to research to create more robust, manageable, and sustainable research software.
