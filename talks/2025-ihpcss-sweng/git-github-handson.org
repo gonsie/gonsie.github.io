@@ -1,0 +1,187 @@
+#+REVEAL_ROOT: https://cdn.jsdelivr.net/npm/reveal.js
+#+REVEAL_VERSION: 4
+# must set org-re-reveal-height/width via :custom # this makes font look smaller
+# use 900/1400 on pluto
+#+REVEAL_THEME: https://www.gonsie.com/talks/2025-ihpcss-careers/robot-lung.css
+#+HTML_HEAD_EXTRA: <div class="line top"></div><div class="line bottom"></div><div class="line left"></div><div class="line right"></div>
+#+HTML_HEAD_EXTRA: <style>.line {background: #FD81FE;}</style>
+#+REVEAL_TRANS: slide
+
+
+#+title: Command Line Kung-Fu
+#+author: Elsa Gonsiorowski
+#+date: July  10, 2025
+
+
+#+options: H:2 toc:1
+#+startup: overview
+
+* Introduction
+[[https://www.psc.edu/resources/bridges-2/user-guide/][Read the Documentation]]
+* SSH
+** SSH: Secure SHell
+- Protocol for accessing computer resources across a network
+- SSH key :: an authentication credential, aka "identity"
+- Each key has a "public" and "private" component
+- Computers have an SSH fingerprint
+- WHY? Makes it easier to connect to remote systems
+** SSH Config
+Lives in =~/.ssh/config=
+#+attr_reveal: :code_attribs data-line-numbers
+#+begin_src shell
+host bridges
+  user gonsie
+  hostname bridges2.psc.edu
+#+end_src
+** *Fancy* SSH Config
+#+attr_reveal: :code_attribs data-line-numbers
+#+begin_src shell
+Host *
+  ControlMaster auto
+  ControlPath ~/.ssh/%r@%h:%p
+  ControlPersist 12h
+  ForwardX11 yes
+  ForwardX11Timeout 12h
+#+end_src
+** SSH Key Creation
+#+begin_src shell
+ssh-keygen -t rsa -b 4096
+#+end_src
+Creates:
+#+begin_example
+id_rsa
+id_rsa.pub
+#+end_example
+** SSH Key Installation
+#+begin_src shell
+ssh-copy-id bridges
+#+end_src
+** Files in =~/.ssh/=
+- =id_rsa= :: private key file
+- =id_rsa.pub= :: public key file, share this one!
+- =config= :: configuration information
+- =known_hosts= :: list of saved fingerprints of machines you've connected to
+- =authorized_keys= :: list of ssh keys that are authorized to connect to this system
+* Shell
+** Shell Terminology
+- Shell :: operating system user interface, command-line interface
+- Prompt :: line asking for input
+- Commands :: tools/applications/binaries that you can run
+- Aliases :: typing shortcuts
+** Shells
+- sh :: A specification of a shell, /not/ an implementation
+- bash :: Bourne-Again Shell
+- csh :: the C Shell
+- tcsh :: enhanced C shell
+- zsh :: the Z Shell
+- fish :: Friendly Interactive SHell
+** Shell Syntax
+- variables, loops, string manipulation, wildcards (globs), testing, branching
+- prompt :: line that asks for input, configurable!
+- alias :: shortcut for typing
+- functions :: encapsulate complicated (or multiple) shell commands
+** Shell dot files
+- Vary depending on the shell
+- loaded upon login (or shell startup depending)
+** Environment Variables
+- =$USER=
+- =$SHELL=
+- =$PATH= and =$LD_LIBRARY_PATH=
+- =env= command
+** =.inputrc=
+#+begin_example
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+"\eOA": history-search-backward
+"\eOB": history-search-forward
+"\C-p": history-search-backward
+"\C-n": history-search-forward
+set show-all-if-ambiguous on
+set completion-ignore-case on
+#+end_example
+** Install Dot Files
+* Git Basics
+** Raise Your Hand
+#+attr_reveal: :frag (appear)
+- If you've played a video game with "checkpoints"
+- If you've used "Track Changes" (MS Word or Google Docs)
+- If you know you have git installed on your system
+** VC Through Naming
+[[file:images/phd101212s.png]]
+
+Open question: Why bother with Version Control?
+
+** Configuring from the Command Line
+[[https://swcarpentry.github.io/git-novice/02-setup.html][Software Carpentry: Setting Up Git]]
+#+begin_src shell
+$ git config --global user.name "Ada Lovelace"
+$ git config --global user.email "ada@lovelace.io"
+$ git config --global core.editor "emacs -nw"
+$ git config --global init.defaultBranch main
+#+end_src
+** Help with Config
+#+begin_src shell
+$ git config --list
+$ git config --help
+$ cat ~/.gitconfig
+#+end_src
+** File: =~/.gitconfig=
+#+attr_reveal: :code_attribs data-line-numbers
+#+begin_src shell
+[core]
+    editor = emacs -nw
+[init]
+    defaultBranch = main
+[user]
+    name = Elsa Gonsiorowski
+    email = gonsie@me.com
+#+end_src
+
+** Git vs GitHub
+- Git Cheatsheet
+- GitHub Cheatsheet
+* Git Hands On
+** Create a repo
+#+begin_src shell
+cp -r /jet/home/zjupa/programming_challenge ./
+cd programming_challenge
+git init
+git add *
+git commit -m "initial commit"
+#+end_src
+** Share the repo??
+** Clone the Repo
+* Build Systems
+** Compiling Code
+#+begin_src shell
+gcc source.c
+
+gcc source.c -o my_program
+
+gcc source.c util.c -o my_program -g -O2 -lboost -I/opt/boost
+#+end_src
+** Build Tools
+- =make=
+- ~~autotools~~
+- CMake
+- Spack or EasyBuild or Conda/pip
+** Magical Incantation
+#+begin_src shell
+./configure # or ccmake
+make
+make install
+#+end_src
+* Other Topics
+- resource schedulers / managers
+- modules
+- moving data: globus, scp, mpifileutils
+- editors
+- =nohup=, =screen=, =tmux=
+* Credits
+Created with [[https://www.gnu.org/software/emacs/][Emacs]], [[https://orgmode.org][Org Mode]], and [[https://revealjs.com][RevealJS]]
+
+(using the [[https://revealjs-themes.dzello.com/#/][Robot Lung]] theme).
+
+#+begin_export html
+View the <a href="./git-github-handson.org">source</a>.
+#+end_export

@@ -4,6 +4,7 @@ title: Talks
 ---
 
 ## 2025
+- [Software Engineering Hands-On](/talks/2025-ihpcss-sweng/git-github-handson.html), International HPC Summer School. July 10, 2025.
 - [Career Paths](/talks/2025-ihpcss-careers/career-paths.html), International HPC Summer School. July 7, 2025.
 - [Ada Lovelace's Computer Program](/talks/2025-ada-appletime.pdf), LLNL Computing Summer Students. June 6, 2025.
 

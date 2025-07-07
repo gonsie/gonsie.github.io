@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Generated on 2025-07-07 Mon 18:28 -->
+<meta charset="utf-8"/>
+<title>Command Line Kung-Fu</title>
+<meta name="author" content="Elsa Gonsiorowski"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://www.gonsie.com/talks/2025-ihpcss-careers/robot-lung.css" id="theme"/>
+<div class="line top"></div><div class="line bottom"></div><div class="line left"></div><div class="line right"></div>
+<style>.line {background: #FD81FE;}</style>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1 class="title">Command Line Kung-Fu</h1><h2 class="author">Elsa Gonsiorowski</h2><h2 class="date">July  10, 2025</h2><p class="date">Created: 2025-07-07 Mon 18:28</p>
+</section>
+<section id="table-of-contents-section">
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#/slide-1">1. Introduction</a></li>
+<li><a href="#/slide-2">2. SSH</a></li>
+<li><a href="#/slide-3">3. Shell</a></li>
+<li><a href="#/slide-4">4. Git Basics</a></li>
+<li><a href="#/slide-5">5. Git Hands On</a></li>
+<li><a href="#/slide-6">6. Build Systems</a></li>
+<li><a href="#/slide-7">7. Other Topics</a></li>
+<li><a href="#/slide-8">8. Credits</a></li>
+</ul>
+</div>
+</div>
+</section>
+<section>
+<section id="slide-1">
+<h2 id="1"><span class="section-number-2">1.</span> Introduction</h2>
+<p>
+<a href="https://www.psc.edu/resources/bridges-2/user-guide/">Read the Documentation</a>
+</p>
+</section>
+</section>
+<section>
+<section id="slide-2">
+<h2 id="2"><span class="section-number-2">2.</span> SSH</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+</section>
+<section id="slide-2-1">
+<h3 id="2-1"><span class="section-number-3">2.1.</span> SSH: Secure SHell</h3>
+<ul>
+<li>Protocol for accessing computer resources across a network</li>
+<li id="SSH key">an authentication credential, aka "identity"</li>
+<li>Each key has a "public" and "private" component</li>
+<li>Computers have an SSH fingerprint</li>
+<li>WHY? Makes it easier to connect to remote systems</li>
+
+</ul>
+</section>
+<section id="slide-2-2">
+<h3 id="2-2"><span class="section-number-3">2.2.</span> SSH Config</h3>
+<p>
+Lives in <code>~/.ssh/config</code>
+</p>
+<div class="org-src-container">
+
+<pre class="src src-shell">host bridges
+  user gonsie
+  hostname bridges2.psc.edu
+</pre>
+</div>
+</section>
+<section id="slide-2-3">
+<h3 id="2-3"><span class="section-number-3">2.3.</span> <b>Fancy</b> SSH Config</h3>
+<div class="org-src-container">
+
+<pre class="src src-shell">Host *
+  ControlMaster auto
+  ControlPath ~/.ssh/%r@%h:%p
+  ControlPersist 12h
+  ForwardX11 yes
+  ForwardX11Timeout 12h
+</pre>
+</div>
+</section>
+<section id="slide-2-4">
+<h3 id="2-4"><span class="section-number-3">2.4.</span> SSH Key Creation</h3>
+<div class="org-src-container">
+
+<pre class="src src-shell">ssh-keygen -t rsa -b 4096
+</pre>
+</div>
+<p>
+Creates:
+</p>
+<pre class="example" id="orgecc36bf">
+id_rsa
+id_rsa.pub
+</pre>
+</section>
+<section id="slide-2-5">
+<h3 id="2-5"><span class="section-number-3">2.5.</span> SSH Key Installation</h3>
+<div class="org-src-container">
+
+<pre class="src src-shell">ssh-copy-id bridges
+</pre>
+</div>
+</section>
+<section id="slide-2-6">
+<h3 id="2-6"><span class="section-number-3">2.6.</span> Files in <code>~/.ssh/</code></h3>
+<dl>
+<dt><code>id_rsa</code></dt><dd>private key file</dd>
+<dt><code>id_rsa.pub</code></dt><dd>public key file, share this one!</dd>
+<dt><code>config</code></dt><dd>configuration information</dd>
+<dt><code>known_hosts</code></dt><dd>list of saved fingerprints of machines you've connected to</dd>
+<dt><code>authorized_keys</code></dt><dd>list of ssh keys that are authorized to connect to this system</dd>
+
+</dl>
+</section>
+</section>
+<section>
+<section id="slide-3">
+<h2 id="3"><span class="section-number-2">3.</span> Shell</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+</section>
+<section id="slide-3-1">
+<h3 id="3-1"><span class="section-number-3">3.1.</span> Shell Terminology</h3>
+<dl>
+<dt>Shell</dt><dd>operating system user interface, command-line interface</dd>
+<dt>Prompt</dt><dd>line asking for input</dd>
+<dt>Commands</dt><dd>tools/applications/binaries that you can run</dd>
+<dt>Aliases</dt><dd>typing shortcuts</dd>
+
+</dl>
+</section>
+<section id="slide-3-2">
+<h3 id="3-2"><span class="section-number-3">3.2.</span> Shells</h3>
+<dl>
+<dt>sh</dt><dd>A specification of a shell, <i>not</i> an implementation</dd>
+<dt>bash</dt><dd>Bourne-Again Shell</dd>
+<dt>csh</dt><dd>the C Shell</dd>
+<dt>tcsh</dt><dd>enhanced C shell</dd>
+<dt>zsh</dt><dd>the Z Shell</dd>
+<dt>fish</dt><dd>Friendly Interactive SHell</dd>
+
+</dl>
+</section>
+<section id="slide-3-3">
+<h3 id="3-3"><span class="section-number-3">3.3.</span> Shell Syntax</h3>
+<ul>
+<li>variables, loops, string manipulation, wildcards (globs), testing, branching</li>
+<li id="prompt">line that asks for input, configurable!</li>
+<li id="alias">shortcut for typing</li>
+<li id="functions">encapsulate complicated (or multiple) shell commands</li>
+
+</ul>
+</section>
+<section id="slide-3-4">
+<h3 id="3-4"><span class="section-number-3">3.4.</span> Shell dot files</h3>
+<ul>
+<li>Vary depending on the shell</li>
+<li>loaded upon login (or shell startup depending)</li>
+
+</ul>
+</section>
+<section id="slide-3-5">
+<h3 id="3-5"><span class="section-number-3">3.5.</span> Environment Variables</h3>
+<ul>
+<li><code>$USER</code></li>
+<li><code>$SHELL</code></li>
+<li><code>$PATH</code> and <code>$LD_LIBRARY_PATH</code></li>
+<li><code>env</code> command</li>
+
+</ul>
+</section>
+<section id="slide-3-6">
+<h3 id="3-6"><span class="section-number-3">3.6.</span> <code>.inputrc</code></h3>
+<pre class="example" id="orgfea51e5">
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+"\eOA": history-search-backward
+"\eOB": history-search-forward
+"\C-p": history-search-backward
+"\C-n": history-search-forward
+set show-all-if-ambiguous on
+set completion-ignore-case on
+</pre>
+</section>
+<section id="slide-3-7">
+<h3 id="3-7"><span class="section-number-3">3.7.</span> Install Dot Files</h3>
+</section>
+</section>
+<section>
+<section id="slide-4">
+<h2 id="4"><span class="section-number-2">4.</span> Git Basics</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+</section>
+<section id="slide-4-1">
+<h3 id="4-1"><span class="section-number-3">4.1.</span> Raise Your Hand</h3>
+<ul>
+<li class="fragment appear">If you've played a video game with "checkpoints"</li>
+<li class="fragment appear">If you've used "Track Changes" (MS Word or Google Docs)</li>
+<li class="fragment appear">If you know you have git installed on your system</li>
+
+</ul>
+</section>
+<section id="slide-4-2">
+<h3 id="4-2"><span class="section-number-3">4.2.</span> VC Through Naming</h3>
+
+<div id="orgff6cee6" class="figure">
+<p><img src="images/phd101212s.png" alt="phd101212s.png" />
+</p>
+</div>
+
+<p>
+Open question: Why bother with Version Control?
+</p>
+</section>
+<section id="slide-4-3">
+<h3 id="4-3"><span class="section-number-3">4.3.</span> Configuring from the Command Line</h3>
+<p>
+<a href="https://swcarpentry.github.io/git-novice/02-setup.html">Software Carpentry: Setting Up Git</a>
+</p>
+<div class="org-src-container">
+
+<pre class="src src-shell">$ git config --global user.name <span style="color: #E1404A;">"Ada Lovelace"</span>
+$ git config --global user.email <span style="color: #E1404A;">"ada@lovelace.io"</span>
+$ git config --global core.editor <span style="color: #E1404A;">"emacs -nw"</span>
+$ git config --global init.defaultBranch main
+</pre>
+</div>
+</section>
+<section id="slide-4-4">
+<h3 id="4-4"><span class="section-number-3">4.4.</span> Help with Config</h3>
+<div class="org-src-container">
+
+<pre class="src src-shell">$ git config --list
+$ git config --help
+$ cat ~/.gitconfig
+</pre>
+</div>
+</section>
+<section id="slide-4-5">
+<h3 id="4-5"><span class="section-number-3">4.5.</span> File: <code>~/.gitconfig</code></h3>
+<div class="org-src-container">
+
+<pre class="src src-shell">[core]
+    editor = emacs -nw
+[init]
+    defaultBranch = main
+[user]
+    name = Elsa Gonsiorowski
+    email = gonsie@me.com
+</pre>
+</div>
+</section>
+<section id="slide-4-6">
+<h3 id="4-6"><span class="section-number-3">4.6.</span> Git vs GitHub</h3>
+<ul>
+<li>Git Cheatsheet</li>
+<li>GitHub Cheatsheet</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-5">
+<h2 id="5"><span class="section-number-2">5.</span> Git Hands On</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+</section>
+<section id="slide-5-1">
+<h3 id="5-1"><span class="section-number-3">5.1.</span> Create a repo</h3>
+<div class="org-src-container">
+
+<pre class="src src-shell">cp -r /jet/home/zjupa/programming_challenge ./
+<span style="color: #D08E5D;">cd</span> programming_challenge
+git init
+git add *
+git commit -m <span style="color: #E1404A;">"initial commit"</span>
+</pre>
+</div>
+</section>
+<section id="slide-5-2">
+<h3 id="5-2"><span class="section-number-3">5.2.</span> Share the repo??</h3>
+</section>
+<section id="slide-5-3">
+<h3 id="5-3"><span class="section-number-3">5.3.</span> Clone the Repo</h3>
+</section>
+</section>
+<section>
+<section id="slide-6">
+<h2 id="6"><span class="section-number-2">6.</span> Build Systems</h2>
+<div class="outline-text-2" id="text-6">
+</div>
+</section>
+<section id="slide-6-1">
+<h3 id="6-1"><span class="section-number-3">6.1.</span> Compiling Code</h3>
+<div class="org-src-container">
+
+<pre class="src src-shell">gcc source.c
+
+gcc source.c -o my_program
+
+gcc source.c util.c -o my_program -g -O2 -lboost -I/opt/boost
+</pre>
+</div>
+</section>
+<section id="slide-6-2">
+<h3 id="6-2"><span class="section-number-3">6.2.</span> Build Tools</h3>
+<ul>
+<li><code>make</code></li>
+<li><code>~autotools~</code></li>
+<li>CMake</li>
+<li>Spack or EasyBuild or Conda/pip</li>
+
+</ul>
+</section>
+<section id="slide-6-3">
+<h3 id="6-3"><span class="section-number-3">6.3.</span> Magical Incantation</h3>
+<div class="org-src-container">
+
+<pre class="src src-shell">./configure <span style="color: #54BE5A; font-style: italic;"># </span><span style="color: #54BE5A; font-style: italic;">or ccmake
+</span>make
+make install
+</pre>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-7">
+<h2 id="7"><span class="section-number-2">7.</span> Other Topics</h2>
+<ul>
+<li>resource schedulers / managers</li>
+<li>modules</li>
+<li>moving data: globus, scp, mpifileutils</li>
+<li>editors</li>
+<li><code>nohup</code>, <code>screen</code>, <code>tmux</code></li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-8">
+<h2 id="8"><span class="section-number-2">8.</span> Credits</h2>
+<p>
+Created with <a href="https://www.gnu.org/software/emacs/">Emacs</a>, <a href="https://orgmode.org">Org Mode</a>, and <a href="https://revealjs.com">RevealJS</a>
+</p>
+
+<p>
+(using the <a href="https://revealjs-themes.dzello.com/#/">Robot Lung</a> theme).
+</p>
+
+View the <a href="./git-github-handson.org">source</a>.
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/search/search.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom/zoom.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: false,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+overview: true,
+width: 1400,
+height: 900,
+
+transition: 'slide',
+transitionSpeed: 'default',
+
+// Plugins with reveal.js 4.x
+plugins: [ RevealMarkdown, RevealNotes, RevealSearch, RevealZoom ],
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+]
+
+});
+</script>
+</body>
+</html>
