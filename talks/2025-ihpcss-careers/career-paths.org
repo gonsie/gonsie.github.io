@@ -136,13 +136,25 @@
 - [[https://www.acm.org/special-interest-groups/alphabetical-listing][ACM SIGs]] (Association of Computing Machinery Special Interest Groups)
 - [[https://researchsoftware.org][Research Software Engineer]] (RSE) Societies
   - See also "Research Data Engineer" and "Research Infrastructure Engineer"
+  - [[https://www.researchsoft.org/][ReSA]]: Research Software Alliance
 - [[https://carcc.org][CaRCC]]: Campus Research Computing Consortium and [[https://casc.org][CASC]]: Coalition for Academic Scientific Computation
 - See IHPCSS organizers
-** RSE Example Career Path
+** RSE Example
 - Bring software engineering skills to research projects
 #+begin_quote
 those who regularly use expertise in programming to advance research. This includes researchers who spend a significant amount of time programming, full-time software engineers writing code to solve research problems, and those somewhere in-between. We aspire to apply the skills and practices of software development to research to create more robust, manageable, and sustainable research software.
 #+end_quote
+** RSE Career Path
+- Can be a domain scientist who picks up computer science / software engineering expertise
+- Can be trained computer scientist who, over the course a career, supports research software in different domains
+- Gaining more recognition as its own career path
+** How to Get Started
+- Join an RSE society. They have job postings and host conferences.
+  - [[https://society-rse.org][Society RSE]] (Mostly UK-based)
+  - [[https://us-rse.org][US RSE]]
+  - [[https://www.researchsoft.org/][ReSA]]: Research Software Alliance (international)
+- Continue to improve software engineering skills, many online courses
+- /Talk to Andrew Kirby, Weronika Filinger, Scott Callaghan/
 * COMMENT Research Software Engineer (RSE)
 ** RSE
 - Could be a associated with a (Research) University or Research Lab
