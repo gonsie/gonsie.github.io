@@ -17,7 +17,25 @@
 #+startup: overview
 
 * Introduction
-[[https://www.psc.edu/resources/bridges-2/user-guide/][Read the Documentation]]
+** Goals
+- Save you keystrokes
+- Show you something new
+- Relax
+** Where to find out more
+- [[https://www.psc.edu/resources/bridges-2/user-guide/][Bridges2 User Guide]]
+- [[https://bssw.io/][Better Scientific Software]]
+  - [[https://bssw.io/items?topic=software-engineering][Software Engineering items]]
+- [[https://society-rse.org][Society of Research Software Engineering]]
+  - [[https://us-rse.org][US-RSE]]
+** Git Lessons
+- [[https://training.github.com][Git Cheetsheet]]
+- [[https://swcarpentry.github.io/git-novice/][Software Carpentry: Git Novice]]
+- [[https://docs.gitlab.com/ee/tutorials/#use-git][GitLab: Use Git Tutorials]]
+- [[https://www.atlassian.com/git][Atlassian (BitBucket): Learn Git]]
+** Advanced Git Resources
+- [[https://skills.github.com][GitHub Skills]]
+- [[https://learngitbranching.js.org][Learn Git Branching Interactively]]
+- [[https://sethrobertson.github.io/GitFixUm/fixup.html][Choose your own adventure: undoing, fixing, or removing commits in git]]
 * SSH
 ** SSH: Secure SHell
 - Protocol for accessing computer resources across a network
@@ -138,8 +156,12 @@ $ cat ~/.gitconfig
 #+end_src
 
 ** Git vs GitHub
-- Git Cheatsheet
-- GitHub Cheatsheet
+- [[https://education.github.com/git-cheat-sheet-education.pdf][Git Cheatsheet]]
+- GitHub is git /with social features/
+- also GitLab, BitBucket, etc.
+- Non-git terms
+  - Pull Request / Merge Request
+  - Fork
 * Git Hands On
 ** Create a repo
 #+begin_src shell
@@ -150,7 +172,7 @@ git add *
 git commit -m "initial commit"
 #+end_src
 ** Share the repo??
-** Clone the Repo
+** Code with friends :)
 * Build Systems
 ** Compiling Code
 #+begin_src shell
@@ -172,10 +194,10 @@ make
 make install
 #+end_src
 * Other Topics
-- resource schedulers / managers
 - modules
-- moving data: globus, scp, mpifileutils
 - editors
+- resource schedulers / managers
+- moving data: globus, scp, mpifileutils
 - =nohup=, =screen=, =tmux=
 * Credits
 Created with [[https://www.gnu.org/software/emacs/][Emacs]], [[https://orgmode.org][Org Mode]], and [[https://revealjs.com][RevealJS]]

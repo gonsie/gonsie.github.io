@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Generated on 2025-07-07 Mon 18:28 -->
+<!-- Generated on 2025-07-09 Wed 16:58 -->
 <meta charset="utf-8"/>
 <title>Command Line Kung-Fu</title>
 <meta name="author" content="Elsa Gonsiorowski"/>
@@ -18,7 +18,7 @@
 <div class="reveal">
 <div class="slides">
 <section id="sec-title-slide">
-<h1 class="title">Command Line Kung-Fu</h1><h2 class="author">Elsa Gonsiorowski</h2><h2 class="date">July  10, 2025</h2><p class="date">Created: 2025-07-07 Mon 18:28</p>
+<h1 class="title">Command Line Kung-Fu</h1><h2 class="author">Elsa Gonsiorowski</h2><h2 class="date">July  10, 2025</h2><p class="date">Created: 2025-07-09 Wed 16:58</p>
 </section>
 <section id="table-of-contents-section">
 <div id="table-of-contents" role="doc-toc">
@@ -40,9 +40,53 @@
 <section>
 <section id="slide-1">
 <h2 id="1"><span class="section-number-2">1.</span> Introduction</h2>
-<p>
-<a href="https://www.psc.edu/resources/bridges-2/user-guide/">Read the Documentation</a>
-</p>
+<div class="outline-text-2" id="text-1">
+</div>
+</section>
+<section id="slide-1-1">
+<h3 id="1-1"><span class="section-number-3">1.1.</span> Goals</h3>
+<ul>
+<li>Save you keystrokes</li>
+<li>Show you something new</li>
+<li>Relax</li>
+
+</ul>
+</section>
+<section id="slide-1-2">
+<h3 id="1-2"><span class="section-number-3">1.2.</span> Where to find out more</h3>
+<ul>
+<li><a href="https://www.psc.edu/resources/bridges-2/user-guide/">Bridges2 User Guide</a></li>
+<li><a href="https://bssw.io/">Better Scientific Software</a>
+<ul>
+<li><a href="https://bssw.io/items?topic=software-engineering">Software Engineering items</a></li>
+
+</ul></li>
+<li><a href="https://society-rse.org">Society of Research Software Engineering</a>
+<ul>
+<li><a href="https://us-rse.org">US-RSE</a></li>
+
+</ul></li>
+
+</ul>
+</section>
+<section id="slide-1-3">
+<h3 id="1-3"><span class="section-number-3">1.3.</span> Git Lessons</h3>
+<ul>
+<li><a href="https://training.github.com">Git Cheetsheet</a></li>
+<li><a href="https://swcarpentry.github.io/git-novice/">Software Carpentry: Git Novice</a></li>
+<li><a href="https://docs.gitlab.com/ee/tutorials/#use-git">GitLab: Use Git Tutorials</a></li>
+<li><a href="https://www.atlassian.com/git">Atlassian (BitBucket): Learn Git</a></li>
+
+</ul>
+</section>
+<section id="slide-1-4">
+<h3 id="1-4"><span class="section-number-3">1.4.</span> Advanced Git Resources</h3>
+<ul>
+<li><a href="https://skills.github.com">GitHub Skills</a></li>
+<li><a href="https://learngitbranching.js.org">Learn Git Branching Interactively</a></li>
+<li><a href="https://sethrobertson.github.io/GitFixUm/fixup.html">Choose your own adventure: undoing, fixing, or removing commits in git</a></li>
+
+</ul>
 </section>
 </section>
 <section>
@@ -98,7 +142,7 @@ Lives in <code>~/.ssh/config</code>
 <p>
 Creates:
 </p>
-<pre class="example" id="orgecc36bf">
+<pre class="example" id="org118e8ab">
 id_rsa
 id_rsa.pub
 </pre>
@@ -181,7 +225,7 @@ id_rsa.pub
 </section>
 <section id="slide-3-6">
 <h3 id="3-6"><span class="section-number-3">3.6.</span> <code>.inputrc</code></h3>
-<pre class="example" id="orgfea51e5">
+<pre class="example" id="org616d96d">
 "\e[A": history-search-backward
 "\e[B": history-search-forward
 "\eOA": history-search-backward
@@ -214,7 +258,7 @@ set completion-ignore-case on
 <section id="slide-4-2">
 <h3 id="4-2"><span class="section-number-3">4.2.</span> VC Through Naming</h3>
 
-<div id="orgff6cee6" class="figure">
+<div id="org2f4f90c" class="figure">
 <p><img src="images/phd101212s.png" alt="phd101212s.png" />
 </p>
 </div>
@@ -264,8 +308,15 @@ $ cat ~/.gitconfig
 <section id="slide-4-6">
 <h3 id="4-6"><span class="section-number-3">4.6.</span> Git vs GitHub</h3>
 <ul>
-<li>Git Cheatsheet</li>
-<li>GitHub Cheatsheet</li>
+<li><a href="https://education.github.com/git-cheat-sheet-education.pdf">Git Cheatsheet</a></li>
+<li>GitHub is git <i>with social features</i></li>
+<li>also GitLab, BitBucket, etc.</li>
+<li>Non-git terms
+<ul>
+<li>Pull Request / Merge Request</li>
+<li>Fork</li>
+
+</ul></li>
 
 </ul>
 </section>
@@ -292,7 +343,7 @@ git commit -m <span style="color: #E1404A;">"initial commit"</span>
 <h3 id="5-2"><span class="section-number-3">5.2.</span> Share the repo??</h3>
 </section>
 <section id="slide-5-3">
-<h3 id="5-3"><span class="section-number-3">5.3.</span> Clone the Repo</h3>
+<h3 id="5-3"><span class="section-number-3">5.3.</span> Code with friends :)</h3>
 </section>
 </section>
 <section>
@@ -338,10 +389,10 @@ make install
 <section id="slide-7">
 <h2 id="7"><span class="section-number-2">7.</span> Other Topics</h2>
 <ul>
-<li>resource schedulers / managers</li>
 <li>modules</li>
-<li>moving data: globus, scp, mpifileutils</li>
 <li>editors</li>
+<li>resource schedulers / managers</li>
+<li>moving data: globus, scp, mpifileutils</li>
 <li><code>nohup</code>, <code>screen</code>, <code>tmux</code></li>
 
 </ul>
