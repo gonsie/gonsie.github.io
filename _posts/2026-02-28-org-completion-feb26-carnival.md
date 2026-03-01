@@ -6,10 +6,6 @@ tags:
 - emacs
 - orgmode
 ---
-
-
-# February 2026 Emacs Carnival
-
 I'm so happy to be joining [this month's emacs carnival](https://sachachua.com/blog/2026/01/emacs-carnival-february-2026-completion/)!
 I love the idea behind these carnivals and I think it's such a good way of building community virtually.
 
@@ -17,7 +13,7 @@ This month's topic is Emacs completions.
 I'm going to share a sort of "hack"&#x2026; a way that I've been able to achieve completions within core org mode.
 
 
-# Org Mode Tempo Templates
+## Org Mode Tempo Templates
 
 Org Mode has long supported a template expansion mechanism, some times called "easy templates" or "structured templates".
 The default behavior changed dramatically in [version 9.2](https://orgmode.org/worg/org-release-notes.html#orgf815049), and is now built on top of the Emacs builtin `tempo.el`.
@@ -40,7 +36,7 @@ and hitting `TAB` will expand to:
 Super handy and very easy to remember.
 
 
-## Default templates
+### Default templates
 
 The default are not entirely documented, though most are listed on the [Structured Templates manual page](https://orgmode.org/manual/Structure-Templates.html).
 
@@ -72,7 +68,7 @@ In addition to those blocks, there are also some quick tags:
 You can see that there is sort of a convention, uppercase letters usually insert a tag, whereas lowercase letters are mainly for blocks (though it's definitely not perfect).
 
 
-## Additional Templates
+### Additional Templates
 
 Some additional templates can be defined by packages.
 For example, the [org-re-reveal](https://gitlab.com/oer/org-re-reveal) package adds:
@@ -82,13 +78,13 @@ For example, the [org-re-reveal](https://gitlab.com/oer/org-re-reveal) package a
 | <n | `#+begin_notes ... #+end_notes` |
 
 
-# Basic Customization
+## Basic Customization
 
 You can add your own tags and blocks.
 In fact, there is actually no need for the "keys" to single characters.
 
 
-## Adding Tags
+### Adding Tags
 
 Adding another tag is very easy, seen here:
 
@@ -103,7 +99,7 @@ Which results in this completion:
 | <N | `#+name:` |
 
 
-## Create a New Hotkey
+### Create a New Hotkey
 
 I don't like the `<E` hotkey for export block, instead I would like that to be `<x`.
 That is easily added with:
@@ -113,7 +109,7 @@ That is easily added with:
 {% endhighlight %}
 
 
-## Create a Completion
+### Create a Completion
 
 You can define your own completion with the `tempo-define-template` function (see the doc string for full details).
 It is very flexible!
@@ -121,13 +117,13 @@ You can specify where the cursor (or "prompt") ends up after the completion, or 
 There are more advance features, including auto indentation and dealing with regions.
 
 
-# My Custom Completions
+## My Custom Completions
 
 There is no requirement that these templates be simply blocks or tags.
 I've implemented about 5 custom templates, but here are a few that I think would be most useful for others.
 
 
-## Properties Drawer<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>
+### Properties Drawer<sup><a id="fnr.1" class="footref" href="#fn.1" role="doc-backlink">1</a></sup>
 
 Org headings can have properties, specified by the [properties drawer](https://orgmode.org/manual/Property-Syntax.html):
 
@@ -148,7 +144,7 @@ I add this as `<p` via this implementation code:
 {% endhighlight %}
 
 
-## Title Block
+### Title Block
 
 This is one that I use most frequently.
 It's a title block that I start all my org documents with.
@@ -177,7 +173,7 @@ I also implement another completion that is a slightly different title block whi
 It includes the all the options that I want by default.
 
 
-# Finally
+## Finally
 
 In writing this article I stumbled across orgmode documentation page for [Completions](https://orgmode.org/manual/Completion.html).
 I had no idea these `M-tab` completions existed!
