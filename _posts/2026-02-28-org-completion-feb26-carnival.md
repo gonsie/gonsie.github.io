@@ -18,6 +18,8 @@ I'm going to share a sort of "hack"&#x2026; a way that I've been able to achieve
 Org Mode has long supported a template expansion mechanism, some times called "easy templates" or "structured templates".
 The default behavior changed dramatically in [version 9.2](https://orgmode.org/worg/org-release-notes.html#orgf815049), and is now built on top of the Emacs builtin `tempo.el`.
 
+*Update* To get the behavior described here, you must add `(require 'org-tempo)` to your config.
+
 Essentially, you start a new line with `<X` (where `X` is a pre-defined key), then hit `TAB` to have the template expanded.
 For example, starting a new line with:
 
