@@ -71,8 +71,12 @@ Home gyms in bold, repeat locations italicized.
 | 2022         | Athens, Greece         | IHPCSS                  |   23.706244, 37.963687 |
 | 2023         | Atlanta, GA            | IHPCSS                  |  -84.389507, 33.779982 |
 | 2024         | Kobe, Japan            | IHPCSS                  |   135.206572,34.703740 |
+| 2025         | Lisbon, Portugal       | IHPCSS                  |   -9.103455, 38.740519 |
+| 2025         | Philadelphia, PA       | US-RSE                  |  -75.147833, 39.930965 |
+| 2025         | St. Louis, MO          | SC                      |  -90.204982, 38.603331 |
+| 2026         | San Jose, CA           | US-RSE                  | -121.908322, 37.322319 |
 |:------------:|:-----------------------|:------------------------|-----------------------:|
-| **11 years** | **3 continents**       | **31 boxes**            |                        |
+| **13 years** | **3 continents**       | **35 boxes**            |                        |
 
 ## URL Request for MapBox Image
 
