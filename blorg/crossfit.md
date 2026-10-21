@@ -40,16 +40,16 @@ Home gyms in bold, repeat locations italicized.
 | 2013         | Fairborn, OH           | vacation                |    -84.05798, 39.87464 |
 | 2014         | Denver, CO             | PADS conference         |  -104.987972, 39.75224 |
 | 2014         | Champaign, IL          | XPDES meeting           |                        |
-| 2015         | London England         | PADS conference         |   -0.134618, 51.508393 |
-| 2015         | Toronto Canada         | IHPCSS                  |  -79.396402, 43.674968 |
+| 2015         | London, England        | PADS conference         |   -0.134618, 51.508393 |
+| 2015         | Toronto, Canada        | IHPCSS                  |  -79.396402, 43.674968 |
 | 2015         | Woodridge, IL          | CODES meeting           |   -88.014555, 41.74133 |
 | 2015         | Seattle, WA            | ModSim Meeting          |   -122.29635, 47.66537 |
 | 2015         | Austin, TX             | SC                      |   -97.767785, 30.21521 |
 | 2016         | Albuquerque, NM        | Sandia visit            | -106.645162, 35.110754 |
-| 2016         | Banff Canada           | PADS conference         | -115.318777, 51.076077 |
+| 2016         | Banff, Canada          | PADS conference         | -115.318777, 51.076077 |
 | 2016         | Salt Lake City, UT     | SC                      |     -111.908, 40.75597 |
 | 2016         | *Woodridge, IL*        | CODES meeting?          |                        |
-| 2016         | Vienna Austria         | IHPCSS                  |   16.374074, 48.218777 |
+| 2016         | Vienna, Austria        | IHPCSS                  |   16.374074, 48.218777 |
 | 2016         | Livermore, CA          | CrossFit WIT            |   -121.73492, 37.70034 |
 | 2016         | Livermore, CA          | CrossFit 580            |  -121.750549, 37.68972 |
 | 2016         | Livermore, CA          | **CrossFit Livermore**  | -121.738323, 37.699485 |
